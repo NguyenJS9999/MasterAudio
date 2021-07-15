@@ -1,0 +1,165 @@
+/* font Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* font Rubik */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+a:hover {
+  color: #e42313;
+}
+.container-fluid {
+  padding: 0px;
+}
+/* Nav */
+header {
+  border: 1px solid red;
+}
+.breadcrumb-container {
+  background-color: #c4c4c4;
+  width: 100%;
+  height: 40px;
+  padding: 6px 80px;
+  font-size: 16px;
+}
+
+/* End Nav */
+
+/* Start filter */
+.filter-container {
+  border: 1px solid red;
+  padding: 0px 80px;
+  text-align: center;
+  margin-top: 48px;
+
+  display: flex;
+  flex-direction: column;
+  grid-gap: 32px;
+}
+
+.filters {
+  border: 2px dotted rgb(72, 118, 0);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  grid-gap: 40px;
+}
+
+/* Mỗi-1 content và lọc - ngang  */
+.filter-by-brand {
+  border: 1px solid brown;
+  border-radius: 4px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  padding: 20px 24px;
+  transition: all 0.2s;
+}
+.filter-by-brand:hover {
+  box-shadow: 0px 0px 5px 0px #E42313;
+}
+/*  */
+.filter-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.list-brand {
+  /* border: 1px solid rgb(64, 255, 0); */
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+/*  */
+.brand-logo {
+  border: 1px solid #e42313;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  padding: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all 0.2s;
+}
+.brand-logo:hover {
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+.brand-logo img {
+  width: 100%;
+  height: 100%;
+}
+.brand-logo span {
+  /* border: 1px solid #9e13e4; */
+  margin: auto;
+  font-weight: 600;
+  color: #e42313;
+}
+
+
+/* Lọc theo giá bán và tìm kiếm */
+.filter-by-price-search-container {
+  border: 1px solid brown;
+  border-radius: 4px;
+  background: #EEEEEE;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filter-by-price {
+  border: 1px solid rgb(61, 61, 30);
+
+}
+.product-search {
+  border: 1px solid rgb(61, 61, 30);
+
+}
+/* End filter */
+
+/* Start */
+/* End */
+
+/* ***************************************** */
+/* Start Responsive by @Media same bootstrap */
+
+/* X-Small */
+@media (max-width: 576px) {
+}
+
+/* Small */
+@media (min-width: 576px) {
+}
+
+/* Medium */
+@media (min-width: 768px) {
+}
+
+/* Large */
+@media (min-width: 992px) {
+}
+
+/* Extra large */
+@media (min-width: 1200px) {
+}
+
+/* Extra extra large */
+@media (min-width: 1400px) {
+}
+/* End Responsive by @Media same  bootstrap*/
+
+/* Start */
+/* End */

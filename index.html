@@ -9,32 +9,391 @@
 
     <title>Master Audio</title>
     <!-- Icon -->
-    <link rel="shortcut icon" href="#">
+    <link rel="shortcut icon" href="./img/logo/logo.png">
     <!-- font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap 5  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
 
+    <!-- Menu trượt slick crocell -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
-
-    <!-- slick crocell -->
-    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" /> -->
-    <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
     <!-- slick crocell CDN CSS -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-    <!-- css -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- css code tay-->
+    <link rel="stylesheet" href="css/index.css">
 
 </head>
 
 <body>
-    <h1>Đồ án web tĩnh 1</h1>
+
+    <header>
+
+        <div class="container-header container-fluid">
+
+            <!-- Start navigation mobile -->
+            <div class="navigation-mobile   md-d.none">
+
+                <span class="icon-menu-hiden-mobile" onclick="hiddenMenu()">
+                    <i class="fas fa-bars"></i>
+                </span>
+
+                <!--  d-none -->
+                <div class="menu-infos-header-mobile    ">
+                    <a href="#">
+                        <div>TRANG CHỦ</div>
+                    </a>
+
+                    <a href="/product.html">
+                        <div>SẢN PHẨM</div>
+                    </a>
+
+                    <a href="/about.html">
+                        <div>GIỚI THIỆU</div>
+                    </a>
+
+                    <a href="/blog.html">
+                        <div>TIN TỨC</div>
+                    </a>
+                </div>
+
+                <div class="logo-master-audio">
+                    <img src="./img/logo/logo.png" alt="logo">
+                </div>
+
+                <!-- cart / login -->
+                <div class="cart-login">
+                    <a class="" href="/cart.html">
+                        <i class="fas fa-cart-plus"></i>
+                    </a>
+
+                    <!-- User -->
+                    <a class="" href="#">
+                        <i class="far fa-user"></i>
+                    </a>
+                </div>
+
+
+            </div> <!-- End navigation mobile -->
+
+
+            <!-- Start navigation desktop-->
+            <nav>
+
+                <div class="navigation-desktop">
+
+                    <div class="logo-master-audio">
+                        <a href="./index.html"><img src="./img/logo/logo.png" alt="logo"></a>
+                    </div>
+
+                    <div class="menu-pages-desktop">
+                        <a class="menu-page-desktop" href="#">
+                            <div>TRANG CHỦ</div>
+                        </a>
+
+                        <a class="menu-page-desktop" href="/product.html">
+                            <div>SẢN PHẨM</div>
+                        </a>
+
+                        <a class="menu-page-desktop" href="/about.html">
+                            <div>GIỚI THIỆU</div>
+                        </a>
+
+                        <a class="menu-page-desktop" href="/blog.html">
+                            <div>TIN TỨC</div>
+                        </a>
+
+
+                    </div>
+                    <!-- cart / login -->
+                    <div class="cart-login">
+                        <a href="/cart.html">
+                            <div><i class="fas fa-cart-plus"></i></div>
+                        </a>
+
+                        <!-- User -->
+                        <a href="#">
+                            <div><i class="far fa-user"></i></div>
+                        </a>
+                    </div>
+
+
+                </div> <!-- navigation-desktop -->
+
+                <div class="banner-top-home">
+                    <!-- carosel -->
+                    <img src="/img/banner/banner-top-home(2).png" alt="banner">
+
+
+                    <div class="banner-content">
+
+                        <h1>Chất âm đến từ <span>châu Âu</span></h1>
+
+                        <div class="banner-description">
+                            Nơi cảm xúc thăng hoa cùng hòa mình vào những giai điệu đầy cảm xúc
+                        </div>
+
+                        <div class="button-discover  " type="button">Khám phá ngay</div>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <!-- End navigation desktop-->
+
+        </div> <!-- container-header -->
+
+    </header>
+
+    <main>
+        <!-- Sản phẩm bán chạy -->
+        <section class="best-seller-new-products-container   container-fluid ">
+            <h1>SẢN PHẨM BÁN CHẠY</h1>
+
+            <div class="best-seller-products">
+                <!-- carousel -->
+                <div class="banner-carousel">
+
+                    <div class="best-seller-product">
+                        <img src="https://www.4-acoustic.com/files/cto_layout/img/produkte/PCS-318NB/PCS-318NB-01.png"
+                            alt="#">
+                    </div>
+
+                    <div class="best-seller-product">
+                        <img src="https://www.4-acoustic.com/files/cto_layout/img/produkte/PCS-318NB/PCS-318NB-01.png"
+                            alt="#">
+                    </div>
+
+                    <div class="best-seller-product">
+                        <img src="https://www.4-acoustic.com/files/cto_layout/img/produkte/PCS-318NB/PCS-318NB-01.png"
+                            alt="#">
+                    </div>
+
+                    <div class="best-seller-product">
+                        <img src="https://www.4-acoustic.com/files/cto_layout/img/produkte/PCS-318NB/PCS-318NB-01.png"
+                            alt="#">
+                    </div>
+
+                    <div class="best-seller-product">
+                        <img src="https://www.4-acoustic.com/files/cto_layout/img/produkte/PCS-318NB/PCS-318NB-01.png"
+                            alt="#">
+                    </div>
+
+                    <div class="best-seller-product">
+                        <img src="https://www.4-acoustic.com/files/cto_layout/img/produkte/PCS-318NB/PCS-318NB-01.png"
+                            alt="#">
+                    </div>
+
+                </div> <!-- carousel -->
+
+                <a href="/product.html">
+                    <div class="button-viewall-product ">XEM TOÀN BỘ SẢN PHẨM</div>
+                </a>
+
+            </div>
+
+        </section> <!-- Sản phẩm bán chạy -->
+
+        <!-- !!!!!!!!!!!!!!!!!!!!! Thay ảnh slide khác nhau với mỗi ảnh là một link đến trang chi tiết chung hoặc khác mẫu sản phẩm -->
+
+        <section class="best-seller-new-products-container   container-fluid ">
+            <h1>SẢN PHẨM MỚI RA</h1>
+
+
+            <div class="best-seller-products">
+                <!-- carousel -->
+                <div class="banner-carousel">
+
+                    <div class="best-seller-product">
+                        <img src="https://www.4-acoustic.com/files/cto_layout/img/produkte/PCS-318NB/PCS-318NB-01.png"
+                            alt="#">
+                    </div>
+
+                    <div class="best-seller-product">
+                        <img src="https://www.4-acoustic.com/files/cto_layout/img/produkte/PCS-318NB/PCS-318NB-01.png"
+                            alt="#">
+                    </div>
+
+                    <div class="best-seller-product">
+                        <img src="https://www.4-acoustic.com/files/cto_layout/img/produkte/PCS-318NB/PCS-318NB-01.png"
+                            alt="#">
+                    </div>
+
+                    <div class="best-seller-product">
+                        <img src="https://www.4-acoustic.com/files/cto_layout/img/produkte/PCS-318NB/PCS-318NB-01.png"
+                            alt="#">
+                    </div>
+
+                    <div class="best-seller-product">
+                        <img src="https://www.4-acoustic.com/files/cto_layout/img/produkte/PCS-318NB/PCS-318NB-01.png"
+                            alt="#">
+                    </div>
+
+                    <div class="best-seller-product">
+                        <img src="https://www.4-acoustic.com/files/cto_layout/img/produkte/PCS-318NB/PCS-318NB-01.png"
+                            alt="#">
+                    </div>
+
+                </div> <!-- carousel -->
+
+                <a href="/product.html">
+                    <div class="button-viewall-product ">XEM TOÀN BỘ SẢN PHẨM</div>
+                </a>
+
+            </div>
+
+        </section> <!-- Sản phẩm bán chạy -->
+
+
+        <section>
+            <!-- Thương hiệu tiếng -->
+            <div class="famous-brand-container   container-fluid ">
+
+                <div class="famous-brand">
+                    <h1>THƯƠNG HIỆU NỔI TIẾNG</h1>
+
+                    <!-- <img src="/img/Brands/" alt="brand"> -->
+                    <div class="famous-brand-list-product">
+
+                        <div class=" famous-product "> <img src="/img/Brands/4-acoustic.png" alt="brand"> </div>
+                        <div class=" famous-product "> <img src="/img/Brands/4-acoustic.png" alt="brand"> </div>
+                        <div class=" famous-product "> <img src="/img/Brands/4-acoustic.png" alt="brand"> </div>
+
+                        <div class=" famous-product "> <img src="/img/Brands/4-acoustic.png" alt="brand"> </div>
+                        <div class=" famous-product "> <img src="/img/Brands/4-acoustic.png" alt="brand"> </div>
+                        <div class=" famous-product "> <img src="/img/Brands/4-acoustic.png" alt="brand"> </div>
+
+                        <div class=" famous-product "> <img src="/img/Brands/4-acoustic.png" alt="brand"> </div>
+                        <div class=" famous-product "> <img src="/img/Brands/4-acoustic.png" alt="brand"> </div>
+                        <div class=" famous-product "> <img src="/img/Brands/4-acoustic.png" alt="brand"> </div>
+
+
+                    </div>
+
+                </div>
+
+            </div> <!-- Thương hiệu tiếng -->
+
+        </section>
 
 
 
+
+        <section>
+            <!-- Bản tin / Blog - newsletters -->
+
+            <div class="blog-container">
+            </div>
+
+        </section> <!-- Bản tin / Blog - newsletters -->
+
+
+        <section>
+            <!-- Tự hào dịch vụ -->
+        </section> <!-- Tự hào dịch vụ -->
+
+
+        <section>
+            <!-- Đăng kí nhận tin mới -->
+
+        </section> <!-- Đăng kí nhận tin mới -->
+
+
+        <footer>
+            <div class="footer-container   container-fluid">
+
+                <div class="footer-infors">
+
+                    <div class="footer-infor">
+                        <h6>CÔNG TY CỔ PHẦN MASTER AUDIO VIỆT NAM</h6>
+                        <div class="footer-infor-description">
+                            <p>CS 1: Số 31 - BT4, 3 KĐT Vinaconex 3, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội</p>
+                            <p>CS 2: Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài, Hà Nội</p>
+                            <p>Hotline: 0988360148</p>
+                            <p>Email: admin@master-audio.com</p>
+                            
+                            <div class="social-network-icon">
+                                <i class="fab fa-youtube"></i>
+                                <i class="fab fa-facebook-f"></i>
+                                <i class="far fa-envelope"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-pinterest"></i>
+                                <i class="fab fa-twitter"></i>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="footer-infor">
+                        <h6>THỜI GIAN LÀM VIỆC</h6>
+                        <div class="footer-infor-description">
+                            <p>Thứ 2 - Thứ 6: 8AM - 17hPM</p>
+                            <p>Thứ 7: 9AM - 16PM</p>
+                            <p>Chủ Nhật: ĐÃ ĐÓNG CỬA</p>
+                            <p>Nghỉ các ngày lễ, Tết</p>
+                        </div>
+                    </div>
+
+                    
+                    <div class="footer-infor">
+                        <h6>DỊCH VỤ HỖ TRỢ KHÁCH HÀNG</h6>
+                        <div class="footer-infor-description">
+                            <p>Hướng dẫn mua hàng online</p>
+                            <p>Hướng dẫn mua hàng trả góp</p>
+                            <p>Chính sách bảo mật</p>
+                            <p>Liên hệ & góp ý</p>
+                            <p>Câu hỏi thường gặp</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="footer-infor">
+                        <h6>CHÍNH SÁCH</h6>
+                        <div class="footer-infor-description">
+                            <p>Chính sách bảo hành</p>
+                            <p>Chính sách giao hàng</p>
+                            <p>Chính sách đổi trả</p>
+                            <p>Chính sách bảo mật</p>
+                            <p>Thẻ thành viên</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+               
+
+            </div>
+        </footer>
+
+        <div class="bottom-copyright">
+
+            <div class="copy-right">Copyright 2021 <span>&#169</span> Powered by Nguyên Bass</div>
+
+            <div class="contact-the-author">
+                <span>Contact</span> 
+                <span>Data Protection</span> 
+                <span>Publishing Branch</span>
+            </div>
+        </div>
+
+    </main>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -42,13 +401,18 @@
 
     <!-- Thư viện Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Thư viện local slick -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
     <!-- Bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <!-- File Js -->
+    <!-- File Js Để dưới để ghi đè js của thư viện -->
     <script src="./js/main.js"></script>
+
 </body>
 
 </html>
