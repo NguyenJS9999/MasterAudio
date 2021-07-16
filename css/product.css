@@ -23,13 +23,6 @@ a:hover {
 header {
   border: 1px solid red;
 }
-.breadcrumb-container {
-  background-color: #c4c4c4;
-  width: 100%;
-  height: 40px;
-  padding: 6px 80px;
-  font-size: 16px;
-}
 
 /* End Nav */
 
@@ -38,7 +31,7 @@ header {
   border: 1px solid red;
   padding: 0px 80px;
   text-align: center;
-  margin-top: 48px;
+  /* margin-top: 48px; */
 
   display: flex;
   flex-direction: column;
@@ -46,17 +39,18 @@ header {
 }
 
 .filters {
-  border: 2px dotted rgb(72, 118, 0);
+  /* border: 2px dotted rgb(72, 118, 0); */
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   grid-gap: 40px;
+  margin-top: 36px;
 }
 
 /* Mỗi-1 content và lọc - ngang  */
 .filter-by-brand {
-  border: 1px solid brown;
+  /* border: 1px solid brown; */
   border-radius: 4px;
   width: 100%;
   display: flex;
@@ -66,7 +60,7 @@ header {
   transition: all 0.2s;
 }
 .filter-by-brand:hover {
-  box-shadow: 0px 0px 5px 0px #E42313;
+  box-shadow: 0px 0px 5px 0px #e42313;
 }
 /*  */
 .filter-title {
@@ -107,27 +101,84 @@ header {
   margin: auto;
   font-weight: 600;
   color: #e42313;
+  /* font-size: 16px; */
 }
-
 
 /* Lọc theo giá bán và tìm kiếm */
 .filter-by-price-search-container {
-  border: 1px solid brown;
+  /* border: 1px solid brown; */
   border-radius: 4px;
-  background: #EEEEEE;
+  background: #eeeeee;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  grid-gap: 24px;
+  padding: 12px 26px;
+}
+/* Lọc theo giá */
+
+/* 2 nút lọc giá */
+.filter-by-price-buttons {
+  /* border: 1px solid rgb(85, 223, 21); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px;
+}
+.filter-by-price-button {
+  border: 2px dotted #1a2c42;
+  border-radius: 4px;
+  padding: 6px 20px;
+  transition: all 0.2s;
+}
+.filter-by-price-button:hover {
+  background: #1a2c42;
+  color: white;
 }
 
-.filter-by-price {
-  border: 1px solid rgb(61, 61, 30);
-
-}
+/* Ô tìm kiếm */
 .product-search {
-  border: 1px solid rgb(61, 61, 30);
-
+  /* border: 1px solid #E42313; */
+  padding-top: 4px;
+  position: relative;
 }
+
+.search-input {
+  border: 1px solid #e42313;
+  border-radius: 4px;
+  background: white;
+  padding: 8px;
+  /* Độ rộng input */
+  max-width: 100%;
+}
+.search-input::placeholder {
+  color: #e42313;
+  opacity: 0.4;
+}
+.search-input:active {
+  border: white;
+}
+/* icon tìm kiếm */
+.search-icon {
+  border: 1px solid #e42313;
+  background: #e42313;
+  opacity: 8;
+  color: white;
+  border-radius: 4px;
+  width: 55px;
+  margin-top: 5px;
+  font-size: 23px;
+  position: absolute;
+  right: 2px;
+  top: -8px;
+  transition: all 0.2s;
+}
+.search-icon:hover {
+  background: white;
+  color: #e42313;
+}
+
 /* End filter */
 
 /* Start */
@@ -138,18 +189,141 @@ header {
 
 /* X-Small */
 @media (max-width: 576px) {
+  /* Giảm khoảng cách lề và cỡ chữ cho breacum ở màn iphone 5 */
+  .breadcrumb-container {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  /* Ở màn bé nhất lề web giảm ngang còn 20px */
+  .filter-container {
+    padding: 0px 20px;
+  }
+  /* Dưới 576px 2 khối lọc xếp dọc và chia 3 cột mỗi khối lọc*/
+  .filters {
+    flex-direction: column;
+    grid-gap: 12px
+  }
+  .filter-by-brand {
+    padding: 20px 12px;
+  }
+
+  /* Tiêu đề khối lọc sản phẩm giảm 4px->16px */
+  .filter-title {
+    font-size: 18px;
+  }
+  /* Co 3 hàng cho khối lọc theo thương hiệu */
+  .list-brand {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* Ở màn iphone 5 cỡ chữ của brand lọc giảm nhỏ gần nửa */
+  .brand-logo span {
+    font-size: 12px;
+  }
+  /* Giảm khoảng cách phần tử cho khối lọc giá và tìm kiếm */
+  .filter-by-price-search-container {
+    grid-gap: 16px;
+  }
+  /* Nút lọc sản phẩm theo giá giảm cỡ chữ đủ cho iphone 5 */
+  .filter-by-price-button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  /* Thay đổi xếp DỌC khối bọc lọc giá và tìm kiếm */
+  .filter-by-price-search-container {
+    flex-direction: column;
+  }
+  /* Thay đổi độ rộng ô tìm kiếm product */
+  .search-input {
+    /* width: 260px; */
+    width: 100%;
+  }
 }
 
 /* Small */
 @media (min-width: 576px) {
+    /* Ở màn bé nhất lề web giảm ngang còn 40px */
+    .filter-container {
+      padding: 0px 40px;
+    }
+  /* Trên 576px 2 khối lọc xếp dọc và chia 3 cột mỗi khối lọc*/
+  .filters {
+    flex-direction: column;
+  }
+
+  /* Tiêu đề khối lọc sản phẩm giảm 4px->16px */
+  .filter-title {
+    font-size: 20px;
+  }
+  /* Co 2 hàng cho khối lọc theo thương hiệu */
+  .list-brand {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* Ở màn Lớn hơn iphone 5 cỡ chữ của brand lọc với cỡ chữ chuẩn, khối ọc phân 2 */
+  .brand-logo span {
+    font-size: 16px;
+  }
+  /* Nút lọc sản phẩm theo giá cỡ chữ đủ cho màn lớn hơn iphone 5 */
+  .filter-by-price-button {
+    font-size: 20px;
+  }
+
+  /* Thay đổi xếp DỌC khối bọc lọc giá và tìm kiếm */
+  .filter-by-price-search-container {
+    flex-direction: column;
+  }
+  /* Thay đổi độ rộng ô tìm kiếm product */
+  .search-input {
+    width: 80%;
+  }
 }
 
 /* Medium */
 @media (min-width: 768px) {
+  /* Trên 768px 2 khối lọc vẫn xếp ngang */
+  .filters {
+    flex-direction: row;
+    grid-gap: 20px;
+  }
+  /* Co 2 hàng cho khối lọc theo thương hiệu */
+  .list-brand {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* Tiêu đề khối lọc sản phẩm bth: 20px */
+  .filter-title {
+    font-size: 20px;
+  }
+
+  /* Thay đổi xếp DỌC khối bọc lọc giá và tìm kiếm */
+  .filter-by-price-search-container {
+    flex-direction: column;
+  }
+    /* Thay đổi độ rộng ô tìm kiếm product */
+    .search-input {
+      width: 70%;
+    }
+
 }
 
 /* Large */
 @media (min-width: 992px) {
+    /* Trên 768px 2 khối lọc vẫn xếp ngang */
+    .filters {
+      flex-direction: row;
+      grid-gap: 40px;
+    }
+  /* Co 2 hàng cho khối lọc theo thương hiệu */
+  .list-brand {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /* Thay đổi xếp DỌC khối bọc lọc giá và tìm kiếm */
+  .filter-by-price-search-container {
+    flex-direction: row;
+  }
+      /* Thay đổi độ rộng ô tìm kiếm product */
+      .search-input {
+        width: 360px;
+      }
+  
 }
 
 /* Extra large */

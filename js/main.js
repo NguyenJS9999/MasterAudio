@@ -20,12 +20,12 @@ function hiddenMenu() {
 $(document).ready(function () {
     $(".banner-carousel").slick({
         autoplay: true,
-        autoplaySpeed: 50000,
-        width: 1764,
-        centerMode: true,
+        autoplaySpeed: 5000,
+        // width: 1764,
+        // centerMode: true,
         dots: true,
 
-        arrows: true,
+        // arrows: true,
         pauseOnFocus: true,
         pauseOnHover: true,
         
@@ -37,42 +37,49 @@ $(document).ready(function () {
             {
                 breakpoint: 1920,
                 settings: {
-                    slidesToShow: 2.949,
+                    slidesToShow: 3.1,
                 },
             },
 
             {
                 breakpoint: 1400,
                 settings: {
-                    slidesToShow: 2.949,
+                    slidesToShow: 3.1,
                 },
             },
 
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 2.949,
+                    slidesToShow: 3.1,
                 },
             },
 
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 2.1,
                 },
             },
 
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1.5,
+                    slidesToShow: 1.1,
                 },
             },
 
             {
                 breakpoint: 576,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 0.9,
+                },
+            },
+
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 0.6,
                 },
             },
 

@@ -1,3 +1,4 @@
+/* Tệp index Trang chủ */
 /* font Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 /* font Rubik */
@@ -50,134 +51,6 @@ a {
   color: #e42313;
 }
 /* Start Nav */
-.container-header {
-  /* border: 0.1px dotted rgb(9, 7, 138); */
-  /* max-width: 1920px; */
-  margin: auto;
-  padding: 0px;
-}
-
-/* Strat Nav Mobile*/
-.navigation-mobile {
-  /* border: 0.1px dotted red; */
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 80px;
-}
-
-.icon-menu-hiden-mobile {
-  padding: 10px 18px;
-  border: 1px solid #e42313;
-  background: #e42313;
-  color: #ffffff;
-  mix-blend-mode: normal;
-  opacity: 0.9;
-  /* border-radius: 6px; */
-  transition: all 0.2s;
-}
-.icon-menu-hiden-mobile:hover {
-  background: #f8f8f8;
-  color: #e42313;
-}
-
-.menu-infos-header-mobile {
-  width: 100%;
-  display: none;
-  flex-direction: column;
-  grid-gap: 10px;
-  align-items: center;
-  color: #1fdb84;
-  background-color: rgb(253, 253, 253);
-  border: 1px solid red;
-  /* box-shadow: 0px -8px 34px rgb(31 219 132 / 60%); */
-
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  /* Vị trí tương đối cho menu mobile ẩn */
-  position: absolute;
-  top: 9%;
-  left: 0px;
-  z-index: 10;
-  /* border: 0.1px dotted red; */
-  padding-left: 18px;
-}
-.menu-infos-header-mobile a {
-  color: black;
-  padding: 15px 20px;
-  border-bottom: 1px solid white;
-  transition: all 0.2s;
-}
-.menu-infos-header-mobile a:hover {
-  color: #e42313;
-  transform: scale(1.08);
-  border-bottom: 1px solid red;
-}
-/* End Nav Mobile*/
-
-/* Strat Nav Desktop */
-.navigation-desktop {
-  /* border: 0.1px dotted red; */
-  max-width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 80px;
-}
-
-.logo-master-audio {
-  /* border: 0.1px dotted red; */
-  width: 129px;
-}
-.logo-master-audio img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.menu-pages-desktop {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  grid-gap: 28px;
-  font-weight: 700;
-  font-size: 20px;
-}
-/* .menu-pages-desktop a {
-  color: black;
-}
-.menu-pages-desktop:hover a {
-  color: #E42313;
-} */
-.menu-page-desktop {
-  color: black;
-  transition: all 0.2s;
-}
-.menu-page-desktop:hover {
-  color: #e42313;
-  transform: scale(1.08);
-}
-
-.cart-login {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  grid-gap: 28px;
-  font-size: 20px;
-  color: #e42313;
-}
-.cart-login a {
-  color: #000000;
-  transition: all 0.5s;
-}
-.cart-login a:hover {
-  color: #e42313;
-  transform: scale(1.05);
-}
 
 /* End Nav Desktop */
 
@@ -314,63 +187,7 @@ a {
 }
 /* End Blog*/
 
-/* Start footer*/
-.footer-container {
-  /* border: 1px solid red; */
-  padding: 60px 80px;
-  background: #1a2c42;
-  color: white;
-}
-.footer-infors {
-  /* border: 1px solid rgb(0, 255, 42); */
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 28px;
-}
 
-.footer-infor {
-  /* border: 1px solid red; */
-}
-.footer-infor h6 {
-  font-size: 24px;
-  font-weight: 600;
-}
-.footer-infor-description {
-  margin-top: 24px;
-}
-.social-network-icon {
-  display: flex;
-  grid-gap: 8px;
-}
-
-.footer-infor p {
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.bottom-copyright {
-  /* border: 1px solid rgb(0, 255, 64); */
-  background: #acacac;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  grid-gap: 16px;
-
-  font-size: 14px;
-  padding: 20px 80px;
-}
-.copy-right {
-  display: flex;
-  justify-content: flex-start;
-  grid-gap: 16px;
-}
-.contact-the-author {
-  display: flex;
-  justify-content: flex-end;
-  grid-gap: 16px;
-}
-
-/* End footer*/
 
 /* ****************************************8 */
 /* Start Responsive by @Media same bootstrap */
@@ -408,10 +225,6 @@ a {
     grid-template-columns: 1fr;
     grid-gap: 40px;
   }
-    /* footer chia 3 cột */
-    .footer-infors {
-      grid-template-columns: 1fr;
-    }
 
 }
 
@@ -449,11 +262,7 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
   }
-    /* footer chia 2 cột */
-    .footer-infors {
-      grid-template-columns: 1fr 1fr;
-    }
-
+ 
 }
 
 /* Medium Điểm ngắt 2  */
@@ -480,10 +289,6 @@ a {
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
   }
-    /* footer chia 3 cột */
-    .footer-infors {
-      grid-template-columns: 1fr 1fr;
-    }
 
 }
 
@@ -522,10 +327,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
   }
-  /* footer chia 3 cột */
-  .footer-infors {
-    grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr;
-  }
+
 }
 
 /* Extra large */
