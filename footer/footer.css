@@ -39,7 +39,7 @@
   grid-template-columns: 1fr 1fr;
   align-items: center;
   grid-gap: 16px;
-
+  /*  */
   font-size: 14px;
   padding: 20px 80px;
 }
@@ -60,13 +60,13 @@
 /* Start Responsive by @Media same bootstrap */
 /* X-Small */
 @media (max-width: 576px) {
-  /* Khung ngoài chân trang giảm khoảng cách lền ngang */
+  /* Khung ngoài chân trang giảm khoảng cách lề ngang */
   .footer-container {
     /* border: 1px solid red; */
     padding: 30px 20px;
     background: #1a2c42;
     color: white;
-}
+  }
   /* footer chia 3 cột */
   .footer-infors {
     grid-template-columns: 1fr;
@@ -96,16 +96,40 @@
     justify-content: center;
     grid-gap: 12px;
   }
-
 }
 
 /* Ở điểm ngắt này tách biệt nên ko cần mốc giữ khác ở màn lớn hơn */
 /* Small Điểm ngắt 1 */
 @media (min-width: 576px) {
+  /* Khung ngoài chân trang giảm khoảng cách lề ngang */
+  .footer-container {
+    /* border: 1px solid red; */
+    padding: 30px 40px;
+  }
   /* footer chia 1 cột */
   .footer-infors {
     grid-template-columns: 1fr;
     grid-gap: 48px;
+  }
+
+  /* Phần khung copyright chia thành 1 cột cho hai khối bên */
+  .bottom-copyright {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px 20px;
+    font-size: 12px;
+  }
+  /* Phần khung copyright giảm khoảng cách Lề */
+  .bottom-copyright {
+    padding: 20px 40px;
+  }
+  .copy-right {
+    justify-content: center;
+    grid-gap: 8px;
+  }
+  .contact-the-author {
+    justify-content: center;
+    grid-gap: 12px;
   }
 }
 
@@ -116,24 +140,54 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 48px;
   }
+
+  /* Phần khung copyright chia thành 2 cột cho hai khối bên */
+  .bottom-copyright {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+    padding: 20px 80px;
+    font-size: 16px;
+  }
+  /* Phần khung copyright giảm khoảng cách Lề */
+  .bottom-copyright {
+    padding: 20px 40px;
+  }
+  .copy-right {
+    justify-content: flex-start;
+    grid-gap: 16px;
+  }
+  .contact-the-author {
+    justify-content: flex-end;
+    grid-gap: 16px;
+  }
 }
 
 /* Large */
 @media (min-width: 992px) {
+  /* Khung ngoài chân trang giảm khoảng cách lề 60px ngang */
+  .footer-container {
+    /* border: 1px solid red; */
+    padding: 30px 80px;
+  }
   /* footer chia 4 cột */
   .footer-infors {
     grid-template-columns: 1fr 1fr;
     grid-gap: 60px;
   }
+
+  /* Phần khung copyright giảm khoảng cách Lề */
+  .bottom-copyright {
+    padding: 20px 80px;
+  }
 }
 
 /* Extra large */
 @media (min-width: 1200px) {
-    /* footer chia 4 cột */
-    .footer-infors {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      grid-gap: 60px;
-    }
+  /* footer chia 4 cột */
+  .footer-infors {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 60px;
+  }
 }
 
 /* Extra extra large Điểm ngắt 3 */

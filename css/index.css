@@ -191,11 +191,9 @@ a {
 }
 /* End Blog*/
 
-
-
 /* ****************************************8 */
 /* Start Responsive by @Media same bootstrap */
-/* X-Small */
+/* X-Small LỀ 20px */
 @media (max-width: 576px) {
   /* Hiện menu mobile-icon hambeger >576px */
   .navigation-mobile {
@@ -231,13 +229,16 @@ a {
   }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
-    grid-template-columns: 1fr;
-    grid-gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
   }
-
+  /* Các thương hiệu nổi tiếng khung logo giảm padding */
+  .famous-product {
+    padding: 4px;
+  }
 }
 
-/* Small Điểm ngắt 1 */
+/* Small Điểm ngắt 1 LỀ 40px */
 @media (min-width: 576px) {
   /* Hiện menu mobile-icon hambeger <=576px */
   .navigation-mobile {
@@ -266,15 +267,22 @@ a {
     font-size: 13.3px;
   }
 
+  /* Các thương hiệu nổi tiếng Giảm khoảng cách lề ngoài */
+  .famous-brand-container {
+    padding: 0px 40px;
+  }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
   }
- 
+  /* Các thương hiệu nổi tiếng khung logo giảm padding */
+  .famous-product {
+    padding: 12px;
+  }
 }
 
-/* Medium Điểm ngắt 2  */
+/* Medium Điểm ngắt 2 Lề? 60px */
 @media (min-width: 768px) {
   /* Tiêu đề banner giảm độ rộng */
   .banner-content {
@@ -293,15 +301,19 @@ a {
     padding: 12px 20px 15px 20px;
     font-size: 15px;
   }
+
+  /* Các thương hiệu nổi tiếng Giảm khoảng cách lề ngoài */
+  .famous-brand-container {
+    padding: 0px 60px;
+  }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
   }
-
 }
 
-/* Large */
+/* Large LỀ? 80px */
 @media (min-width: 992px) {
   /* Ẩn menu mobile-icon hambeger (lơn hơn) <=992px */
   .navigation-mobile {
@@ -331,12 +343,15 @@ a {
     font-size: 15px;
   }
 
+  /* Các thương hiệu nổi tiếng Giữ khoảng cách lề ngoài ban đầu màn >992 */
+  .famous-brand-container {
+    padding: 0px 80px;
+  }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
   }
-
 }
 
 /* Extra large */
