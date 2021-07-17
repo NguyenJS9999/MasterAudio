@@ -176,6 +176,10 @@ a {
   border: 1px solid #e42313;
   background: white;
   padding: 40px;
+  transition: all 0.2s;
+}
+.famous-product:hover {
+  box-shadow: 0px 0px 4px 0px red;
 }
 .famous-product img {
   width: 100%;
@@ -220,6 +224,11 @@ a {
     font-size: 10px;
   }
 
+  /* Các thương hiệu nổi tiếng famous-product giảm kê khung 20px màn iphone 5 */
+  .famous-brand-container {
+    padding: 0px 20px;
+    text-align: center;
+  }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
     grid-template-columns: 1fr;

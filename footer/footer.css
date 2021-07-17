@@ -60,18 +60,51 @@
 /* Start Responsive by @Media same bootstrap */
 /* X-Small */
 @media (max-width: 576px) {
+  /* Khung ngoài chân trang giảm khoảng cách lền ngang */
+  .footer-container {
+    /* border: 1px solid red; */
+    padding: 30px 20px;
+    background: #1a2c42;
+    color: white;
+}
   /* footer chia 3 cột */
   .footer-infors {
     grid-template-columns: 1fr;
-    grid-gap: 48px;
+    grid-gap: 60px;
   }
+  /* Thay đổi cỡ chữ tiêu đề mỗi khỗi chân trang */
+  .footer-infor h6 {
+    font-size: 20px;
+  }
+  /* Nội dung tiêu đề chân trang cỡ chữ bé hơn */
+  .footer-infor-description {
+    font-size: 16px;
+  }
+
+  /* Phần khung copyright chia thành 1 cột cho hai khối bên */
+  .bottom-copyright {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px 20px;
+    font-size: 12px;
+  }
+  .copy-right {
+    justify-content: center;
+    grid-gap: 8px;
+  }
+  .contact-the-author {
+    justify-content: center;
+    grid-gap: 12px;
+  }
+
 }
 
+/* Ở điểm ngắt này tách biệt nên ko cần mốc giữ khác ở màn lớn hơn */
 /* Small Điểm ngắt 1 */
 @media (min-width: 576px) {
-  /* footer chia 2 cột */
+  /* footer chia 1 cột */
   .footer-infors {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 48px;
   }
 }
@@ -89,12 +122,18 @@
 @media (min-width: 992px) {
   /* footer chia 4 cột */
   .footer-infors {
-    grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
   }
 }
 
 /* Extra large */
 @media (min-width: 1200px) {
+    /* footer chia 4 cột */
+    .footer-infors {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 60px;
+    }
 }
 
 /* Extra extra large Điểm ngắt 3 */
