@@ -85,6 +85,7 @@ a {
   border: 0.1px solid #e42313;
   border-radius: 25px;
   background: #e42313;
+  color: white;
   width: 154px;
   padding: 12px 20px 15px 20px;
   margin-top: 8px;
@@ -187,8 +188,6 @@ a {
 /* End Start Các thương hiệu nổi bật */
 
 /* Start Blog */
-.blog-container {
-}
 /* End Blog*/
 
 /* ****************************************8 */

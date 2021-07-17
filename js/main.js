@@ -1,6 +1,6 @@
 // import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
-console.log("File main")
+console.log("file main Trang chủ")
 
 // Phủ định trạng thái
 let showMenu = false;

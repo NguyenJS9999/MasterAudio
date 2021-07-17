@@ -26,6 +26,9 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <!-- css code tay-->
+    <!-- Css trang Home -->
+    <link rel="stylesheet" href="./navigation/navigation.css">
+    <!-- Css trang product -->
     <link rel="stylesheet" href="/css/product.css">
     <!-- css Breadcrumb -->
     <link rel="stylesheet" href="./breadcrumb/breadcrumb.css">
@@ -38,26 +41,121 @@
 
     <header>
 
-        nav
+        <div class="container-header container-fluid">
 
-        <div class="breadcrumb-container container-fluid">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/index.html">TRANG CHỦ</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">SẢN PHẨM</li>
-                </ol>
+            <!-- Start navigation mobile -->
+            <div class="navigation-mobile   md-d.none">
+
+                <span class="icon-menu-hiden-mobile" onclick="hiddenMenu()">
+                    <i class="fas fa-bars"></i>
+                </span>
+
+                <!--  d-none -->
+                <div class="menu-infos-header-mobile    ">
+
+                    <a class="menu-infor-mobile" href="./index.html">
+                        <div>TRANG CHỦ</div>
+                    </a>
+
+                    <a class="menu-infor-mobile" href="./product.html">
+                        <div>SẢN PHẨM</div>
+                    </a>
+
+                    <a class="menu-infor-mobile" href="./about.html">
+                        <div>GIỚI THIỆU</div>
+                    </a>
+
+                    <a class="menu-infor-mobile" href="./blog.html">
+                        <div>TIN TỨC</div>
+                    </a>
+
+                </div>
+
+                <div class="logo-master-audio">
+                    <img src="./img/logo/logo.png" alt="logo">
+                </div>
+
+                <!-- cart / login -->
+                <div class="cart-login">
+                    <a class="" href="/cart.html">
+                        <i class="fas fa-cart-plus"></i>
+                    </a>
+
+                    <!-- User -->
+                    <a class="" href="#">
+                        <i class="far fa-user"></i>
+                    </a>
+                </div>
+
+
+            </div> <!-- End navigation mobile -->
+
+
+            <!-- Start navigation desktop-->
+            <nav>
+
+                <div class="navigation-desktop">
+
+                    <div class="logo-master-audio">
+                        <a href="./index.html"><img src="./img/logo/logo.png" alt="logo"></a>
+                    </div>
+
+                    <div class="menu-pages-desktop">
+                        <a class="menu-page-desktop" href="#">
+                            <div>TRANG CHỦ</div>
+                        </a>
+
+                        <a class="menu-page-desktop" href="/product.html">
+                            <div>SẢN PHẨM</div>
+                        </a>
+
+                        <a class="menu-page-desktop" href="/about.html">
+                            <div>GIỚI THIỆU</div>
+                        </a>
+
+                        <a class="menu-page-desktop" href="/blog.html">
+                            <div>TIN TỨC</div>
+                        </a>
+
+
+                    </div>
+                    <!-- cart / login -->
+                    <div class="cart-login">
+                        <a href="/cart.html">
+                            <div><i class="fas fa-cart-plus"></i></div>
+                        </a>
+
+                        <!-- User -->
+                        <a href="#">
+                            <div><i class="far fa-user"></i></div>
+                        </a>
+                    </div>
+
+
+                </div> <!-- navigation-desktop -->
+
+
             </nav>
 
-        </div>
+            <!-- End navigation desktop-->
 
-
-
-        <div>
-            small Banner
-            <!-- <img src="./img/banner/PS-Series-banner.jpg" alt="Banner"> -->
-        </div>
+        </div> <!-- container-header -->
 
     </header>
+
+    <!-- breadcrumb -->
+    <div class="breadcrumb-container container-fluid">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index.html">TRANG CHỦ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">SẢN PHẨM</li>
+            </ol>
+        </nav>
+
+    </div> <!-- breadcrumb -->
+
+
+
 
     <main>
 
@@ -74,13 +172,15 @@
                             <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-4-acoustic.png" alt="logo">
                             </div>
                             <div class="brand-logo"><img src="./img/Brands/brand-logo/Nexo.png" alt="logo"></div>
-                            <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Adamson.png" alt="logo"></div>
+                            <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Adamson.png" alt="logo">
+                            </div>
 
                             <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Amate.png" alt="logo"></div>
                             <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Kuledy.png" alt="logo"></div>
                             <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-DK.png" alt="logo"></div>
 
-                            <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Baiervires.png" alt="logo"></div>
+                            <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Baiervires.png" alt="logo">
+                            </div>
                             <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Hours.png" alt="logo"></div>
                             <div class="brand-logo"><img src="./img/Brands/brand-logo/Pioneer-dj.png" alt="logo"></div>
 
@@ -142,8 +242,52 @@
 
 
 
-        <section>
-            Danh sách sản phẩm và phân trang
+        <section class="products-pagination-container    container-pluid">
+
+            <div class="list-products">
+
+                <!-- 1 2 3 -->
+                <div class="product" >
+                    <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                </div>
+
+                <div class="product" >
+                    <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                </div>
+
+                <div class="product" >
+                    <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                </div>
+                <!-- 4 5 6 -->
+                <div class="product" >
+                    <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                </div>
+
+                <div class="product" >
+                    <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                </div>
+
+                <div class="product" >
+                    <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                </div>
+                <!-- 5 6 7 -->
+                <div class="product" >
+                    <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                </div>
+
+                <div class="product" >
+                    <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                </div>
+
+                <div class="product" >
+                    <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                </div>
+
+                
+
+            </div>
+
+            <div class="paginations">Phân trang</div>
 
         </section>
 
@@ -160,6 +304,90 @@
         </section>
 
     </main>
+
+    <footer>
+        <div class="footer-container   container-fluid">
+
+            <div class="footer-infors">
+
+                <div class="footer-infor">
+                    <h6>CÔNG TY MASTER AUDIO VIỆT NAM</h6>
+                    <div class="footer-infor-description">
+                        <p>CS 1: Số 31 - BT4, 3 KĐT Vinaconex 3, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội</p>
+                        <p>CS 2: Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài, Hà Nội</p>
+                        <p>Hotline: 0988360148</p>
+                        <p>Email: admin@master-audio.com</p>
+
+                        <div class="social-network-icon">
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="far fa-envelope"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-pinterest"></i>
+                            <i class="fab fa-twitter"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-infor">
+                    <h6>THỜI GIAN LÀM VIỆC</h6>
+                    <div class="footer-infor-description">
+                        <p>Thứ 2 - Thứ 6: 8AM - 17hPM</p>
+                        <p>Thứ 7: 9AM - 16PM</p>
+                        <p>Chủ Nhật: ĐÃ ĐÓNG CỬA</p>
+                        <p>Nghỉ các ngày lễ, Tết</p>
+                    </div>
+                </div>
+
+
+                <div class="footer-infor">
+                    <h6>DỊCH VỤ HỖ TRỢ KHÁCH HÀNG</h6>
+                    <div class="footer-infor-description">
+                        <p>Hướng dẫn mua hàng online</p>
+                        <p>Hướng dẫn mua hàng trả góp</p>
+                        <p>Chính sách bảo mật</p>
+                        <p>Liên hệ & góp ý</p>
+                        <p>Câu hỏi thường gặp</p>
+                    </div>
+
+                </div>
+
+
+                <div class="footer-infor">
+                    <h6>CHÍNH SÁCH</h6>
+                    <div class="footer-infor-description">
+                        <p>Chính sách bảo hành</p>
+                        <p>Chính sách giao hàng</p>
+                        <p>Chính sách đổi trả</p>
+                        <p>Chính sách bảo mật</p>
+                        <p>Thẻ thành viên</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="bottom-copyright">
+
+            <div class="copy-right">Copyright 2021 <span>&#169</span> Powered by Nguyên Bass</div>
+
+            <div class="contact-the-author">
+                <span>Contact</span>
+                <span>Data Protection</span>
+                <span>Publishing Branch</span>
+            </div>
+        </div>
+
+    </footer>
+
     <!-- 
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
