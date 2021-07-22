@@ -8,8 +8,16 @@
 
 /* Strat Nav Mobile*/
 .navigation-mobile {
-  /* border: 0.1px dotted red; */
-  max-width: 100%;
+  border: 0.1px dotted red;
+  /* Cố định thanh Menu */
+  position: fixed;
+  top: -1px;
+  right: 0px;
+  z-index: 1000;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid red;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -44,13 +52,12 @@
   text-align: center;
   /* Vị trí tương đối cho menu mobile ẩn */
   position: absolute;
-  top: 15%;
+  top: 100%;
   left: 0px;
   z-index: 10;
   /* border: 0.1px dotted red; */
-
 }
-.menu-infor-mobile  {
+.menu-infor-mobile {
   color: black;
   padding: 15px 20px;
   transition: all 0.2s;
@@ -58,8 +65,8 @@
 
 .menu-infor-mobile:hover {
   color: #e42313;
-  /* transform: scale(2); */
-  /* border: 1px solid red; */
+  text-shadow: 0px 0px 2px 0px red;
+  font-weight: 700;
 }
 
 /* End Nav Mobile*/
@@ -67,12 +74,23 @@
 /* Strat Nav Desktop */
 .navigation-desktop {
   /* border: 0.1px dotted red; */
-  max-width: 100%;
+  /* max-width: 100%; */
+  /* Cố định thanh Menu */
+  position: fixed;
+  top: -1px;
+  right: 0px;
+  z-index: 1000;
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid red;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 80px;
+  padding: 8px 80px;
+
+  /* box-shadow: 0px 1px 1px 0px red; */
 }
 
 .logo-master-audio {
@@ -81,7 +99,11 @@
 }
 .logo-master-audio img {
   max-width: 100%;
-  max-height: 100%;
+  /* max-height: 100%; */
+  transition: all 0.2s;
+}
+.logo-master-audio img:hover {
+  opacity: 0.8;
 }
 
 .menu-pages-desktop {
@@ -89,7 +111,7 @@
   flex-direction: row;
   justify-content: center;
   grid-gap: 28px;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
 }
 /* .menu-pages-desktop a {
@@ -117,16 +139,15 @@
 }
 .cart-login a {
   color: #000000;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 .cart-login a:hover {
   color: #e42313;
+  font-weight: 700;
   transform: scale(1.05);
 }
 
 /* End Nav Desktop */
-
-
 
 /* ****************************************8 */
 /* Start Responsive by @Media same bootstrap */
@@ -138,11 +159,19 @@
     display: flex;
     padding: 18px 20px;
   }
+  .icon-menu-hiden-mobile {
+    padding: 10px 18px;
+  }
+
   /* Ẩn menu desktop */
   .navigation-desktop {
     display: none;
   }
 
+  /* Giảm kích thước trông thấy của logo chúng ở màn iphone 5 */
+  .logo-master-audio {
+    width: 86px;
+  }
 }
 
 /* Small Điểm ngắt 1 */
@@ -151,13 +180,16 @@
   .navigation-mobile {
     display: block;
     display: flex;
-    padding: 18px 40px;
+    padding: 18px 30px;
   }
   /* Ẩn menu desktop */
   .navigation-desktop {
     display: none;
   }
- 
+  /* Giảm kích thước trông thấy của logo chúng ở màn nhỏ >567px */
+  .logo-master-audio {
+    width: 86px;
+  }
 }
 
 /* Medium Điểm ngắt 2  */
@@ -166,9 +198,12 @@
   .navigation-mobile {
     /* display: block; */
     /* display: flex; */
-    padding: 18px 60px;
+    padding: 18px 40px;
   }
-
+  /* Giảm kích thước trông thấy của logo chúng ở màn nhỏ >768px */
+  .logo-master-audio {
+    width: 103.2px;
+  }
 }
 
 /* Large */
@@ -176,19 +211,22 @@
   /* Ẩn menu mobile-icon hambeger (lơn hơn) <=992px */
   .navigation-mobile {
     display: none;
+    
   }
   /* Hiện menu desktop flex lại, thêm padding */
   .navigation-desktop {
     display: block;
     display: flex;
-    /* padding: 0px 5px; */
+    padding: 8px 60px;
   }
-
-
 }
 
 /* Extra large */
 @media (min-width: 1200px) {
+    /* Hiện menu desktop flex lại, thêm padding */
+    .navigation-desktop {
+      padding: 8px 80px;
+    }
 }
 
 /* Extra extra large Điểm ngắt 3 */

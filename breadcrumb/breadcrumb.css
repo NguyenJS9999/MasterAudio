@@ -1,9 +1,18 @@
 .breadcrumb-container {
+  /* border: 1px solid red; */
   background-color: #c4c4c4;
   width: 100%;
   height: 40px;
   padding: 6px 80px;
   font-size: 16px;
+  /* Khoảng cách top vì đẩy cho NAV cố định che lên */
+  margin-top: 94px;
+}
+.breadcrumb a {
+  color: black;
+}
+.breadcrumb a:hover {
+  color: #e42313;
 }
 
 /* ***************************************** */
@@ -15,25 +24,48 @@
   .breadcrumb-container {
     padding: 10px 20px;
     font-size: 12px;
+    margin-top: 89px;
   }
-
-
-
 }
 /* Small */
 @media (min-width: 576px) {
+  /* Giảm khoảng cách lề và cỡ chữ cho breacum ở màn trên 567px */
+  .breadcrumb-container {
+    padding: 10px 30px;
+    font-size: 12px;
+    margin-top: 89px;
+
+  }
 }
 
 /* Medium */
 @media (min-width: 768px) {
+  /* Giảm khoảng cách lề và cỡ chữ cho breacum ở màn trên 768px */
+  .breadcrumb-container {
+    padding: 10px 40px;
+    font-size: 12px;
+    margin-top: 100px;
+  }
 }
 
 /* Large */
 @media (min-width: 992px) {
+  /* Giảm khoảng cách lề và cỡ chữ cho breacum ở màn trên 768px */
+  .breadcrumb-container {
+    padding: 10px 60px;
+    font-size: 14px;
+    margin-top: 79px;
+
+  }
 }
 
 /* Extra large */
 @media (min-width: 1200px) {
+  /* Giảm khoảng cách lề và cỡ chữ cho breacum ở màn trên 768px */
+  .breadcrumb-container {
+    padding: 10px 80px;
+    font-size: 16px;
+  }
 }
 
 /* Extra extra large */

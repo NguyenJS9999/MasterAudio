@@ -21,18 +21,16 @@ a:hover {
 }
 /* Nav */
 header {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 /* End Nav */
 
 /* Start filter */
 .filter-container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 0px 80px;
   text-align: center;
-  /* margin-top: 48px; */
-
   display: flex;
   flex-direction: column;
   grid-gap: 32px;
@@ -182,32 +180,144 @@ header {
 
 /* Start Danh sách các sản phẩm và phân trang */
 .products-pagination-container {
-  border: 1px dotted #e42313;
-  /* Để tạm height */
-  /* height: 400px; */
+  /* border: 1px dotted #e42313; */
   width: 100%;
-  padding: 0px 80px;
-  margin-top: 38px;
+  padding: 40px 80px;
+  /* margin-top: 38px; */
 }
 .list-products {
+  /* border: 1px dotted #e4d613; */
   width: 100%;
-  border: 1px dotted #e4d613;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 40px;
 }
+/*  */
 .product {
-  border: 1px dotted #1332e4;
+  /* border: 1px dotted #1332e4; */
+  width: 100%;
+  /* padding: 12px 20px 12px 20px; */
+  padding: 12px 20px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 40px;
+  transition: all 0.2s;
+}
+.product:hover {
+  box-shadow: 0px 0px 4px 0px #e42313;
+}
+
+.product-img {
+  /* border: 1px dotted #E42313; */
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s;
+}
+.product-img:hover {
+  opacity: 0.8;
+}
+.product-img img {
   width: 100%;
   height: 100%;
 }
-.product img {
-  width: 100%;
-  height: 100%;
+
+.product-details {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  grid-gap: 16px;
 }
+.product-infor {
+  /* border: 1px solid rgb(0, 187, 255); */
+  padding: 12px 28px;
+  display: flex;
+  flex-direction: column;
+  grid-gap: 4px;
+}
+.product-infor-brand {
+  font-weight: 700;
+}
+.product-infor-price {
+  /* border: 1px solid red; */
+  color: #e42313;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.product-details-button {
+  /* border: 1px solid rgb(128, 0, 255); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 28px;
+  grid-gap: 12px;
+}
+.product-details-button span {
+  /* border: 1px solid rgb(255, 89, 0); */
+  border-radius: 2px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0px;
+  font-size: 14px;
+}
+
+.product-details-button-cart {
+  border: 1px solid #ecaf44;
+  background: #ecaf44;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 8px;
+  transition: all 0.2s;
+}
+.product-details-button-cart:hover {
+  background: white;
+  color: #ecaf44;
+}
+
+.product-details-button-buynow {
+  border: 1px solid #e42313;
+  width: 100%;
+  background: #e42313;
+  transition: all 0.2s;
+}
+.product-details-button-buynow:hover {
+  /* background: linear-gradient(to right, #E42313, #ECAF44, #E42313); */
+  background: white;
+  color: #e42313;
+}
+
+/*  */
+
 /* Phân trang */
 .paginations {
-  border: 1px dotted #13e463;
+  /* border: 1px dotted #13e463; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 8px;
+  margin-top: 64px;
+}
+#paginations-active {
+  background: #e42313;
+  color: white;
+}
+.paginations span {
+  border: 1px solid #e42313;
+  border-radius: 25px;
+  color: #e42313;
+  font-size: 16px;
+  padding: 2.5px 10.5px;
+  transition: all 0.2s;
+}
+.paginations span:hover {
+  background: #e42313;
+  color: white;
+  transform: scale(1.1);
 }
 
 /* End Danh sách các sản phẩm và phân trang */
@@ -272,14 +382,30 @@ header {
 
   /* Danh sách sản phẩm giảm lề ở màn iphone 5 còn 20px */
   .products-pagination-container {
-    padding: 0px 20px;
+    padding: 10px 20px;
   }
   /* Danh sách Products giảm khoảng cách lưới còn 4px */
   .list-products {
     grid-template-columns: 1fr;
-    grid-gap: 4px;
+    grid-gap: 20px;
   }
 
+  /* Mỗi 1 sản phẩm có viền trong giảm vừa, giảm kh cách lưới */
+  .product {
+    padding: 8px 12px;
+    grid-gap: 8px;
+  }
+  /* Khối thông tin sản phẩm và nút giảm dày viền ngoài */
+  .product-infor,
+  .product-details-button {
+    padding: 12px 20px;
+  }
+
+  /* Phân trang giảm kích thước phần tử = padding */
+  .paginations span {
+    font-size: 12px;
+    padding: 4px 9px;
+  }
 }
 
 /* Small */
@@ -321,7 +447,23 @@ header {
 
   /* Danh sách sản phẩm giảm lề ở màn 576px còn 60px */
   .products-pagination-container {
-    padding: 0px 40px;
+    padding: 20px 40px;
+  }
+  /* Danh sách sản phẩm 2 cột sp, k cách lưới giảm */
+  .list-products {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+  }
+
+  /* Mỗi 1 sản phẩm có viền trong giảm vừa, giảm kh cách lưới */
+  .product {
+    padding: 8px 12px;
+    grid-gap: 16px;
+  }
+  /* Khối thông tin sản phẩm và nút giảm dày viền ngoài */
+  .product-infor,
+  .product-details-button {
+    padding: 12px 20px;
   }
 }
 
@@ -357,7 +499,23 @@ header {
 
   /* Danh sách sản phẩm giảm lề ở màn còn 60px */
   .products-pagination-container {
-    padding: 0px 80px;
+    padding: 30px 60px;
+  }
+  /* Danh sách sản phẩm 2 cột sp, k cách lưới giảm */
+  .list-products {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 28px;
+  }
+
+  /* Mỗi 1 sản phẩm có viền trong giảm vừa, giảm kh cách lưới */
+  .product {
+    padding: 8px 16px;
+    grid-gap: 24px;
+  }
+  /* Khối thông tin sản phẩm và nút giảm dày viền ngoài */
+  .product-infor,
+  .product-details-button {
+    padding: 12px 24px;
   }
 }
 
@@ -385,9 +543,25 @@ header {
     width: 360px;
   }
 
-  /* Danh sách sản phẩm giảm lề ở màn 992px còn 80px */
+  /* Danh sách sản phẩm giảm lề ở màn 992px còn 80px  */
   .products-pagination-container {
-    padding: 0px 80px;
+    padding: 40px 80px;
+  }
+  /* Danh sách sản phẩm 2 cột sp, k cách lưới giảm */
+  .list-products {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 32px;
+  }
+
+  /* Mỗi 1 sản phẩm có viền trong giảm vừa, giảm kh cách lưới */
+  .product {
+    padding: 12px 20px;
+    grid-gap: 28px;
+  }
+  /* Khối thông tin sản phẩm và nút giảm dày viền ngoài */
+  .product-infor,
+  .product-details-button {
+    padding: 12px 28px;
   }
 }
 
@@ -401,7 +575,18 @@ header {
 
   /* Danh sách sản phẩm giữ lề ở màn 1200px 80px */
   .products-pagination-container {
-    padding: 0px 80px;
+    padding: 40px 80px;
+  }
+  /* Danh sách sản phẩm 2 cột sp, k cách lưới giảm */
+  .list-products {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+  }
+
+  /* Mỗi 1 sản phẩm có viền trong giảm vừa, giảm kh cách lưới */
+  .product {
+    padding: 12px 20px;
+    grid-gap: 40px;
   }
 }
 

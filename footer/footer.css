@@ -71,6 +71,7 @@
   .footer-infors {
     grid-template-columns: 1fr;
     grid-gap: 60px;
+    text-align: center;
   }
   /* Thay đổi cỡ chữ tiêu đề mỗi khỗi chân trang */
   .footer-infor h6 {
@@ -79,6 +80,10 @@
   /* Nội dung tiêu đề chân trang cỡ chữ bé hơn */
   .footer-infor-description {
     font-size: 16px;
+  }
+  /* Khung các icon mạng xã hội căn giữ chân trang màn iphone */
+  .social-network-icon {
+    justify-content: center;
   }
 
   /* Phần khung copyright chia thành 1 cột cho hai khối bên */

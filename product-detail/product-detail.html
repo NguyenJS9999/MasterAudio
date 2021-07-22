@@ -1,0 +1,726 @@
+<!-- Ngày -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Master Audio products detail</title>
+    <!-- Icon -->
+    <link rel="shortcut icon" href="../img/icon/logo.png">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap 5  -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
+
+    <!-- Menu trượt slick crocell -->
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css" />
+
+    <!--  Menu trượt slick crocell CDN CSS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+    <!-- css code tay-->
+    <link rel="stylesheet" href="./product-detail.css">
+
+    <!-- css NAV -->
+    <link rel="stylesheet" href="../navigation/navigation.css">
+
+    <!-- css breadcrumb -->
+    <link rel="stylesheet" href="../breadcrumb/breadcrumb.css">
+
+    <!-- css FOOTER -->
+    <link rel="stylesheet" href="../footer/footer.css">
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container-header container-fluid">
+
+            <!-- Start navigation mobile -->
+            <div class="navigation-mobile   md-d.none">
+
+                <span class="icon-menu-hiden-mobile" onclick="hiddenMenu()">
+                    <i class="fas fa-bars"></i>
+                </span>
+
+                <!--  d-none -->
+                <div class="menu-infos-header-mobile    ">
+
+                    <a class="menu-infor-mobile" href="../index.html">
+                        <div>TRANG CHỦ</div>
+                    </a>
+
+                    <a class="menu-infor-mobile" href="../product.html">
+                        <div>SẢN PHẨM</div>
+                    </a>
+
+                    <a class="menu-infor-mobile" href="../feature-development.html">
+                        <div>GIỚI THIỆU</div>
+                    </a>
+
+                    <a class="menu-infor-mobile" href="../feature-development.html">
+                        <div>TIN TỨC</div>
+                    </a>
+
+                </div>
+
+                <div class="logo-master-audio">
+                    <img src="../img/logo/logo.png" alt="logo">
+                </div>
+
+                <!-- cart / login -->
+                <div class="cart-login">
+                    <a class="" href="../cart.html">
+                        <i class="fas fa-cart-plus"></i>
+                    </a>
+
+                    <!-- User -->
+                    <a class="" href="#">
+                        <i class="far fa-user"></i>
+                    </a>
+                </div>
+
+
+            </div> <!-- End navigation mobile -->
+
+
+            <!-- Start navigation desktop-->
+            <nav>
+
+                <div class="navigation-desktop">
+
+                    <div class="logo-master-audio">
+                        <a href="./index.html"><img src="../img/logo/logo.png" alt="logo"></a>
+                    </div>
+
+                    <div class="menu-pages-desktop">
+                        <a class="menu-page-desktop" href="../index.html">
+                            <div>TRANG CHỦ</div>
+                        </a>
+
+                        <a class="menu-page-desktop" href="../product.html">
+                            <div>SẢN PHẨM</div>
+                        </a>
+
+                        <a class="menu-page-desktop" href="../feature-development.html">
+                            <div>GIỚI THIỆU</div>
+                        </a>
+
+                        <a class="menu-page-desktop" href="../feature-development.html">
+                            <div>TIN TỨC</div>
+                        </a>
+
+
+                    </div>
+                    <!-- cart / login -->
+                    <div class="cart-login">
+                        <a href="../cart.html">
+                            <div><i class="fas fa-cart-plus"></i></div>
+                        </a>
+
+                        <!-- User -->
+                        <a href="#">
+                            <div><i class="far fa-user"></i></div>
+                        </a>
+                    </div>
+
+
+                </div> <!-- navigation-desktop -->
+
+
+            </nav>
+
+            <!-- End navigation desktop-->
+
+        </div> <!-- container-header -->
+
+    </header>
+
+    <!-- breadcrumb -->
+    <div class="breadcrumb-container container-fluid">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">TRANG CHỦ</a></li>
+                <li class="breadcrumb-item"><a href="./product.html">SẢN PHẨM</a></li>
+                <li class="breadcrumb-item active" aria-current="page">4 Acoustic</li>
+            </ol>
+        </nav>
+
+    </div> <!-- breadcrumb -->
+
+
+    <main>
+        <section class=" product-detail-image-buy-contrainer   contrainer-pluid ">
+            <!-- 1 product-detail-image-buy -->
+
+            <div class=" product-detail-image ">
+
+                <div class="product-image ">
+                    <img src="../img/4-acoustic/Subwoofer-PCS-318NB.png" alt="chi tiết sản phẩm">
+                </div>
+
+                <div class=" product-images-other  ">
+
+                    <div class="images-other" id="images-other-active">
+                        <img src="../img/4-acoustic/Subwoofer-PCS-318NB.png" alt="chi tiết sản phẩm">
+                    </div>
+
+                    <div class="images-other">
+                        <img src="../img/4-acoustic/Subwoofer-PCS-318NB.png" alt="chi tiết sản phẩm">
+                    </div>
+
+                    <div class="images-other">
+                        <img src="../img/4-acoustic/Subwoofer-PCS-318NB.png" alt="chi tiết sản phẩm">
+                    </div>
+
+                    <div class="images-other">
+                        <img src="../img/4-acoustic/Subwoofer-PCS-318NB.png" alt="chi tiết sản phẩm">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class=" product-detail-buy ">
+                <!-- 1 -->
+                <div class="product-name-code">
+
+                    <div class="product-name-detail ">Speak Subwoofer PCS 318NB</div>
+                    <div class="product-code-detail ">Mã sản phẩm: 318NB</div>
+                    <b>Giá chưa VAT</b>
+                    <div class="product-price-detail ">65,200,000₫</div>
+
+                </div>
+
+                <div class="bottom-line"></div>
+
+                <!-- 2 -->
+                <div class="product-status-amount">
+
+
+                    <div class="product-status-detail ">Tình trạng:
+                        <span>Còn hàng</span>
+                    </div>
+
+                    <div class="product-amount-detail ">
+                        <b>Số lượng:</b>
+
+                        <span class="custom-number">
+
+                            <i class="fas fa-plus"></i>
+                            <input class="custom-number-input" type="text" value="1">
+                            <i class="fas fa-minus"></i>
+
+                        </span>
+
+                        <span class="like-product"><i class="far fa-heart"></i></span>
+
+                    </div>
+                    <!-- Nút bấm thêm vào giở hàng - mua -->
+                    <div class="button-cart-buy">
+                        <div class="button-cart" type="button"><i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                        </div>
+                        
+                        <a href="../cart.html">
+                            <div class="button-buy" type="button">Mua ngay</div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="bottom-line"></div>
+
+                <!-- 3-->
+                <div class="product-detail-phone-contact">
+                    <strong class="phone-contact-title">Liên hệ</strong>
+
+                    <div> <strong>KINH DOANH 1: </strong> <span>0988 360 149</span> </div>
+
+                    <div> <strong>KINH DOANH 2: </strong> <span>0777 891 992</span> </div>
+
+                    <div> <strong>KINH DOANH 3: </strong> <span>0942 97 96 96</span> </div>
+
+                </div>
+
+            </div> <!-- product-detail-buy -->
+
+        </section> <!-- 1 -->
+
+
+
+        <section class=" product-description-container   contrainer-pluid">
+            <!-- 2 Mô tả sản phẩm - product-description-container -->
+            <div class="product-description">
+
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
+                            type="button" role="tab" aria-controls="home" aria-selected="true">
+                            GIỚI THIỆU SẢN PHẨM</button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                            type="button" role="tab" aria-controls="profile" aria-selected="false">
+                            THÔNG SỐ KĨ THUẬT</button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                            type="button" role="tab" aria-controls="contact" aria-selected="false">
+                            ẢNH SẢN PHẨM
+                        </button>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content" id="myTabContent">
+
+                    <!-- 1 GIỚI THIỆU SẢN PHẨM -->
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                        <p class="product-description-text">
+                            Loa Subwoofer PCS-318NB là dòng loa sub 3 được hãng loa 4 Acoustic thiết kế với kích thước
+                            và công
+                            suất rất lớn lên tới 4500W. Chính vì vậy, sản phẩm phù hợp để lắp đặt cho dàn âm thanh cố
+                            định có
+                            không gian rộng như hội trường, bar, sân khấu biểu diễn, phòng karaoke chuyên
+                            nghiệp,...<br /><br />
+
+                            Đánh giá thiết kế loa sub Loa Sub PCS-318NB.<br /><br />
+
+                            Thiết kế đẹp mắt với kiểu dáng đa năng hình chữ nhật có thể để đứng hoặc nằm ngang từ vào
+                            không gian
+                            công trình. Thùng loa như những sản phẩm cao cấp đến từ hãng loa Đức là từ gỗ ép bạch dương
+                            cao
+                            cấp,cực kì chắn chắn nên độ bền và chất âm luôn được đảm bảo tốt nhất. Bề mặt được phủ lớp
+                            sơn đen
+                            sần đẹp mắt và tôn lên vẻ sang trọng cho sản phẩm.<br /><br />
+
+                            Tấm ê căng bằng thép không gỉ bao phủ bề mặt trước của sản phẩm Loa Sub PCS-318NB nhằm bảo
+                            vệ hệ
+                            thống linh kiện bên trong khỏi những tác động tư bên ngoài, đồng thời tăng tính thẩm mỹ cho
+                            loa.<br /><br />
+
+                            Mặt sau của loa gồm những cổng kết nối và một số chi tiết kỹ thuật khác được bố trí khoa học
+                            và
+                            thuận tiện cho việc đấu nối loa.<br /><br />
+
+                            Đánh giá chất lượng loa Sub PCS-318NB<br /><br />
+
+                            Được trang bị "hàng khủng" với 3 củ loa bass 50 cm sử dụng nam châm Neodymium mang đến chất
+                            âm tuyệt
+                            hay, chắc nịch nhưng đôi lúc lại sâu lắng thích hợp với nhiều thể loại nhạc từ trữ tình đến
+                            nhạc
+                            sàn, remix cực mạnh.<br /><br />
+
+                            Được trang bị công suất Min là 4500W và có thể lên tới 18000W kết hợp với độ nhạy 101 dB sẽ
+                            đáp ứng
+                            tốt nhu cầu cho những hệ thống âm thanh như bar, sân khấu ngoài trời, karaoke,...
+                            - Với 3 củ Neodymium cao cấp, mỗi củ loa có công suất AES 1500 watt được lắp đặt trong một
+                            thùng lớn
+                            chỉ 500x1200x700 mm.<br /><br />
+
+                            - Cho áp suất âm thanh tuyệt vời lên tới 154dB. Với hiệu suất công suất cao nhất của loa
+                            siêu trầm
+                            đáng kinh ngạc này là hơn 18000 Watts. Đáp ứng tần số bao gồm 28 Hz đến 160 Hz và cung cấp
+                            một điểm
+                            kết nối linh hoạt với các hệ thống trung bình / cao. Trở kháng danh nghĩa là 2,7 ohm.
+                            - 318NB là giải pháp cho các phòng bay Karaoke, các hội trường lớn, sân khấu ngoài trời với
+                            hàng
+                            nghìn người nghe...<br /><br />
+
+                            Hiện tại, Amster Audio Việt Nam đang là phân phối độc quyền cac sản phẩm loa, Amply, Cục đẩy
+                            công
+                            suất,...đến từ nhà sản xuất 4-Acoustic. Mời quý khách hàng đến trực tiếp Showroom tại địa
+                            chỉ : Tầng
+                            12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài, Hà Nội để trải nghiệm.
+                            Chúng tôi
+                            cam kết chất lượng và chính sách hậu mãi tốt nhất dành cho quý khách hàng trên mọi miền tổ
+                            quốc.<br />
+
+                        </p>
+
+                    </div>
+
+                    <!-- 2 THÔNG SỐ KĨ THUẬT -->
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+
+                        <table class="table">
+
+                            <thead>
+                                <tr>
+                                    <th scope="col">Model Name</th>
+                                    <th scope="col">PCS-318NB</th>
+                                </tr>
+                            </thead>
+
+
+                            <tbody>
+                                <tr>
+                                    <td>Power Rating</td>
+                                    <td>4500 W AES <br>
+                                        9000 W program <br>
+                                        18000 W peak
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>Frequency Range (-10 dB)</td>
+                                    <td>28 Hz - 160 Hz</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Sensitivity</td>
+                                    <td>103 dB 1w/1m</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Maximum SPL</td>
+                                    <td>154 dB</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Nominal Impedance</td>
+                                    <td>2,7 Ohm</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Input Connectors</td>
+                                    <td>2 x Neutrik NL4 Socket parallel 1+/1-</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Dimensions (h/w/d)</td>
+                                    <td>1200x500x700 mm</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Net weight</td>
+                                    <td>91,5 kg</td>
+                                </tr>
+
+
+                            </tbody>
+
+
+                        </table>
+
+                    </div> <!-- 2 THÔNG SỐ KĨ THUẬT -->
+
+                    <!-- 3 ẢNH SẢN PHẨM -->
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        Thêm các bức ảnh khác về sản phẩm
+                    </div> <!-- 3 ẢNH SẢN PHẨM -->
+
+
+                </div>
+
+            </div>
+
+
+
+            <!-- <div class="product-description-title">
+
+                <strong id="product-description-title-active">GIỚI THIỆU SẢN PHẨM</strong>
+                <span class="vertical-line"></span>
+
+                <strong>THÔNG SỐ KĨ THUẬT</strong>
+                <span class="vertical-line"></span>
+
+                <strong class="active">ẢNH SẢN PHẨM</strong>
+
+            </div>
+
+
+
+            <div class="product-description">
+
+                <p class="product-description-text">
+                   Nội dung miêu tả
+                </p>
+
+                <div class="product-configuration">
+
+                    Bảng thông số kỹ thuật
+
+                </div>
+            </div> -->
+
+
+
+        </section> <!-- 2 Mô tả sản phẩm - product-description-container -->
+
+
+        <section class=" same-products-container   contrainer-pluid ">
+            <!-- 3 Sản phẩm tương tự -->
+            <div class="same-products-title">SẢN PHẨM TƯƠNG TỰ</div>
+
+            <button class="slick-prev slick-arrow" aria-label="Previous" >Lùi</button>
+
+            <div class="same-products">
+
+                <!-- Class gắn slide -->
+
+                <!-- 1 -->
+                <div class="slide-same-products">
+
+                    <div class="product">
+
+                        <a href="./product-detail.html">
+                            <div class="product-img">
+                                <img src="../img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                            </div>
+                        </a>
+
+                        <div class="product-details">
+                            <div class="product-infor">
+                                <div class="product-infor-brand">4 Acoustic</div>
+                                <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
+                                <div class="product-infor-price">65,200,000₫</div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!-- 2 -->
+
+                    <div class="product">
+
+                        <a href="./product-detail.html">
+                            <div class="product-img">
+                                <img src="../img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                            </div>
+                        </a>
+
+                        <div class="product-details">
+                            <div class="product-infor">
+                                <div class="product-infor-brand">4 Acoustic</div>
+                                <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
+                                <div class="product-infor-price">65,200,000₫</div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!-- 3 -->
+
+                    <div class="product">
+
+                        <a href="./product-detail.html">
+                            <div class="product-img">
+                                <img src="../img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                            </div>
+                        </a>
+
+                        <div class="product-details">
+                            <div class="product-infor">
+                                <div class="product-infor-brand">4 Acoustic</div>
+                                <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
+                                <div class="product-infor-price">65,200,000₫</div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!--4  -->
+
+                    <div class="product">
+
+                        <a href="./product-detail.html">
+                            <div class="product-img">
+                                <img src="../img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                            </div>
+                        </a>
+
+                        <div class="product-details">
+                            <div class="product-infor">
+                                <div class="product-infor-brand">4 Acoustic</div>
+                                <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
+                                <div class="product-infor-price">65,200,000₫</div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!-- 5 -->
+
+                    <div class="product">
+
+                        <a href="./product-detail.html">
+                            <div class="product-img">
+                                <img src="../img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                            </div>
+                        </a>
+
+                        <div class="product-details">
+                            <div class="product-infor">
+                                <div class="product-infor-brand">4 Acoustic</div>
+                                <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
+                                <div class="product-infor-price">65,200,000₫</div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!--  -->
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div> <!-- same-products -->
+
+
+        </section> <!-- 3 Sản phẩm tương tư -->
+
+    </main>
+
+    <!-- <nav class="nav">
+        <a class="nav-link active" aria-current="page" href="#">Lên top</a>
+    </nav> -->
+
+    <footer>
+        <div class="footer-container   container-fluid">
+
+            <div class="footer-infors">
+
+                <div class="footer-infor">
+                    <h6>CÔNG TY MASTER AUDIO VIỆT NAM</h6>
+                    <div class="footer-infor-description">
+                        <p>CS 1: Số 31 - BT4, 3 KĐT Vinaconex 3, P. Trung Văn, Q. Nam Từ Liêm, Hà Nội</p>
+                        <p>CS 2: Tầng 12A, tòa nhà Viwaseen Tower, số 48, Tố Hữu, Lê Văn Lương kéo dài, Hà Nội</p>
+                        <p>Hotline: 0988360148</p>
+                        <p>Email: admin@master-audio.com</p>
+
+                        <div class="social-network-icon">
+                            <i class="fab fa-youtube"></i>
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="far fa-envelope"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-pinterest"></i>
+                            <i class="fab fa-twitter"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-infor">
+                    <h6>THỜI GIAN LÀM VIỆC</h6>
+                    <div class="footer-infor-description">
+                        <p>Thứ 2 - Thứ 6: 8AM - 17hPM</p>
+                        <p>Thứ 7: 9AM - 16PM</p>
+                        <p>Chủ Nhật: ĐÃ ĐÓNG CỬA</p>
+                        <p>Nghỉ các ngày lễ, Tết</p>
+                    </div>
+                </div>
+
+
+                <div class="footer-infor">
+                    <h6>DỊCH VỤ HỖ TRỢ KHÁCH HÀNG</h6>
+                    <div class="footer-infor-description">
+                        <p>Hướng dẫn mua hàng online</p>
+                        <p>Hướng dẫn mua hàng trả góp</p>
+                        <p>Chính sách bảo mật</p>
+                        <p>Liên hệ & góp ý</p>
+                        <p>Câu hỏi thường gặp</p>
+                    </div>
+
+                </div>
+
+
+                <div class="footer-infor">
+                    <h6>CHÍNH SÁCH</h6>
+                    <div class="footer-infor-description">
+                        <p>Chính sách bảo hành</p>
+                        <p>Chính sách giao hàng</p>
+                        <p>Chính sách đổi trả</p>
+                        <p>Chính sách bảo mật</p>
+                        <p>Thẻ thành viên</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+        <div class="bottom-copyright">
+
+            <div class="copy-right">Copyright 2021 <span>&#169</span> Powered by Nguyên Bass</div>
+
+            <div class="contact-the-author">
+                <span>Contact</span>
+                <span>Data Protection</span>
+                <span>Publishing Branch</span>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Thư viện Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Thư viện local slick offline Chú ý ./ ../ đường dẫn từ tệp này -->
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+    <!-- File Js Để dưới để ghi đè js của thư viện -->
+
+    <!-- Têp js của product-detail - trang chi tiết sản phẩm -->
+    <script src="./product-detail.js"></script>
+
+    <!-- Js NAV -->
+    <script src="../navigation/navigation.js"></script>
+
+    <!-- Js breadcrumb -->
+
+    <script src="../breadcrumb/breadcrumb.js"></script>
+    <!-- Js FOOTER -->
+
+    <script src="./footer/footer.js"></script>
+
+</body>
+
+</html>
