@@ -241,6 +241,15 @@ header {
   font-size: 22px;
   font-weight: 600;
 }
+/* Thích sản phẩm - Thả tim*/
+.like-product {
+  font-size: 16px;
+  color: #ff9dd8;
+  transition: all 0.2s ease-in-out;
+}
+.like-product:hover {
+  transform: scale(1.2);
+}
 
 .product-details-button {
   /* border: 1px solid rgb(128, 0, 255); */
@@ -278,11 +287,16 @@ header {
 
 .product-details-button-buynow {
   width: 100%;
-
   border: 1px solid #e42313;
+  border-radius: 2px;
   background: #e42313;
   color: white;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 7px 0px;
   transition: all 0.2s;
 }
 .product-details-button-buynow:hover {

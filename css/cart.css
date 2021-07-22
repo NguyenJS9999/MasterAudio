@@ -90,17 +90,37 @@ a {
 }
 
 .cart-item-product-image {
-  border: 1px solid #13e47b;
+  /* border: 1px solid #13e47b; */
 
   /* width: 50%; */
   /* height: 50%; */
   display: flex;
+  flex-direction: row;
   justify-content: center;
+    align-items: center;
 }
 .cart-item-product-image img {
   width: 50%;
   height: 50%;
 }
+/* Nút tăng giảm số lượng sản phẩm */
+.cart-item-button-amount {
+  /* width: 50px;
+  height: 50px; */
+  padding: 2px 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+/* Ô nhập số lượng sản phẩm */
+.cart-item-input-amount {
+  display: flex;
+  flex-direction: row;
+  grid-gap: 4px;
+}
+.cart-item-input-amount input {
+  width: 100%;
+}
+
 /* Các mục giỏ hàng */
 
 /* Nút tiếp tục mua hàng và xóa toàn bộ */
@@ -113,7 +133,6 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-
   /* font-size: 8px; */
 }
 .cart-button-buy-delete-all span {
@@ -124,20 +143,21 @@ a {
 .button-cart {
   border: 1px solid #3d4144;
   background: #3d4144;
+  transition: all 0.2s;
 }
 .button-cart:hover {
-    
   background: white;
-    color: #3d4144;
+  color: #3d4144;
 }
 
 .button-buy {
   border: 1px solid #ecaf44;
   background: #ecaf44;
+  transition: all 0.2s;
 }
 .button-buy:hover {
-    background: white;
-    color: #ecaf44;
+  background: white;
+  color: #ecaf44;
 }
 /* -- End khối giỏ hàng -- */
 
@@ -172,6 +192,11 @@ a {
     padding: 0px 2px;
     grid-gap: 4px;
     font-size: 8px;
+  }
+
+  .cart-item-product-image img {
+    width: 80%;
+    height: 80%;
   }
 }
 
@@ -285,10 +310,6 @@ a {
     grid-gap: 20px;
     padding: 12px 20px;
   }
-  /* .cart-item-product-image img {
-    width: 50%;
-    height: 50%;
-  } */
 }
 
 /* Extra extra large */
