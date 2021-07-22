@@ -13,9 +13,7 @@ a {
   cursor: pointer;
   color: black;
 }
-a:hover {
-  color: #e42313;
-}
+
 .container-fluid {
   padding: 0px;
 }
@@ -279,13 +277,15 @@ header {
 }
 
 .product-details-button-buynow {
-  border: 1px solid #e42313;
   width: 100%;
+
+  border: 1px solid #e42313;
   background: #e42313;
+  color: white;
+
   transition: all 0.2s;
 }
 .product-details-button-buynow:hover {
-  /* background: linear-gradient(to right, #E42313, #ECAF44, #E42313); */
   background: white;
   color: #e42313;
 }
