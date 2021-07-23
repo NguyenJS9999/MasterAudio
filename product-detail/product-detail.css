@@ -184,7 +184,7 @@ a {
 }
 .custom-number i:hover {
   transform: scale(1.3);
-  border: 1px solid #ae1c0e;
+  /* border: 1px solid #ae1c0e; */
 }
 .custom-number i:active {
   color: #e42313;

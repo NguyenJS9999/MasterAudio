@@ -25,7 +25,7 @@ a {
 
 /* -- Start khối giỏ hàng --  */
 .cart-container {
-  border: 1px solid #e42313;
+  /* border: 1px solid #e42313; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -37,7 +37,8 @@ a {
 }
 /* Tiêu đề giỏ hàng */
 .cart-title {
-  border: 1px solid #959ddd;
+  border: 1px solid rgba(228, 35, 19, 0.5);
+  border-radius: 2px;
   width: 100%;
 
   /* display: flex; */
@@ -53,7 +54,7 @@ a {
   padding: 12px 20px;
 }
 .cart-title span {
-  border: 1px solid #e42313;
+  /* border: 1px solid #e42313; */
   font-size: 20px;
   font-weight: 700;
 }
@@ -70,7 +71,8 @@ a {
   grid-gap: 20px;
 }
 .cart-item {
-  border: 1px solid #e4dd13;
+  border: 1px solid rgba(228, 35, 19, 0.5);
+  border-radius: 2px;
   width: 100%;
 
   /* display: flex; */
@@ -86,7 +88,7 @@ a {
   padding: 4px 20px;
 }
 .cart-item span {
-  border: 1px solid #e42313;
+  /* border: 1px solid #e42313; */
 }
 
 .cart-item-product-image {
@@ -97,7 +99,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
-    align-items: center;
+  align-items: center;
 }
 .cart-item-product-image img {
   width: 50%;
@@ -118,22 +120,54 @@ a {
   grid-gap: 4px;
 }
 .cart-item-input-amount input {
+  border: 0.1px solid #e42313;
   width: 100%;
+  padding-top: 7px;
+  text-align: center;
+}
+
+.custom-number {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  grid-gap: 12px;
+  vertical-align: middle;
+  text-align: center;
+}
+.custom-number-input {
+  border: 1px solid #e42313;
+  border-radius: 2px;
+  width: 60%;
+  text-align: center;
+  padding: 2px;
+}
+.custom-number-input:active {
+  border: 1px solid #e42313;
+}
+.custom-number i:hover {
+  transform: scale(1.3);
+  /* border: 1px solid #ae1c0e; */
+}
+.custom-number i:active {
+  color: #e42313;
 }
 
 /* Các mục giỏ hàng */
 
 /* Nút tiếp tục mua hàng và xóa toàn bộ */
 .cart-button-buy-delete-all {
-  /* border: 1px solid #e42313; */
+  border: 1px solid rgba(228, 35, 19, 0.5);
+  border-radius: 2px;
   width: 100%;
 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 20px;
-  /* font-size: 8px; */
+  padding: 8px 20px;
+  font-size: 20px;
 }
 .cart-button-buy-delete-all span {
   padding: 6px 14px;
@@ -163,6 +197,74 @@ a {
 
 /* Start khối thanh toán */
 .payment-container {
+  border: 1px solid rgba(228, 35, 19, 0.5);
+  border-radius: 2px;
+  text-align: center;
+  margin: 80px 80px 0px 80px;
+  padding: 36px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* grid-gap: 20px; */
+}
+.payment-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Khối tính toán - tổng giá tiền */
+.count-money {
+  /* border: 1px solid blue; */
+  width: 100%;
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-gap: 8px;
+}
+.count-money span {
+  padding: 12px 4px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Tổng tiền */
+.total-money {
+  /* border: 1px solid #bee413; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Thuế VAT */
+.tax-avt {
+  /* border: 1px solid #bee413; */
+}
+/* Thành tiền */
+.into-money {
+  /* border: 1px solid #13e447; */
+  margin-top: 20px;
+}
+.total-money-number {
+  font-size: 22px;
+  font-weight: 600;
+}
+/* Viền dưới ngăn cách */
+.border-bottom {
+  border-bottom: 2px solid #e42313;
+  width: 98%;
+  opacity: 0.4;
+  margin: auto;
+}
+.into-money-number {
+  color: #e42313;
+  font-weight: 700;
+  font-size: 24px;
 }
 /* End khối thanh toán */
 
@@ -180,12 +282,17 @@ a {
 
   /* Tiêu đề của products cart gỉam lề và kh cách các phẩn tử */
   .cart-title {
-    padding: 0px 2px;
+    padding: 8px 2px;
     grid-gap: 4px;
   }
   /* Products cart giảm cỡ chữ */
   .cart-title span {
     font-size: 10px;
+  }
+
+  /* Các mục sản phẩm cart item giảm khoảng cách */
+  .cart-items {
+    grid-gap: 4px;
   }
   /* Mỗi mục sản phẩm đặt giảm lề và kh cách các phẩn tử */
   .cart-item {
@@ -193,10 +300,43 @@ a {
     grid-gap: 4px;
     font-size: 8px;
   }
-
+  /* Ảnh từng ảnh phẩm giỏ hàng */
   .cart-item-product-image img {
     width: 80%;
     height: 80%;
+  }
+  /* Khung nhập số lượng sản phẩm giảm khoảng cách các ph tử */
+  .custom-number {
+    grid-gap: 2px;
+  }
+  /* Giảm cỡ chữ 2 nút mua tiếp và xóa hết */
+  .cart-button-buy-delete-all {
+    font-size: 8px;
+  }
+  /* Giảm độ dày lề nút mua tiếp và xóa hết */
+  .cart-button-buy-delete-all span {
+    padding: 4px 10px;
+  }
+
+  /* Khối thanh toán giảm lề ngang trong và ngoài*/
+  .payment-container {
+    margin: 40px 20px 0px 20px;
+    padding: 4px;
+  }
+  /* Tiêu đề khối thanh toán giảm cỡ chữ */
+  .payment-title {
+    font-size: 20px;
+  }
+  /* Khối thanh toán giảm kh cách top */
+  .count-money {
+    margin-top: 28px;
+  }
+  /* Sổ tổng tiền giảm cỡ chữ */
+  .total-money-number {
+    font-size: 18px;
+  }
+  .into-money-number {
+    font-size: 20px;
   }
 }
 
@@ -226,6 +366,25 @@ a {
     grid-gap: 4px;
     padding: 2px 4px;
   }
+
+  /* Ảnh từng ảnh phẩm giỏ hàng */
+  .cart-item-product-image img {
+    width: 80%;
+    height: 80%;
+  }
+  /* Giảm cỡ chữ 2 nút mua tiếp và xóa hết */
+  .cart-button-buy-delete-all {
+    font-size: 14px;
+  }
+  /* Giảm độ dày lề nút mua tiếp và xóa hết */
+  .cart-button-buy-delete-all span {
+    padding: 4px 10px;
+  }
+  /* Khối thanh toán giảm lề ngang trong và ngoài*/
+  .payment-container {
+    margin: 80px 30px 0px 30px;
+    padding: 12px;
+  }
 }
 
 /* Medium */
@@ -253,6 +412,16 @@ a {
   .cart-item {
     grid-gap: 8px;
     padding: 4px 8px;
+  }
+
+  .cart-button-buy-delete-all {
+    font-size: 14px;
+  }
+
+  /* Khối thanh toán giảm lề ngang trong và ngoài*/
+  .payment-container {
+    margin: 80px 40px 0px 40px;
+    padding: 20px;
   }
 }
 
@@ -282,6 +451,12 @@ a {
     grid-gap: 20px;
     padding: 12px 20px;
   }
+
+  /* Khối thanh toán giảm lề ngang trong và ngoài*/
+  .payment-container {
+    margin: 80px 60px 0px 60px;
+    padding: 28px;
+  }
 }
 
 /* Extra large */
@@ -309,6 +484,12 @@ a {
   .cart-item {
     grid-gap: 20px;
     padding: 12px 20px;
+  }
+
+  /* Khối thanh toán giảm lề ngang trong và ngoài*/
+  .payment-container {
+    margin: 80px 80px 0px 80px;
+    padding: 36px;
   }
 }
 

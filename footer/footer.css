@@ -18,6 +18,7 @@
 .footer-infor h6 {
   font-size: 24px;
   font-weight: 600;
+  line-height: 36px;
 }
 .footer-infor-description {
   margin-top: 24px;
@@ -29,6 +30,7 @@
 
 .footer-infor p {
   font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
 }
 
