@@ -1,0 +1,1 @@
+console.log(" Trang check out - thông tin khách hàng - thanh toán - đặt đơn")

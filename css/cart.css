@@ -266,6 +266,29 @@ a {
   font-weight: 700;
   font-size: 24px;
 }
+/* Nút tiến hành thanh toán */
+.make-payment {
+  margin-top: 40px;
+}
+.make-payment-button {
+  width: 100%;
+  border: 1px solid #e42313;
+  border-radius: 2px;
+  background: #e42313;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 7px 20px;
+  transition: all 0.2s;
+}
+.make-payment-button:hover {
+  background: white;
+  color: #e42313;
+}
+
 /* End khối thanh toán */
 
 /* Start Responsive by @Media same bootstrap */
