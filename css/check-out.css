@@ -40,12 +40,12 @@ input::placeholder {
 
 /* Khối THÔNG TIN THANH TOÁN */
 .billing-information-container {
-  border: 1px solid violet;
+  /* border: 1px solid violet; */
   padding: 0px 80px;
   margin-top: 20px;
 }
 .billing-information-title-input {
-  border: 1px solid rgba(111, 111, 111, 0.5);
+  border: 1px solid rgba(228,35,19, 0.5);
   border-radius: 2px;
   padding: 20px 28px 32px 28px;
 }
@@ -109,16 +109,173 @@ input::placeholder {
   font-size: 8px;
   color: #e42313;
 }
-/* Khối Đơn hàng của bạn */
 
+/* -- Bắt đầu Khối Đơn hàng của bạn -- */
 .your-order-container {
+  /* border: 1px solid violet; */
   margin-top: 40px;
-  border: 1px solid #e42313;
+  padding: 0px 80px;
   text-align: center;
 }
-.your-order-title {
-  border: 1px solid #e42313;
+/* Khối đơn hàng của bạn tiêu đề và tính toán */
+.your-order-title-calculates {
+  border: 1px solid rgba(228,35,19, 0.5);
+  border-radius: 2px;
+  padding: 20px 24px 32px 24px;
 }
+
+/* Tiêu đề */
+.your-order-title {
+  /* border: 1px solid #e42313; */
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #e42313;
+  padding: 8px 0px;
+}
+/* Các tính toán của đơn hàng và đầu mục */
+.your-order-calculates {
+  /* border: 1px solid olive; */
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 20px;
+}
+/* 0 -- 2 đầu mục biệu thị (2) */
+.your-order-calculates-title {
+  /* border: 1px solid #84c41e; */
+  width: 100%;
+  padding: 4px 12px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* grid-gap: 36px; */
+}
+.your-order-calculates-title span {
+  /* border: 1px solid #e42313; */
+}
+/* 1 Tên sp - số lượng mỗi sp - tổng đơn giá */
+.your-order-name-amount-totalcount {
+  /* border: 1px solid #e42313; */
+  width: 100%;
+  margin-top: -24px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 12px;
+}
+.your-order-name-amount-totalcount span {
+  /* border: 1px solid #e42313; */
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 36px;
+}
+/* Tên và số lượng đơn hàng */
+.your-order-name-amount {
+  /* border: 1px solid blue; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 12px;
+}
+/* Số lượng sản phẩm mỗi sản phẩm */
+.your-order-amount {
+  color: #e42313;
+  font-size: 14px;
+  font-weight: 600;
+}
+/* Tổng giá tiền riêng cho mỗi sản phẩm  */
+.your-order-totalcount {
+  color: #e42313;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* 2 Tạm tính - Vận chuyển, lắp đăt - VAT */
+.your-order-temporaryprice-totalmoney-vat {
+  /* border: 1px solid #e42313; */
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 12px;
+}
+.your-order-temporaryprice-totalmoney-vat span {
+  /* border: 1px solid orchid; */
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 80px;
+}
+/* Ghi đề css kh cách đáy thẻ p */
+.your-order-temporaryprice-totalmoney-vat span p {
+  margin: 0px!important;
+}
+/* 3 Tổng giá trị đơn hàng */
+.total-order-value {
+  /* border: 1px solid #e42313; */
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* grid-gap: 36px; */
+}
+.total-order-value span {
+  /* border: 1px solid #e42313; */
+}
+.total-order-value-number {
+  color: #e42313;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Nút Tiến hành đặt hàng */
+.proceed-to-order-button {
+  margin: auto;
+  margin-top: 36px;
+  width: 240px;
+  border: 1px solid #e42313;
+  box-shadow: 0px 0px 8px 0px #e42313;
+  border-radius: 2px;
+  background: #e42313;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 7px 20px;
+  transition: all 0.2s;
+}
+.proceed-to-order-button:hover {
+  background: white;
+  color: #e42313;
+}
+/* Kẻ ngang chân các mục */
+.lines-bottom {
+  width: 100%;
+  border-bottom: 1px solid rgba(228,35,19, 0.2);
+}
+/* -- Kết thúc Khối Đơn hàng của bạn -- */
 
 /* Start Responsive by @Media same bootstrap */
 
@@ -132,6 +289,25 @@ input::placeholder {
   .billing-information-title-input {
     padding: 20px 12px 32px 12px;
   }
+
+  /* Khung ngoài Đơn hàng của bạn giảm lề */
+  .your-order-container {
+    padding: 0px 20px;
+  }
+
+  /* Khối đơn hàng của bạn tiêu đề và tính toán giảm lề */
+  .your-order-title-calculates {
+    padding: 20px 12px 32px 12px;
+  }
+  /* Khối Tên sp - số lượng mỗi sp - tổng đơn giá giảm kh cách giữa các ptử mỗi item */
+  .your-order-name-amount-totalcount span {
+    grid-gap: 24px;
+  }
+  /* Khổi Tổng giá trị đơn hàng xếp dọc */
+  .total-order-value {
+    flex-direction: column;
+    grid-gap: 12px;
+  }
 }
 
 /* Small */
@@ -142,6 +318,16 @@ input::placeholder {
   }
   /* Khối tiêu đề và input giảm kh cách lề trong */
   .billing-information-title-input {
+    padding: 20px 16px 32px 16px;
+  }
+
+  /* Khung ngoài Đơn hàng của bạn giảm lề */
+  .your-order-container {
+    padding: 0px 30px;
+  }
+
+  /* Khối đơn hàng của bạn tiêu đề và tính toán giảm lề */
+  .your-order-title-calculates {
     padding: 20px 16px 32px 16px;
   }
 }
@@ -155,6 +341,15 @@ input::placeholder {
   /* Khối tiêu đề và input giảm kh cách lề trong */
   .billing-information-title-input {
   }
+
+  /* Khung ngoài Đơn hàng của bạn giảm lề */
+  .your-order-container {
+    padding: 0px 40px;
+  }
+  /* Khối đơn hàng của bạn tiêu đề và tính toán giảm lề */
+  .your-order-title-calculates {
+    padding: 20px 16px 32px 16px;
+  }
 }
 
 /* Large */
@@ -167,12 +362,27 @@ input::placeholder {
   .billing-information-title-input {
     padding: 20px 24px 32px 24px;
   }
+
+  /* Khung ngoài Đơn hàng của bạn giảm lề */
+  .your-order-container {
+    padding: 0px 60px;
+  }
+
+  /* Khối đơn hàng của bạn tiêu đề và tính toán giảm lề */
+  .your-order-title-calculates {
+    padding: 20px 24px 32px 24px;
+  }
 }
 
 /* Extra large */
 @media (min-width: 1200px) {
   /* khung ngoài khối th tin th toán giảm kjh cách lề */
   .billing-information-container {
+    padding: 0px 80px;
+  }
+
+  /* Khung ngoài Đơn hàng của bạn giảm lề */
+  .your-order-container {
     padding: 0px 80px;
   }
 }

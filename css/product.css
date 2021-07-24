@@ -13,10 +13,28 @@ a {
   cursor: pointer;
   color: black;
 }
-
 .container-fluid {
   padding: 0px;
 }
+/* style cho ô INPUT dùng chung */
+input {
+  border: 1px solid red;
+  border-radius: 2px;
+  padding: 8px 6px;
+  transition: all 0.2s;
+}
+input:hover {
+  box-shadow: 0px 0px 4px 0px red;
+}
+input:focus {
+  outline: none !important;
+  box-shadow: 0px 0px 4px 0px red;
+}
+input::placeholder {
+  color: rgba(228, 35, 19, 0.6);
+  font-size: 14px;
+}
+
 /* Nav */
 header {
   /* border: 1px solid red; */
@@ -148,13 +166,14 @@ header {
   /* Độ rộng input */
   max-width: 100%;
 }
-.search-input::placeholder {
+/* .search-input::placeholder {
   color: #e42313;
   opacity: 0.4;
-}
-.search-input:active {
+} */
+/* .search-input:active {
   border: white;
-}
+} */
+
 /* icon tìm kiếm */
 .search-icon {
   border: 1px solid #e42313;
