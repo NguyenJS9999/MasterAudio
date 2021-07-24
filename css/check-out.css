@@ -4,45 +4,176 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-::selection {
+/* ::selection {
     color: red;
+} */
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.container-fluid {
+  padding: 0px;
+}
+/* Khối THÔNG TIN THANH TOÁN */
+.billing-information-container {
+  border: 1px solid violet;
+  padding: 0px 80px;
+  margin-top: 20px;
+}
+.billing-information-title-input {
+  border: 1px solid rgba(111, 111, 111, 0.5);
+  border-radius: 2px;
+  padding: 20px 28px 32px 28px;
+}
+.billing-title {
+  /* border: 1px solid #e42313; */
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #e42313;
+  padding: 8px 0px;
+}
+/* Khối các ô iput nhập thông tin của kh hàng */
+.billing-information-inputs {
+  margin-top: 28px;
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-gap: 24px;
+}
+.billing-information-inputs span {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  grid-gap: 8px;
+}
+/* Hoa thị nằm giữa  */
+.billing-information-inputs span b {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.billing-information-inputs span input {
+  border: 1px solid red;
+  border-radius: 2px;
+  padding: 8px 6px;
+  transition: all 0.2s;
+}
+.billing-information-inputs span input:hover {
+  box-shadow: 0px 0px 4px 0px red;
+}
+.billing-information-inputs span input:focus {
+    outline: none !important;
+    box-shadow: 0px 0px 4px 0px red;
+  }
+
+.billing-information-inputs span input::placeholder {
+    color: rgba(228,35,19, 0.6);
+    font-size: 14px;
+}
+/* Ghi chú của khách hàng nếu có */
+.billing-information-note input {
+  height: 150px;
+}
+.billing-information-note input::placeholder {
+  
 }
 
+/* Thử */
+input {
+    border: 1px solid #e42313;
+}
+input:focus { 
+    outline: none !important;
+
+    border-color: #e42313;
+    border-radius: 2px;
+    box-shadow: 0 0 10px 0px #e42313;
+    padding: 4px;
+}
+
+/* Dấu hoa thị - bắt buộc đăng nhập */
+.billing-varlidate-input {
+  font-size: 8px;
+  color: #e42313;
+}
+/* Khối Đơn hàng của bạn */
+
+.your-order-container {
+  margin-top: 40px;
+  border: 1px solid #e42313;
+  text-align: center;
+}
+.your-order-title {
+  border: 1px solid #e42313;
+}
 
 /* Start Responsive by @Media same bootstrap */
 
 /* X-Small */
 @media (max-width: 576px) {
-    
+  /* khung ngoài khối th tin th toán giảm kjh cách lề */
+  .billing-information-container {
+    padding: 0px 20px;
+  }
+   /* Khối tiêu đề và input giảm kh cách lề trong */
+   .billing-information-title-input {
+    padding: 20px 12px 32px 12px;
+  }
+
 }
 
 /* Small */
 @media (min-width: 576px) {
-    
+  /* khung ngoài khối th tin th toán giảm kjh cách lề */
+  .billing-information-container {
+    padding: 0px 30px;
+  }
+  /* Khối tiêu đề và input giảm kh cách lề trong */
+  .billing-information-title-input {
+    padding: 20px 16px 32px 16px;
+  }
 }
 
 /* Medium */
 @media (min-width: 768px) {
-    
+  /* khung ngoài khối th tin th toán giảm kjh cách lề */
+  .billing-information-container {
+    padding: 0px 40px;
+  }
+  /* Khối tiêu đề và input giảm kh cách lề trong */
+  .billing-information-title-input {
+  }
 }
 
 /* Large */
 @media (min-width: 992px) {
-    
+  /* khung ngoài khối th tin th toán giảm kjh cách lề */
+  .billing-information-container {
+    padding: 0px 60px;
+  }
+  /* Khối tiêu đề và input giảm kh cách lề trong */
+  .billing-information-title-input {
+    padding: 20px 24px 32px 24px;
+  }
 }
 
 /* Extra large */
 @media (min-width: 1200px) {
-    
+  /* khung ngoài khối th tin th toán giảm kjh cách lề */
+  .billing-information-container {
+    padding: 0px 80px;
+  }
 }
 
 /* Extra extra large */
 @media (min-width: 1400px) {
-    
 }
 /* End Responsive by @Media same  bootstrap*/
 

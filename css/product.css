@@ -47,7 +47,7 @@ header {
 /* Mỗi-1 content và lọc - ngang  */
 .filter-by-brand {
   /* border: 1px solid brown; */
-  border-radius: 4px;
+  border-radius: 2px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -74,7 +74,7 @@ header {
 /*  */
 .brand-logo {
   border: 1px solid #e42313;
-  border-radius: 4px;
+  border-radius: 2px;
   width: 100%;
   height: 100%;
   padding: 4px;
@@ -103,7 +103,7 @@ header {
 /* Lọc theo giá bán và tìm kiếm */
 .filter-by-price-search-container {
   /* border: 1px solid brown; */
-  border-radius: 4px;
+  border-radius: 2px;
   background: #eeeeee;
   display: flex;
   flex-direction: row;
@@ -124,7 +124,7 @@ header {
 }
 .filter-by-price-button {
   border: 2px dotted #1a2c42;
-  border-radius: 4px;
+  border-radius: 2px;
   padding: 6px 20px;
   transition: all 0.2s;
 }
@@ -142,7 +142,7 @@ header {
 
 .search-input {
   border: 1px solid #e42313;
-  border-radius: 4px;
+  border-radius: 2px;
   background: white;
   padding: 8px;
   /* Độ rộng input */
@@ -161,7 +161,7 @@ header {
   background: #e42313;
   opacity: 8;
   color: white;
-  border-radius: 4px;
+  border-radius: 2px;
   width: 55px;
   margin-top: 5px;
   font-size: 23px;

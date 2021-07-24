@@ -40,7 +40,7 @@ a {
   border: 1px solid rgba(228, 35, 19, 0.5);
   border-radius: 2px;
   width: 100%;
-
+  
   /* display: flex; */
   /* flex-direction: row; */
   /* justify-content: space-between; */
@@ -57,6 +57,16 @@ a {
   /* border: 1px solid #e42313; */
   font-size: 20px;
   font-weight: 700;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Số lượng sản phẩm hiện thên cạnh tiêu đề Sản Phẩm */
+.cart-title-number-items {
+  font-size: 16px!important;
+  vertical-align: middle;
+  color: #e42313;
 }
 
 /* Các mục giỏ hàng */
@@ -273,6 +283,7 @@ a {
 .make-payment-button {
   width: 100%;
   border: 1px solid #e42313;
+  box-shadow: 0px 0px 8px 0px #e42313;
   border-radius: 2px;
   background: #e42313;
   color: white;
