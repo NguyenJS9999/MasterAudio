@@ -19,6 +19,25 @@ a {
 .container-fluid {
   padding: 0px;
 }
+/* style cho ô INPUT dùng chung */
+input {
+  border: 1px solid red;
+  border-radius: 2px;
+  padding: 8px 6px;
+  transition: all 0.2s;
+}
+input:hover {
+  box-shadow: 0px 0px 4px 0px red;
+}
+input:focus {
+  outline: none !important;
+  box-shadow: 0px 0px 4px 0px red;
+}
+input::placeholder {
+  color: rgba(228, 35, 19, 0.6);
+  font-size: 14px;
+}
+
 /* Khối THÔNG TIN THANH TOÁN */
 .billing-information-container {
   border: 1px solid violet;
@@ -59,7 +78,8 @@ a {
   flex-direction: row;
   align-items: center;
 }
-.billing-information-inputs span input {
+/* style cho ô input */
+/* .billing-information-inputs span input {
   border: 1px solid red;
   border-radius: 2px;
   padding: 8px 6px;
@@ -69,33 +89,19 @@ a {
   box-shadow: 0px 0px 4px 0px red;
 }
 .billing-information-inputs span input:focus {
-    outline: none !important;
-    box-shadow: 0px 0px 4px 0px red;
-  }
+  outline: none !important;
+  box-shadow: 0px 0px 4px 0px red;
+} */
 
 .billing-information-inputs span input::placeholder {
-    color: rgba(228,35,19, 0.6);
-    font-size: 14px;
+  color: rgba(228, 35, 19, 0.6);
+  font-size: 14px;
 }
 /* Ghi chú của khách hàng nếu có */
 .billing-information-note input {
   height: 150px;
 }
 .billing-information-note input::placeholder {
-  
-}
-
-/* Thử */
-input {
-    border: 1px solid #e42313;
-}
-input:focus { 
-    outline: none !important;
-
-    border-color: #e42313;
-    border-radius: 2px;
-    box-shadow: 0 0 10px 0px #e42313;
-    padding: 4px;
 }
 
 /* Dấu hoa thị - bắt buộc đăng nhập */
@@ -122,11 +128,10 @@ input:focus {
   .billing-information-container {
     padding: 0px 20px;
   }
-   /* Khối tiêu đề và input giảm kh cách lề trong */
-   .billing-information-title-input {
+  /* Khối tiêu đề và input giảm kh cách lề trong */
+  .billing-information-title-input {
     padding: 20px 12px 32px 12px;
   }
-
 }
 
 /* Small */
