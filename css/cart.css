@@ -207,22 +207,22 @@ input::placeholder {
   color: white;
   border-radius: 2px;
 }
-.button-cart {
+.button-buy {
   border: 1px solid #3d4144;
   background: #3d4144;
   transition: all 0.2s;
 }
-.button-cart:hover {
+.button-buy:hover {
   background: white;
   color: #3d4144;
 }
 
-.button-buy {
+.button-delete-all {
   border: 1px solid #ecaf44;
   background: #ecaf44;
   transition: all 0.2s;
 }
-.button-buy:hover {
+.button-delete-all:hover {
   background: white;
   color: #ecaf44;
 }

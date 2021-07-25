@@ -114,6 +114,7 @@ input::placeholder {
 .your-order-container {
   /* border: 1px solid violet; */
   margin-top: 40px;
+  margin-bottom: 80px;
   padding: 0px 80px;
   text-align: center;
 }

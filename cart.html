@@ -65,12 +65,12 @@
                         <div>SẢN PHẨM</div>
                     </a>
 
-                    <a class="menu-infor-mobile" href="./about.html">
-                        <div>GIỚI THIỆU</div>
+                    <a class="menu-infor-mobile" href="./blog.html">
+                        <div>BLOG</div>
                     </a>
 
-                    <a class="menu-infor-mobile" href="./blog.html">
-                        <div>TIN TỨC</div>
+                    <a class="menu-infor-mobile" href="#">
+                        <div>LIÊN HỆ</div>
                     </a>
 
                 </div>
@@ -83,7 +83,7 @@
 
                 <!-- cart / login -->
                 <div class="cart-login">
-                    <a class="" href="/cart.html">
+                    <a class="" href="./cart.html">
                         <i class="fas fa-cart-plus"></i>
                     </a>
 
@@ -115,12 +115,12 @@
                             <div>SẢN PHẨM</div>
                         </a>
 
-                        <a class="menu-page-desktop" href="./about.html">
-                            <div>GIỚI THIỆU</div>
-                        </a>
-
                         <a class="menu-page-desktop" href="./blog.html">
-                            <div>TIN TỨC</div>
+                            <div>BLOG</div>
+                        </a>
+                        <!-- Liên hệ sẽ cho chạy xuống dưới footer -->
+                        <a class="menu-page-desktop" href="#">
+                            <div>LIÊN HỆ</div>
                         </a>
 
 
@@ -141,11 +141,8 @@
                 </div> <!-- navigation-desktop -->
 
 
-
-            </nav>
-
-            <!-- End navigation desktop-->
-
+            </nav> <!-- End navigation desktop-->
+            <!-- banner trc -->
         </div> <!-- container-header -->
 
     </header>
@@ -209,7 +206,7 @@
                     <span>65.200.000đ</span>
 
                     <!-- icon thùng rác xóa đơn -->
-                    <span class=" delete-one "> <i class="fas fa-trash-alt "></i> </span>
+                    <span class=" delete-one " type="button" onclick="deleteOneItem()"> <i class="fas fa-trash-alt "></i> </span>
 
                 </div> <!-- cart-item -->
 
@@ -242,7 +239,7 @@
                     <span>66.000.000đ</span>
 
                     <!-- icon thùng rác xóa đơn -->
-                    <span class=" delete-one "> <i class="fas fa-trash-alt "></i> </span>
+                    <span class=" delete-one " type="button" onclick="deleteOneItem()"> <i class="fas fa-trash-alt "></i> </span>
 
                 </div> <!-- cart-item -->
 
@@ -275,7 +272,7 @@
                     <span>67.500.000đ</span>
 
                     <!-- icon thùng rác xóa đơn -->
-                    <span class=" delete-one "> <i class="fas fa-trash-alt "></i> </span>
+                    <span class=" delete-one " type="button" onclick="deleteOneItem()"> <i class="fas fa-trash-alt "></i> </span>
 
                 </div> <!-- cart-item -->
 
@@ -287,8 +284,9 @@
             <!-- cart-items -->
 
             <div class=" cart-button-buy-delete-all ">
-                <a href="./product.html"> <span class="button-cart" type="button"> TIẾP TỤC MUA HÀNG </span> </a>
-                <span class="button-buy" type="button"> XÓA TOÀN BỘ </span>
+                <a href="./product.html"> <span class="button-buy" type="button"> TIẾP TỤC MUA HÀNG </span> </a>
+               
+                <span class="button-delete-all" type="button" onclick="deleteAllItem()"> XÓA TOÀN BỘ </span>
 
             </div>
 
