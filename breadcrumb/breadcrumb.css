@@ -6,7 +6,8 @@
   padding: 6px 80px;
   font-size: 16px;
   /* Khoảng cách top vì đẩy cho NAV cố định che lên */
-  margin-top: 94px;
+  /* Bỏ vì Nav để relative rồi */
+  margin-top: -1px;
 }
 .breadcrumb a {
   color: black;
@@ -24,7 +25,7 @@
   .breadcrumb-container {
     padding: 10px 20px;
     font-size: 12px;
-    margin-top: 89px;
+    /* margin-top: 89px; */
   }
 }
 /* Small */
@@ -33,7 +34,7 @@
   .breadcrumb-container {
     padding: 10px 30px;
     font-size: 12px;
-    margin-top: 89px;
+    /* margin-top: 89px; */
 
   }
 }
@@ -44,7 +45,7 @@
   .breadcrumb-container {
     padding: 10px 40px;
     font-size: 12px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
   }
 }
 
@@ -54,7 +55,7 @@
   .breadcrumb-container {
     padding: 10px 60px;
     font-size: 14px;
-    margin-top: 79px;
+    /* margin-top: 79px; */
 
   }
 }

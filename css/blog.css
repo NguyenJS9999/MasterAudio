@@ -24,8 +24,7 @@ a {
   /* border: 1px solid violet; */
   padding: 40px 80px;
   width: 100%;
-  /* để tạm */
-  /* height: 500px; */
+  margin-bottom: 40px;
 }
 
 .blogs-title {

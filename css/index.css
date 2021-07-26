@@ -23,6 +23,24 @@ a {
 .container-fluid {
   padding: 0px;
 }
+/* style cho ô INPUT dùng chung  */
+input {
+  border: 1px solid red;
+  border-radius: 2px;
+  padding: 8px 6px;
+  transition: all 0.2s;
+}
+input:hover {
+  box-shadow: 0px 0px 4px 0px red;
+}
+input:focus {
+  outline: none !important;
+  box-shadow: 0px 0px 4px 0px red;
+}
+input::placeholder {
+  color: rgba(228, 35, 19, 0.6);
+  font-size: 14px;
+}
 
 /* Start Nav */
 /* Nav Mobile */
@@ -30,6 +48,7 @@ a {
 
 /* Banner top home */
 .banner-top-home {
+  margin-top: -1px;
   position: relative;
   width: 100%;
 }
@@ -56,9 +75,10 @@ a {
 }
 
 .button-discover {
-  border: 0.1px solid #e42313;
+  border: 0.1px solid rgba(255, 255, 255, 0.2);
   border-radius: 25px;
-  background: #e42313;
+  /* background: #e42313; */
+  background: none;
   color: white;
   /* display: flex;
   justify-content: center;
@@ -69,11 +89,14 @@ a {
 
   padding: 12px 20px 15px 20px;
   margin-top: 8px;
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
 .button-discover:hover {
-  background: rgb(255, 255, 255);
-  color: #e42313;
+  background: rgba(255, 255, 255, 0.2);
+  /* background: rgba(228,35,19, 0.2); */
+  border: 0.1px solid white;
+  /* background: #e42313; */
+  color: white;
 }
 .button-discover button {
   color: white;
@@ -83,30 +106,24 @@ a {
 /* Start best seller & new-products */
 .best-seller-new-products-container {
   /* border: 0.1px solid #4013e4; */
-
+  margin-top: 48px;
   text-align: center;
-  padding: 48px 80px;
+  padding: 12px 80px;
   /* background: #f8f8f8; */
 }
-
+/* Các slide sản phẩm và nút */
 .best-seller-products {
-  border: 0.1px solid #13e413;
+  /* border: 0.1px solid #13e413; */
   margin: auto;
   display: flex;
   flex-direction: column;
-  grid-gap: 36px;
-  padding: 0px 0px 48px 0px;
+  /* grid-gap: 36px; */
+  padding: 0px 0px 16px 0px;
   margin-top: 36px;
 }
-/* Đính JS carosel */
-.banner-carousel {
-  display: flex;
-  flex-direction: row;
-  color: white;
-  /* grid-gap: 20px; */
-}
 
-.slick-prev:before,
+/* Ghi đè css nút chuyển slide */
+/* .slick-prev:before,
 .slick-next:before {
   font-size: 60px;
   line-height: 3;
@@ -117,19 +134,25 @@ a {
   color: #e42313;
 }
 
-.best-seller-products img {
-  /* border: 0.1px solid #e42313; */
-  width: 400px;
+.best-seller-product {
+  padding: 2px;
 }
 
+.best-seller-product img {
+  border: 0.1px solid #e42313;
+  width: 100%;
+} */
+
+/* Nút xem toàn bộ sản phẩm */
 .button-viewall-product {
   background: #e42313;
+  border-radius: 2px;
   color: white;
   border: 1px solid #e42313;
   width: 230px;
   margin: auto;
   padding: 8px 12px;
-  border-radius: 25px;
+
   transition: all 0.2s;
 }
 .button-viewall-product:hover {
@@ -138,7 +161,100 @@ a {
 }
 /* End best seller & new-products */
 
-/* Start Các thương hiệu nổi bật */
+/* Khối CSS đi copy màn khác -------------------------- */
+/* Start khối sản phẩm tương tự */
+.same-products-container {
+  /* border: 0.1px solid #e42313; */
+  margin: 0px 80px 40px 80px;
+  text-align: center;
+
+  padding: 4px;
+}
+.same-products-title {
+  /* border: 0.1px solid #e42313; */
+  font-size: 24px;
+  font-weight: 600;
+  padding: 16px;
+}
+
+.same-products {
+  /* border: 1px dotted #ba13e4; */
+}
+/* Các sản phẩm - các slide !!!!!!!!!!!!!!!!!!! */
+.slide-same-products {
+  border: 1px solid rgba(228, 35, 19, 0);
+  padding: 8px 0px;
+}
+.slide-same-products:hover {
+  /* border: 1px solid rgba(228,35,19, 0.2); */
+  padding: 8px 0px;
+}
+/* Ghi đè css hai bút chuyển slide */
+.slick-prev,
+.slick-arrow {
+  background: #eea8a8;
+  color: blue;
+  border-radius: 25px;
+  padding-bottom: 2px;
+  padding-left: 3px;
+  width: 28px;
+  height: 28px;
+  padding: 4px;
+
+  display: none !important;
+}
+.product {
+  border: 0.1px solid #e42313;
+  margin: 0px 20px;
+  padding: 12px 16px;
+  transition: all 0.4s;
+}
+.product:hover {
+  box-shadow: 0px 0px 8px 0px #e42313;
+}
+/* Ảnh sản phẩm */
+.product-img {
+  /* border: 0.1px solid #1344e4; */
+  padding: 4px;
+}
+.product-img img {
+  width: 100%;
+}
+/* Thông tin sản phẩm dưới ảnh */
+.product-details {
+  /* border: 0.1px solid #792579; */
+  margin-top: 20px;
+}
+.product-infor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 8px;
+}
+.product-infor-brand {
+  font-weight: 700;
+  font-size: 18px;
+}
+.product-infor-name-product {
+  font-size: 16px;
+}
+.product-infor-price {
+  /* border: 1px solid red; */
+  color: #e42313;
+  font-size: 22px;
+  font-weight: 600;
+}
+/* Ghi đè css các chấm chuyển slide */
+.slick-dots {
+  /* border: 0.1px solid #6a13e4; */
+  margin-top: 20px;
+  position: static !important;
+}
+
+/* End khối sản phẩm tương tự */
+
+/* -- Start Các thương hiệu nổi bật -- */
 .famous-brand-container {
   padding: 0px 80px;
   text-align: center;
@@ -149,6 +265,12 @@ a {
   display: flex;
   flex-direction: column;
   grid-gap: 40px;
+}
+/* Tiêu đề các khối css giống nhau */
+.famous-brand h1,
+.best-seller-new-products-title {
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .famous-brand-list-product {
@@ -171,8 +293,121 @@ a {
 }
 /* End Start Các thương hiệu nổi bật */
 
-/* Start Blog */
-/* End Blog*/
+/* Start Khẳng định dịch vụ */
+.positive-service {
+  /* border: 1px solid #e42313; */
+  padding: 8px 80px;
+  color: rgb(0, 0, 0);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
+
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.positive-service span {
+  border: 1px solid rgba(228, 35, 19, 0.2);
+  border-radius: 2px;
+  width: 90%;
+  height: 100%;
+  padding: 4px 8px;
+  margin: auto;
+
+  transition: all 0.2s;
+}
+.positive-service span:hover {
+  /* border: 1px solid rgba(228,35,19, 0.8); */
+}
+
+.positive-icon-text {
+  /* border: 1px solid violet; */
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 16px;
+}
+.positive-icon-text i {
+  color: #e42313;
+  font-size: 48px;
+}
+
+.positive-text {
+  /* border: 1px solid rgba(19, 228, 78, 0.2); */
+}
+/* End Khẳng định dịch vụ */
+
+/* Đường kẻ ngang */
+.line-bottom {
+  border-top: 1px solid rgba(228,35,19, 0.2);
+  /* border-top: 1px solid rgba(145,146,148, 0.5); */
+  margin: 64px auto 0px auto;
+  width: 60%;
+}
+
+/* Start Đăng kí nhận tin mới */
+.subscribe-receive-news {
+  /* border: 1px solid red; */
+  /* margin-top: 40px; */
+  padding: 64px;
+  text-align: center;
+  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 48px;
+}
+.subscribe-receive-news-text {
+  /* border: 1px solid violet; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 0px;
+}
+.subscribe-receive-news-text span {
+  font-size: 24px;
+  font-weight: 600;
+}
+.subscribe-receive-news-text small {
+  font-size: 16px;
+}
+
+/* Ô nhập địa chỉ email */
+.subscribe-receive-news-email-input {
+  /* border: 1px solid red; */
+  margin-top: 12px;
+  width: 300px;
+  color: #e42313;
+
+  position: relative;
+}
+.subscribe-receive-news-email-input input {
+  width: 100%;
+  border-radius: 2px;
+}
+.subscribe-receive-news-email-input i {
+  font-size: 22px;
+  opacity: 0.5;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  transition: all 0.2s;
+}
+.subscribe-receive-news-email-input i:hover {
+  transform: scale(1.2);
+}
+.subscribe-receive-news-email-input i:active {
+  opacity: 1;
+}
+/* End Đăng kí nhận tin mới */
 
 /* ****************************************8 */
 /* Start Responsive by @Media same bootstrap */
@@ -190,9 +425,9 @@ a {
   /* Tiêu đề banner giảm độ rộng Lề và top của absolute */
   .banner-content {
     width: 80%;
-    top: 20%;
+    top: 32%;
     left: 20px;
-    grid-gap: 8px;
+    grid-gap: 0px;
   }
   .banner-content h1 {
     font-size: 20px;
@@ -201,17 +436,41 @@ a {
     font-size: 10px;
   }
 
-   /* Nút khám phá ngay điểu chỉnh độ rộng theo phần trăm */
+  /* Nút khám phá ngay điểu chỉnh độ rộng theo phần trăm */
   .button-discover {
     font-size: 8px;
     width: 32%;
     padding: 6px 8px 6px 8px;
   }
 
+  /* Khối bán chạy và sp mới giảm lề ơ màn nhỏ */
+  .best-seller-new-products-container {
+    padding: 12px 20px;
+  }
+  /* Khối bán chạy giảm kh cách các p tử trong */
+  .best-seller-products {
+    grid-gap: 0px;
+  }
+  /* Đoạn đi copy css có class khác */
+  .product {
+    margin: 0px 8px;
+    padding: 4px 8px;
+  }
+
+  /* Các chấm chuyển slide giảm kh cách top */
+  .slick-dots {
+    margin-top: 8px;
+  }
   /* Các thương hiệu nổi tiếng famous-product giảm kê khung 20px màn iphone 5 */
   .famous-brand-container {
     padding: 0px 20px;
     text-align: center;
+  }
+  /* Tiêu đề Các thương hiệu nổi tiếng giảm cỡ chữ */
+  .famous-brand h1,
+  .best-seller-new-products-title {
+    font-size: 24px;
+    font-weight: 700;
   }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
@@ -222,6 +481,16 @@ a {
   .famous-product {
     padding: 4px;
   }
+
+  /* Khổi khẳng định thương hiệu - dịch vụ chia số cột giảm */
+  .positive-service {
+    padding: 8px 20px;
+    grid-template-columns: 1fr;
+  }
+  .positive-service span {
+    width: 300px;
+  }
+
 }
 
 /* Small Điểm ngắt 1 LỀ 40px */
@@ -238,7 +507,7 @@ a {
   /* Tiêu đề banner giảm độ rộng */
   .banner-content {
     width: 80%;
-    top: 25%;
+    top: 32%;
     left: 40px;
     grid-gap: 12.5px;
   }
@@ -249,16 +518,26 @@ a {
     font-size: 13.3px;
   }
 
-   /* Nút khám phá ngay điểu chỉnh độ rộng theo phần trăm */
+  /* Nút khám phá ngay điểu chỉnh độ rộng theo phần trăm */
   .button-discover {
     width: 32%;
     font-size: 12px;
     padding: 6px 6px 10px 6px;
   }
+  /* Khối bán chạy và sp mới giảm lề ơ màn nhỏ */
+  .best-seller-new-products-container {
+    padding: 12px 30px;
+  }
 
   /* Các thương hiệu nổi tiếng Giảm khoảng cách lề ngoài */
   .famous-brand-container {
     padding: 0px 40px;
+  }
+  /* Tiêu đề Các thương hiệu nổi tiếng giảm cỡ chữ */
+  .famous-brand h1,
+  .best-seller-new-products-title {
+    font-size: 20px;
+    font-weight: 700;
   }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
@@ -269,15 +548,28 @@ a {
   .famous-product {
     padding: 12px;
   }
+
+  /* Khổi khẳng định thương hiệu - dịch vụ chia số cột giảm */
+  .positive-service {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Khổi khẳng định thương hiệu - dịch vụ chia số cột giảm */
+  .positive-service {
+    grid-template-columns: 1fr;
+  }
+  .positive-service span {
+    width: 300px;
+  }
+
 }
 
 /* Medium Điểm ngắt 2 Lề? 60px */
 @media (min-width: 768px) {
-
   /* Tiêu đề banner giảm độ rộng */
   .banner-content {
     width: 80%;
-    top: 25%;
+    top: 32%;
     left: 60px;
     grid-gap: 20.8px;
   }
@@ -287,21 +579,40 @@ a {
   .banner-description {
     font-size: 20px;
   }
-   /* Nút khám phá ngay điểu chỉnh độ rộng theo phần trăm */
+  /* Nút khám phá ngay điểu chỉnh độ rộng theo phần trăm */
   .button-discover {
     padding: 12px 4px 15px 4px;
     width: 24%;
     font-size: 12px;
+  }
+  /* Khối bán chạy và sp mới giảm lề ơ màn nhỏ */
+  .best-seller-new-products-container {
+    padding: 12px 40px;
   }
 
   /* Các thương hiệu nổi tiếng Giảm khoảng cách lề ngoài */
   .famous-brand-container {
     padding: 0px 60px;
   }
+  /* Tiêu đề Các thương hiệu nổi tiếng giảm cỡ chữ */
+  .famous-brand h1,
+  .best-seller-new-products-title {
+    font-size: 24px;
+    font-weight: 700;
+  }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
+  }
+
+  /* Khổi khẳng định thương hiệu - dịch vụ chia số cột giảm */
+  .positive-service {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* Khối khẳng định thương hiệu fix rộng các khối nhỏ trong */
+  .positive-service span {
+    width: 300px;
   }
 }
 
@@ -336,15 +647,34 @@ a {
     width: 32%;
     font-size: 16px;
   }
+  /* Khối bán chạy và sp mới giảm lề ơ màn nhỏ */
+  .best-seller-new-products-container {
+    padding: 12px 60px;
+  }
 
   /* Các thương hiệu nổi tiếng Giữ khoảng cách lề ngoài ban đầu màn >992 */
   .famous-brand-container {
     padding: 0px 80px;
   }
+  /* Tiêu đề Các thương hiệu nổi tiếng giảm cỡ chữ */
+  .famous-brand h1,
+  .best-seller-new-products-title {
+    font-size: 28px;
+    font-weight: 700;
+  }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
+  }
+
+  /* Khối khẳng định thương hiệu - dịch vụ chia số cột giảm */
+  .positive-service {
+    grid-template-columns: 1fr 1fr;
+  }
+  /* Khối khẳng định thương hiệu fix rộng các khối nhỏ trong */
+  .positive-service span {
+    width: 90%;
   }
 }
 
@@ -354,6 +684,21 @@ a {
   .button-discover {
     padding: 12px 20px 15px 20px;
     width: 24%;
+  }
+  /* Khối bán chạy và sp mới giảm lề ơ màn nhỏ */
+  .best-seller-new-products-container {
+    padding: 12px 80px;
+  }
+  /* Tiêu đề Các thương hiệu nổi tiếng giảm cỡ chữ */
+  .famous-brand h1,
+  .best-seller-new-products-title {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  /* Khổi khẳng định thương hiệu - dịch vụ chia số cột giữ nguyên */
+  .positive-service {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 

@@ -9,8 +9,10 @@
 /* Strat Nav Mobile*/
 .navigation-mobile {
   border: 0.1px dotted red;
+  /* Vì cố định FIXED nên độ cao sẽ che các khối dưới */
+  padding: 18px 80px;
   /* Cố định thanh Menu */
-  position: fixed;
+  position: relative;
   top: -1px;
   right: 0px;
   z-index: 1000;
@@ -22,7 +24,6 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 80px;
 }
 
 .icon-menu-hiden-mobile {
@@ -75,7 +76,7 @@
 .navigation-desktop {
   /* border: 0.1px dotted red; */
   /* Cố định thanh Menu */
-  position: fixed;
+  position: relative;
   top: -1px;
   right: 0px;
   z-index: 1000;
@@ -209,7 +210,6 @@
   /* Ẩn menu mobile-icon hambeger (lơn hơn) <=992px */
   .navigation-mobile {
     display: none;
-    
   }
   /* Hiện menu desktop flex lại, thêm padding */
   .navigation-desktop {
@@ -221,10 +221,10 @@
 
 /* Extra large */
 @media (min-width: 1200px) {
-    /* Hiện menu desktop flex lại, thêm padding */
-    .navigation-desktop {
-      padding: 8px 80px;
-    }
+  /* Hiện menu desktop flex lại, thêm padding */
+  .navigation-desktop {
+    padding: 8px 80px;
+  }
 }
 
 /* Extra extra large Điểm ngắt 3 */

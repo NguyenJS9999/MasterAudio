@@ -24,10 +24,20 @@
 .footer-infor-description {
   margin-top: 24px;
 }
+
 .social-network-icon {
   display: flex;
-  grid-gap: 8px;
+  flex-direction: row;
+  grid-gap: 10px;
 }
+.social-network-icon a{
+  transition: all 0.2s;
+}
+.social-network-icon a:hover {
+  transform: scale(1.5);
+  color: #E42313;
+}
+
 .footer-infor a,
 p {
   font-size: 14px;
@@ -35,6 +45,7 @@ p {
   font-weight: 400;
   color: #91908f;
 }
+
 
 .bottom-copyright {
   /* border: 1px solid rgb(0, 255, 64); */
@@ -56,6 +67,9 @@ p {
   display: flex;
   justify-content: flex-end;
   grid-gap: 16px;
+}
+.contact-the-author a {
+  color: #0C1115;
 }
 
 /* End footer*/
