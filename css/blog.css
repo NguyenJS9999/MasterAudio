@@ -21,38 +21,208 @@ a {
 
 /* Start Khối blog*/
 .blog-container {
-    border: 1px solid #E42313;
-    margin: 0px 80px;
-    /* để tạm */
-    height: 500px;
+  /* border: 1px solid violet; */
+  padding: 40px 80px;
+  width: 100%;
+  /* để tạm */
+  /* height: 500px; */
 }
 
+.blogs-title {
+  /* border: 1px solid orange; */
+  padding: 12px 0px;
+  color: rgba(228, 35, 19, 0.8);
 
+  display: flex;
+  flex-direction: column;
+}
+.blogs-title b {
+  font-size: 24px;
+}
+.blogs-title small {
+  font-size: 14px;
+  color: black;
+}
+
+.blogs {
+  /* border: 1px solid #E42313; */
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 40px;
+}
+/* blog đơn */
+.blog {
+  border: 1px solid rgba(228, 35, 19, 0.3);
+  border-radius: 2px;
+  /* padding: 12px; */
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 20px;
+  transition: all 0.2s;
+}
+.blog:hover {
+  border: 1px solid rgba(228, 35, 19, 0.8);
+}
+
+.blog-content {
+  border: 1px solid rgba(228, 35, 19, 0);
+  /* Tránh nội dung bên trong đẩy ra vượt quá */
+  width: 100%;
+  /* border: 1px solid green; */
+  padding: 40px;
+  margin-top: 2%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  grid-gap: 20px;
+  transition: all 0.4s;
+}
+.blog-content:hover {
+  border: 1px solid rgba(228, 35, 19, 0.2);
+}
+
+.blog-content {
+}
+/* blog đơn tiêu đề và nội dung tắt */
+.blog-content-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.blog-content-short {
+  font-size: 14px;
+}
+/* Ảnh blog đơn */
+.blog-img {
+  /* border: 1px solid rgba(228,35,19, 0); */
+  border-radius: 2px;
+  width: 80%;
+  padding: 8px;
+
+  transition: all 0.4s;
+}
+.blog-img:hover {
+  /* box-shadow: 0px 0px 2px 0px rgba(228,35,19, 1); */
+  /* transform: scale(1.05); */
+}
+.blog-img img {
+  width: 100%;
+  transition: all 0.4s;
+}
+.blog-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Nút xem thêm chỉ tiết của tin tức ấy */
+.blog-see-more-button {
+  width: 150px;
+  border: 1px solid #e42313;
+  border-radius: 2px;
+  background: #e42313;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 0px;
+  transition: all 0.2s;
+}
+.blog-see-more-button:hover {
+  background: white;
+  color: #e42313;
+}
 
 /* End Khối blog */
-
-
 
 /* Start Responsive by @Media same bootstrap */
 
 /* X-Small */
 @media (max-width: 576px) {
+  .blog-container {
+    padding: 40px 20px;
+  }
+  .blogs-title b {
+    font-size: 20px;
+  }
+  .blogs-title small {
+    font-size: 10px;
+  }
+  .blogs {
+    margin-top: 4px;
+  }
+  .blog {
+    padding: 0px;
+    grid-gap: 0px;
+  }
+
+  .blog-content {
+    padding: 8px;
+  }
+  .blog-content {
+    grid-gap: 8px;
+  }
+  .blog-content-title {
+    font-size: 12px;
+  }
+  .blog-content-short {
+    font-size: 10px;
+  }
+  .blog-see-more-button {
+    width: 125px;
+    padding: 4px 0px;
+    margin: auto;
+  }
+  .blog-img {
+    width: 100%;
+  }
 }
 
 /* Small */
 @media (min-width: 576px) {
+  .blog-container {
+    padding: 40px 30px;
+  }
+
+  .blog-content {
+    padding: 16px;
+  }
 }
 
 /* Medium */
 @media (min-width: 768px) {
+  .blog-container {
+    padding: 40px 40px;
+  }
+
+  .blog-content {
+    padding: 24px;
+  }
 }
 
 /* Large */
 @media (min-width: 992px) {
+  .blog-container {
+    padding: 40px 60px;
+  }
+
+  .blog-content {
+    padding: 32px;
+  }
 }
 
 /* Extra large */
 @media (min-width: 1200px) {
+  .blog-content {
+    padding: 40px;
+  }
 }
 
 /* Extra extra large */

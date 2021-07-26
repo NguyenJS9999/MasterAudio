@@ -16,6 +16,7 @@
   /* border: 1px solid red; */
 }
 .footer-infor h6 {
+  height: 72px;
   font-size: 24px;
   font-weight: 600;
   line-height: 36px;
@@ -27,11 +28,12 @@
   display: flex;
   grid-gap: 8px;
 }
-
-.footer-infor p {
+.footer-infor a,
+p {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
+  color: #91908f;
 }
 
 .bottom-copyright {
@@ -78,6 +80,7 @@
   /* Thay đổi cỡ chữ tiêu đề mỗi khỗi chân trang */
   .footer-infor h6 {
     font-size: 20px;
+    height: auto;
   }
   /* Nội dung tiêu đề chân trang cỡ chữ bé hơn */
   .footer-infor-description {
