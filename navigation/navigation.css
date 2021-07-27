@@ -94,7 +94,7 @@
 
 .logo-master-audio {
   /* border: 0.1px dotted red; */
-  width: 129px;
+  width: 96px;
 }
 .logo-master-audio img {
   max-width: 100%;
@@ -156,7 +156,7 @@
   .navigation-mobile {
     display: block;
     display: flex;
-    padding: 18px 20px;
+    padding: 4px 8px;
   }
   .icon-menu-hiden-mobile {
     padding: 10px 18px;
@@ -169,7 +169,7 @@
 
   /* Giảm kích thước trông thấy của logo chúng ở màn iphone 5 */
   .logo-master-audio {
-    width: 86px;
+    width: 88px;
   }
 }
 
@@ -179,7 +179,7 @@
   .navigation-mobile {
     display: block;
     display: flex;
-    padding: 18px 30px;
+    padding: 4px 30px;
   }
   /* Ẩn menu desktop */
   .navigation-desktop {
@@ -187,7 +187,7 @@
   }
   /* Giảm kích thước trông thấy của logo chúng ở màn nhỏ >567px */
   .logo-master-audio {
-    width: 86px;
+    width: 92px;
   }
 }
 
@@ -197,11 +197,11 @@
   .navigation-mobile {
     /* display: block; */
     /* display: flex; */
-    padding: 18px 40px;
+    padding: 8px 40px;
   }
   /* Giảm kích thước trông thấy của logo chúng ở màn nhỏ >768px */
   .logo-master-audio {
-    width: 103.2px;
+    width: 96px;
   }
 }
 
@@ -217,6 +217,10 @@
     display: flex;
     padding: 8px 60px;
   }
+    /* Giữ kích thước trông thấy của logo chúng ở màn nhỏ >992px */
+    .logo-master-audio {
+      width: 96px;
+    }
 }
 
 /* Extra large */

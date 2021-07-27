@@ -38,18 +38,18 @@ input::placeholder {
   font-size: 14px;
 }
 
-
 /* Start Mô tả sản phẩm  */
-.product-detail-image-buy-contrainer {
+.product-detail-image-buy-container {
   /* border: 1px solid red; */
-  margin: 0px 80px;
+  /* margin: 0px 80px; */
+  margin: auto;
   /* Cách tạm */
   margin-top: 40px;
 
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  /* grid-gap: 40px; */
+  grid-gap: 20px;
 }
 
 /* Khối Ảnh chính và các góc ảnh khác */
@@ -280,7 +280,8 @@ input::placeholder {
 /* Khối miêu tả sản phẩm chi tiết */
 .product-description-container {
   /* border: 1px solid blue; */
-  margin: 0px 80px;
+  /* margin: 0px 80px; */
+  margin: auto;
   padding: 12px 0px;
 }
 /* Ghi đè css của boostrap màu tiêu đề TAB */
@@ -299,7 +300,6 @@ input::placeholder {
   border-radius: 2px;
   margin: 8px 80px;
   padding: 8px;
-  
 }
 /* Giới thiệu sản phẩm */
 .product-description-text {
@@ -313,10 +313,11 @@ input::placeholder {
 
 /* End Mô tả sản phẩm */
 
-/* Start khối sản phẩm tương tự */
+/* -- Start khối sản phẩm tương tự -- */
 .same-products-container {
   /* border: 0.1px solid #e42313; */
-  margin: 0px 80px 40px 80px;
+  margin: auto;
+  margin-bottom: 40px;
   text-align: center;
 
   padding: 4px;
@@ -396,6 +397,10 @@ input::placeholder {
   margin-top: 40px;
   position: static !important;
 }
+.slick-dots li button::before {
+  color: red!important;
+}
+
 
 /* End khối sản phẩm tương tự */
 
@@ -407,10 +412,12 @@ input::placeholder {
 /* X-Small */
 @media (max-width: 576px) {
   /* Giảm kích thướng lề 2 bên khối ảnh/mua */
-  .product-detail-image-buy-contrainer {
-    margin: 0px 20px;
+  .product-detail-image-buy-container {
+    /* margin: 0px 20px; */
+    margin: auto;
     margin-top: 24px;
     flex-direction: column;
+    grid-gap: 4px;
   }
   /* Ảnh chi tiết sản phẩm rộng bè hết màn iphone */
   .product-detail-image {
@@ -442,7 +449,8 @@ input::placeholder {
 
   /* Khối miêu tả sp chi tiết = chữ giảm độ dày lề */
   .product-description-container {
-    margin: 0px 20px;
+    /* margin: 0px 20px; */
+    margin: auto;
   }
   /* Khối miêu tả sản phẩm chữ, giảm/giữ độ dày lề ngoài */
   .product-description {
@@ -451,7 +459,7 @@ input::placeholder {
 
   /* Khối sản phẩm tương tự giảm độ dày lề */
   .same-products-container {
-    margin: 40px 20px 40px 20px;
+    margin: auto;
   }
 
   /* Khối sản phẩm tương tự khoảng cách các sp giảm, lê trong giảm */
@@ -476,18 +484,18 @@ input::placeholder {
   }
   .product-infor-price {
     font-size: 20px;
-
   }
-
 }
 
 /* Small */
 @media (min-width: 576px) {
   /* Giảm kích thướng lề 2 bên khối ảnh/mua */
-  .product-detail-image-buy-contrainer {
-    margin: 0px 30px;
+  .product-detail-image-buy-container {
+    /* margin: 0px 30px; */
+    margin: auto;
     margin-top: 28px;
     flex-direction: column;
+    grid-gap: 8px;
   }
   /* Ảnh chi tiết sản phẩm rộng full khi các khối ngoài xếp dọc*/
   .product-detail-image {
@@ -517,7 +525,8 @@ input::placeholder {
 
   /* Khối miêu tả sp chi tiết = chữ giảm độ dày lề */
   .product-description-container {
-    margin: 0px 30px;
+    /* margin: 0px 30px; */
+    margin: auto;
   }
   /* Khối miêu tả sản phẩm chữ, giảm/giữ độ dày lề ngoài */
   .product-description {
@@ -526,7 +535,7 @@ input::placeholder {
 
   /* Khối sản phẩm tương tự giảm độ dày lề */
   .same-products-container {
-    margin: 40px 30px 40px 30px;
+    margin: auto;
   }
 
   /* Khối sản phẩm tương tự khoảng cách các sp giảm, lê trong giảm */
@@ -539,10 +548,12 @@ input::placeholder {
 /* Medium */
 @media (min-width: 768px) {
   /* Giảm kích thướng lề 2 bên khối ảnh/mua */
-  .product-detail-image-buy-contrainer {
-    margin: 0px 40px;
+  .product-detail-image-buy-container {
+    /* margin: 0px 40px; */
+    margin: auto;
     flex-direction: row;
     margin-top: 32px;
+    grid-gap: 12px;
   }
   /* Ảnh chi tiết sản phẩm rộng giảm % rộng đủ vừa chiều dọc */
   .product-detail-image {
@@ -572,7 +583,8 @@ input::placeholder {
 
   /* Khối miêu tả sp chi tiết = chữ giảm độ dày lề */
   .product-description-container {
-    margin: 0px 40px;
+    /* margin: 0px 40px; */
+    margin: auto;
   }
   /* Khối miêu tả sản phẩm chữ, giảm/giữ độ dày lề ngoài */
   .product-description {
@@ -581,7 +593,7 @@ input::placeholder {
 
   /* Khối sản phẩm tương tự giảm độ dày lề */
   .same-products-container {
-    margin: 40px 40px 40px 40px;
+    margin: auto;
   }
 
   /* Khối sản phẩm tương tự khoảng cách các sp giảm, lê trong giảm */
@@ -594,9 +606,11 @@ input::placeholder {
 /* Large */
 @media (min-width: 992px) {
   /* Giảm kích thướng lề 2 bên khối ảnh/mua */
-  .product-detail-image-buy-contrainer {
-    margin: 0px 60px;
+  .product-detail-image-buy-container {
+    /* margin: 0px 60px; */
+    margin: auto;
     margin-top: 36px;
+    grid-gap: 16px;
   }
   .product-detail-image {
     width: 75%;
@@ -610,7 +624,8 @@ input::placeholder {
 
   /* Khối miêu tả sp chi tiết = chữ giảm độ dày lề */
   .product-description-container {
-    margin: 0px 60px;
+    /* margin: 0px 60px; */
+    margin: auto;
   }
   /* Khối miêu tả sản phẩm chữ, giảm/giữ độ dày lề ngoài */
   .product-description {
@@ -619,7 +634,7 @@ input::placeholder {
 
   /* Khối sản phẩm tương tự giảm độ dày lề */
   .same-products-container {
-    margin: 40px 60px 40px 60px;
+    margin: auto;
   }
 
   /* Khối sản phẩm tương tự khoảng cách các sp giảm, lê trong giảm */
@@ -632,9 +647,11 @@ input::placeholder {
 /* Extra large */
 @media (min-width: 1200px) {
   /* Giảm kích thướng lề 2 bên khối ảnh/mua */
-  .product-detail-image-buy-contrainer {
-    margin: 0px 80px;
+  .product-detail-image-buy-container {
+    /* margin: 0px 80px; */
+    margin: auto;
     margin-top: 40px;
+    grid-gap: 20px;
   }
   /* Ảnh chi tiết sản phẩm rộng giảm % rộng đủ vừa chiều dọc */
   .product-detail-image {
@@ -648,7 +665,8 @@ input::placeholder {
 
   /* Khối miêu tả sp chi tiết = chữ giảm độ dày lề */
   .product-description-container {
-    margin: 0px 80px;
+    /* margin: 0px 80px; */
+    margin: auto;
   }
   /* Khối miêu tả sản phẩm chữ, giảm/giữ độ dày lề ngoài */
   .product-description {
@@ -657,7 +675,8 @@ input::placeholder {
 
   /* Khối sản phẩm tương tự giảm độ dày lề */
   .same-products-container {
-    margin: 40px 80px 40px 80px;
+    /* margin: 40px 80px 40px 80px; */
+    margin: auto;
   }
 
   /* Khối sản phẩm tương tự khoảng cách các sp giảm, lê trong giảm */

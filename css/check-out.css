@@ -148,7 +148,7 @@ input::placeholder {
 .your-order-calculates-title {
   /* border: 1px solid #84c41e; */
   width: 100%;
-  padding: 4px 12px;
+  padding: 4px 0px;
 
   display: flex;
   flex-direction: row;
@@ -163,7 +163,7 @@ input::placeholder {
 .your-order-name-amount-totalcount {
   /* border: 1px solid #e42313; */
   width: 100%;
-  margin-top: -24px;
+  margin-top: 0px;
 
   display: flex;
   flex-direction: column;

@@ -68,7 +68,9 @@ input::placeholder {
   grid-gap: 25px;
 }
 .banner-content h1 {
+  /* border: 1px solid red; */
   font-size: 52px;
+  margin: 0px;
 }
 .banner-description {
   font-size: 20px;
@@ -85,10 +87,10 @@ input::placeholder {
   align-items: center; */
   display: block;
   text-align: center;
-  width: 25%;
+  width: 150px;
 
   padding: 12px 20px 15px 20px;
-  margin-top: 8px;
+  margin-top: 16px;
   transition: all 0.4s;
 }
 .button-discover:hover {
@@ -248,8 +250,11 @@ input::placeholder {
 /* Ghi đè css các chấm chuyển slide */
 .slick-dots {
   /* border: 0.1px solid #6a13e4; */
-  margin-top: 20px;
+  margin-top: 40px;
   position: static !important;
+}
+.slick-dots li button::before {
+  color: red!important;
 }
 
 /* End khối sản phẩm tương tự */
@@ -291,13 +296,15 @@ input::placeholder {
 .famous-product img {
   width: 100%;
 }
+
 /* End Start Các thương hiệu nổi bật */
 
 /* Start Khẳng định dịch vụ */
 .positive-service {
   /* border: 1px solid #e42313; */
-  padding: 8px 80px;
+  padding-top: 0px;
   color: rgb(0, 0, 0);
+  padding: 0px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -425,9 +432,9 @@ input::placeholder {
   /* Tiêu đề banner giảm độ rộng Lề và top của absolute */
   .banner-content {
     width: 80%;
-    top: 32%;
+    top: 25%;
     left: 20px;
-    grid-gap: 0px;
+    grid-gap: 4px;
   }
   .banner-content h1 {
     font-size: 20px;
@@ -439,8 +446,9 @@ input::placeholder {
   /* Nút khám phá ngay điểu chỉnh độ rộng theo phần trăm */
   .button-discover {
     font-size: 8px;
-    width: 32%;
+    width: 100px;
     padding: 6px 8px 6px 8px;
+    margin-top: 4px;
   }
 
   /* Khối bán chạy và sp mới giảm lề ơ màn nhỏ */
@@ -484,7 +492,6 @@ input::placeholder {
 
   /* Khổi khẳng định thương hiệu - dịch vụ chia số cột giảm */
   .positive-service {
-    padding: 8px 20px;
     grid-template-columns: 1fr;
   }
   .positive-service span {
@@ -506,23 +513,23 @@ input::placeholder {
   }
   /* Tiêu đề banner giảm độ rộng */
   .banner-content {
-    width: 80%;
-    top: 32%;
+    width: 50%;
+    top: 25%;
     left: 40px;
-    grid-gap: 12.5px;
+    grid-gap: 8px;
   }
   .banner-content h1 {
-    font-size: 34.6px;
+    font-size: 24px;
   }
   .banner-description {
-    font-size: 13.3px;
+    font-size: 12px;
   }
 
   /* Nút khám phá ngay điểu chỉnh độ rộng theo phần trăm */
   .button-discover {
-    width: 32%;
+    /* width: 32%; */
     font-size: 12px;
-    padding: 6px 6px 10px 6px;
+    /* padding: 6px 6px 10px 6px; */
   }
   /* Khối bán chạy và sp mới giảm lề ơ màn nhỏ */
   .best-seller-new-products-container {
@@ -568,21 +575,21 @@ input::placeholder {
 @media (min-width: 768px) {
   /* Tiêu đề banner giảm độ rộng */
   .banner-content {
-    width: 80%;
-    top: 32%;
+    width: 50%;
+    top: 30%;
     left: 60px;
-    grid-gap: 20.8px;
+    grid-gap: 12px;
   }
   .banner-content h1 {
-    font-size: 31.2px;
+    font-size: 28px;
   }
   .banner-description {
-    font-size: 20px;
+    font-size: 16px;
   }
   /* Nút khám phá ngay điểu chỉnh độ rộng theo phần trăm */
   .button-discover {
     padding: 12px 4px 15px 4px;
-    width: 24%;
+    width: 150px;
     font-size: 12px;
   }
   /* Khối bán chạy và sp mới giảm lề ơ màn nhỏ */
@@ -643,8 +650,8 @@ input::placeholder {
   }
   /* Nút khám phá ngay điểu chỉnh độ rộng theo phần trăm */
   .button-discover {
-    padding: 12px 20px 15px 20px;
-    width: 32%;
+    /* padding: 12px 20px 15px 20px; */
+    /* width: 32%; */
     font-size: 16px;
   }
   /* Khối bán chạy và sp mới giảm lề ơ màn nhỏ */
@@ -682,8 +689,8 @@ input::placeholder {
 @media (min-width: 1200px) {
   /* Nút khám phá ngay điểu chỉnh độ rộng theo phần trăm */
   .button-discover {
-    padding: 12px 20px 15px 20px;
-    width: 24%;
+    /* padding: 12px 20px 15px 20px; */
+    /* width: 24%; */
   }
   /* Khối bán chạy và sp mới giảm lề ơ màn nhỏ */
   .best-seller-new-products-container {
@@ -706,8 +713,8 @@ input::placeholder {
 @media (min-width: 1400px) {
   /* Nút khám phá ngay điểu chỉnh độ rộng theo phần trăm */
   .button-discover {
-    padding: 12px 20px 15px 20px;
-    width: 16%;
+    /* padding: 12px 20px 15px 20px; */
+    /* width: 16%; */
   }
 }
 /* End Responsive by @Media same  bootstrap*/

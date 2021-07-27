@@ -45,7 +45,7 @@ header {
 /* Start filter */
 .filter-container {
   /* border: 1px solid red; */
-  padding: 0px 80px;
+  /* padding: 0px 80px; */
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -199,8 +199,10 @@ header {
 .products-pagination-container {
   /* border: 1px dotted #e42313; */
   width: 100%;
-  padding: 40px 80px;
-  /* margin-top: 38px; */
+  /* padding-top: 40px; */
+  /* padding: 40px 80px; */
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 .list-products {
   /* border: 1px dotted #e4d613; */
@@ -370,7 +372,7 @@ header {
   }
   /* Ở màn bé nhất lề web giảm ngang còn 20px */
   .filter-container {
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
   }
   /* Dưới 576px 2 khối lọc xếp dọc và chia 3 cột mỗi khối lọc*/
   .filters {
@@ -415,11 +417,11 @@ header {
 
   /* Danh sách sản phẩm giảm lề ở màn iphone 5 còn 20px */
   .products-pagination-container {
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
   }
   /* Danh sách Products giảm khoảng cách lưới còn 4px */
   .list-products {
-    grid-template-columns: 1fr;
+    grid-template-columns: 0.5fr 0.5fr;
     grid-gap: 20px;
   }
 
@@ -445,7 +447,7 @@ header {
 @media (min-width: 576px) {
   /* Ở màn bé nhất lề web giảm ngang còn 40px */
   .filter-container {
-    padding: 0px 40px;
+    /* padding: 0px 40px; */
   }
   /* Trên 576px 2 khối lọc xếp dọc và chia 3 cột mỗi khối lọc*/
   .filters {
@@ -480,7 +482,7 @@ header {
 
   /* Danh sách sản phẩm giảm lề ở màn 576px còn 60px */
   .products-pagination-container {
-    padding: 20px 40px;
+    /* padding: 20px 40px; */
   }
   /* Danh sách sản phẩm 2 cột sp, k cách lưới giảm */
   .list-products {
@@ -504,7 +506,7 @@ header {
 @media (min-width: 768px) {
   /* Ở màn 768px lề web giảm ngang còn 60px */
   .filter-container {
-    padding: 0px 60px;
+    /* padding: 0px 60px; */
   }
 
   /* Trên 768px 2 khối lọc vẫn xếp ngang */
@@ -532,7 +534,7 @@ header {
 
   /* Danh sách sản phẩm giảm lề ở màn còn 60px */
   .products-pagination-container {
-    padding: 30px 60px;
+    /* padding: 30px 60px; */
   }
   /* Danh sách sản phẩm 2 cột sp, k cách lưới giảm */
   .list-products {
@@ -556,7 +558,7 @@ header {
 @media (min-width: 992px) {
   /* Ở màn 992px lề web ngang giữ nguyên 80px */
   .filter-container {
-    padding: 0px 80px;
+    /* padding: 0px 80px; */
   }
   /* Trên 768px 2 khối lọc vẫn xếp ngang */
   .filters {
@@ -578,7 +580,7 @@ header {
 
   /* Danh sách sản phẩm giảm lề ở màn 992px còn 80px  */
   .products-pagination-container {
-    padding: 40px 80px;
+    /* padding: 40px 80px; */
   }
   /* Danh sách sản phẩm 2 cột sp, k cách lưới giảm */
   .list-products {
@@ -608,7 +610,7 @@ header {
 
   /* Danh sách sản phẩm giữ lề ở màn 1200px 80px */
   .products-pagination-container {
-    padding: 40px 80px;
+    /* padding: 40px 80px;s */
   }
   /* Danh sách sản phẩm 2 cột sp, k cách lưới giảm */
   .list-products {

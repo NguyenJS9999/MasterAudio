@@ -50,7 +50,8 @@ input::placeholder {
   align-items: center;
   grid-gap: 20px;
 
-  margin: 40px 80px;
+  margin: auto;
+  margin-top: 40px;
   padding: 8px 0px 12px 0px;
 }
 /* Tiêu đề giỏ hàng */
@@ -233,7 +234,8 @@ input::placeholder {
   border: 1px solid rgba(228, 35, 19, 0.5);
   border-radius: 2px;
   text-align: center;
-  margin: 80px 80px 0px 80px;
+  margin: auto;
+  margin-top: 80px;
   padding: 36px;
 
   display: flex;
@@ -331,7 +333,8 @@ input::placeholder {
 @media (max-width: 576px) {
   /* Khối mua sắm giảm độ dày lề màn iphone */
   .cart-container {
-    margin: 40px 20px;
+    /* margin: 40px 20px; */
+    margin-top: 12px;
     grid-gap: 12px;
   }
 
@@ -339,7 +342,7 @@ input::placeholder {
 
   /* Tiêu đề của products cart gỉam lề và kh cách các phẩn tử */
   .cart-title {
-    padding: 8px 2px;
+    padding: 8px 8px;
     grid-gap: 4px;
   }
   /* Products cart giảm cỡ chữ */
@@ -357,7 +360,7 @@ input::placeholder {
   }
   /* Mỗi mục sản phẩm đặt giảm lề và kh cách các phẩn tử */
   .cart-item {
-    padding: 0px 2px;
+    padding: 0px 8px;
     grid-gap: 4px;
     font-size: 8px;
   }
@@ -381,16 +384,23 @@ input::placeholder {
 
   /* Khối thanh toán giảm lề ngang trong và ngoài*/
   .payment-container {
-    margin: 40px 20px 0px 20px;
+    /* margin: 40px 20px 0px 20px; */
+    margin-top: 20px;
     padding: 4px;
   }
   /* Tiêu đề khối thanh toán giảm cỡ chữ */
   .payment-title {
-    font-size: 20px;
+    font-size: 16px;
   }
   /* Khối thanh toán giảm kh cách top */
   .count-money {
     margin-top: 28px;
+  }
+.count-money span {
+  padding: 0px 4px;
+}
+  .count-money b {
+    font-size: 14px;
   }
   /* Sổ tổng tiền giảm cỡ chữ */
   .total-money-number {
@@ -399,13 +409,20 @@ input::placeholder {
   .into-money-number {
     font-size: 20px;
   }
+  /* Nút tiến hành thanh toán */
+  .make-payment {
+    margin-top: 20px;
+  }
+  .make-payment a {
+    font-size: 10px;
+  }
 }
 
 /* Small */
 @media (min-width: 576px) {
   /* Khối mua sắm giảm độ dày lề */
   .cart-container {
-    margin: 40px 30px;
+    /* margin: 40px 30px; */
   }
 
   /* Tiêu đề của products cart gỉam lề và kh cách các phẩn tử */
@@ -443,7 +460,7 @@ input::placeholder {
   }
   /* Khối thanh toán giảm lề ngang trong và ngoài*/
   .payment-container {
-    margin: 80px 30px 0px 30px;
+    /* margin: 80px 30px 0px 30px; */
     padding: 12px;
   }
 }
@@ -452,7 +469,7 @@ input::placeholder {
 @media (min-width: 768px) {
   /* Khối mua sắm giảm độ dày lề */
   .cart-container {
-    margin: 40px 40px;
+    /* margin: 40px 40px; */
   }
 
   /* Tiêu đề của products cart gỉam lề và kh cách các phẩn tử */
@@ -481,7 +498,7 @@ input::placeholder {
 
   /* Khối thanh toán giảm lề ngang trong và ngoài*/
   .payment-container {
-    margin: 80px 40px 0px 40px;
+    /* margin: 80px 40px 0px 40px; */
     padding: 20px;
   }
 }
@@ -490,7 +507,7 @@ input::placeholder {
 @media (min-width: 992px) {
   /* Khối mua sắm giảm độ dày lề */
   .cart-container {
-    margin: 40px 60px;
+    /* margin: 40px 60px; */
   }
 
   /* Tiêu đề của products cart gỉam lề và kh cách các phẩn tử */
@@ -515,7 +532,7 @@ input::placeholder {
 
   /* Khối thanh toán giảm lề ngang trong và ngoài*/
   .payment-container {
-    margin: 80px 60px 0px 60px;
+    /* margin: 80px 60px 0px 60px; */
     padding: 28px;
   }
 }
@@ -524,7 +541,7 @@ input::placeholder {
 @media (min-width: 1200px) {
   /* Khối mua sắm giảm độ dày lề */
   .cart-container {
-    margin: 40px 80px;
+    /* margin: 40px 80px; */
   }
 
   /* Tiêu đề của products cart gỉam lề và kh cách các phẩn tử */
@@ -549,7 +566,7 @@ input::placeholder {
 
   /* Khối thanh toán giảm lề ngang trong và ngoài*/
   .payment-container {
-    margin: 80px 80px 0px 80px;
+    /* margin: 80px 80px 0px 80px; */
     padding: 36px;
   }
 }
