@@ -11,7 +11,10 @@
 /* ::selection {
     color: red;
 } */
-
+/* Màu Ink cho web - màu vàng kem nhạt */
+body {
+  background:#F6F6F6;
+}
 a {
   text-decoration: none;
   cursor: pointer;
@@ -45,8 +48,9 @@ input::placeholder {
   margin-top: 20px;
 }
 .billing-information-title-input {
-  border: 1px solid rgba(228,35,19, 0.5);
+  /* border: 0.1px solid rgba(228,35,19, 0.2); */
   border-radius: 2px;
+  background: white;
   padding: 20px 28px 32px 28px;
 }
 .billing-title {
@@ -79,13 +83,13 @@ input::placeholder {
   align-items: center;
 }
 /* style cho ô input */
-/* .billing-information-inputs span input {
-  border: 1px solid red;
+.billing-information-inputs span input {
+  border: 1px solid rgba(228,35,19, 0.5);
   border-radius: 2px;
   padding: 8px 6px;
   transition: all 0.2s;
 }
-.billing-information-inputs span input:hover {
+/* .billing-information-inputs span input:hover {
   box-shadow: 0px 0px 4px 0px red;
 }
 .billing-information-inputs span input:focus {
@@ -120,8 +124,9 @@ input::placeholder {
 }
 /* Khối đơn hàng của bạn tiêu đề và tính toán */
 .your-order-title-calculates {
-  border: 1px solid rgba(228,35,19, 0.5);
+  /* border: 0.1px solid rgba(228,35,19, 0.2); */
   border-radius: 2px;
+  background: white;
   padding: 20px 24px 32px 24px;
 }
 
@@ -274,7 +279,8 @@ input::placeholder {
 /* Kẻ ngang chân các mục */
 .lines-bottom {
   width: 100%;
-  border-bottom: 1px solid rgba(228,35,19, 0.2);
+  /* border-bottom: 1px solid rgba(228,35,19, 0.2); */
+  border-bottom: 2px solid #dee2e6;
 }
 /* -- Kết thúc Khối Đơn hàng của bạn -- */
 

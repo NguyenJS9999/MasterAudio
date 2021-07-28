@@ -46,6 +46,8 @@ input::placeholder {
 /* Nav Mobile */
 /* Nav Desktop */
 
+
+
 /* Banner top home */
 .banner-top-home {
   margin-top: -1px;
@@ -254,7 +256,7 @@ input::placeholder {
   position: static !important;
 }
 .slick-dots li button::before {
-  color: red!important;
+  color: red !important;
 }
 
 /* End khối sản phẩm tương tự */
@@ -350,7 +352,7 @@ input::placeholder {
 
 /* Đường kẻ ngang */
 .line-bottom {
-  border-top: 1px solid rgba(228,35,19, 0.2);
+  border-top: 1px solid rgba(228, 35, 19, 0.2);
   /* border-top: 1px solid rgba(145,146,148, 0.5); */
   margin: 64px auto 0px auto;
   width: 60%;
@@ -362,7 +364,6 @@ input::placeholder {
   /* margin-top: 40px; */
   padding: 64px;
   text-align: center;
-  
 
   display: flex;
   flex-direction: column;
@@ -482,7 +483,7 @@ input::placeholder {
   }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px;
   }
   /* Các thương hiệu nổi tiếng khung logo giảm padding */
@@ -497,7 +498,6 @@ input::placeholder {
   .positive-service span {
     width: 300px;
   }
-
 }
 
 /* Small Điểm ngắt 1 LỀ 40px */
@@ -548,7 +548,7 @@ input::placeholder {
   }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
   }
   /* Các thương hiệu nổi tiếng khung logo giảm padding */
@@ -568,7 +568,6 @@ input::placeholder {
   .positive-service span {
     width: 300px;
   }
-
 }
 
 /* Medium Điểm ngắt 2 Lề? 60px */
@@ -609,7 +608,7 @@ input::placeholder {
   }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 40px;
   }
 
@@ -671,7 +670,7 @@ input::placeholder {
   }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 40px;
   }
 

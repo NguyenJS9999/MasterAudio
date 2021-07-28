@@ -11,12 +11,33 @@
 /* ::selection {
     color: red;
 } */
+body {
+  background:#F6F6F6;
+}
 a {
   text-decoration: none;
   cursor: pointer;
 }
 .container-fluid {
   padding: 0px;
+}
+/* style cho ô INPUT dùng chung */
+input {
+  border: 1px solid red;
+  border-radius: 2px;
+  padding: 8px 6px;
+  transition: all 0.2s;
+}
+input:hover {
+  box-shadow: 0px 0px 4px 0px red;
+}
+input:focus {
+  outline: none !important;
+  box-shadow: 0px 0px 4px 0px red;
+}
+input::placeholder {
+  color: rgba(228, 35, 19, 0.6);
+  font-size: 14px;
 }
 
 /* Start Khối blog*/
@@ -55,9 +76,10 @@ a {
 }
 /* blog đơn */
 .blog {
-  border: 1px solid rgba(228, 35, 19, 0.3);
+  /* border: 1px solid rgba(228, 35, 19, 0.2); */
   border-radius: 2px;
   /* padding: 12px; */
+  background-color: #ffffff;
 
   display: flex;
   flex-direction: row;
@@ -67,11 +89,11 @@ a {
   transition: all 0.2s;
 }
 .blog:hover {
-  border: 1px solid rgba(228, 35, 19, 0.8);
+  /* border: 1px solid rgba(228, 35, 19, 0.5); */
 }
 
 .blog-content {
-  border: 1px solid rgba(228, 35, 19, 0);
+  /* border: 1px solid rgba(228, 35, 19, 0);` */
   /* Tránh nội dung bên trong đẩy ra vượt quá */
   width: 100%;
   /* border: 1px solid green; */
@@ -86,7 +108,7 @@ a {
   transition: all 0.4s;
 }
 .blog-content:hover {
-  border: 1px solid rgba(228, 35, 19, 0.2);
+  /* border: 1px solid rgba(228, 35, 19, 0.2); */
 }
 
 .blog-content {

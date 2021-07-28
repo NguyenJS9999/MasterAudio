@@ -88,9 +88,7 @@
                     </a>
 
                     <!-- User -->
-                    <a class="" href="#">
-                        <i class="far fa-user"></i>
-                    </a>
+                    <div class=" login-register-btn "><i class="far fa-user"></i></div>
                 </div>
 
 
@@ -132,9 +130,7 @@
                         </a>
 
                         <!-- User -->
-                        <a href="#">
-                            <div><i class="far fa-user"></i></div>
-                        </a>
+                        <div class=" login-register-btn "><i class="far fa-user"></i></div>
                     </div>
 
 
@@ -149,7 +145,122 @@
 
     </header>
 
-  
+    <!-- Moadal Đăng nhập / đăng kí -->
+    <div class=" login-register-container   container-fluid ">
+
+
+
+        <div class=" login-register-form ">
+
+            <ul class="nav nav-pills mb-3  d-flex justify-content-center   login-register-tab-change " id="pills-tab"
+                role="tablist">
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">Đăng nhập</button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">
+                        Đăng ký
+                    </button>
+                </li>
+
+
+
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+
+                <!-- 1 - Đăng nhập -->
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                    <form>
+                        <!-- <div class=" login-register-form-title ">Đăng nhập</div> <br> -->
+
+                        <div class=" laber-inputs-infor ">
+
+                            <div class=" laber-input-infor  mb-3 ">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="" id="exampleInputEmail1"
+                                    placeholder="Địa chỉ email đã đăng kí">
+
+                            </div>
+
+                            <div class=" laber-input-infor  mb-3 ">
+                                <label for="password" class="form-label">Mật khẩu</label>
+                                <input type="password" class="" id="password" placeholder="">
+                            </div>
+                        </div>
+
+                        <div type="button" class=" login-btn  register-button mt-2">Đăng nhập</div>
+
+                    </form>
+
+                </div> <!-- 2 - Đăng nhập -->
+
+
+                <!-- 2 - Đăng kí -->
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                    <form>
+                        <!-- <div class=" login-register-form-title ">Đăng ký</div> <br> -->
+
+                        <div class=" laber-inputs-infor ">
+                            <div class=" laber-input-infor  mb-3 ">
+                                <label for="full-name">Họ và tên</label>
+                                <input type="text" class="" id="full-name">
+                            </div>
+
+                            <div class=" laber-input-infor  mb-3 ">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="" id="exampleInputEmail1"
+                                    placeholder="Địa chỉ email dùng đăng kí mới">
+
+                            </div>
+
+                            <div class=" laber-input-infor  mb-3 ">
+                                <label for="password" class="form-label">Mật khẩu</label>
+                                <input type="password" class="" id="password" placeholder="Tạo mật khẩu mới">
+                            </div>
+
+                            <div class=" laber-input-infor  mb-3 ">
+                                <label for="date-of-birth">Ngày tháng năm sinh</label>
+                                <input type="date" class="" id="date-of-birth">
+                            </div>
+
+                        </div>
+
+                        <div class=" mb-3  form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">
+                                Đồng ý với điều khoản dịch vụ của chúng tôi
+                            </label>
+                        </div>
+
+                        <div type="button" class="  register-btn  register-button ">Đăng ký</div>
+
+                    </form>
+
+                </div> <!-- 2 - Đăng kí -->
+
+
+            </div>
+
+
+
+
+        </div>
+        <!-- login-register-form -->
+
+    </div>
+    <!-- Moadal Đăng nhập / đăng kí -->
+
+    <!-- Kê navigation -->
+    <div class="margin-top-nav   container-fluid "></div>
 
     <!-- breadcrumb -->
     <div class="breadcrumb-container container-fluid">
@@ -228,7 +339,7 @@
 
                         </span>
 
-                        <span class="like-product" >
+                        <span class="like-product">
                             <i class="far fa-heart"></i>
                         </span>
 
@@ -237,13 +348,13 @@
                     <div class="button-cart-buy">
                         <div class="button-cart" type="button"><i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
                         </div>
-                        
+
                         <a href="../cart.html">
-                            
+
                             <div class="button-buy" type="button">
                                 <i class="fas fa-coins"></i> Mua ngay
                             </div>
-                            
+
                         </a>
 
                     </div>
@@ -478,7 +589,7 @@
             <!-- 3 Sản phẩm tương tự -->
             <div class="same-products-title">SẢN PHẨM TƯƠNG TỰ</div>
 
-            <button class="slick-prev slick-arrow" aria-label="Previous" >Lùi</button>
+            <button class="slick-prev slick-arrow" aria-label="Previous">Lùi</button>
 
             <div class="same-products">
 

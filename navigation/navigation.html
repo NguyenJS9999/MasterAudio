@@ -37,130 +37,123 @@
 
 <body>
 
-    <header>
-
-        <div class="container-header container-fluid">
-
-            <!-- Start navigation mobile -->
-            <div class="navigation-mobile   md-d.none">
-
-                <span class="icon-menu-hiden-mobile" onclick="hiddenMenu()">
-                    <i class="fas fa-bars"></i>
-                </span>
-
-                <!--  d-none -->
-                <div class="menu-infos-header-mobile    ">
-                    <div class="list-infos-header-mobile">
-
-                        <a href="../index.html">
-                            <div>TRANG CHỦ</div>
-                        </a>
-
-                        <a href="../product.html">
-                            <div>SẢN PHẨM</div>
-                        </a>
-
-                        <a href="../about.html">
-                            <div>GIỚI THIỆU</div>
-                        </a>
-
-                        <a href="../blog.html">
-                            <div>TIN TỨC</div>
-                        </a>
-                    </div>
-
-                </div>
-
-                <div class=".logo-master-audio">
-                    <img src="./img/logo/logo.png" alt="logo">
-                </div>
-
-                <!-- cart / login -->
-                <div class="cart-login">
-                    <a class="" href="/cart.html">
-                        <i class="fas fa-cart-plus"></i>
-                    </a>
-
-                    <!-- User -->
-                    <a class="" href="#">
-                        <i class="far fa-user"></i>
-                    </a>
-                </div>
+    
+  <!-- Moadal Đăng nhập / đăng kí -->
+  <div class=" login-register-container   container-fluid ">
 
 
-            </div> <!-- End navigation mobile -->
+
+    <div class=" login-register-form container-fluid ">
+
+        <ul class="nav nav-pills mb-3  d-flex justify-content-center   login-register-tab-change " id="pills-tab"
+            role="tablist">
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                    aria-selected="false">Đăng nhập</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                    aria-selected="true">
+                    Đăng ký
+                </button>
+            </li>
 
 
-            <!-- Start navigation desktop-->
-            <nav>
 
-                <div class="navigation-desktop">
+        </ul>
 
-                    <div class="logo-master-audio">
-                        <a href="./index.html"><img src="./img/logo/logo.png" alt="logo"></a>
-                    </div>
+        <div class="tab-content" id="pills-tabContent">
 
-                    <div class="menu-pages-desktop">
-                        <a class="menu-page-desktop" href="#">
-                            <div>TRANG CHỦ</div>
-                        </a>
+            <!-- 1 - Đăng nhập -->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
 
-                        <a class="menu-page-desktop" href="/product.html">
-                            <div>SẢN PHẨM</div>
-                        </a>
+                <form>
+                    <!-- <div class=" login-register-form-title ">Đăng nhập</div> <br> -->
 
-                        <a class="menu-page-desktop" href="/about.html">
-                            <div>GIỚI THIỆU</div>
-                        </a>
+                    <div class=" laber-inputs-infor ">
 
-                        <a class="menu-page-desktop" href="/blog.html">
-                            <div>TIN TỨC</div>
-                        </a>
+                        <div class=" laber-input-infor  mb-3 ">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="" id="exampleInputEmail1"
+                                placeholder="Địa chỉ email đã đăng kí">
 
-
-                    </div>
-                    <!-- cart / login -->
-                    <div class="cart-login">
-                        <a href="/cart.html">
-                            <div><i class="fas fa-cart-plus"></i></div>
-                        </a>
-
-                        <!-- User -->
-                        <a href="#">
-                            <div><i class="far fa-user"></i></div>
-                        </a>
-                    </div>
-
-
-                </div> <!-- navigation-desktop -->
-
-                <div class="banner-top-home">
-                    <!-- carosel -->
-                    <img src="/img/banner/banner-top-home(2).png" alt="banner">
-
-
-                    <div class="banner-content">
-
-                        <h1>Chất âm đến từ <span>châu Âu</span></h1>
-
-                        <div class="banner-description">
-                            Nơi cảm xúc thăng hoa cùng hòa mình vào những giai điệu đầy cảm xúc
                         </div>
 
-                        <div class="button-discover  " type="button">Khám phá ngay</div>
+                        <div class=" laber-input-infor  mb-3 ">
+                            <label for="password" class="form-label">Mật khẩu</label>
+                            <input type="password" class="" id="password" placeholder="">
+                        </div>
+                    </div>
+
+                    <div type="button" class=" login-btn  register-button mt-2">Đăng nhập</div>
+
+                </form>
+
+            </div> <!-- 2 - Đăng nhập -->
+
+
+            <!-- 2 - Đăng kí -->
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                <form>
+                    <!-- <div class=" login-register-form-title ">Đăng ký</div> <br> -->
+
+                    <div class=" laber-inputs-infor ">
+                        <div class=" laber-input-infor  mb-3 ">
+                            <label for="full-name">Họ và tên</label>
+                            <input type="text" class="" id="full-name">
+                        </div>
+
+                        <div class=" laber-input-infor  mb-3 ">
+                            <label for="exampleInputEmail1" class="form-label">Email</label>
+                            <input type="email" class="" id="exampleInputEmail1"
+                                placeholder="Địa chỉ email dùng đăng kí mới">
+
+                        </div>
+
+                        <div class=" laber-input-infor  mb-3 ">
+                            <label for="password" class="form-label">Mật khẩu</label>
+                            <input type="password" class="" id="password" placeholder="Tạo mật khẩu mới">
+                        </div>
+
+                        <div class=" laber-input-infor  mb-3 ">
+                            <label for="date-of-birth">Ngày tháng năm sinh</label>
+                            <input type="date" class="" id="date-of-birth">
+                        </div>
 
                     </div>
 
-                </div>
+                    <div class=" mb-3  form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">
+                            Đồng ý với điều khoản dịch vụ của chúng tôi
+                        </label>
+                    </div>
 
-            </nav>
+                    <div type="button" class="  register-btn  register-button ">Đăng ký</div>
 
-            <!-- End navigation desktop-->
+                </form>
 
-        </div> <!-- container-header -->
+            </div> <!-- 2 - Đăng kí -->
 
-    </header>
 
+        </div>
+
+
+
+
+    </div>
+    <!-- login-register-form -->
+
+</div>
+<!-- Moadal Đăng nhập / đăng kí -->
+
+ <!-- Kê navigation -->
+ <div class="margin-top-nav   container-fluid "></div>
 
 
 

@@ -12,13 +12,13 @@
   /* Vì cố định FIXED nên độ cao sẽ che các khối dưới */
   padding: 18px 80px;
   /* Cố định thanh Menu */
-  position: relative;
+  position: fixed;
   top: -1px;
   right: 0px;
   z-index: 1000;
   width: 100%;
   background: white;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid rgba(228, 35, 19, 0.5);
 
   display: flex;
   flex-direction: row;
@@ -76,14 +76,14 @@
 .navigation-desktop {
   /* border: 0.1px dotted red; */
   /* Cố định thanh Menu */
-  position: relative;
+  position: fixed;
   top: -1px;
   right: 0px;
   z-index: 1000;
   width: 100%;
   background: white;
   /* border-bottom: 1px solid red; */
-  box-shadow: 0px 1px 2px 0px #e42313;
+  border-bottom: 1px solid rgba(228, 35, 19, 0.5);
 
   display: flex;
   flex-direction: row;
@@ -134,7 +134,7 @@
   justify-content: center;
   grid-gap: 28px;
   font-size: 20px;
-  color: #e42313;
+  /* color: #e42313; */
 }
 .cart-login a {
   color: #000000;
@@ -142,12 +142,124 @@
 }
 .cart-login a:hover {
   color: #e42313;
-  font-weight: 700;
-  transform: scale(1.05);
+}
+.login-register-btn {
+  color: #000000;
+  transition: all 0.2s;
+}
+.login-register-btn:hover {
+  color: #e42313;
+  cursor: pointer;
 }
 
 /* End Nav Desktop */
 
+/* -- Start Đăng nhập / đăng kí -- */
+/* Phần nền xám mờ và đẩy giữa khối form */
+.login-register-container {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 1000px;
+  background: rgba(204, 201, 201, 0.5);
+  position: fixed;
+  top: -20px;
+  z-index: 1002;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  display: none;
+}
+
+.login-register-form {
+  /* border: 1px solid rgba(228,35,19, 0.2); */
+  border-radius: 2px;
+  background: white;
+  padding: 20px 28px 24px 28px;
+  width: 380px;
+  /* height: 590px; */
+  margin: auto;
+  margin-top: 90px;
+}
+/* Start Tab chuyển bootstap ghi đê css */
+.login-register-tab-change {
+  /* border: 1px solid rgba(228,35,19, 1); */
+
+  display: flex;
+  flex-direction: row;
+  grid-gap: 8px;
+}
+.login-register-tab-change button {
+  width: 150px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  border: 1px solid rgba(228, 35, 19, 1);
+  background: rgba(228, 35, 19, 0.8) !important;
+}
+.nav-link {
+  color: #000000;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: #000000;
+}
+/* End Tab chuyển bootstap ghi đê css */
+
+.login-register-form-title {
+  /* border: 1px solid red; */
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+.laber-inputs-infor {
+  /* border: 1px solid violet; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-gap: 8px;
+}
+.laber-input-infor {
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  grid-gap: 4px;
+}
+.laber-input-infor input {
+  border: 0.1px solid rgba(228, 35, 19, 0.5);
+}
+
+/* Nút đăng kí */
+.register-button {
+  width: 100%;
+  /* border: 1px solid rgba(0,177,79, 1); */
+  border-radius: 2px;
+  color: white;
+  background: rgba(0, 177, 79, 1);
+  box-shadow: 0px 0p 12px 0px rgba(0, 177, 79, 1);
+  cursor: pointer;
+  text-align: center;
+  padding: 8px 0px;
+  transition: all 0.2s;
+}
+.register-button:hover {
+  color: white;
+  background: rgba(0, 177, 79, 0.8);
+  /* box-shadow: 0px 0p 12px 0px rgba(0,177,79, 1); */
+}
+
+/* -- End Đăng nhập / đăng kí -- */
+
+/* Kê navigation */
+.margin-top-nav {
+  width: 100%;
+  height: 74.59px;
+  background: rgb(226, 226, 226);
+  position: relative;
+}
 /* ****************************************8 */
 /* Start Responsive by @Media same bootstrap */
 /* X-Small */
@@ -171,6 +283,18 @@
   .logo-master-audio {
     width: 88px;
   }
+
+  /* Kê navigation giảm chiều cao màn iphone */
+  .margin-top-nav {
+    height: 62.59px;
+  }
+
+  /* khung form đăng kí - đăng nhập co ngang vừa màn iphone */
+  .login-register-form {
+    width: 90%;
+    margin-top: 40px;
+    padding: 10px 12px 10px 12px;
+  }
 }
 
 /* Small Điểm ngắt 1 */
@@ -189,6 +313,16 @@
   .logo-master-audio {
     width: 92px;
   }
+  /* Kê navigation giảm chiều cao màn */
+  .margin-top-nav {
+    height: 64.59px;
+  }
+
+  /* khung form đăng kí - đăng nhập co ngang vừa màn nhỏ */
+  .login-register-form {
+    width: 380px;
+    margin-top: 90px;
+  }
 }
 
 /* Medium Điểm ngắt 2  */
@@ -202,6 +336,17 @@
   /* Giảm kích thước trông thấy của logo chúng ở màn nhỏ >768px */
   .logo-master-audio {
     width: 96px;
+  }
+
+  /* Kê navigation giữ chiều cao */
+  .margin-top-nav {
+    height: 74.59px;
+  }
+
+  /* khung form đăng kí - đăng nhập co ngang vừa màn nhỏ */
+  .login-register-form {
+    width: 380px;
+    margin-top: 90px;
   }
 }
 
@@ -217,10 +362,10 @@
     display: flex;
     padding: 8px 60px;
   }
-    /* Giữ kích thước trông thấy của logo chúng ở màn nhỏ >992px */
-    .logo-master-audio {
-      width: 96px;
-    }
+  /* Giữ kích thước trông thấy của logo chúng ở màn nhỏ >992px */
+  .logo-master-audio {
+    width: 96px;
+  }
 }
 
 /* Extra large */
@@ -228,6 +373,11 @@
   /* Hiện menu desktop flex lại, thêm padding */
   .navigation-desktop {
     padding: 8px 80px;
+  }
+   /* khung form đăng kí - đăng nhập co ngang vừa màn nhỏ */
+   .login-register-form {
+    width: 380px;
+    margin-top: 80px;
   }
 }
 

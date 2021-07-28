@@ -15,6 +15,10 @@ body {
   /* background: #f8f8f8; */
   background: #ffffff;
 }
+/* Màu Ink cho web - màu vàng kem nhạt */
+body {
+  background:#F6F6F6;
+}
 a {
   text-decoration: none;
   cursor: pointer;
@@ -44,6 +48,7 @@ input::placeholder {
 /* -- Start khối giỏ hàng --  */
 .cart-container {
   /* border: 1px solid #e42313; */
+  /* background: #ffffff; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -56,9 +61,10 @@ input::placeholder {
 }
 /* Tiêu đề giỏ hàng */
 .cart-title {
-  border: 1px solid rgba(228, 35, 19, 0.5);
+  /* border: 1px solid rgba(228, 35, 19, 0.5); */
   border-radius: 2px;
   width: 100%;
+  background: #ffffff;
 
   /* display: flex; */
   /* flex-direction: row; */
@@ -100,9 +106,10 @@ input::placeholder {
   grid-gap: 20px;
 }
 .cart-item {
-  border: 1px solid rgba(228, 35, 19, 0.5);
+  /* border: 1px solid rgba(228, 35, 19, 0.5); */
   border-radius: 2px;
   width: 100%;
+  background: #ffffff;
 
   /* display: flex; */
   /* flex-direction: row; */
@@ -192,9 +199,10 @@ input::placeholder {
 
 /* Nút tiếp tục mua hàng và xóa toàn bộ */
 .cart-button-buy-delete-all {
-  border: 1px solid rgba(228, 35, 19, 0.5);
+  /* border: 1px solid rgba(228, 35, 19, 0.5); */
   border-radius: 2px;
   width: 100%;
+  background: #ffffff;
 
   display: flex;
   flex-direction: row;
@@ -231,8 +239,9 @@ input::placeholder {
 
 /* Start khối thanh toán */
 .payment-container {
-  border: 1px solid rgba(228, 35, 19, 0.5);
+  /* border: 1px solid rgba(228, 35, 19, 0.5); */
   border-radius: 2px;
+  background: #ffffff;
   text-align: center;
   margin: auto;
   margin-top: 80px;
