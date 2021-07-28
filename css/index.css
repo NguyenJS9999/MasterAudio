@@ -482,7 +482,7 @@ input::placeholder {
   }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     grid-gap: 16px;
   }
   /* Các thương hiệu nổi tiếng khung logo giảm padding */
@@ -548,7 +548,7 @@ input::placeholder {
   }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
     grid-gap: 40px;
   }
   /* Các thương hiệu nổi tiếng khung logo giảm padding */
@@ -609,7 +609,7 @@ input::placeholder {
   }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-gap: 40px;
   }
 
@@ -671,7 +671,7 @@ input::placeholder {
   }
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
     grid-gap: 40px;
   }
 

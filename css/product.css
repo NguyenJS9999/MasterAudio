@@ -213,7 +213,7 @@ header {
 }
 /*  */
 .product {
-  /* border: 1px dotted #1332e4; */
+  border: 1px dotted #1332e4;
   width: 100%;
   /* padding: 12px 20px 12px 20px; */
   padding: 12px 20px;
@@ -421,7 +421,7 @@ header {
   }
   /* Danh sách Products giảm khoảng cách lưới còn 4px */
   .list-products {
-    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-columns: 1fr;
     grid-gap: 20px;
   }
 
