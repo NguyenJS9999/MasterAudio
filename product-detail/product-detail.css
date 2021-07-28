@@ -24,7 +24,7 @@ input {
   border: 1px solid red;
   border-radius: 2px;
   padding: 8px 6px;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
 }
 input:hover {
   box-shadow: 0px 0px 4px 0px red;
@@ -90,7 +90,7 @@ input::placeholder {
   height: 100%;
   border: 2px solid rgb(255, 255, 255);
   padding: 2px;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
 }
 .images-other:hover {
   border: 1px solid #e42313;
@@ -210,13 +210,16 @@ input::placeholder {
   color: #e42313;
 }
 /* Thích sản phẩm - Thả tim*/
-.like-product {
+.like-product i {
   color: #ff9dd8;
-  transition: all 0.2s ease-in-out;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s  ease;
 }
-.like-product:hover {
-  transform: scale(1.2);
+.like-product i:hover {
+  font-weight: 600;
 }
+
 
 /* 3 */
 .button-cart-buy {
@@ -235,7 +238,7 @@ input::placeholder {
   border-radius: 2px;
   background: #ecaf44;
   padding: 8px;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
 }
 .button-cart:hover {
   background: white;
@@ -248,7 +251,7 @@ input::placeholder {
   background: #e42313;
   color: white;
   padding: 8px;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
 }
 .button-buy:hover {
   background: white;

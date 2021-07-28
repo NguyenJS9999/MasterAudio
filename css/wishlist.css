@@ -17,7 +17,7 @@ body {
 }
 /* Màu Ink cho web - màu vàng kem nhạt */
 body {
-  background: #f6f6f6;
+  background:#F6F6F6;
 }
 a {
   text-decoration: none;
@@ -72,7 +72,7 @@ input::placeholder {
   align-items: center;
 
   display: grid;
-  grid-template-columns: 0.15fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
   text-align: center;
   grid-gap: 20px;
 
@@ -117,7 +117,7 @@ input::placeholder {
   align-items: center;
 
   display: grid;
-  grid-template-columns: 0.15fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.2fr;
   text-align: center;
   grid-gap: 20px;
 
@@ -187,6 +187,10 @@ input::placeholder {
 }
 .custom-number i:active {
   color: #e42313;
+}
+/* Nút thêm sản phẩm yêu thích vào giỏ hàng */
+.wishlist-button-cart {
+    
 }
 .delete-one {
   transition: all 0.2s;
@@ -405,9 +409,9 @@ input::placeholder {
   .count-money {
     margin-top: 28px;
   }
-  .count-money span {
-    padding: 0px 4px;
-  }
+.count-money span {
+  padding: 0px 4px;
+}
   .count-money b {
     font-size: 14px;
   }
