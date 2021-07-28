@@ -140,7 +140,12 @@ input::placeholder {
 .cart-item-product-image img {
   width: 50%;
   height: 50%;
+  transition: all 0.3s ease;
 }
+.cart-item-product-image img:hover {
+    transform: scale(1.05);
+}
+
 /* Nút tăng giảm số lượng sản phẩm */
 .cart-item-button-amount {
   /* width: 50px;

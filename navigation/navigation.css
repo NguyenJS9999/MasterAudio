@@ -140,6 +140,7 @@
 .cart-login a {
   color: #000000;
 }
+/* Cart */
 .cart-icon {
   border-radius: 25px;
   /* padding: 3px 9px; */
@@ -150,7 +151,25 @@
   color: #e42313;
   /* background: rgba(228,35,19, 0.1); */
 }
+/* Điểm tự position cho cart */
+.cart-icon {
+  position: relative;
+}
+.cart-number-items {
+  background: rgba(228, 35, 19, 0.5);
+  border-radius: 25px;
+  color: white;
+  font-size: 8px;
+  padding: 0.2px 3.7px 0.5px 3.7px;
 
+  position: absolute;
+  right: -8px;
+  top: -2px;
+}
+.cart-number-items:hover {
+  /* border: 0.1px solid rgba(228,35,19, 1); */
+  background: rgba(228,35,19, 0.8);
+}
 /* like */
 .liked-product-wishlist {
   /* color: #ff9dd8; */
@@ -159,13 +178,33 @@
   color: #000000;
   font-size: 1.2rem;
   cursor: pointer;
-  line-height: 1.6!important;
+  line-height: 1.6 !important;
   transition: all 0.3s ease;
 }
 .liked-product-wishlist:hover {
   color: #fc77c7;
   /* background: rgba(228,35,19, 0.1); */
 }
+/* Điểm tự position cho like */
+.cart-login i {
+  position: relative;
+}
+.liked-number-item {
+  background: rgba(228, 35, 19, 0.5);
+  border-radius: 25px;
+  color: white;
+  font-size: 8px;
+  padding: 0.2px 3.7px 0.5px 3.7px;
+
+  position: absolute;
+  right: -8px;
+  top: -1px;
+}
+.liked-number-item:hover {
+  /* border: 0.1px solid rgba(228,35,19, 1); */
+  background: rgba(228,35,19, 0.8);
+}
+
 /* login */
 .login-register-btn {
   border-radius: 25px;
@@ -401,8 +440,8 @@
   .navigation-desktop {
     padding: 8px 80px;
   }
-   /* khung form đăng kí - đăng nhập co ngang vừa màn nhỏ */
-   .login-register-form {
+  /* khung form đăng kí - đăng nhập co ngang vừa màn nhỏ */
+  .login-register-form {
     width: 380px;
     margin-top: 80px;
   }
