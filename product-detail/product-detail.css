@@ -308,11 +308,30 @@ input::placeholder {
 .product-description-text {
   line-height: 24px;
 }
+.product-description-img {
+  width: 60%;
+  float: left;
+}
+.product-description-img img{
+  width: 60%;
+}
 /* Cấu hình */
 .product-configuration {
-  border: 0.1px solid #e42313;
+  border: 0.1px solid rgba(228,35,19, 1);
 }
 /* Kho ảnh sản phẩm */
+.img-gallery {
+  border: 0.1px solid rgba(228,35,19, 1);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+}
+.product-gallery-img {
+  width: 100%;
+}
+.product-gallery-img img {
+  width: 100%;
+}
 
 /* End Mô tả sản phẩm */
 

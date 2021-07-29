@@ -76,15 +76,26 @@
                 </div>
 
                 <div class="logo-master-audio">
-                    <a href="./index.html">
+                    <a href="../index.html">
                         <img src="../img/logo/logo.png" alt="logo">
                     </a>
                 </div>
 
                 <!-- cart / login -->
                 <div class="cart-login">
-                    <a class="" href="../cart.html">
-                        <i class="fas fa-cart-plus"></i>
+                    <a class="cart-icon" class="cart-icon" href="./cart.html">
+
+                        <i class="fas fa-cart-arrow-down">
+                            <span class=" cart-number-items ">3</span>
+                        </i>
+
+                    </a>
+
+                    <!-- Like -->
+                    <a href="./wishlist.html">
+                        <i class=" liked-product-wishlist  far fa-heart">
+                            <span class="liked-number-item">3</span>
+                        </i>
                     </a>
 
                     <!-- User -->
@@ -125,8 +136,19 @@
                     </div>
                     <!-- cart / login -->
                     <div class="cart-login">
-                        <a href="../cart.html">
-                            <div><i class="fas fa-cart-plus"></i></div>
+                        <a class="cart-icon" class="cart-icon" href="./cart.html">
+
+                            <i class="fas fa-cart-arrow-down">
+                                <span class=" cart-number-items ">3</span>
+                            </i>
+
+                        </a>
+
+                        <!-- Like -->
+                        <a href="./wishlist.html">
+                            <i class=" liked-product-wishlist  far fa-heart">
+                                <span class="liked-number-item">3</span>
+                            </i>
                         </a>
 
                         <!-- User -->
@@ -150,7 +172,7 @@
 
 
 
-        <div class=" login-register-form ">
+        <div class=" login-register-form container-fluid ">
 
             <ul class="nav nav-pills mb-3  d-flex justify-content-center   login-register-tab-change " id="pills-tab"
                 role="tablist">
@@ -184,19 +206,29 @@
                         <div class=" laber-inputs-infor ">
 
                             <div class=" laber-input-infor  mb-3 ">
-                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <label for="exampleInputEmail1" class="form-label">Email
+                                    <span class="text-danger">*</span>
+                                </label>
+
                                 <input type="email" class="" id="exampleInputEmail1"
                                     placeholder="Địa chỉ email đã đăng kí">
+                                <small class="error-mess d-none ">Vui lòng nhập đúng Email</small>
 
                             </div>
 
                             <div class=" laber-input-infor  mb-3 ">
-                                <label for="password" class="form-label">Mật khẩu</label>
+                                <label for="password" class="form-label">Mật khẩu
+                                    <span class="text-danger">*</span>
+                                </label>
+
                                 <input type="password" class="" id="password" placeholder="">
+                                <small class="error-mess">Vui lòng nhập mật khẩu</small>
+
                             </div>
                         </div>
 
                         <div type="button" class=" login-btn  register-button mt-2">Đăng nhập</div>
+
 
                     </form>
 
@@ -211,34 +243,51 @@
 
                         <div class=" laber-inputs-infor ">
                             <div class=" laber-input-infor  mb-3 ">
-                                <label for="full-name">Họ và tên</label>
+                                <label for="full-name">Họ và tên
+                                    <span class="text-danger">*</span>
+                                </label>
+
                                 <input type="text" class="" id="full-name">
+                                <small class="error-mess d-none ">Vui lòng nhập đúng họ và tên</small>
                             </div>
 
                             <div class=" laber-input-infor  mb-3 ">
-                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <label for="exampleInputEmail1" class="form-label">Email
+                                    <span class="text-danger">*</span>
+                                </label>
+
                                 <input type="email" class="" id="exampleInputEmail1"
                                     placeholder="Địa chỉ email dùng đăng kí mới">
-
+                                <small class="error-mess d-none ">Vui lòng nhập đúng Email</small>
                             </div>
 
                             <div class=" laber-input-infor  mb-3 ">
-                                <label for="password" class="form-label">Mật khẩu</label>
+                                <label for="password" class="form-label">Mật khẩu
+                                    <span class="text-danger">*</span>
+                                </label>
+
                                 <input type="password" class="" id="password" placeholder="Tạo mật khẩu mới">
+                                <small class="error-mess d-none ">Vui lòng nhập đúng Email</small>
                             </div>
 
                             <div class=" laber-input-infor  mb-3 ">
-                                <label for="date-of-birth">Ngày tháng năm sinh</label>
+                                <label for="date-of-birth">Ngày tháng năm sinh
+                                    <span class="text-danger">*</span>
+                                </label>
+
                                 <input type="date" class="" id="date-of-birth">
+                                <small class="error-mess d-none ">Vui lòng nhập vào ngày sinh nhật</small>
                             </div>
 
                         </div>
 
                         <div class=" mb-3  form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
                             <label class="form-check-label" for="exampleCheck1">
-                                Đồng ý với điều khoản dịch vụ của chúng tôi
+                                Quý khách đồng ý với điều khoản dịch vụ của chúng tôi
                             </label>
+
                         </div>
 
                         <div type="button" class="  register-btn  register-button ">Đăng ký</div>
@@ -422,6 +471,10 @@
 
                             Đánh giá thiết kế loa sub Loa Sub PCS-318NB.<br /><br />
 
+                            <div class=" product-description-img ">
+                                <img src="../img/4-acoustic/Subwoofer-PCS-318NB.png" alt="description-img">
+                            </div>
+
                             Thiết kế đẹp mắt với kiểu dáng đa năng hình chữ nhật có thể để đứng hoặc nằm ngang từ vào
                             không gian
                             công trình. Thùng loa như những sản phẩm cao cấp đến từ hãng loa Đức là từ gỗ ép bạch dương
@@ -543,7 +596,37 @@
 
                     <!-- 3 ẢNH SẢN PHẨM -->
                     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                        Thêm các bức ảnh khác về sản phẩm
+                        <div class=" img-gallery ">
+                            <!-- 1 -->
+                            <div class=" product-gallery-img ">
+                                <img src="../img/4-acoustic/PCS-318NB-01.png" alt="img-product-detail">
+                            </div>
+                            <!-- 2 -->
+                            <div class=" product-gallery-img ">
+                                <img src="../img/4-acoustic/PCS-318NB-02.png" alt="img-product-detail">
+                            </div>
+                            <!-- 3 -->
+                            <div class=" product-gallery-img ">
+                                <img src="../img/4-acoustic/PCS-318NB-03.png" alt="img-product-detail">
+                            </div>
+                            <!-- 4 -->
+                            <div class=" product-gallery-img ">
+                                <img src="../img/4-acoustic/PCS-318NB-04.png" alt="img-product-detail">
+                            </div>  
+                            <!-- 5 -->
+                            <div class=" product-gallery-img ">
+                                    <img src="../img/4-acoustic/PCS-318NB-05.png" alt="img-product-detail">
+                            </div>
+                            <!-- 6 -->
+                            <div class=" product-gallery-img ">
+                                <img src="../img/4-acoustic/PCS-318NB-06.png" alt="img-product-detail">
+                            </div>
+                            <!-- 7 -->
+                            <div class=" product-gallery-img ">
+                                <img src="../img/4-acoustic/PCS-318NB-07.png" alt="img-product-detail">
+                            </div>
+
+                        </div>
                     </div> <!-- 3 ẢNH SẢN PHẨM -->
 
 

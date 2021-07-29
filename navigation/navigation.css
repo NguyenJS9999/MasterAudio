@@ -8,12 +8,12 @@
 
 /* Strat Nav Mobile*/
 .navigation-mobile {
-  border: 0.1px dotted red;
+  /* border: 0.1px dotted red; */
   /* Vì cố định FIXED nên độ cao sẽ che các khối dưới */
   padding: 18px 80px;
   /* Cố định thanh Menu */
   position: fixed;
-  top: -1px;
+  top: 0px;
   right: 0px;
   z-index: 1000;
   width: 100%;
@@ -160,11 +160,11 @@
   border-radius: 25px;
   color: white;
   font-size: 8px;
-  padding: 0.2px 3.7px 0.5px 3.7px;
+  padding: 0.8px 3.7px 1px 3.7px;
 
   position: absolute;
   right: -8px;
-  top: -2px;
+  top: 0px;
 }
 .cart-number-items:hover {
   /* border: 0.1px solid rgba(228,35,19, 1); */
@@ -172,12 +172,15 @@
 }
 /* like */
 .liked-product-wishlist {
+  border: rgba(228, 35, 19, 1);
   /* color: #ff9dd8; */
   border-radius: 25px;
   /* padding: 2px 9px; */
   color: #000000;
   font-size: 1.2rem;
   cursor: pointer;
+
+  position: relative;
   line-height: 1.6 !important;
   transition: all 0.3s ease;
 }
@@ -186,8 +189,8 @@
   /* background: rgba(228,35,19, 0.1); */
 }
 /* Điểm tự position cho like */
-.cart-login i {
-  position: relative;
+.liked-product-wishlist {
+
 }
 .liked-number-item {
   background: rgba(228, 35, 19, 0.5);
@@ -295,7 +298,8 @@
   grid-gap: 4px;
 }
 .laber-input-infor input {
-  border: 0.1px solid rgba(228, 35, 19, 0.5);
+  /* border: 0.1px solid rgba(228, 35, 19, 0.5); */
+  border: 0.1px solid rgba(208,208,208, 1);
 }
 
 /* Nút đăng kí */

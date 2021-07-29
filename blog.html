@@ -94,8 +94,9 @@
 
 
                     <a href="./wishlist.html">
-                        <i class=" liked-product-wishlist  far fa-heart"></i>
-                        <span class="liked-number-item">3</span>
+                        <i class=" liked-product-wishlist  far fa-heart">
+                            <span class="liked-number-item">3</span>
+                        </i>
                     </a>
 
                     <!-- User -->
@@ -207,19 +208,29 @@
                         <div class=" laber-inputs-infor ">
 
                             <div class=" laber-input-infor  mb-3 ">
-                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <label for="exampleInputEmail1" class="form-label">Email
+                                    <span class="text-danger">*</span>
+                                </label>
+
                                 <input type="email" class="" id="exampleInputEmail1"
                                     placeholder="Địa chỉ email đã đăng kí">
+                                <small class="error-mess d-none ">Vui lòng nhập đúng Email</small>
 
                             </div>
 
                             <div class=" laber-input-infor  mb-3 ">
-                                <label for="password" class="form-label">Mật khẩu</label>
+                                <label for="password" class="form-label">Mật khẩu
+                                    <span class="text-danger">*</span>
+                                </label>
+
                                 <input type="password" class="" id="password" placeholder="">
+                                <small class="error-mess">Vui lòng nhập mật khẩu</small>
+
                             </div>
                         </div>
 
                         <div type="button" class=" login-btn  register-button mt-2">Đăng nhập</div>
+
 
                     </form>
 
@@ -234,34 +245,51 @@
 
                         <div class=" laber-inputs-infor ">
                             <div class=" laber-input-infor  mb-3 ">
-                                <label for="full-name">Họ và tên</label>
+                                <label for="full-name">Họ và tên
+                                    <span class="text-danger">*</span>
+                                </label>
+
                                 <input type="text" class="" id="full-name">
+                                <small class="error-mess d-none ">Vui lòng nhập đúng họ và tên</small>
                             </div>
 
                             <div class=" laber-input-infor  mb-3 ">
-                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <label for="exampleInputEmail1" class="form-label">Email
+                                    <span class="text-danger">*</span>
+                                </label>
+
                                 <input type="email" class="" id="exampleInputEmail1"
                                     placeholder="Địa chỉ email dùng đăng kí mới">
-
+                                    <small class="error-mess d-none ">Vui lòng nhập đúng Email</small>
                             </div>
 
                             <div class=" laber-input-infor  mb-3 ">
-                                <label for="password" class="form-label">Mật khẩu</label>
+                                <label for="password" class="form-label">Mật khẩu
+                                    <span class="text-danger">*</span>
+                                </label>
+
                                 <input type="password" class="" id="password" placeholder="Tạo mật khẩu mới">
+                                <small class="error-mess d-none ">Vui lòng nhập đúng Email</small>
                             </div>
 
                             <div class=" laber-input-infor  mb-3 ">
-                                <label for="date-of-birth">Ngày tháng năm sinh</label>
+                                <label for="date-of-birth">Ngày tháng năm sinh
+                                    <span class="text-danger">*</span>
+                                </label>
+
                                 <input type="date" class="" id="date-of-birth">
+                                <small class="error-mess d-none ">Vui lòng nhập vào ngày sinh nhật</small>
                             </div>
 
                         </div>
 
                         <div class=" mb-3  form-check">
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
                             <label class="form-check-label" for="exampleCheck1">
-                                Đồng ý với điều khoản dịch vụ của chúng tôi
+                                Quý khách đồng ý với điều khoản dịch vụ của chúng tôi
                             </label>
+
                         </div>
 
                         <div type="button" class="  register-btn  register-button ">Đăng ký</div>
@@ -298,7 +326,7 @@
 
 
     <!-- Blog -->
-    <div class=" blog-container   container-fluid ">
+    <div class=" blog-container   container ">
 
         <div class=" blogs-title ">
             <b><i class="fas fa-newspaper"></i>  Tin tức âm thanh</b>
