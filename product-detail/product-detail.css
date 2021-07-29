@@ -309,11 +309,11 @@ input::placeholder {
   line-height: 24px;
 }
 .product-description-img {
-  width: 60%;
+  width: 40%;
   float: left;
 }
 .product-description-img img{
-  width: 60%;
+  width: 100%;
 }
 /* Cấu hình */
 .product-configuration {
