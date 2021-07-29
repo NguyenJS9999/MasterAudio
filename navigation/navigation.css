@@ -12,7 +12,7 @@
   /* Vì cố định FIXED nên độ cao sẽ che các khối dưới */
   padding: 18px 80px;
   /* Cố định thanh Menu */
-  position: fixed;
+  /* position: fixed; */
   top: 0px;
   right: 0px;
   z-index: 1000;
@@ -76,7 +76,7 @@
 .navigation-desktop {
   /* border: 0.1px dotted red; */
   /* Cố định thanh Menu */
-  position: fixed;
+  /* position: fixed; */
   top: -1px;
   right: 0px;
   z-index: 1000;
@@ -230,7 +230,7 @@
   width: 100%;
   height: 1000px;
   background: rgba(204, 201, 201, 0.5);
-  position: fixed;
+  /* position: fixed; */
   top: -20px;
   z-index: 1002;
 

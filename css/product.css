@@ -301,8 +301,8 @@ header {
 }
 
 .product-details-button-cart {
-  border: 1px solid #ecaf44;
-  background: #ecaf44;
+  border: 1px solid rgba(236,175,68, 1);
+  background: rgba(236,175,68, 1);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -311,8 +311,8 @@ header {
   transition: all 0.2s;
 }
 .product-details-button-cart:hover {
-  background: white;
-  color: #ecaf44;
+  background: rgba(236,175,68, 0.85);
+  color: white;
 }
 
 .product-details-button-buynow {

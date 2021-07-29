@@ -1,10 +1,12 @@
-console.log("Trang product-detail - Chi tiết sản phẩm")
+// console.log("Trang product-detail - Chi tiết sản phẩm")
 
 // $(document).ready(function () {
 
-//     $('.slide-same-products').slick({
+//     $('.product-images-othe-slide').slick({
+//         infinite: true,
+//         autoplay: true,
 
-//         slidesToShow: 3,
+//         slidesToShow: 6,
 //         slidesToScroll: 1
 //     });
 
@@ -15,12 +17,12 @@ $(document).ready(function () {
     $(".slide-same-products").slick({
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
         centerMode: true,
         dots: true,
 
         // arrows: true,
-        pauseOnFocus: true,
+        pauseOnFocus: false,
         pauseOnHover: true,
 
         slidesToScroll: 1,

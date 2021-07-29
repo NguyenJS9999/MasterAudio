@@ -114,9 +114,10 @@ input::placeholder {
 .best-seller-new-products-container {
   border: 0.1px solid #4013e4;
   background: #f6f6f6;
-  margin-top: 48px;
+  margin-top: -1px;
   text-align: center;
-  padding: 12px 80px;
+  /* padding: 12px 80px; */
+  padding: 40px 0px;
   /* background: #f8f8f8; */
 }
 /* Các slide sản phẩm và nút */
@@ -153,7 +154,7 @@ input::placeholder {
 
 /* Nút xem toàn bộ sản phẩm */
 .button-viewall-product {
-  background: #e42313;
+  background: rgba(228,35,19, 1);
   border-radius: 2px;
   color: white;
   border: 1px solid #e42313;
@@ -164,8 +165,8 @@ input::placeholder {
   transition: all 0.2s;
 }
 .button-viewall-product:hover {
-  background: white;
-  color: #e42313;
+  background: rgba(228,35,19, 0.85);
+  color: #ffffff;
 }
 /* End best seller & new-products */
 
@@ -213,15 +214,17 @@ input::placeholder {
 }
 
 .product {
-  border: 0.1px solid #e42313;
+  border: 0.1px solid rgba(145,146,148, 0.5);
   /* border: 1px solid var(--color-neutral-border); */
   background: #f6f6f6;
   margin: 0px 20px;
   padding: 12px 16px;
-  transition: all 0.4s ease;
+  transition: all 0.3s ease;
 }
 .product:hover {
-  box-shadow: 0px 0px 4px 0px #e42313;
+  box-shadow: 0px 0px 2px 0px rgba(228,35,19, 0.5);
+  border: 0.1px solid  rgba(228,35,19, 0.5);
+
 }
 /* Ghi đề Css của Slick */
 .slick-initialized .slick-slide {
@@ -465,7 +468,7 @@ input::placeholder {
 
   /* Khối bán chạy và sp mới giảm lề ơ màn nhỏ */
   .best-seller-new-products-container {
-    padding: 12px 20px;
+    /* padding: 12px 20px; */
   }
   /* Khối bán chạy giảm kh cách các p tử trong */
   .best-seller-products {
@@ -544,7 +547,7 @@ input::placeholder {
   }
   /* Khối bán chạy và sp mới giảm lề ơ màn nhỏ */
   .best-seller-new-products-container {
-    padding: 12px 30px;
+    /* padding: 12px 30px; */
   }
 
   /* Các thương hiệu nổi tiếng Giảm khoảng cách lề ngoài */
@@ -604,7 +607,7 @@ input::placeholder {
   }
   /* Khối bán chạy và sp mới giảm lề ơ màn nhỏ */
   .best-seller-new-products-container {
-    padding: 12px 40px;
+    /* padding: 12px 40px; */
   }
 
   /* Các thương hiệu nổi tiếng Giảm khoảng cách lề ngoài */
@@ -666,7 +669,7 @@ input::placeholder {
   }
   /* Khối bán chạy và sp mới giảm lề ơ màn nhỏ */
   .best-seller-new-products-container {
-    padding: 12px 60px;
+    /* padding: 12px 60px; */
   }
 
   /* Các thương hiệu nổi tiếng Giữ khoảng cách lề ngoài ban đầu màn >992 */
@@ -704,7 +707,7 @@ input::placeholder {
   }
   /* Khối bán chạy và sp mới giảm lề ơ màn nhỏ */
   .best-seller-new-products-container {
-    padding: 12px 80px;
+    /* padding: 12px 80px; */
   }
   /* Tiêu đề Các thương hiệu nổi tiếng giảm cỡ chữ */
   .famous-brand h1,
