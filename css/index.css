@@ -110,9 +110,10 @@ input::placeholder {
 /* Start best seller & new-products */
 .best-seller-new-products-title-background {
   background: #f6f6f6;
+  /* padding: 0px 150px 0px 150px; */
 }
 .best-seller-new-products-container {
-  border: 0.1px solid #4013e4;
+  /* border: 0.1px solid #4013e4; */
   background: #f6f6f6;
   margin-top: -1px;
   text-align: center;
@@ -165,7 +166,7 @@ input::placeholder {
   transition: all 0.2s;
 }
 .button-viewall-product:hover {
-  background: rgba(228,35,19, 0.85);
+  background: rgba(228,35,19, 0.80);
   color: #ffffff;
 }
 /* End best seller & new-products */
@@ -222,7 +223,7 @@ input::placeholder {
   transition: all 0.3s ease;
 }
 .product:hover {
-  box-shadow: 0px 0px 2px 0px rgba(228,35,19, 0.5);
+  box-shadow: 0px 0px 1px 0px rgba(228,35,19, 0.5);
   border: 0.1px solid  rgba(228,35,19, 0.5);
 
 }
@@ -237,6 +238,10 @@ input::placeholder {
 }
 .product-img img {
   width: 100%;
+  transition: all 0.3s ease;
+}
+.product-img img:hover {
+  opacity: 0.95;
 }
 /* Thông tin sản phẩm dưới ảnh */
 .product-details {
@@ -277,7 +282,7 @@ input::placeholder {
 
 /* -- Start Các thương hiệu nổi bật -- */
 .famous-brand-container {
-  padding: 0px 80px;
+  /* padding: 0px 80px; */
   text-align: center;
 }
 .famous-brand {
@@ -301,16 +306,20 @@ input::placeholder {
   grid-gap: 40px;
 }
 .famous-product {
-  border: 1px solid #e42313;
+  border: 1px solid rgba(208,208,208, 0.5);
   background: white;
   padding: 40px;
-  transition: all 0.2s;
+  transition: all 0.3s ease;
 }
 .famous-product:hover {
-  box-shadow: 0px 0px 4px 0px red;
+ /* border: 1px solid rgba(228,35,19, 0.5); */
 }
 .famous-product img {
   width: 100%;
+  transition: all 0.5s ease;
+}
+.famous-product img:hover {
+transform: scale(1.04);
 }
 
 /* End Start Các thương hiệu nổi bật */
@@ -321,6 +330,7 @@ input::placeholder {
   padding-top: 0px;
   color: rgb(0, 0, 0);
   padding: 0px;
+  margin-top: 40px;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -552,7 +562,7 @@ input::placeholder {
 
   /* Các thương hiệu nổi tiếng Giảm khoảng cách lề ngoài */
   .famous-brand-container {
-    padding: 0px 40px;
+    /* padding: 0px 40px; */
   }
   /* Tiêu đề Các thương hiệu nổi tiếng giảm cỡ chữ */
   .famous-brand h1,
@@ -563,7 +573,7 @@ input::placeholder {
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 40px;
+    grid-gap: 16px;
   }
   /* Các thương hiệu nổi tiếng khung logo giảm padding */
   .famous-product {
@@ -612,7 +622,7 @@ input::placeholder {
 
   /* Các thương hiệu nổi tiếng Giảm khoảng cách lề ngoài */
   .famous-brand-container {
-    padding: 0px 60px;
+    /* padding: 0px 60px; */
   }
   /* Tiêu đề Các thương hiệu nổi tiếng giảm cỡ chữ */
   .famous-brand h1,
@@ -674,7 +684,7 @@ input::placeholder {
 
   /* Các thương hiệu nổi tiếng Giữ khoảng cách lề ngoài ban đầu màn >992 */
   .famous-brand-container {
-    padding: 0px 80px;
+    /* padding: 0px 80px; */
   }
   /* Tiêu đề Các thương hiệu nổi tiếng giảm cỡ chữ */
   .famous-brand h1,
@@ -685,7 +695,7 @@ input::placeholder {
   /* Các thương hiệu nổi tiếng famous-product co chia 2 số cột lưới*/
   .famous-brand-list-product {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 40px;
+    grid-gap: 20px;
   }
 
   /* Khối khẳng định thương hiệu - dịch vụ chia số cột giảm */
