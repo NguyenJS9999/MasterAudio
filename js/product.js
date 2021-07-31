@@ -1,4 +1,7 @@
-console.log(' Trang sản phẩm - product ')
+// console.log(' Trang sản phẩm - product ')
+
+// Function sẵn sàng - tự động chạy
+$(function () {
 
 // Product list
 $(".list-brand-carousel").slick({
@@ -27,7 +30,7 @@ $(".list-brand-carousel").slick({
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 8,
+          slidesToShow: 6,
           arrows: false,
           dots: true,
         },
@@ -35,17 +38,32 @@ $(".list-brand-carousel").slick({
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 8,
+          slidesToShow: 4,
         },
       },
 
       {
         breakpoint: 576,
         settings: {
-          slidesToShow: 8,
+          slidesToShow: 2,
           arrows: false,
           dots: true,
         },
       },
+
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 2,
+          arrows: false,
+          dots: true,
+        },
+      },
+
+
     ],
   });
+
+
+
+}); // Function sẵn sàng
