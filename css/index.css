@@ -27,20 +27,20 @@ a {
 }
 /* style cho ô INPUT dùng chung  */
 input {
-  border: 1px solid rgba(208,208,208, 1);
+  border: 1px solid rgba(208, 208, 208, 1);
   border-radius: 2px;
   padding: 8px 6px;
   transition: all 0.2s;
 }
 input:hover {
-  box-shadow: 0px 0px 4px 0px rgba(208,208,208, 1);
+  box-shadow: 0px 0px 4px 0px rgba(208, 208, 208, 1);
 }
 input:focus {
   outline: none !important;
-  box-shadow: 0px 0px 2px 0px rgba(208,208,208, 1);
+  box-shadow: 0px 0px 2px 0px rgba(208, 208, 208, 1);
 }
 input::placeholder {
-  color: rgba(208,208,208, 0.8);
+  color: rgba(208, 208, 208, 0.8);
   font-size: 14px;
 }
 
@@ -155,7 +155,7 @@ input::placeholder {
 
 /* Nút xem toàn bộ sản phẩm */
 .button-viewall-product {
-  background: rgba(228,35,19, 1);
+  background: rgba(228, 35, 19, 1);
   border-radius: 2px;
   color: white;
   border: 1px solid #e42313;
@@ -166,7 +166,7 @@ input::placeholder {
   transition: all 0.2s;
 }
 .button-viewall-product:hover {
-  background: rgba(228,35,19, 0.80);
+  background: rgba(228, 35, 19, 0.8);
   color: #ffffff;
 }
 /* End best seller & new-products */
@@ -219,7 +219,7 @@ input::placeholder {
 }
 /* ----------------------------------------------product------------------------------------------ */
 .product {
-  border: 0.1px solid rgba(145,146,148, 0.5);
+  border: 0.1px solid rgba(145, 146, 148, 0.5);
   /* border: 1px solid var(--color-neutral-border); */
   background: #f6f6f6;
 
@@ -233,14 +233,14 @@ input::placeholder {
   grid-gap: 12px;
 }
 .product:hover {
-  box-shadow: 0px 0px 1px 0px rgba(228,35,19, 0.5);
-  border: 0.1px solid  rgba(228,35,19, 0.5);
+  box-shadow: 0px 0px 1px 0px rgba(228, 35, 19, 0.5);
+  border: 0.1px solid rgba(228, 35, 19, 0.5);
 }
 /* Khung bọc ảnh ở thẻ a */
-.product-img-link{
+.product-img-link {
   /* border: 0.1px solid  rgba(19, 43, 228, 0.5); */
   width: 100%;
-  height: 250px!important;
+  height: 250px !important;
 
   display: flex;
   flex-direction: column;
@@ -272,13 +272,11 @@ input::placeholder {
   justify-content: center;
   align-items: center;
   grid-gap: 2px;
-
 }
 .product-infor-brand {
   font-weight: 700;
   font-size: 18px;
-  text-align: start!important;
-
+  text-align: start !important;
 }
 .product-infor-name-product {
   font-size: 16px;
@@ -296,7 +294,7 @@ input::placeholder {
   color: #ff9dd8;
   font-size: 1.2rem;
   cursor: pointer;
-  transition: all 0.2s  ease;
+  transition: all 0.2s ease;
 }
 .like-product:hover {
   font-weight: 600;
@@ -325,8 +323,8 @@ input::placeholder {
 }
 
 .product-details-button-cart {
-  border: 1px solid rgba(236,175,68, 1);
-  background: rgba(236,175,68, 1);
+  border: 1px solid rgba(236, 175, 68, 1);
+  background: rgba(236, 175, 68, 1);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -335,7 +333,7 @@ input::placeholder {
   transition: all 0.2s;
 }
 .product-details-button-cart:hover {
-  background: rgba(236,175,68, 0.85);
+  background: rgba(236, 175, 68, 0.85);
   color: white;
 }
 
@@ -358,7 +356,6 @@ input::placeholder {
   background: white;
   color: #e42313;
 }
-
 
 /* Ghi đề Css của Slick */
 .slick-initialized .slick-slide {
@@ -403,22 +400,21 @@ input::placeholder {
   grid-gap: 40px; */
 }
 .famous-product {
-  border: 1px solid rgba(208,208,208, 0.5);
+  border: 1px solid rgba(208, 208, 208, 0.8);
   background: white;
   width: 100%;
   /* height: 250px; */
   height: auto;
 
-
   margin: 0px 8px;
-  padding: 4px;
+  padding: 8px;
 
   transition: all 0.3s ease;
 }
 /* Div bọc ngoài khối được nhúng slide */
 .famous-product:hover {
- /* border: 1px solid rgba(228,35,19, 0.5); */
- display: flex;
+  /* border: 1px solid rgba(228,35,19, 0.8); */
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
@@ -429,10 +425,10 @@ input::placeholder {
   height: 100%;
 
   /* border: 1px solid brown; */
-  transition: all 0.5s ease;
+  transition: all 0.4s ease;
 }
 .famous-product img:hover {
-transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 /* End Start Các thương hiệu nổi bật */
@@ -773,13 +769,13 @@ transform: scale(1.04);
   }
   /* Tiêu đề banner giảm độ rộng */
   .banner-content {
-    width: 70%;
+    width: 50%;
     top: 32%;
     left: 80px;
     grid-gap: 25px;
   }
   .banner-content h1 {
-    font-size: 52px;
+    font-size: 44px;
   }
   .banner-description {
     font-size: 20px;
