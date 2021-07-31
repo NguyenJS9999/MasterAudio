@@ -109,7 +109,7 @@ header {
   /* height: 100%; */
 
   /* width: 182px; */
-  /* height: 84px; */
+  height: 60px;
   
   margin: 0px 4px;
   padding: 4px;
@@ -130,9 +130,9 @@ header {
 }
 .brand-logo span {
   /* border: 1px solid rgba(223, 17, 17, 0.5); */
-  width: 100% !important;
+  /* width: 126px !important; */
   /* height: 100% !important; */
-  height: 55px!important;
+  /* height: 55px!important; */
   padding: 12px 0px 12px 0px;
 
   font-weight: 600;
