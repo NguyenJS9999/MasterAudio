@@ -194,6 +194,10 @@ input::placeholder {
 .slide-same-products {
   border: 1px solid rgba(228, 35, 19, 0);
   padding: 8px 0px;
+
+  /* Chỉ để xem tạm, khi cho slide chạy cần bỏ đi */
+  /* display: flex; */
+  /* flex-direction: row; */
 }
 .slide-same-products:hover {
   /* border: 1px solid rgba(228,35,19, 0.2); */
@@ -220,24 +224,37 @@ input::placeholder {
   background: #f6f6f6;
   margin: 0px 20px;
   padding: 12px 16px;
-  transition: all 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 20px;
 }
 .product:hover {
   box-shadow: 0px 0px 1px 0px rgba(228,35,19, 0.5);
   border: 0.1px solid  rgba(228,35,19, 0.5);
+}
+/* Khung bọc ảnh ở thẻ a */
+.product-img-link{
+  /* border: 0.1px solid  rgba(19, 43, 228, 0.5); */
+  width: 100%;
+  height: 250px!important;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-/* Ghi đề Css của Slick */
-.slick-initialized .slick-slide {
-  background: white;
-}
-/* Ảnh sản phẩm */
+/* Khung ảnh sp ở thẻ div bọc thẻ img */
 .product-img {
   /* border: 0.1px solid #1344e4; */
+  width: 100%;
   padding: 4px;
 }
 .product-img img {
   width: 100%;
+  height: 100%;
   transition: all 0.3s ease;
 }
 .product-img img:hover {
@@ -253,11 +270,14 @@ input::placeholder {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  grid-gap: 8px;
+  grid-gap: 2px;
+
 }
 .product-infor-brand {
   font-weight: 700;
   font-size: 18px;
+  text-align: start!important;
+
 }
 .product-infor-name-product {
   font-size: 16px;
@@ -267,7 +287,83 @@ input::placeholder {
   color: #e42313;
   font-size: 22px;
   font-weight: 600;
+
+  margin-top: 8px;
 }
+/* Thích sản phẩm - Thả tim*/
+.like-product {
+  color: #ff9dd8;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s  ease;
+}
+.like-product:hover {
+  font-weight: 600;
+}
+
+/* Nút thêm giỏ hàng và mua ngay */
+.product-details-button {
+  /* border: 1px solid rgb(128, 0, 255); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 24px;
+  /* padding: 12px 28px; */
+  grid-gap: 12px;
+}
+.product-details-button span {
+  /* border: 1px solid rgb(255, 89, 0); */
+  border-radius: 2px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 8px 0px;
+  font-size: 14px;
+}
+
+.product-details-button-cart {
+  border: 1px solid rgba(236,175,68, 1);
+  background: rgba(236,175,68, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 8px;
+  transition: all 0.2s;
+}
+.product-details-button-cart:hover {
+  background: rgba(236,175,68, 0.85);
+  color: white;
+}
+
+.product-details-button-buynow {
+  width: 100%;
+  border: 1px solid #e42313;
+  border-radius: 2px;
+  background: #e42313;
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  padding: 7px 0px;
+  transition: all 0.2s;
+}
+.product-details-button-buynow:hover {
+  background: white;
+  color: #e42313;
+}
+
+
+/* Ghi đề Css của Slick */
+.slick-initialized .slick-slide {
+  background: white;
+}
+
 /* Ghi đè css các chấm chuyển slide */
 .slick-dots {
   /* border: 0.1px solid #6a13e4; */

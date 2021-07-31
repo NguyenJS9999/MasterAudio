@@ -1,4 +1,4 @@
-console.log(" Trang cart - giỏ hàng ")
+// console.log(" Trang cart - giỏ hàng ")
 
 
 $(".delete-one").on("click", function deleteOneItem() {

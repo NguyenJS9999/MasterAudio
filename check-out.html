@@ -258,7 +258,7 @@
 
                                 <input type="email" class="" id="exampleInputEmail1"
                                     placeholder="Địa chỉ email dùng đăng kí mới">
-                                    <small class="error-mess d-none ">Vui lòng nhập đúng Email</small>
+                                <small class="error-mess d-none ">Vui lòng nhập đúng Email</small>
                             </div>
 
                             <div class=" laber-input-infor  mb-3 ">
@@ -368,7 +368,8 @@
                             <b>Ghi chú đơn hàng (Không bắt buộc)</b>
                         </label>
 
-                        <input type="text" id="note" placeholder="Ghi chú của quý khách">
+                        <input class="billing-information-note-input" type="text" id="note"
+                            placeholder="Ghi chú của quý khách">
 
                     </span>
 
@@ -431,6 +432,26 @@
 
                             <div class=" your-order-totalcount ">67.500.000đ</div>
                         </span>
+                        <!-- 3 -->
+                        <span>
+                            <div class=" your-order-name-amount ">
+                                <small>Loa Subwoofer PCS 118BQ</small>
+                                <div class=" your-order-amount ">x3</div>
+
+                            </div>
+
+                            <div class=" your-order-totalcount ">67.500.000đ</div>
+                        </span>
+                        <!-- 3 -->
+                        <span>
+                            <div class=" your-order-name-amount ">
+                                <small>Loa Subwoofer PCS 118BQ</small>
+                                <div class=" your-order-amount ">x3</div>
+
+                            </div>
+
+                            <div class=" your-order-totalcount ">67.500.000đ</div>
+                        </span>
 
                     </div>
 
@@ -477,16 +498,29 @@
 
                 </div> <!-- your-order-calculates -->
 
-               
+
 
                 <!-- Nút Tiến hành đặt hàng -->
-                <a class="proceed-to-order-button" href="#">
+                <div class="proceed-to-order-button" >
                     <i class="fas fa-hand-holding-usd"></i>  TIẾN HÀNH ĐẶT HÀNG
-                </a>
+                </div>
 
             </div> <!-- your-order-title-calculates -->
 
+            
+
         </section> <!-- your-order-container -->
+
+        <div class="modal-notice-successful-order ">
+            <div class="notice-successful-order-modal">
+
+                <p>Chúc mừng quý khách đã đặt hàng thành công  <i class="fas fa-heart"></i> <br /></p>
+                <!-- Cảm ơn quý khách rất nhiều
+                Hẹn gặp lại quý khách! -->
+                </p>
+
+            </div>
+        </div>
 
     </main>
 

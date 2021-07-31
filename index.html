@@ -16,8 +16,8 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- Bootstrap 5  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
 
     <!-- Menu trượt slick crocell -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
@@ -52,7 +52,7 @@
             <!-- Start navigation mobile -->
             <div class="navigation-mobile   md-d.none">
 
-                <span class="icon-menu-hiden-mobile" onclick="hiddenMenu()">
+                <span class="icon-menu-hiden-mobile  icon-menu-hiden-mobile  " onclick="hiddenMenu()"  >
                     <i class="fas fa-bars"></i>
                 </span>
 
@@ -71,7 +71,7 @@
                         <div>BLOG</div>
                     </a>
 
-                    <a class="menu-infor-mobile" href="#">
+                    <a class="menu-infor-mobile" href="./contact.html">
                         <div>LIÊN HỆ</div>
                     </a>
 
@@ -129,7 +129,7 @@
                             <div>BLOG</div>
                         </a>
                         <!-- Liên hệ sẽ cho chạy xuống dưới footer -->
-                        <a class="menu-page-desktop" href="#">
+                        <a class="menu-page-desktop"  href="./contact.html">
                             <div>LIÊN HỆ</div>
                         </a>
 
@@ -344,7 +344,7 @@
 
     <main>
 
-        
+
 
         <!-- Các thương hiệu tiếng -->
         <section>
@@ -367,9 +367,9 @@
                         <div class=" famous-product "> <img src="./img/Brands/Yamaha.png" alt="brand"> </div>
                         <div class=" famous-product "> <img src="./img/Brands/Baiervires.png" alt="brand"> </div>
                         <div class=" famous-product "> <img src="./img/Brands/Hours.png" alt="brand"> </div>
-                        
+
                         <div class=" famous-product "> <img src="./img/Brands/Pioneer dj.png" alt="brand"> </div>
-                        
+
 
 
 
@@ -398,19 +398,31 @@
                             <!-- 1 -->
                             <div class="product">
 
-                                <a href="./product-detail/product-detail.html">
+                                <a class="product-img-link" href="./product-detail/product-detail.html">
                                     <div class="product-img">
-                                        <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                                        <img src="./img/nexo/nexo-ps8.png" alt="product">
                                     </div>
                                 </a>
 
                                 <div class="product-details">
                                     <div class="product-infor">
-                                        <div class="product-infor-brand">4 Acoustic</div>
-                                        <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
-                                        <div class="product-infor-price">65,200,000₫</div>
+                                        <div class="product-infor-brand">Nexo</div>
+                                        <div class="product-infor-name-product">Fullrange Nexo PS8</div>
+                                        <div class="product-infor-price">43,501,700₫  <i class="far fa-heart  like-product "></i>
+                                        </div>
                                     </div>
 
+                                </div>
+
+
+                                  <div class="product-details-button">
+                                    <span class=" product-details-button-cart " type="button">
+                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                                    </span>
+        
+                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                        <i class="fas fa-coins"></i> Mua ngay
+                                    </a>
                                 </div>
 
 
@@ -419,19 +431,31 @@
 
                             <div class="product">
 
-                                <a href="./product-detail/product-detail.html">
+                                <a class="product-img-link" href="./product-detail/product-detail.html">
                                     <div class="product-img">
-                                        <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                                        <img src="./img/nexo/nexo-id-84.png" alt="product">
                                     </div>
                                 </a>
 
                                 <div class="product-details">
                                     <div class="product-infor">
-                                        <div class="product-infor-brand">4 Acoustic</div>
-                                        <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
-                                        <div class="product-infor-price">65,200,000₫</div>
+                                        <div class="product-infor-brand">Nexo</div>
+                                        <div class="product-infor-name-product">ID84 - NEW 2021</div>
+                                        <div class="product-infor-price">69,750,000₫  <i class="far fa-heart  like-product "></i>
+                                        </div>
                                     </div>
 
+                                </div>
+
+
+                                  <div class="product-details-button">
+                                    <span class=" product-details-button-cart " type="button">
+                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                                    </span>
+        
+                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                        <i class="fas fa-coins"></i> Mua ngay
+                                    </a>
                                 </div>
 
 
@@ -440,40 +464,64 @@
 
                             <div class="product">
 
-                                <a href="./product-detail/product-detail.html">
+                                <a class="product-img-link" href="./product-detail/product-detail.html">
                                     <div class="product-img">
-                                        <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                                        <img src="./img/amate/Amate-Nitid-N318-Active.png" alt="product">
                                     </div>
                                 </a>
 
                                 <div class="product-details">
                                     <div class="product-infor">
-                                        <div class="product-infor-brand">4 Acoustic</div>
-                                        <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
-                                        <div class="product-infor-price">65,200,000₫</div>
+                                        <div class="product-infor-brand">Amate </div>
+                                        <div class="product-infor-name-product">Nitid N318</div>
+                                        <div class="product-infor-price">199,700,000₫  <i class="far fa-heart  like-product "></i>
+                                        </div>
                                     </div>
 
                                 </div>
 
 
+                                  <div class="product-details-button">
+                                    <span class=" product-details-button-cart " type="button">
+                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                                    </span>
+        
+                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                        <i class="fas fa-coins"></i> Mua ngay
+                                    </a>
+                                </div>
+
+
                             </div>
-                            <!--4  -->
+                            <!-- 4 -->
 
                             <div class="product">
 
-                                <a href="./product-detail/product-detail.html">
+                                <a class="product-img-link" href="./product-detail/product-detail.html">
                                     <div class="product-img">
-                                        <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                                        <img src="./img/kuledy/Kuledy-B121.JPG" alt="product">
                                     </div>
                                 </a>
 
                                 <div class="product-details">
                                     <div class="product-infor">
-                                        <div class="product-infor-brand">4 Acoustic</div>
-                                        <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
-                                        <div class="product-infor-price">65,200,000₫</div>
+                                        <div class="product-infor-brand">Kuledy</div>
+                                        <div class="product-infor-name-product">Subwoofer B121</div>
+                                        <div class="product-infor-price">20,000,000₫  <i class="far fa-heart  like-product "></i>
+                                        </div>
                                     </div>
 
+                                </div>
+
+
+                                  <div class="product-details-button">
+                                    <span class=" product-details-button-cart " type="button">
+                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                                    </span>
+        
+                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                        <i class="fas fa-coins"></i> Mua ngay
+                                    </a>
                                 </div>
 
 
@@ -482,7 +530,7 @@
 
                             <div class="product">
 
-                                <a href="./product-detail/product-detail.html">
+                                <a class="product-img-link" href="./product-detail/product-detail.html">
                                     <div class="product-img">
                                         <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="bestsell-product-img">
                                     </div>
@@ -492,9 +540,21 @@
                                     <div class="product-infor">
                                         <div class="product-infor-brand">4 Acoustic</div>
                                         <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
-                                        <div class="product-infor-price">65,200,000₫</div>
+                                        <div class="product-infor-price">65,200,000₫  <i class="far fa-heart  like-product "></i>
+                                        </div>
                                     </div>
 
+                                </div>
+
+
+                                  <div class="product-details-button">
+                                    <span class=" product-details-button-cart " type="button">
+                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                                    </span>
+        
+                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                        <i class="fas fa-coins"></i> Mua ngay
+                                    </a>
                                 </div>
 
 
@@ -516,7 +576,7 @@
 
         </section> <!-- Sản phẩm bán chạy -->
 
-        <br/> <br/> <br/> 
+        <br /> <br /> <br />
         <!-- !!!!!!!!!!!!!!!!!!!!! Thay ảnh slide khác nhau với mỗi ảnh là một link đến trang chi tiết chung hoặc khác mẫu sản phẩm -->
         <!-- SẢN PHẨM MỚI RA -->
 
@@ -536,40 +596,64 @@
 
                             <div class="product">
 
-                                <a href="./product-detail/product-detail.html">
+                                <a class="product-img-link" href="./product-detail/product-detail.html">
                                     <div class="product-img">
-                                        <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                                        <img src="./img/amate/Amate-Nitid-N318-Active.png" alt="product">
                                     </div>
                                 </a>
 
                                 <div class="product-details">
                                     <div class="product-infor">
-                                        <div class="product-infor-brand">4 Acoustic</div>
-                                        <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
-                                        <div class="product-infor-price">65,200,000₫</div>
+                                        <div class="product-infor-brand">Amate </div>
+                                        <div class="product-infor-name-product">Nitid N318</div>
+                                        <div class="product-infor-price">199,700,000₫  <i class="far fa-heart  like-product "></i>
+                                        </div>
                                     </div>
 
                                 </div>
 
 
+                                  <div class="product-details-button">
+                                    <span class=" product-details-button-cart " type="button">
+                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                                    </span>
+        
+                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                        <i class="fas fa-coins"></i> Mua ngay
+                                    </a>
+                                </div>
+
+                              
                             </div>
                             <!-- 2 -->
 
                             <div class="product">
 
-                                <a href="./product-detail/product-detail.html">
+                                <a class="product-img-link" href="./product-detail/product-detail.html">
                                     <div class="product-img">
-                                        <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                                        <img src="./img/kuledy/Kuledy-B121.JPG" alt="product">
                                     </div>
                                 </a>
 
                                 <div class="product-details">
                                     <div class="product-infor">
-                                        <div class="product-infor-brand">4 Acoustic</div>
-                                        <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
-                                        <div class="product-infor-price">65,200,000₫</div>
+                                        <div class="product-infor-brand">Kuledy</div>
+                                        <div class="product-infor-name-product">Subwoofer B121</div>
+                                        <div class="product-infor-price">20,000,000₫  <i class="far fa-heart  like-product "></i>
+                                        </div>
                                     </div>
 
+                                </div>
+
+
+                                  <div class="product-details-button">
+                                    <span class=" product-details-button-cart " type="button">
+                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                                    </span>
+        
+                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                        <i class="fas fa-coins"></i> Mua ngay
+                                    </a>
                                 </div>
 
 
@@ -578,40 +662,64 @@
 
                             <div class="product">
 
-                                <a href="./product-detail/product-detail.html">
+                                <a class="product-img-link" href="./product-detail/product-detail.html">
                                     <div class="product-img">
-                                        <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                                        <img src="./img/nexo/nexo-id-84.png" alt="product">
                                     </div>
                                 </a>
 
                                 <div class="product-details">
                                     <div class="product-infor">
-                                        <div class="product-infor-brand">4 Acoustic</div>
-                                        <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
-                                        <div class="product-infor-price">65,200,000₫</div>
+                                        <div class="product-infor-brand">Nexo</div>
+                                        <div class="product-infor-name-product">ID84 - NEW 2021</div>
+                                        <div class="product-infor-price">69,750,000₫  <i class="far fa-heart  like-product "></i>
+                                        </div>
                                     </div>
 
                                 </div>
 
 
+                                  <div class="product-details-button">
+                                    <span class=" product-details-button-cart " type="button">
+                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                                    </span>
+        
+                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                        <i class="fas fa-coins"></i> Mua ngay
+                                    </a>
+                                </div>
+
+
                             </div>
-                            <!--4  -->
+                            <!-- 4 -->
 
                             <div class="product">
 
-                                <a href="./product-detail/product-detail.html">
+                                <a class="product-img-link" href="./product-detail/product-detail.html">
                                     <div class="product-img">
-                                        <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                                        <img src="./img/nexo/nexo-ps8.png" alt="product">
                                     </div>
                                 </a>
 
                                 <div class="product-details">
                                     <div class="product-infor">
-                                        <div class="product-infor-brand">4 Acoustic</div>
-                                        <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
-                                        <div class="product-infor-price">65,200,000₫</div>
+                                        <div class="product-infor-brand">Nexo</div>
+                                        <div class="product-infor-name-product">Fullrange Nexo PS8</div>
+                                        <div class="product-infor-price">43,501,700₫  <i class="far fa-heart  like-product "></i>
+                                        </div>
                                     </div>
 
+                                </div>
+
+
+                                  <div class="product-details-button">
+                                    <span class=" product-details-button-cart " type="button">
+                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                                    </span>
+        
+                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                        <i class="fas fa-coins"></i> Mua ngay
+                                    </a>
                                 </div>
 
 
@@ -620,19 +728,31 @@
 
                             <div class="product">
 
-                                <a href="./product-detail/product-detail.html">
+                                <a class="product-img-link" href="./product-detail/product-detail.html">
                                     <div class="product-img">
-                                        <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="bestsell-product-img">
+                                        <img src="./img/nexo/nexo-ps8.png" alt="product">
                                     </div>
                                 </a>
 
                                 <div class="product-details">
                                     <div class="product-infor">
-                                        <div class="product-infor-brand">4 Acoustic</div>
-                                        <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
-                                        <div class="product-infor-price">65,200,000₫</div>
+                                        <div class="product-infor-brand">Nexo</div>
+                                        <div class="product-infor-name-product">Fullrange Nexo PS8</div>
+                                        <div class="product-infor-price">43,501,700₫  <i class="far fa-heart  like-product "></i>
+                                        </div>
                                     </div>
 
+                                </div>
+
+
+                                  <div class="product-details-button">
+                                    <span class=" product-details-button-cart " type="button">
+                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                                    </span>
+        
+                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                        <i class="fas fa-coins"></i> Mua ngay
+                                    </a>
                                 </div>
 
 

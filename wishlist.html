@@ -50,7 +50,7 @@
             <!-- Start navigation mobile -->
             <div class="navigation-mobile   md-d.none">
 
-                <span class="icon-menu-hiden-mobile" onclick="hiddenMenu()">
+                <span class="icon-menu-hiden-mobile  icon-menu-hiden-mobile  " onclick="hiddenMenu()"  >
                     <i class="fas fa-bars"></i>
                 </span>
 
@@ -69,7 +69,7 @@
                         <div>BLOG</div>
                     </a>
 
-                    <a class="menu-infor-mobile" href="#">
+                    <a class="menu-infor-mobile" href="./contact.html">
                         <div>LIÊN HỆ</div>
                     </a>
 
@@ -83,14 +83,24 @@
 
                 <!-- cart / login -->
                 <div class="cart-login">
-                    <a class="" href="./cart.html">
-                        <i class="fas fa-cart-plus"></i>
+                    <a class="cart-icon" class="cart-icon" href="./cart.html">
+
+                        <i class="fas fa-cart-arrow-down">
+                            <span class=" cart-number-items ">3</span>
+                        </i>
+
+                    </a>
+
+
+                    <a href="./wishlist.html">
+                        <i class=" liked-product-wishlist  far fa-heart">
+                            <span class="liked-number-item">3</span>
+                        </i>
                     </a>
 
                     <!-- User -->
                     <div class=" login-register-btn "><i class="far fa-user"></i></div>
                 </div>
-
 
             </div> <!-- End navigation mobile -->
 
@@ -117,7 +127,7 @@
                             <div>BLOG</div>
                         </a>
                         <!-- Liên hệ sẽ cho chạy xuống dưới footer -->
-                        <a class="menu-page-desktop" href="#">
+                        <a class="menu-page-desktop"  href="./contact.html">
                             <div>LIÊN HỆ</div>
                         </a>
 
@@ -125,8 +135,18 @@
                     </div>
                     <!-- cart / login -->
                     <div class="cart-login">
-                        <a href="./cart.html">
-                            <div><i class="fas fa-cart-plus"></i></div>
+                        <a class="cart-icon" href="./cart.html">
+                            <div>
+                                <i class="fas fa-cart-arrow-down"></i>
+                                <span class=" cart-number-items ">3</span>
+                            </div>
+                        </a>
+
+
+                        <a href="./wishlist.html">
+                            <i class=" liked-product-wishlist  far fa-heart">
+                                <span class="liked-number-item">3</span>
+                            </i>
                         </a>
 
                         <!-- User -->
@@ -145,6 +165,7 @@
 
 
     </header>
+
 
     <!-- ************************************************ -->
 

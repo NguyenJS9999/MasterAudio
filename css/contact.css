@@ -1,0 +1,170 @@
+/* font Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+/* font Rubik */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/* ::selection {
+    color: red;
+} */
+body {
+  background: #f6f6f6;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.container-fluid {
+  padding: 0px;
+}
+/* style cho ô INPUT dùng chung */
+input {
+    border: 1px solid rgba(208,208,208, 0.5);
+    border-radius: 2px;
+    padding: 8px 6px;
+    transition: all 0.2s;
+  }
+  input:hover {
+    box-shadow: 0px 0px 4px 0px rgba(208,208,208, 1);
+  }
+  input:focus {
+    outline: none !important;
+    box-shadow: 0px 0px 4px 0px rgba(208,208,208, 1);
+  }
+  input::placeholder {
+    color: rgba(228, 35, 19, 0.5);
+    font-size: 14px;
+  }
+
+/* Start khối Giới thiệu */
+.about-container {
+  padding: 40px 0px;
+  line-height: 28px;
+}
+.about-description {
+  /* border: 1px solid rgba(228, 35, 19, 1); */
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+}
+.name-company {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(228, 35, 19, 1);
+  text-align: center;
+  margin-bottom: 12px;
+}
+.contact-logo {
+  /* border: 1px solid rgba(228, 35, 19, 1); */
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+.contact-logo img {
+  width: 50%;
+}
+.text-layout-center {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/* Eng khối Giới thiệu*/
+
+/* Start Đăng kí nhận tin mới */
+.subscribe-receive-news {
+  /* border: 1px solid red; */
+  /* margin-top: 40px; */
+  padding: 64px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 48px;
+}
+.subscribe-receive-news-text {
+  /* border: 1px solid violet; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  grid-gap: 0px;
+}
+.subscribe-receive-news-text span {
+  font-size: 24px;
+  font-weight: 600;
+}
+.subscribe-receive-news-text small {
+  font-size: 16px;
+}
+
+/* Ô nhập địa chỉ email */
+.subscribe-receive-news-email-input {
+  /* border: 1px solid red; */
+  margin-top: 12px;
+  width: 300px;
+  color: #e42313;
+
+  position: relative;
+}
+.subscribe-receive-news-email-input input {
+  width: 100%;
+  border-radius: 2px;
+}
+.subscribe-receive-news-email-input i {
+  font-size: 22px;
+  opacity: 0.5;
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  transition: all 0.2s;
+}
+.subscribe-receive-news-email-input i:hover {
+  transform: scale(1.2);
+}
+.subscribe-receive-news-email-input i:active {
+  opacity: 1;
+}
+/* End Đăng kí nhận tin mới */
+
+/* End Khối blog */
+
+/* Start Responsive by @Media same bootstrap */
+
+/* X-Small */
+@media (max-width: 576px) {
+}
+
+/* Small */
+@media (min-width: 576px) {
+}
+
+/* Medium */
+@media (min-width: 768px) {
+}
+
+/* Large */
+@media (min-width: 992px) {
+}
+
+/* Extra large */
+@media (min-width: 1200px) {
+}
+
+/* Extra extra large */
+@media (min-width: 1400px) {
+}
+/* End Responsive by @Media same  bootstrap*/
+
+/* Start */
+/* End */

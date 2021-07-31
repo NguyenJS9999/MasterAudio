@@ -12,88 +12,12 @@
 
 // }); // $(document).ready(function ()
 
-
-// $(document).ready(function () {
-//     $(".slide-same-products").slick({
-//         infinite: true,
-//         autoplay: true,
-//         autoplaySpeed: 3000,
-//         centerMode: true,
-//         dots: true,
-
-//         // arrows: true,
-//         pauseOnFocus: false,
-//         pauseOnHover: true,
-
-//         slidesToScroll: 1,
-
-
-//         responsive: [
-
-//             {
-//                 breakpoint: 1920,
-//                 settings: {
-//                     slidesToShow: 3,
-//                 },
-//             },
-
-//             {
-//                 breakpoint: 1400,
-//                 settings: {
-//                     slidesToShow: 3,
-//                 },
-//             },
-
-//             {
-//                 breakpoint: 1200,
-//                 settings: {
-//                     slidesToShow: 3,
-//                 },
-//             },
-
-//             {
-//                 breakpoint: 992,
-//                 settings: {
-//                     slidesToShow: 2,
-//                 },
-//             },
-
-//             {
-//                 breakpoint: 768,
-//                 settings: {
-//                     slidesToShow: 2,
-//                 },
-//             },
-
-//             {
-//                 breakpoint: 576,
-//                 settings: {
-//                     slidesToShow: 1,
-//                 },
-//             },
-
-//             {
-//                 breakpoint: 320,
-//                 settings: {
-//                     slidesToShow: 1,
-//                 },
-//             },
-
-//         ],
-
-//     });
-
-
-// }); 
-// $(document).ready(function ()
-
 // Product list
-
 $(".slide-same-products").slick({
     autoplay: true,
     autoplaySpeed: 5500,
     speed: 1200,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
     dots: true,
