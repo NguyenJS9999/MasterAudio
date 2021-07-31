@@ -338,7 +338,7 @@ input::placeholder {
 .border-bottom {
   border-bottom: 2px solid #e42313;
   width: 98%;
-  opacity: 0.4;
+  opacity: 0.9;
   margin: auto;
 }
 .into-money-number {
