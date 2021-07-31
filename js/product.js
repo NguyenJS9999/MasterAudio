@@ -3,7 +3,7 @@
 // Function sẵn sàng - tự động chạy
 $(function () {
 
-// Product list
+//  Bộ lọc bằng các thương hiệu
 $(".list-brand-carousel").slick({
     autoplay: true,
     autoplaySpeed: 5500,

@@ -33,6 +33,7 @@ $(function () {
   //   pauseOnHover: false,
   // });
 
+  // Các thương hiệu nổi tiếng
   $(".famous-banner-slider").slick({
     autoplay: true,
     autoplaySpeed: 5500,

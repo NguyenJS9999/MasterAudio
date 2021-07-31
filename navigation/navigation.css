@@ -99,10 +99,11 @@
 .logo-master-audio img {
   max-width: 100%;
   /* max-height: 100%; */
+  cursor: pointer;
   transition: all 0.2s;
 }
 .logo-master-audio img:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .menu-pages-desktop {

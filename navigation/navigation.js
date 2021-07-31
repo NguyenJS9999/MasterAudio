@@ -16,18 +16,18 @@
 //     showMenu = !showMenu;
 // }
 
-let showHideMenu = false;
-$('.icon-menu-hiden-mobile').click(function() {
-   console.log('Đóng mở menu màn mobile')
+// let showHideMenu = false;
+// $('.icon-menu-hiden-mobile').click(function() {
+//    console.log('Đóng mở menu màn mobile')
 
-   if (showHideMenu) {
-    $('.menu-infos-header-mobile').hide()
-   } else {
-    $('.menu-infos-header-mobile').show()
-   }
-showHideMenu = !showHideMenu;
+//    if (showHideMenu) {
+//     $('.menu-infos-header-mobile').hide()
+//    } else {
+//     $('.menu-infos-header-mobile').show()
+//    }
+// showHideMenu = !showHideMenu;
 
-});
+// });
 
 
 // Login / Register
