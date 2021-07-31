@@ -112,25 +112,30 @@ header {
   height: 84px;
   margin: 0px 4px;
   padding: 4px;
-  
+
   text-align: center;
 
-  display: flex!important;
-  flex-direction: column!important;
-  justify-content: center!important;
-  align-items: center!important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
 
   cursor: pointer;
   transition: all 0.2s ease;
 }
 .brand-logo:hover {
   border: 1px solid rgba(145, 146, 148, 1);
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .brand-logo span {
   /* border: 1px solid rgba(223, 17, 17, 0.5); */
-  width: 100%!important;
-  height: 100%!important;
+  width: 100% !important;
+  height: 100% !important;
+  
+  padding: 21px 0px 0px 0px;
+
+  font-weight: 600;
+  color: #e42313;
 }
 
 .brand-logo img {
@@ -141,13 +146,6 @@ header {
 }
 .brand-logo img:hover {
   opacity: 0.6;
-}
-.brand-logo span {
-  /* border: 1px solid #9e13e4; */
-  margin: auto;
-  font-weight: 600;
-  color: #e42313;
-  /* font-size: 16px; */
 }
 
 /* Lọc theo giá bán và tìm kiếm */
