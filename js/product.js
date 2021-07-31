@@ -1,12 +1,14 @@
+console.log(' Trang sản phẩm - product ')
+
 // Product list
-$(".slide-same-products").slick({
+$(".list-brand-carousel").slick({
     autoplay: true,
     autoplaySpeed: 5500,
     speed: 1200,
-    slidesToShow: 4,
+    slidesToShow: 8,
     slidesToScroll: 1,
     arrows: false,
-    dots: true,
+    dots: false,
     pauseOnFocus: false,
     pauseOnHover: false,
     prevArrow:
@@ -25,7 +27,7 @@ $(".slide-same-products").slick({
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 8,
           arrows: false,
           dots: true,
         },
@@ -33,14 +35,14 @@ $(".slide-same-products").slick({
       {
         breakpoint: 992,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 8,
         },
       },
 
       {
         breakpoint: 576,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 8,
           arrows: false,
           dots: true,
         },

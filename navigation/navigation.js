@@ -1,6 +1,6 @@
 // import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
-console.log("File navigation")
+// console.log("File navigation")
 
 // Phủ định trạng thái
 // let showMenu = false;

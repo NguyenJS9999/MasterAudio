@@ -1,3 +1,3 @@
 // import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js";
 
-console.log("File breadcrumb")
+// console.log("File breadcrumb")

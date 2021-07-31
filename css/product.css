@@ -47,7 +47,7 @@ header {
 
 /* Start filter */
 .filter-container {
-  /* border: 1px solid red; */
+  /* border: 1px solid rgb(234, 0, 255); */
   /* padding: 0px 80px; */
   text-align: center;
   display: flex;
@@ -59,7 +59,7 @@ header {
   /* border: 2px dotted rgb(72, 118, 0); */
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   grid-gap: 40px;
   margin-top: 36px;
@@ -89,24 +89,32 @@ header {
   /* border: 1px solid rgb(64, 255, 0); */
   width: 100%;
   height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-gap: 16px; */
+}
+/* Div được gắn Carousel */
+.list-brand-carousel {
+  /* border: 1px solid violet; */
 }
 /* Logo từng hãng cho bộ lọc */
 .brand-logo {
   border: 1px solid rgba(145,146,148, 0.5);
   border-radius: 2px;
-  width: 100%;
+  /* width: 100%; */
   height: 100%;
     /* width: 182px; */
-  /* height: 84px; */
-  
+  height: 84px;
+  margin: 0px 4px;
+
   padding: 4px;
+
   text-align: center;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
+
 
   cursor: pointer;
   transition: all 0.2s ease;
@@ -117,6 +125,7 @@ header {
 .brand-logo img {
   width: 100%;
   height: 100%;
+  text-align: center;
   transition: all 0.3s ease;
 }
 .brand-logo img:hover {
@@ -409,7 +418,7 @@ header {
   }
   /* Dưới 576px 2 khối lọc xếp dọc và chia 3 cột mỗi khối lọc*/
   .filters {
-    flex-direction: column;
+    /* flex-direction: column; */
     grid-gap: 12px;
   }
   /*  */
@@ -484,7 +493,7 @@ header {
   }
   /* Trên 576px 2 khối lọc xếp dọc và chia 3 cột mỗi khối lọc*/
   .filters {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   /* Tiêu đề khối lọc sản phẩm giảm 4px->16px */
@@ -544,7 +553,7 @@ header {
 
   /* Trên 768px 2 khối lọc vẫn xếp ngang */
   .filters {
-    flex-direction: row;
+    /* flex-direction: row; */
     grid-gap: 16px;
   }
   /* Co 2 hàng cho khối lọc theo thương hiệu */
@@ -637,7 +646,7 @@ header {
 @media (min-width: 1200px) {
   /* Trên 1200px 2 khối lọc vẫn xếp ngang khoảng các khối trong giảm */
   .filters {
-    flex-direction: row;
+    /* flex-direction: row; */
     grid-gap: 40px;
   }
 
