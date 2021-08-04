@@ -1,6 +1,5 @@
-<!-- Ngày khởi công 5/7/2021-->
+<!-- Ngày -->
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -11,6 +10,7 @@
     <title>Master Audio</title>
     <!-- Icon -->
     <link rel="shortcut icon" href="./img/icon/logo.png">
+
     <!-- font awesome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,24 +23,22 @@
     <!-- Menu trượt slick crocell -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-
-    <!--  Menu trượt slick crocell CDN CSS -->
+    <!-- slick crocell CDN CSS -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <!-- css code tay-->
 
-    <!-- CSS Trang Home -->
-    <link rel="stylesheet" href="css/index.css">
+    <!-- Css trang product -->
+    <link rel="stylesheet" href="./css/product.css">
 
-    <!-- css NAV -->
+    <!-- Css trang Navigation -->
     <link rel="stylesheet" href="./navigation/navigation.css">
+
+    <!-- css Breadcrumb -->
+    <link rel="stylesheet" href="./breadcrumb/breadcrumb.css">
 
     <!-- css FOOTER -->
     <link rel="stylesheet" href="./footer/footer.css">
-
-
-
-
 
 </head>
 
@@ -53,12 +51,12 @@
             <!-- Start navigation mobile -->
             <div class="navigation-mobile   md-d.none">
 
-                <span class="icon-menu-hiden-mobile  icon-menu-hiden-mobile  " onclick="hiddenMenu()">
+                <span class="icon-menu-hiden-mobile" >
                     <i class="fas fa-bars"></i>
                 </span>
 
                 <!--  d-none -->
-                <div class="menu-infos-header-mobile    ">
+                <div class="menu-infos-header-mobile   icon-menu-hiden-mobile ">
 
                     <a class="menu-infor-mobile" href="./index.html">
                         <div>TRANG CHỦ</div>
@@ -315,565 +313,411 @@
     <!-- Kê navigation -->
     <!-- <div class="margin-top-nav   container-fluid "></div> -->
 
+    <!-- breadcrumb -->
+    <div class="breadcrumb-container container-fluid">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">TRANG CHỦ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">SẢN PHẨM</li>
+            </ol>
+        </nav>
 
-    <!-- Banner -->
-    <div class="banner-top-home">
-        <!-- carosel -->
-        <img src="./img/banner/banner-top-home-adamson-system.png" alt="banner">
-
-
-        <div class="banner-content">
-
-            <h1>Chất âm đến từ Châu&nbspÂu</h1>
-
-            <!-- <div class="banner-description">
-                Nơi cảm xúc thăng hoa cùng hòa mình vào những giai điệu đầy cảm xúc
-            </div> -->
-
-            <div class="banner-description">
-                Hệ thống âm thanh đặc biệt đáp ứng nhu cầu nghe nhạc mạnh giải
-                trí và hát karaoke chuyển nghiệp
-            </div>
-
-            <a class="button-discover" type="button" href="./product.html">
-                Khám phá ngay
-            </a>
-
-        </div>
-
-    </div> <!-- banner-top-home -->
+    </div> <!-- breadcrumb -->
 
     <main>
-
-
-
-        <!-- Các thương hiệu âm thanh nổi tiếng -->
         <section>
-            <div class="famous-brand-container   container ">
+            <!-- Lọc sản phẩm -->
+            <div class=" filter-container  container ">
 
-                <div class="famous-brand">
-                    <h1>NHỮNG THƯƠNG HIỆU HÀNG ĐẦU THẾ GIỚI</h1>
-
-                    <!-- <img src="/img/Brands/" alt="brand"> -->
-                    <!-- Div bọc ngoài khối được nhúng slide -->
-                    <div class="famous-brand-list-product">
-
-                        <!-- Div nhúng slide -->
-                        <div class=" famous-banner-slider ">
-                            <!-- 1 -->
-                            <div class=" famous-product "> <img src="./img/Brands/4-acoustic.png" alt="brand"></div>
-
-                            <!-- 2 -->
-                            <div class=" famous-product "> <img src="./img/Brands/Adamson.png" alt="brand"> </div>
-
-                            <!-- 3 -->
-                            <div class=" famous-product "> <img src="./img/Brands/Kuledy.png" alt="brand"> </div>
-
-                            <!-- 4 -->
-                            <div class=" famous-product "> <img src="./img/Brands/Yamaha.png" alt="brand"> </div>
-
-                            <!-- 5 -->
-                            <div class=" famous-product "> <img src="./img/Brands/Hours.png" alt="brand"> </div>
+                <div class=" filters    ">
 
 
+                    <div class="filter-by-brand">
 
-                        </div> <!-- Div nhúng slide --> <br/>
+                        <div class="filter-title">CHỌN SẢN PHẨM THEO THƯƠNG HIỆU</div>
 
-                        <div class=" famous-banner-slider ">
-                            <!-- 6 -->
-                            <div class=" famous-product "> <img src="./img/Brands/Nexo.png" alt="brand"> </div>
-                            <!-- 7 -->
-                            <div class=" famous-product "> <img src="./img/Brands/Amate.png" alt="brand"> </div>
-                            <!-- 8 -->
-                            <div class=" famous-product "> <img src="./img/Brands/DK.png" alt="brand"> </div>
-                            <!-- 9 -->
-                            <div class=" famous-product "> <img src="./img/Brands/Baiervires.png" alt="brand"> </div>
-                            <!-- 10 -->
-                            <div class=" famous-product "> <img src="./img/Brands/Pioneer dj.png" alt="brand"></div>
-                        </div> <!-- Div nhúng slide -->
+                        <!-- Bọc Carousel -->
+                        <div class="list-brand">
+
+                            <!-- Div được gắn Carousel -->
+                            <div class="list-brand-carousel">
+
+                                <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-4-acoustic.png"
+                                        alt="logo">
+                                </div>
+
+                                <div class="brand-logo"><img src="./img/Brands/brand-logo/Nexo.png" alt="logo"></div>
+
+                                <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Adamson.png" alt="logo">
+                                </div>
+
+                                <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Amate.png" alt="logo">
+
+                                </div>
+                                <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Kuledy.png" alt="logo">
+                                </div>
+
+                                <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-DK.png" alt="logo"></div>
+
+                                <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Baiervires.png"
+                                        alt="logo">
+                                </div>
+
+                                <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Hours.png" alt="logo">
+                                </div>
+
+                                <div class="brand-logo"><img src="./img/Brands/brand-logo/Pioneer-dj.png" alt="logo">
+                                </div>
+
+                            </div> <!-- Div được gắn Carousel,list-brand-carousel -->
+
+                        </div>
+
 
                     </div>
-                    <!-- Div bọc ngoài khối được nhúng slide famous-brand-list-product -->
+                    <!-- Lọc theo kiểu loại sản phẩm -->
+                    <div class="filter-by-brand">
+
+                        <div class="filter-title">CHỌN THEO PHÂN LOẠI SẢN PHẨM </div>
+
+                        <div class="list-brand">
+                            <!-- Div được gắn Carousel -->
+                            <div class="list-brand-carousel">
+
+                                <div class="brand-logo"> <span> Subwoofer </span> </div>
+                                <div class="brand-logo"> <span> Full range </span> </div>
+                                <div class="brand-logo"> <span> Line array </span> </div>
+                                <div class="brand-logo"> <span> Mid low </span> </div>
+                                <div class="brand-logo"> <span> Amplifier </span> </div>
+                                <div class="brand-logo"> <span> Micro </span> </div>
+                                <div class="brand-logo"> <span> Digital echo </span> </div>
+                                <div class="brand-logo"> <span> Mixer </span> </div>
+                                <div class="brand-logo"> <span> Power manage </span> </div>
+                            </div>
+
+                        </div> <!-- list-brand -->
+                    </div>
+
+
+
+                </div> <!-- filters Các bộ lọc (2) -->
+
+
+                <!-- Lọc theo giá và tìm kiếm -->
+                <div class="filter-by-price-search-container   container  ">
+
+                    <div class="filter-by-price-buttons">
+                        <span class="filter-by-price-button">Giá tăng dần</span>
+                        <span class="filter-by-price-button">Giá giảm dần</span>
+                    </div>
+
+                    <span>
+                        <span class="product-search">
+                            <input class="search-input" type="text" placeholder="Tìm kiếm sản phẩm">
+                            <span class="search-icon" type=button> <i class="fas fa-search "> </i></span>
+                        </span>
+                    </span>
+
+
+
+                </div> <!-- Lọc theo giá và tìm kiếm -->
+
+
+
+            </div> <!-- filters-container -->
+
+
+
+
+        </section> <!-- Lọc sản phẩm -->
+
+        <section class="products-pagination-container    container">
+
+            <div class="list-products">
+                <!-- 1 -->
+                <div class="product">
+
+                    <a href="./product-detail/product-detail.html">
+                        <div class="product-img">
+                            <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
+                        </div>
+                    </a>
+
+                    <div class="product-details">
+                        <div class="product-infor    container ">
+                            <div class="product-infor-brand">4 Acoustic</div>
+                            <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
+                            <div class="product-infor-price">
+                                65,200,000₫   <i class="far fa-heart  like-product "></i>
+                            </div>
+
+                        </div>
+
+                        <div class="product-details-button    container ">
+                            <span class=" product-details-button-cart " type="button">
+                                <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                            </span>
+
+                            <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                <i class="fas fa-coins"></i> Mua ngay
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- 2 -->
+
+                <div class="product">
+
+                    <a href="./product-detail/product-detail.html">
+                        <div class="product-img">
+                            <img src="./img/nexo/nexo-ps15.png" alt="product">
+                        </div>
+                    </a>
+
+                    <div class="product-details">
+                        <div class="product-infor    container ">
+                            <div class="product-infor-brand">Nexo</div>
+                            <div class="product-infor-name-product">Fullrange PS15</div>
+                            <div class="product-infor-price">
+                                87,715,000₫  <i class="far fa-heart  like-product "></i>
+                            </div>
+
+                        </div>
+
+                        <div class="product-details-button    container ">
+                            <span class=" product-details-button-cart " type="button">
+                                <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                            </span>
+
+                            <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                <i class="fas fa-coins"></i> Mua ngay
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- 3 -->
+
+                <div class="product">
+
+                    <a href="./product-detail/product-detail.html">
+                        <div class="product-img">
+                            <img src="./img/adamson/adamson-point15.jpg" alt="product">
+                        </div>
+                    </a>
+
+                    <div class="product-details">
+                        <div class="product-infor    container ">
+                            <div class="product-infor-brand">Adamson</div>
+                            <div class="product-infor-name-product">Fullrange Point 15</div>
+                            <div class="product-infor-price">
+                                99,111,000₫   <i class="far fa-heart  like-product "></i>
+                            </div>
+
+                        </div>
+
+                        <div class="product-details-button    container ">
+                            <span class=" product-details-button-cart " type="button">
+                                <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                            </span>
+
+                            <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                <i class="fas fa-coins"></i> Mua ngay
+                            </a>
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div> <!-- Thương hiệu tiếng -->
+                <!--  4  -->
+                <div class="product">
+
+                    <a href="./product-detail/product-detail.html">
+                        <div class="product-img">
+                            <img src="./img//amate/amate-X218WF.png" alt="product">
+                        </div>
+                    </a>
+
+                    <div class="product-details">
+                        <div class="product-infor    container ">
+                            <div class="product-infor-brand">Amate</div>
+                            <div class="product-infor-name-product">Subwoofer X218WFD</div>
+                            <div class="product-infor-price">
+                                179.697.708₫   <i class="far fa-heart  like-product "></i>
+                            </div>
+
+                        </div>
+
+                        <div class="product-details-button    container ">
+                            <span class=" product-details-button-cart " type="button">
+                                <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                            </span>
+
+                            <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                <i class="fas fa-coins"></i> Mua ngay
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- 5 -->
+
+                <div class="product">
+
+                    <a href="./product-detail/product-detail.html">
+                        <div class="product-img">
+                            <img src="./img/kuledy/kuledy-line-array-v110.png" alt="product">
+                        </div>
+                    </a>
+
+                    <div class="product-details">
+                        <div class="product-infor    container ">
+                            <div class="product-infor-brand">Kuledy</div>
+                            <div class="product-infor-name-product">Array Kuledy V110</div>
+                            <div class="product-infor-price">
+                                35,000,000₫   <i class="far fa-heart  like-product "></i>
+                            </div>
+
+                        </div>
+
+                        <div class="product-details-button    container ">
+                            <span class=" product-details-button-cart " type="button">
+                                <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                            </span>
+
+                            <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                <i class="fas fa-coins"></i> Mua ngay
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- 6 -->
+
+                <div class="product">
+
+                    <a href="./product-detail/product-detail.html">
+                        <div class="product-img">
+                            <img src="./img/DK/DK-VR12L.png" alt="product">
+                        </div>
+                    </a>
+
+                    <div class="product-details">
+                        <div class="product-infor    container ">
+                            <div class="product-infor-brand">DK</div>
+                            <div class="product-infor-name-product">Fullrange DK VR12</div>
+                            <div class="product-infor-price">
+                                18,500,000₫   <i class="far fa-heart  like-product "></i>
+                            </div>
+
+                        </div>
+
+                        <div class="product-details-button    container ">
+                            <span class=" product-details-button-cart " type="button">
+                                <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                            </span>
+
+                            <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                <i class="fas fa-coins"></i> Mua ngay
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- 7 -->
+
+                <div class="product">
+
+                    <a href="./product-detail/product-detail.html">
+                        <div class="product-img">
+                            <img src="./img/Baiervires/Baiervires-BS980.png" alt="product">
+                        </div>
+                    </a>
+
+                    <div class="product-details">
+                        <div class="product-infor    container ">
+                            <div class="product-infor-brand">Baiervires </div>
+                            <div class="product-infor-name-product">Micro Baiervires BS980</div>
+                            <div class="product-infor-price">
+                                12,900,000₫   <i class="far fa-heart  like-product "></i>
+                            </div>
+
+                        </div>
+
+                        <div class="product-details-button    container ">
+                            <span class=" product-details-button-cart " type="button">
+                                <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                            </span>
+
+                            <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                <i class="fas fa-coins"></i> Mua ngay
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- 8 -->
+                <div class="product">
+
+                    <a href="./product-detail/product-detail.html">
+                        <div class="product-img">
+                            <img src="./img/hous/amplyfier-Hous-TC-3815.png" alt="product">
+                        </div>
+                    </a>
+
+                    <div class="product-details">
+                        <div class="product-infor    container ">
+                            <div class="product-infor-brand">HOUS</div>
+                            <div class="product-infor-name-product">Amplifier Hous TC 3815</div>
+                            <div class="product-infor-price">
+                                24,500,000₫   <i class="far fa-heart  like-product "></i>
+                            </div>
+
+                        </div>
+
+                        <div class="product-details-button    container ">
+                            <span class=" product-details-button-cart " type="button">
+                                <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                            </span>
+
+                            <a class=" product-details-button-buynow " href="./cart.html" type="button">
+                                <i class="fas fa-coins"></i> Mua ngay
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- 9 -->
+
+            </div>
+            <!-- list-products -->
+
+            <div class="paginations">
+                <span class="previous-pagination">&#60;</span>
+
+                <span class="" id="paginations-active">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+
+                <span class="next-pagination">&#62;</span>
+
+            </div>
 
         </section>
 
-
-        <!-- Sản phẩm bán chạy -->
-        <section class="best-seller-new-products-container   container-fluid ">
-            <div class=" best-seller-new-products-title-background container ">
-                <h1 class="best-seller-new-products-title   ">SẢN PHẨM BÁN CHẠY NHẤT</h1>
-
-                <div class="best-seller-products">
-                    <!-- Bọc cả slide -->
-                    <div class="same-products">
-
-                        <!-- Class gắn slide -->
-
-
-                        <div class="slide-same-products">
-                            <!-- 1 -->
-                            <div class="product">
-
-                                <a class="product-img-link" href="./product-detail/product-detail.html">
-                                    <div class="product-img">
-                                        <img src="./img/nexo/nexo-ps8.png" alt="product">
-                                    </div>
-                                </a>
-
-                                <div class="product-details">
-                                    <div class="product-infor">
-                                        <div class="product-infor-brand">Nexo</div>
-                                        <div class="product-infor-name-product">Fullrange Nexo ID 14</div>
-                                        <div class="product-infor-price">17,922,300₫  <i
-                                                class="far fa-heart  like-product "></i>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="product-details-button">
-                                    <span class=" product-details-button-cart " type="button">
-                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
-                                    </span>
-
-                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                        <i class="fas fa-coins"></i> Mua ngay
-                                    </a>
-                                </div>
-
-
-                            </div>
-                            <!-- 2 -->
-
-                            <div class="product">
-
-                                <a class="product-img-link" href="./product-detail/product-detail.html">
-                                    <div class="product-img">
-                                        <img src="./img/nexo/nexo-id-84.png" alt="product">
-                                    </div>
-                                </a>
-
-                                <div class="product-details">
-                                    <div class="product-infor">
-                                        <div class="product-infor-brand">Nexo</div>
-                                        <div class="product-infor-name-product">ID84 - NEW 2021</div>
-                                        <div class="product-infor-price">69,750,000₫  <i
-                                                class="far fa-heart  like-product "></i>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="product-details-button">
-                                    <span class=" product-details-button-cart " type="button">
-                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
-                                    </span>
-
-                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                        <i class="fas fa-coins"></i> Mua ngay
-                                    </a>
-                                </div>
-
-
-                            </div>
-                            <!-- 3 -->
-
-                            <div class="product">
-
-                                <a class="product-img-link" href="./product-detail/product-detail.html">
-                                    <div class="product-img">
-                                        <img src="./img/amate/Amate-Nitid-N318-Active.png" alt="product">
-                                    </div>
-                                </a>
-
-                                <div class="product-details">
-                                    <div class="product-infor">
-                                        <div class="product-infor-brand">Amate </div>
-                                        <div class="product-infor-name-product">Nitid N318</div>
-                                        <div class="product-infor-price">199,700,000₫  <i
-                                                class="far fa-heart  like-product "></i>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="product-details-button">
-                                    <span class=" product-details-button-cart " type="button">
-                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
-                                    </span>
-
-                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                        <i class="fas fa-coins"></i> Mua ngay
-                                    </a>
-                                </div>
-
-
-                            </div>
-                            <!-- 4 -->
-
-                            <div class="product">
-
-                                <a class="product-img-link" href="./product-detail/product-detail.html">
-                                    <div class="product-img">
-                                        <img src="./img/kuledy/Kuledy-B121.JPG" alt="product">
-                                    </div>
-                                </a>
-
-                                <div class="product-details">
-                                    <div class="product-infor">
-                                        <div class="product-infor-brand">Kuledy</div>
-                                        <div class="product-infor-name-product">Subwoofer B121</div>
-                                        <div class="product-infor-price">20,000,000₫  <i
-                                                class="far fa-heart  like-product "></i>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="product-details-button">
-                                    <span class=" product-details-button-cart " type="button">
-                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
-                                    </span>
-
-                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                        <i class="fas fa-coins"></i> Mua ngay
-                                    </a>
-                                </div>
-
-
-                            </div>
-                            <!-- 5 -->
-
-                            <div class="product">
-
-                                <a class="product-img-link" href="./product-detail/product-detail.html">
-                                    <div class="product-img">
-                                        <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="bestsell-product-img">
-                                    </div>
-                                </a>
-
-                                <div class="product-details">
-                                    <div class="product-infor">
-                                        <div class="product-infor-brand">4 Acoustic</div>
-                                        <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
-                                        <div class="product-infor-price">65,200,000₫  <i
-                                                class="far fa-heart  like-product "></i>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="product-details-button">
-                                    <span class=" product-details-button-cart " type="button">
-                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
-                                    </span>
-
-                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                        <i class="fas fa-coins"></i> Mua ngay
-                                    </a>
-                                </div>
-
-
-                            </div>
-                            <!--  -->
-
-                        </div>
-
-
-                    </div> <!-- same-products -->
-
-                    <a href="./product.html">
-                        <div class="button-viewall-product ">XEM TOÀN BỘ SẢN PHẨM</div>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </section> <!-- Sản phẩm bán chạy -->
-
-        <br /> <br /> <br />
-        <!-- !!!!!!!!!!!!!!!!!!!!! Thay ảnh slide khác nhau với mỗi ảnh là một link đến trang chi tiết chung hoặc khác mẫu sản phẩm -->
-        <!-- SẢN PHẨM MỚI RA -->
-
-        <section class=" best-seller-new-products-container   container-fluid ">
-            <div class=" best-seller-new-products-title-background container ">
-                <h1 class="best-seller-new-products-title">SẢN PHẨM MỚI RA MẮT </h1>
-
-                <div class="best-seller-products">
-
-                    <!-- Bọc cả slide -->
-                    <div class="same-products">
-
-                        <!-- Class gắn slide -->
-
-                        <!-- 1 -->
-                        <div class="slide-same-products">
-
-                            <div class="product">
-
-                                <a class="product-img-link" href="./product-detail/product-detail.html">
-                                    <div class="product-img">
-                                        <img src="./img/amate/Amate-Nitid-N318-Active.png" alt="product">
-                                    </div>
-                                </a>
-
-                                <div class="product-details">
-                                    <div class="product-infor">
-                                        <div class="product-infor-brand">Amate </div>
-                                        <div class="product-infor-name-product">Nitid N318</div>
-                                        <div class="product-infor-price">199,700,000₫  <i
-                                                class="far fa-heart  like-product "></i>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="product-details-button">
-                                    <span class=" product-details-button-cart " type="button">
-                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
-                                    </span>
-
-                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                        <i class="fas fa-coins"></i> Mua ngay
-                                    </a>
-                                </div>
-
-
-                            </div>
-                            <!-- 2 -->
-
-                            <div class="product">
-
-                                <a class="product-img-link" href="./product-detail/product-detail.html">
-                                    <div class="product-img">
-                                        <img src="./img/kuledy/Kuledy-B121.JPG" alt="product">
-                                    </div>
-                                </a>
-
-                                <div class="product-details">
-                                    <div class="product-infor">
-                                        <div class="product-infor-brand">Kuledy</div>
-                                        <div class="product-infor-name-product">Subwoofer B121</div>
-                                        <div class="product-infor-price">20,000,000₫  <i
-                                                class="far fa-heart  like-product "></i>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="product-details-button">
-                                    <span class=" product-details-button-cart " type="button">
-                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
-                                    </span>
-
-                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                        <i class="fas fa-coins"></i> Mua ngay
-                                    </a>
-                                </div>
-
-
-                            </div>
-                            <!-- 3 -->
-
-                            <div class="product">
-
-                                <a class="product-img-link" href="./product-detail/product-detail.html">
-                                    <div class="product-img">
-                                        <img src="./img/nexo/nexo-id-84.png" alt="product">
-                                    </div>
-                                </a>
-
-                                <div class="product-details">
-                                    <div class="product-infor">
-                                        <div class="product-infor-brand">Nexo</div>
-                                        <div class="product-infor-name-product">ID84 - NEW 2021</div>
-                                        <div class="product-infor-price">69,750,000₫  <i
-                                                class="far fa-heart  like-product "></i>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="product-details-button">
-                                    <span class=" product-details-button-cart " type="button">
-                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
-                                    </span>
-
-                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                        <i class="fas fa-coins"></i> Mua ngay
-                                    </a>
-                                </div>
-
-
-                            </div>
-                            <!-- 4 -->
-
-                            <div class="product">
-
-                                <a class="product-img-link" href="./product-detail/product-detail.html">
-                                    <div class="product-img">
-                                        <img src="./img/nexo/nexo-ps15.png" alt="product">
-                                    </div>
-                                </a>
-
-                                <div class="product-details">
-                                    <div class="product-infor">
-                                        <div class="product-infor-brand">Nexo</div>
-                                        <div class="product-infor-name-product">Fullrange Nexo PS15</div>
-                                        <div class="product-infor-price">87,715,000₫  <i
-                                                class="far fa-heart  like-product "></i>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="product-details-button">
-                                    <span class=" product-details-button-cart " type="button">
-                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
-                                    </span>
-
-                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                        <i class="fas fa-coins"></i> Mua ngay
-                                    </a>
-                                </div>
-
-
-                            </div>
-                            <!-- 5 -->
-
-                            <div class="product">
-
-                                <a class="product-img-link" href="./product-detail/product-detail.html">
-                                    <div class="product-img">
-                                        <img src="./img/nexo/nexo-ps8.png" alt="product">
-                                    </div>
-                                </a>
-
-                                <div class="product-details">
-                                    <div class="product-infor">
-                                        <div class="product-infor-brand">Nexo</div>
-                                        <div class="product-infor-name-product">Fullrange Nexo PS8</div>
-                                        <div class="product-infor-price">43,501,700₫  <i
-                                                class="far fa-heart  like-product "></i>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="product-details-button">
-                                    <span class=" product-details-button-cart " type="button">
-                                        <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
-                                    </span>
-
-                                    <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                        <i class="fas fa-coins"></i> Mua ngay
-                                    </a>
-                                </div>
-
-
-                            </div>
-                            <!--  -->
-
-                        </div>
-
-
-                    </div> <!-- same-products -->
-
-
-                    <a href="./product.html">
-                        <div class="button-viewall-product ">XEM TOÀN BỘ SẢN PHẨM</div>
-                    </a>
-
-                </div>
-
-            </div>
-        </section> <!-- Sản phẩm bán chạy -->
-
-
-        <!-- Tự hào dịch vụ -->
-        <section class=" positive-service  container ">
-            <span>
-                <div class=" positive-icon-text ">
-                    <i class="fas fa-check"></i>
-                    <div class="positive-text">
-                        <b>Được nhập khẩu chính ngạch</b>
-                        <p> 100% từ châu Âu</p>
-                    </div>
-
-                </div>
-            </span>
-
-            <span>
-                <div class=" positive-icon-text ">
-                    <i class="far fa-clock"></i>
-                    <div class="positive-text">
-                        <b>Độ bền vượt thời gian</b>
-                        <p>Chất lượng châu Âu</p>
-                    </div>
-
-                </div>
-            </span>
-
-            <span>
-                <div class=" positive-icon-text ">
-                    <i class="fas fa-shipping-fast"></i>
-                    <div class="positive-text">
-                        <b>Miễn phí vận chuyển</b>
-                        <p>Nhận hàng trong 3 ngày</p>
-                    </div>
-
-                </div>
-            </span>
-
-            <span>
-                <div class=" positive-icon-text ">
-                    <i class="fas fa-phone-volume"></i>
-                    <div class="positive-text">
-                        <b>Dịch vụ CSKH tận tâm</b>
-                        <p>Gọi điện - Hotline - Zalo</p>
-                    </div>
-
-                </div>
-            </span>
-
-        </section> <!-- Tự hào dịch vụ -->
-
-        <!-- đường kẻ ngang ngăn UI -->
-        <div class=" line-bottom "></div>
-
-        <!-- Đăng kí nhận tin mới -->
-        <section class=" subscribe-receive-news   container ">
-            <div class="subscribe-receive-news-text">
-                <span>ĐĂNG KÍ NHẬN TIN MỚI</span> <br />
-                <small>Nhận các tin tức về sản phẩm mới và khuyến mãi sớm nhất</small>
-            </div>
-
-            <div class="subscribe-receive-news-email-input">
-                <input type="text" placeholder="Nhập địa chỉ email...">
-                <i class="fas fa-paper-plane"></i>
-            </div>
-
-        </section> <!-- Đăng kí nhận tin mới -->
-
-
-
-
     </main>
+
 
     <footer>
         <div class="footer-container   container-fluid">
@@ -984,12 +828,12 @@
 
     </footer>
 
-
-
-    <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- 
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
+
 
 
 
@@ -1006,13 +850,17 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-    <!-- File js của Index - trang chủ Để dưới để ghi đè js của thư viện -->
-    <script src="./js/main.js"></script>
+    <!-- File Js Để dưới để ghi đè js của thư viện -->
+
+    <!-- Js của product !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <script src="./js/product.js"></script>
 
     <!-- Js của NAV -->
     <script src="./navigation/navigation.js"></script>
     <!-- Js của FOOTER -->
-    <script src="./footer/footer.js"></script>
+    <script src="./footer/product.js"></script>
+    <!-- Js của breadcrumb -->
+    <script src="./navigation/navigation.js"></script>
 
 
 </body>

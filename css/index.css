@@ -219,7 +219,7 @@ input::placeholder {
 }
 /* ----------------------------------------------product------------------------------------------ */
 .product {
-  border: 0.1px solid rgba(145, 146, 148, 0.5);
+  border: 0.1px solid rgba(145, 146, 148, 0);
   /* border: 1px solid var(--color-neutral-border); */
   background: #f6f6f6;
 
@@ -231,6 +231,7 @@ input::placeholder {
   justify-content: space-between;
   align-items: center;
   grid-gap: 12px;
+  animation: alternate 0.3s ease;
 }
 .product:hover {
   box-shadow: 0px 0px 1px 0px rgba(228, 35, 19, 0.5);
