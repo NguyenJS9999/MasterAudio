@@ -17,7 +17,7 @@ a {
   color: black;
 }
 .container-fluid {
-  padding: 0px;
+  /* padding: 0px; */
 }
 /* style cho ô INPUT dùng chung */
 input {
@@ -43,8 +43,7 @@ input::placeholder {
   /* border: 1px solid red; */
   /* margin: 0px 80px; */
   margin: auto;
-  /* Cách tạm */
-  margin-top: 40px;
+  padding-top: 20px;
 
   display: flex;
   flex-direction: row;
@@ -590,7 +589,7 @@ input::placeholder {
   .product-detail-image-buy-container {
     /* margin: 0px 20px; */
     margin: auto;
-    margin-top: 24px;
+    /* margin-top: 24px; */
     flex-direction: column;
     grid-gap: 4px;
   }
@@ -668,7 +667,7 @@ input::placeholder {
   .product-detail-image-buy-container {
     /* margin: 0px 30px; */
     margin: auto;
-    margin-top: 28px;
+    /* margin-top: 28px; */
     flex-direction: column;
     grid-gap: 8px;
   }
@@ -727,7 +726,7 @@ input::placeholder {
     /* margin: 0px 40px; */
     margin: auto;
     flex-direction: row;
-    margin-top: 32px;
+    /* margin-top: 32px; */
     grid-gap: 12px;
   }
   /* Ảnh chi tiết sản phẩm rộng giảm % rộng đủ vừa chiều dọc */
@@ -784,7 +783,7 @@ input::placeholder {
   .product-detail-image-buy-container {
     /* margin: 0px 60px; */
     margin: auto;
-    margin-top: 36px;
+    /* margin-top: 36px; */
     grid-gap: 16px;
   }
   .product-detail-image {
@@ -825,7 +824,7 @@ input::placeholder {
   .product-detail-image-buy-container {
     /* margin: 0px 80px; */
     margin: auto;
-    margin-top: 40px;
+    /* margin-top: 40px; */
     grid-gap: 20px;
   }
   /* Ảnh chi tiết sản phẩm rộng giảm % rộng đủ vừa chiều dọc */

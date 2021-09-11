@@ -2,13 +2,12 @@
   /* border: 1px solid red; */
   background-color: #c4c4c4;
   width: 100%;
-  /* height: 40px; */
+  height: 40px;
   padding-top: 2px;
   padding-bottom: 2px;
   font-size: 16px;
   /* Khoảng cách top vì đẩy cho NAV cố định che lên */
   /* Bỏ vì Nav để relative rồi */
-  margin-top: -1px;
 
   display: flex;
   flex-direction: row;
@@ -41,11 +40,13 @@
 @media (max-width: 576px) {
   /* Giảm khoảng cách lề và cỡ chữ cho breacum ở màn iphone 5 */
   .breadcrumb-container {
-    padding: 3px 8px;
+    /* padding: 3px 8px; */
     font-size: 12px;
     /* margin-top: 89px; */
+    height: 28px;
   }
-  .breadcrumb {
+  .breadcrumb-content {
+    padding: 0px;
     padding-top: 2px;
     /* height: 25px; */
   }
@@ -54,10 +55,14 @@
 @media (min-width: 576px) {
   /* Giảm khoảng cách lề và cỡ chữ cho breacum ở màn trên 567px */
   .breadcrumb-container {
-    padding: 4px 30px;
+    /* padding: 4px 30px; */
     font-size: 12px;
     /* margin-top: 89px; */
-
+    height: 32px;
+  }
+  .breadcrumb-content {
+    max-width: 100% !important;
+    /* margin-top: 5px; */
   }
 }
 
@@ -65,9 +70,14 @@
 @media (min-width: 768px) {
   /* Giảm khoảng cách lề và cỡ chữ cho breacum ở màn trên 768px */
   .breadcrumb-container {
-    padding: 8px 40px;
+    /* padding: 8px 40px; */
     font-size: 12px;
     /* margin-top: 100px; */
+    height: 36px;
+  }
+  .breadcrumb-content {
+    max-width: 100% !important;
+    /* margin-top: 5px; */
   }
 }
 
@@ -75,12 +85,15 @@
 @media (min-width: 992px) {
   /* Giảm khoảng cách lề và cỡ chữ cho breacum ở màn trên 768px */
   .breadcrumb-container {
-    padding: 6px 60px;
+    /* padding: 6px 60px; */
     font-size: 14px;
     /* margin-top: 79px; */
+    height: 36px;
   }
-  .breadcrumb{
+  .breadcrumb-content {
+    max-width: 960px !important;
     /* margin-top: 5px; */
+    padding: 0px 12px;
   }
 }
 
@@ -88,15 +101,21 @@
 @media (min-width: 1200px) {
   /* Giảm khoảng cách lề và cỡ chữ cho breacum ở màn trên 768px */
   .breadcrumb-container {
-    padding: 6px 80px;
+    /* padding: 6px 80px; */
     font-size: 16px;
+    height: 40px;
   }
-  .breadcrumb{
+  .breadcrumb-content {
+    max-width: 1140px !important;
     /* margin-top: 0px; */
   }
 }
 
 /* Extra extra large */
 @media (min-width: 1400px) {
+  .breadcrumb-content {
+    max-width: 1320px !important;
+    /* margin-top: 0px; */
+  }
 }
 /* End Responsive by @Media same  bootstrap*/

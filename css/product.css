@@ -17,11 +17,11 @@ a {
   color: black;
 }
 .container-fluid {
-  padding: 0px;
+  /* padding: 0px; */
 }
-/* style cho ô INPUT dùng chung */
+/* style cho ô INPUT dùng chung  */
 input {
-  border: 1px solid rgba(208, 208, 208, 0.5);
+  border: 1px solid rgba(208, 208, 208, 1);
   border-radius: 2px;
   padding: 8px 6px;
   transition: all 0.2s;
@@ -31,10 +31,10 @@ input:hover {
 }
 input:focus {
   outline: none !important;
-  box-shadow: 0px 0px 4px 0px rgba(208, 208, 208, 1);
+  box-shadow: 0px 0px 2px 0px rgba(208, 208, 208, 1);
 }
 input::placeholder {
-  color: rgba(228, 35, 19, 0.5);
+  color: rgba(208, 208, 208, 0.8);
   font-size: 14px;
 }
 
@@ -42,7 +42,53 @@ input::placeholder {
 header {
   /* border: 1px solid red; */
 }
+/* Xử lý danh mục sản phẩm riêng ngoại từ màn index */
+/* Thẻ Category iêu đề có nút chỉ xuống  */
+.nav-2-category {
+  /* border: 0.1px solid rgba(228,35,19, 1); */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.nav-2-category:hover {
+  background: rgba(92, 98, 103, 0.8);
+}
+.nav-2-category-title {
+  /* border: 0.1px solid violet; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  grid-gap: 6px;
+}
 
+.nav-2-category-title i {
+  /* border: 0.1px solid rgba(228,35,19, 1); */
+  /* display: none; */
+  font-size: 22px;
+  line-height: 0.2;
+  height: 12px;
+}
+.nav-2-category-title:hover > i {
+  display: block;
+}
+/* Quay mũi tên chỉ lển của Category */
+.sort-down-category-to-up {
+  transform: rotate(-180deg);
+  transition: all 0.3s ease;
+}
+
+.categorys {
+  border: 0.1px solid rgba(228, 35, 19, 0.2);
+  margin-top: 6px;
+  z-index: 2;
+}
+.categorys-none {
+  display: none !important;
+}
+.submenu {
+  border: 0.1px solid rgba(228, 35, 19, 0.2);
+}
 /* End Nav */
 
 /* Start filter */
@@ -66,7 +112,8 @@ header {
 }
 
 /* Mỗi-1 content và lọc - ngang  */
-.filter-by-brand {
+.filter-by-brand,
+.filter-by-classify {
   border: 1px solid rgba(145, 146, 148, 0);
   border-radius: 2px;
   width: 100%;
@@ -74,10 +121,11 @@ header {
   display: flex;
   flex-direction: column;
   grid-gap: 20px;
-  padding: 20px 24px;
+  padding: 8px 4px;
   transition: all 0.3s ease;
 }
-.filter-by-brand:hover {
+.filter-by-brand:hover,
+.filter-by-classify:hover {
   border: 1px solid rgba(145, 146, 148, 0.5);
 }
 /*  */
@@ -85,14 +133,18 @@ header {
   font-size: 20px;
   font-weight: 700;
 }
-.list-brand {
+.list-brand,
+.list-classify {
   /* border: 1px solid rgb(64, 255, 0); */
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: row;
   /* display: grid; */
   /* grid-template-columns: 1fr 1fr 1fr; */
-  /* grid-gap: 16px; */
+  grid-gap: 16px;
 }
+
 /* Div được gắn Carousel */
 .list-brand-carousel {
   /* border: 1px solid violet; */
@@ -105,22 +157,11 @@ header {
 .brand-logo {
   border: 1px solid rgba(145, 146, 148, 0.5);
   border-radius: 2px;
-  /* width: 100%; */
-  /* height: 100%; */
-
-  width: 150px!important;
-  height: 60px;
-  
-  overflow: hidden;
-  margin: 0px 4px;
-  padding: 4px;
-
+  width: 100%;
   text-align: center;
-
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: center !important;
-  align-items: center !important;
+  overflow: hidden;
+  /* margin: 0px 4px; */
+  padding: 4px;
 
   cursor: pointer;
   transition: all 0.2s ease;
@@ -129,22 +170,6 @@ header {
   border: 1px solid rgba(145, 146, 148, 1);
   /* margin-top: 20px; */
 }
-.brand-logo span {
-  /* border: 1px solid rgba(223, 17, 17, 0.5); */
-  /* width: 126px !important; */
-  /* height: 100% !important; */
-  /* height: 55px!important; */
-  padding: 12px 0px 12px 0px;
-
-  font-weight: 600;
-  color: #e42313;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .brand-logo img {
   width: 100%;
   /* height: 100%; */
@@ -154,12 +179,36 @@ header {
 .brand-logo img:hover {
   opacity: 0.6;
 }
+/* Lọc theo loại sản phẩm */
+.brand-classify {
+  width: 100%;
+  /* height: 60px; */
+  text-align: center;
+  overflow: hidden;
+  padding: 4px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.brand-classify span {
+  border: 1px solid rgba(145, 146, 148, 0.5);
+  /* width: 126px !imsportant; */
+  width: 100%;
+  /* height: 55px!important; */
+  padding: 12px 0px 12px 0px;
+  font-weight: 600;
+}
 
 /* Lọc theo giá bán và tìm kiếm */
 .filter-by-price-search-container {
   /* border: 1px solid brown; */
   border-radius: 2px;
-  background: #eeeeee;
+  background: #ffffff;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -239,179 +288,6 @@ header {
 /* End filter */
 
 /* Start Danh sách các sản phẩm và phân trang */
-.products-pagination-container {
-  /* border: 1px dotted #e42313; */
-  width: 100%;
-  padding-bottom: 20px;
-  /* padding: 40px 80px; */
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-.list-products {
-  /* border: 1px dotted #e4d613; */
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 40px;
-}
-/*  */
-.product {
-  border: 0.1px solid rgba(145, 146, 148, 0.5);
-  width: 100%;
-  background: #ffffff;
-  /* padding: 12px 20px 12px 20px; */
-  padding: 12px 0px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  grid-gap: 40px;
-  transition: all 0.2s;
-}
-.product:hover {
-  border: 0.1px solid rgba(228, 35, 19, 0.5);
-}
-.product a {
-  /* border: 1px dotted #E42313; */
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-.product-img {
-  /* border: 1px dotted #E42313; */
-  width: 100%;
-  /* height: 100%; */
-  transition: all 0.3s ease-in-out;
-}
-.product-img:hover {
-  opacity: 0.8;
-}
-.product-img img {
-  width: 100%;
-  height: 100%;
-}
-
-.product-details {
-  /* border: 1px solid red; */
-  display: flex;
-  flex-direction: column;
-  grid-gap: 16px;
-}
-.product-infor {
-  /* border: 1px solid rgb(0, 187, 255); */
-  /* padding: 12px 28px; */
-  display: flex;
-  flex-direction: column;
-  grid-gap: 4px;
-}
-.product-infor-brand {
-  font-weight: 700;
-  font-size: 20px;
-}
-.product-infor-price {
-  /* border: 1px solid red; */
-  color: #e42313;
-  font-size: 22px;
-  font-weight: 600;
-}
-/* Thích sản phẩm - Thả tim*/
-.like-product {
-  color: #ff9dd8;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-.like-product:hover {
-  font-weight: 600;
-}
-
-.product-details-button {
-  /* border: 1px solid rgb(128, 0, 255); */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  /* padding: 12px 28px; */
-  grid-gap: 12px;
-}
-.product-details-button span {
-  /* border: 1px solid rgb(255, 89, 0); */
-  border-radius: 2px;
-  color: white;
-  width: 100%;
-  text-align: center;
-  padding: 8px 0px;
-  font-size: 14px;
-}
-
-.product-details-button-cart {
-  border: 1px solid rgba(236, 175, 68, 1);
-  background: rgba(236, 175, 68, 1);
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  grid-gap: 8px;
-  transition: all 0.2s;
-}
-.product-details-button-cart:hover {
-  background: rgba(236, 175, 68, 0.85);
-  color: white;
-}
-
-.product-details-button-buynow {
-  width: 100%;
-  border: 1px solid #e42313;
-  border-radius: 2px;
-  background: #e42313;
-  color: white;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  padding: 7px 0px;
-  transition: all 0.2s;
-}
-.product-details-button-buynow:hover {
-  background: white;
-  color: #e42313;
-}
-
-/*  */
-
-/* Phân trang */
-.paginations {
-  /* border: 1px dotted #13e463; */
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  grid-gap: 8px;
-  margin-top: 64px;
-}
-#paginations-active {
-  background: #e42313;
-  color: white;
-}
-.paginations span {
-  border: 1px solid #e42313;
-  border-radius: 25px;
-  color: #e42313;
-  font-size: 16px;
-  padding: 2.5px 10.5px;
-  transition: all 0.2s;
-}
-.paginations span:hover {
-  background: #e42313;
-  color: white;
-  transform: scale(1.1);
-}
-
 /* End Danh sách các sản phẩm và phân trang */
 
 /* Start */
@@ -422,14 +298,10 @@ header {
 
 /* X-Small */
 @media (max-width: 576px) {
-  /* Giảm khoảng cách lề và cỡ chữ cho breacum ở màn iphone 5 */
-  .breadcrumb-container {
-    padding: 10px 20px;
-    font-size: 12px;
-  }
   /* Ở màn bé nhất lề web giảm ngang còn 20px */
   .filter-container {
     /* padding: 0px 20px; */
+    padding: 0px;
   }
   /* Dưới 576px 2 khối lọc xếp dọc và chia 3 cột mỗi khối lọc*/
   .filters {
@@ -437,7 +309,8 @@ header {
     grid-gap: 12px;
   }
   /*  */
-  .filter-by-brand {
+  .filter-by-brand,
+  .filter-by-classify {
     padding: 20px 12px;
   }
 
@@ -446,7 +319,9 @@ header {
     font-size: 18px;
   }
   /* Co 3 hàng cho khối lọc theo thương hiệu */
-  .list-brand {
+  .list-brand,
+  .list-classify {
+    display: grid;
     grid-template-columns: 1fr 1fr;
   }
   /* Ở màn iphone 5 cỡ chữ của brand lọc giảm nhỏ gần nửa */
@@ -471,33 +346,6 @@ header {
     /* width: 260px; */
     width: 100%;
   }
-
-  /* Danh sách sản phẩm giảm lề ở màn iphone 5 còn 20px */
-  .products-pagination-container {
-    /* padding: 10px 20px; */
-  }
-  /* Danh sách Products giảm khoảng cách lưới còn 4px */
-  .list-products {
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-  }
-
-  /* Mỗi 1 sản phẩm có viền trong giảm vừa, giảm kh cách lưới */
-  .product {
-    padding: 8px 12px;
-    grid-gap: 8px;
-  }
-  /* Khối thông tin sản phẩm và nút giảm dày viền ngoài */
-  .product-infor,
-  .product-details-button {
-    /* padding: 12px 20px; */
-  }
-
-  /* Phân trang giảm kích thước phần tử = padding */
-  .paginations span {
-    font-size: 12px;
-    padding: 4px 9px;
-  }
 }
 
 /* Small */
@@ -505,6 +353,7 @@ header {
   /* Ở màn bé nhất lề web giảm ngang còn 40px */
   .filter-container {
     /* padding: 0px 40px; */
+    max-width: 100% !important;
   }
   /* Trên 576px 2 khối lọc xếp dọc và chia 3 cột mỗi khối lọc*/
   .filters {
@@ -516,8 +365,10 @@ header {
     font-size: 20px;
   }
   /* Co 2 hàng cho khối lọc theo thương hiệu */
-  .list-brand {
-    grid-template-columns: 1fr 1fr;
+  .list-brand,
+  .list-classify {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   /* Ở màn Lớn hơn iphone 5 cỡ chữ của brand lọc với cỡ chữ chuẩn, khối ọc phân 2 */
   .brand-logo span {
@@ -536,33 +387,13 @@ header {
   .search-input {
     width: 80%;
   }
-
-  /* Danh sách sản phẩm giảm lề ở màn 576px còn 60px */
-  .products-pagination-container {
-    /* padding: 20px 40px; */
-  }
-  /* Danh sách sản phẩm 2 cột sp, k cách lưới giảm */
-  .list-products {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 24px;
-  }
-
-  /* Mỗi 1 sản phẩm có viền trong giảm vừa, giảm kh cách lưới */
-  .product {
-    /* padding: 8px 12px; */
-    grid-gap: 16px;
-  }
-  /* Khối thông tin sản phẩm và nút giảm dày viền ngoài */
-  .product-infor,
-  .product-details-button {
-    /* padding: 12px 20px; */
-  }
 }
 
 /* Medium */
 @media (min-width: 768px) {
   /* Ở màn 768px lề web giảm ngang còn 60px */
   .filter-container {
+    max-width: 100% !important;
     /* padding: 0px 60px; */
   }
 
@@ -572,8 +403,10 @@ header {
     grid-gap: 16px;
   }
   /* Co 2 hàng cho khối lọc theo thương hiệu */
-  .list-brand {
-    grid-template-columns: 1fr 1fr;
+  .list-brand,
+  .list-classify {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
   /* Tiêu đề khối lọc sản phẩm bth: 20px */
   .filter-title {
@@ -588,33 +421,13 @@ header {
   .search-input {
     width: 70%;
   }
-
-  /* Danh sách sản phẩm giảm lề ở màn còn 60px */
-  .products-pagination-container {
-    /* padding: 30px 60px; */
-  }
-  /* Danh sách sản phẩm 2 cột sp, k cách lưới giảm */
-  .list-products {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 28px;
-  }
-
-  /* Mỗi 1 sản phẩm có viền trong giảm vừa, giảm kh cách lưới */
-  .product {
-    /* padding: 8px 16px; */
-    grid-gap: 24px;
-  }
-  /* Khối thông tin sản phẩm và nút giảm dày viền ngoài */
-  .product-infor,
-  .product-details-button {
-    /* padding: 12px 24px; */
-  }
 }
 
 /* Large */
 @media (min-width: 992px) {
-  /* Ở màn 992px lề web ngang giữ nguyên 80px */
+  /* Ở màn 992px lề web ngang theo boostrap */
   .filter-container {
+    max-width: 960px !important;
     /* padding: 0px 80px; */
   }
   /* Trên 768px 2 khối lọc vẫn xếp ngang */
@@ -623,8 +436,10 @@ header {
     grid-gap: 8px;
   }
   /* Co 2 hàng cho khối lọc theo thương hiệu */
-  .list-brand {
-    grid-template-columns: 1fr 1fr 1fr;
+  .list-brand,
+  .list-classify {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
   /* Thay đổi xếp DỌC khối bọc lọc giá và tìm kiếm */
   .filter-by-price-search-container {
@@ -634,56 +449,34 @@ header {
   .search-input {
     width: 360px;
   }
-
-  /* Danh sách sản phẩm giảm lề ở màn 992px còn 80px  */
-  .products-pagination-container {
-    /* padding: 40px 80px; */
-  }
-  /* Danh sách sản phẩm 2 cột sp, k cách lưới giảm */
-  .list-products {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 32px;
-  }
-
-  /* Mỗi 1 sản phẩm có viền trong giảm vừa, giảm kh cách lưới */
-  .product {
-    /* padding: 12px 20px; */
-    grid-gap: 28px;
-  }
-  /* Khối thông tin sản phẩm và nút giảm dày viền ngoài */
-  .product-infor,
-  .product-details-button {
-    /* padding: 12px 28px; */
-  }
 }
 
 /* Extra large */
 @media (min-width: 1200px) {
+  /* Ở màn 1200px lề web ngang theo boostrap */
+  .filter-container {
+    max-width: 1140px !important;
+    /* padding: 0px 80px; */
+  }
   /* Trên 1200px 2 khối lọc vẫn xếp ngang khoảng các khối trong giảm */
   .filters {
     /* flex-direction: row; */
     grid-gap: 40px;
   }
-
-  /* Danh sách sản phẩm giữ lề ở màn 1200px 80px */
-  .products-pagination-container {
-    /* padding: 40px 80px;s */
-  }
-  /* Danh sách sản phẩm 2 cột sp, k cách lưới giảm */
-  .list-products {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 40px;
-  }
-
-  /* Mỗi 1 sản phẩm có viền trong giảm vừa, giảm kh cách lưới */
-  .product {
-    /* padding: 12px 20px; */
-    grid-gap: 40px;
+  /* Co 2 hàng cho khối lọc theo thương hiệu */
+  .list-brand,
+  .list-classify {
+    display: flex;
   }
 }
 
 /* Extra extra large */
 @media (min-width: 1400px) {
+  /* Ở màn 1200px lề web ngang theo boostrap */
+  .filter-container {
+    max-width: 1320px !important;
+    /* padding: 0px 80px; */
+  }
 }
 /* End Responsive by @Media same  bootstrap*/
 

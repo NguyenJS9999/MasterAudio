@@ -39,301 +39,1286 @@
     <!-- css FOOTER -->
     <link rel="stylesheet" href="./footer/footer.css">
 
+    <!-- css PRODUCT - trang danh mục tổng quan -->
+    <link rel="stylesheet" href="./css/product.css">
+
 </head>
 
 <body>
 
     <header>
+        <!-- container-nav-1 -->
+        <div class="  container-nav-1  container-fluid  ">
 
-        <div class="container-header container-pluid">
+            <!-- Start navigation 1 -->
+            <nav class=" navigation-mobile-container   container">
+                <!-- Start navigation mobile -->
+                <div class=" navigation-mobile  container ">
 
-            <!-- Start navigation mobile -->
-            <div class="navigation-mobile   md-d.none">
+                    <div class="icon-menu-search">
+                        <!-- Menu Hambeger ẩn màn iphone - Home - Xây dựng cấu hình -->
+                        <div class=" icon-menu-hidden-mobile  ">
+                            <i class="fas fa-bars"></i>
+                        </div>
 
-                <span class="icon-menu-hiden-mobile" onclick="hiddenMenu()">
-                    <i class="fas fa-bars"></i>
-                </span>
+                        <!-- Icon tìm kiếm Màn min992 -->
 
-                <!--  d-none -->
-                <div class="menu-infos-header-mobile  icon-menu-hiden-mobile  ">
+                        <div class=" icon-search-hidden-mobile-992  ">
+                            <i class="fas fa-search"></i>
+                        </div>
 
-                    <a class="menu-infor-mobile" href="./index.html">
-                        <div>TRANG CHỦ</div>
-                    </a>
+                    </div>
 
-                    <a class="menu-infor-mobile" href="./product.html">
-                        <div>SẢN PHẨM</div>
-                    </a>
-
-                    <a class="menu-infor-mobile" href="./blog.html">
-                        <div>BLOG</div>
-                    </a>
-
-                    <a class="menu-infor-mobile" href="./contact.html">
-                        <div>LIÊN HỆ</div>
-                    </a>
-
-                </div>
-
-                <div class="logo-master-audio">
-                    <a href="./index.html">
-                        <img src="./img/logo/logo.png" alt="logo">
-                    </a>
-                </div>
-
-                <!-- cart / login -->
-                <div class="cart-login">
-                    <a class="cart-icon" class="cart-icon" href="./cart.html">
-
-                        <i class="fas fa-cart-arrow-down">
-                            <span class=" cart-number-items ">3</span>
-                        </i>
-
-                    </a>
-
-
-                    <a href="./wishlist.html">
-                        <i class=" liked-product-wishlist  far fa-heart">
-                            <span class="liked-number-item">3</span>
-                        </i>
-                    </a>
-
-                    <!-- User -->
-                    <div class=" login-register-btn "><i class="far fa-user"></i></div>
-                </div>
-
-            </div> <!-- End navigation mobile -->
-
-
-            <!-- Start navigation desktop-->
-            <nav>
-
-                <div class="navigation-desktop">
 
                     <div class="logo-master-audio">
                         <a href="./index.html"><img src="./img/logo/logo.png" alt="logo"></a>
                     </div>
 
-                    <div class="menu-pages-desktop">
-                        <a class="menu-page-desktop" href="./index.html">
-                            <div>TRANG CHỦ</div>
-                        </a>
-
-                        <a class="menu-page-desktop" href="./product.html">
-                            <div>SẢN PHẨM</div>
-                        </a>
-
-                        <a class="menu-page-desktop" href="./blog.html">
-                            <div>BLOG</div>
-                        </a>
-                        <!-- Liên hệ sẽ cho chạy xuống dưới footer -->
-                        <a class="menu-page-desktop" href="./contact.html">
-                            <div>LIÊN HỆ</div>
-                        </a>
-
-
+                    <!-- Icon tìm kiếm màn max576 -->
+                    <div class=" icon-search-hidden-mobile-min576  ">
+                        <i class="fas fa-search"></i>
                     </div>
-                    <!-- cart / login -->
-                    <div class="cart-login">
+
+
+                    <!-- cart / login Mobile max576 -->
+                    <div class="cart-login-mobile">
+                        <!-- cart mobile -->
                         <a class="cart-icon" href="./cart.html">
-                            <div>
-                                <i class="fas fa-cart-arrow-down"></i>
+                            <span>
+                                <i class="fas fa-shopping-cart"></i>
                                 <span class=" cart-number-items ">3</span>
+                            </span>
+                        </a>
+
+                        <!-- Like mobile -->
+                        <a class="liked-product-wishlist " href="./wishlist.html">
+                            <div class="wishlist-status ">
+                                <i class="fas fa-heart"></i>
+                                <span class=" wishlist-number ">3<span>
                             </div>
                         </a>
 
+                        <!-- User mobile -->
+                        <div class=" mobile-account   login-register-btn ">
 
-                        <a href="./wishlist.html">
-                            <i class=" liked-product-wishlist  far fa-heart">
-                                <span class="liked-number-item">3</span>
-                            </i>
-                        </a>
+                            <div class="login-status">
+                                <i class="fas fa-user"></i>
+                                <img class="login-status-logged-avata" src="./img/login/Jennie-2021.webp"
+                                    alt="avata-acount">
+                            </div>
 
-                        <!-- User -->
-                        <span class=" login-register-btn "><i class="far fa-user"></i></span>
+                        </div>
+
+                    </div> <!-- cart / login -->
+
+
+
+                    <!-- menu cố định đáy chuyển từ nav2 ẩn lên thành hambeger màn max576-->
+                    <div class="mobile-header-components">
+                        <div class="component-wrapper">
+
+                            <div class="mobile-component mobile-home">
+                                <a href="./index.html">
+                                    <i class="fas fa-home"></i>
+                                    <span>Trang chủ</span>
+                                </a>
+                            </div>
+
+
+                            <div class=" mobile-component    mobile-wishlist ">
+
+                                <a href="./wishlist.html">
+                                    <div class="mobile-wishlist-status ">
+                                        <i class="fas fa-heart"></i>
+                                        <span class=" mobile-wishlist-number ">3<span>
+                                    </div>
+                                    <span>Yêu thích</span>
+                                </a>
+
+                            </div>
+
+
+                            <div class="mobile-component mobile-cart">
+                                <a href="./cart.html">
+
+                                    <div class="mobile-cart-status">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span class="mobile-cart-number">3</span>
+                                    </div>
+                                    <span>Giỏ hàng</span>
+                                </a>
+                            </div>
+
+                            <div class="mobile-component mobile-account">
+                                <div class="mobile-account-div">
+
+                                    <div class="mobile-accoun-login-status">
+                                        <i class="fas fa-user"></i>
+                                        <img class="login-status-logged-avata" src="./img/login/Jennie-2021.webp"
+                                            alt="avata-acount">
+                                    </div>
+                                    <span>Tài khoản</span>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- menu cố định đáy -->
+
+                </div>
+            </nav> <!-- End navigation mobile -->
+
+
+            <!-- Start navigation desktop-->
+            <nav class=" navigation-desktop-container   container ">
+
+                <div class="navigation-desktop   container">
+
+                    <div class="logo-master-audio">
+                        <a href="./index.html"><img src="./img/logo/logo.png" alt="logo"></a>
+                    </div>
+
+                    <div class=" search-header-desktop ">
+                        <span>
+                            <input type="text" name="" id="" placeholder="Tìm sản phẩm bạn muốn ...">
+                            <i class="fas fa-search"></i>
+                        </span>
 
                     </div>
+                    <!-- cart / login desktop-->
+                    <div class="cart-login">
+                        <a class="cart-icon" href="./cart.html">
+                            <div>
+                                <i class="fas fa-shopping-cart"></i>
+
+                                <span class=" cart-number-items ">3</span>
+
+                            </div>
+                        </a>
+
+                        <!-- Like desktop -->
+                        <a class="liked-product-wishlist " href="./wishlist.html">
+                            <div class="wishlist-status ">
+                                <i class="fas fa-heart"></i>
+                                <span class=" wishlist-number ">3<span>
+                            </div>
+                        </a>
+
+                        <!-- User desktop -->
+                        <div class=" login-register-btn   mobile-account ">
+                            <div class="login-status">
+                                <i class="fas fa-user"> </i>
+
+                                <img class="login-status-logged-avata" src="./img/login/Jennie-2021.webp"
+                                    alt="avata-acount">
+
+                            </div>
+                        </div>
+
+                    </div> <!-- cart / login -->
 
 
                 </div> <!-- navigation-desktop -->
 
-
-            </nav> <!-- End navigation desktop-->
-            <!-- banner trc -->
-        </div> <!-- container-header -->
+            </nav>
+            <!-- End navigation desktop 1-->
 
 
+        </div>
+        <!-- container-nav-1 -->
+
+        <!-- Moadal Đăng nhập / đăng kí -->
+        <div class=" login-register-container   container-fluid ">
+
+
+
+            <div class=" login-register-form container-fluid ">
+
+                <ul class="nav nav-pills mb-3  d-flex justify-content-center   login-register-tab-change "
+                    id="pills-tab" role="tablist">
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Đăng nhập</button>
+                    </li>
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">
+                            Đăng ký
+                        </button>
+                    </li>
+
+
+
+                </ul>
+
+                <div class="tab-content" id="pills-tabContent">
+
+                    <!-- 1 - Đăng nhập -->
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                        <form>
+                            <!-- <div class=" login-register-form-title ">Đăng nhập</div> <br> -->
+
+                            <div class=" laber-inputs-infor ">
+
+                                <div class=" laber-input-infor  mb-3 ">
+                                    <!-- <label for="exampleInputEmail1" class="form-label">Email
+                                        <span class="text-danger">*</span>
+                                    </label> -->
+
+                                    <input type="email" class="" id="exampleInputEmail1" placeholder="Email *">
+                                    <small class="error-mess d-none ">Email không hợp lệ. VD: abc_123@gmail.com</small>
+
+                                </div>
+
+                                <div class=" laber-input-infor  mb-3 ">
+                                    <!-- <label for="password" class="form-label">Mật khẩu
+                                        <span class="text-danger">*</span>
+                                    </label> -->
+
+                                    <input type="password" class="" id="password" placeholder="Mật khẩu *">
+                                    <small class="error-mess d-none">Vui lòng nhập mật khẩu</small>
+
+                                </div>
+
+                                <div class=" mb-3  form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">
+                                        Ẩn/Hiện mật khẩu
+                                    </label>
+                                </div>
+
+
+                                <div class=" mb-3  form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">
+                                        Ghi nhớ tài khoản
+                                    </label>
+                                </div>
+
+
+                            </div>
+
+                            <div type="button" class=" login-btn  register-button mt-2">Đăng nhập</div>
+
+                            <p>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    aria-hidden="true" focusable="false" width="1em" height="1em"
+                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16" class="iconify"
+                                    data-icon="codicon:question" data-inline="false" style="transform: rotate(360deg);">
+                                    <g fill="currentColor">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M7.5 1a6.5 6.5 0 1 0 0 13a6.5 6.5 0 0 0 0-13zm0 12a5.5 5.5 0 1 1 0-11a5.5 5.5 0 0 1 0 11zm1.55-8.42a1.84 1.84 0 0 0-.61-.42A2.25 2.25 0 0 0 7.53 4a2.16 2.16 0 0 0-.88.17c-.239.1-.45.254-.62.45a1.89 1.89 0 0 0-.38.62a3 3 0 0 0-.15.72h1.23a.84.84 0 0 1 .506-.741a.72.72 0 0 1 .304-.049a.86.86 0 0 1 .27 0a.64.64 0 0 1 .22.14a.6.6 0 0 1 .16.22a.73.73 0 0 1 .06.3c0 .173-.037.343-.11.5a2.4 2.4 0 0 1-.27.46l-.35.42c-.12.13-.24.27-.35.41a2.33 2.33 0 0 0-.27.45a1.18 1.18 0 0 0-.1.5v.66H8v-.49a.94.94 0 0 1 .11-.42a3.09 3.09 0 0 1 .28-.41l.36-.44a4.29 4.29 0 0 0 .36-.48a2.59 2.59 0 0 0 .28-.55a1.91 1.91 0 0 0 .11-.64a2.18 2.18 0 0 0-.1-.67a1.52 1.52 0 0 0-.35-.55zM6.8 9.83h1.17V11H6.8V9.83z">
+                                        </path>
+                                    </g>
+                                </svg>
+
+                                Quên mật khẩu
+                            </p>
+
+
+                        </form>
+
+                    </div> <!-- 2 - Đăng nhập -->
+
+
+                    <!-- 2 - Đăng kí -->
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab">
+
+                        <form>
+                            <!-- <div class=" login-register-form-title ">Đăng ký</div> <br> -->
+
+                            <div class=" laber-inputs-infor ">
+
+
+                                <!-- Họ và tên -->
+                                <div class=" laber-input-infor  mb-3 ">
+                                    <input type="text" class="" id="full-name" placeholder="Họ và tên *">
+                                    <small class="error-mess d-none ">Vui lòng nhập đúng họ và tên</small>
+                                </div>
+
+                                <!--sdt -->
+                                <div class=" laber-input-infor  mb-3 ">
+                                    <input type="text" class="" id="phone-number" placeholder="Số điện thoại *">
+                                    <small class="error-mess d-none ">Vui lòng nhập vào số điện thoại của bạn</small>
+                                </div>
+
+                                <!-- Email -->
+                                <div class=" laber-input-infor  mb-3 ">
+                                    <input type="email" class="" id="exampleInputEmail1" placeholder="Email *">
+                                    <small class="error-mess d-none ">Vui lòng nhập đúng Email</small>
+                                </div>
+
+                                <!--  -->
+                                <div class=" laber-input-infor  mb-3 ">
+
+                                    <input type="password" class="" id="password" placeholder="Mật khẩu *">
+                                    <small class="error-mess d-none ">Vui lòng nhập đúng Mật khẩu</small>
+                                </div>
+
+                                <!--  -->
+                                <div class=" mb-3  form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+                                    <label class="form-check-label" for="exampleCheck1">
+                                        Ẩn/Hiện mật khẩu
+                                    </label>
+
+                                </div>
+
+
+                            </div>
+
+                            <div class=" mb-3  form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+                                <label class="form-check-label" for="exampleCheck1">
+                                    Quý khách đồng ý với điều khoản dịch vụ của chúng tôi
+                                </label>
+
+                            </div>
+
+                            <div type="button" class="  register-btn  register-button ">Đăng ký</div>
+
+                        </form>
+
+                    </div> <!-- 2 - Đăng kí -->
+
+
+                </div>
+
+
+
+
+            </div>
+            <!-- login-register-form -->
+
+        </div>
+        <!-- Moadal Đăng nhập / đăng kí -->
+
+        <!-- **************************************************************************** -->
+
+        <!-- container Navigation 2 Mobile Danh mục sán phẩm, menu -->
+        <div class="  container-nav-2  container-fluid  ">
+            <div class="  container-category-menu  container ">
+
+                <div class=" nav-2-category  ">
+                    <span class=" nav-2-category-title  "> Danh mục sản phẩm 
+                        <i class="fas fa-sort-down   sort-down-category "></i>
+                    </span>
+
+                    <!-- style=' display: none;' -->
+                    <ul class=" categorys   " style="margin-top: 6px; display: none;">
+
+                        <!-- 1 -->
+                        <li class=" category ">
+                            <a href="./product.html">
+
+                                <span>Loa fullrange</span>
+                                <i class="fas fa-angle-right   category-right-arrow "></i>
+
+                            </a>
+
+                            <div class=" submenu-container ">
+                                <ul class=" submenu ">
+
+                                    <li class="submenu-items">
+                                        <p>Loa fullrange theo thương hiệu</p>
+                                        <a href="./product.html">4 Acoustic</a>
+                                        <a href="./product.html">Nexo</a>
+                                        <a href="./product.html">Adamson</a>
+
+                                        <a href="./product.html">Amate</a>
+                                        <a href="./product.html">Kukedy</a>
+                                        <a href="./product.html">DK</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <!-- 2 -->
+                        <li class=" category ">
+                            <a href="./product.html">
+
+                                <span>Loa subwoofer</span>
+                                <i class="fas fa-angle-right   category-right-arrow "></i>
+
+                            </a>
+
+                            <div class=" submenu-container ">
+                                <ul class=" submenu ">
+
+                                    <li class="submenu-items">
+                                        <p>Loa subwoofer theo thương hiệu</p>
+                                        <a href="./product.html">4 Acoustic</a>
+                                        <a href="./product.html">Nexo</a>
+                                        <a href="./product.html">Adamson</a>
+
+                                        <a href="./product.html">Amate</a>
+                                        <a href="./product.html">Kukedy</a>
+                                        <a href="./product.html">DK</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <!-- 3 -->
+                        <li class=" category ">
+                            <a href="./product.html">
+
+                                <span>Loa line array</span>
+                                <i class="fas fa-angle-right   category-right-arrow "></i>
+
+                            </a>
+
+                            <div class=" submenu-container ">
+                                <ul class=" submenu ">
+
+                                    <li class="submenu-items">
+                                        <p>Loa line array theo thương hiệu</p>
+                                        <a href="./product.html">4 Acoustic</a>
+                                        <a href="./product.html">Nexo</a>
+                                        <a href="./product.html">Adamson</a>
+
+                                        <a href="./product.html">Amate</a>
+                                        <a href="./product.html">Kukedy</a>
+                                        <a href="./product.html">DK</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <!-- 4 -->
+                        <li class=" category ">
+                            <a href="./product.html">
+
+                                <span>Đẩy công suất</span>
+                                <i class="fas fa-angle-right   category-right-arrow "></i>
+
+                            </a>
+
+                            <div class=" submenu-container ">
+                                <ul class=" submenu ">
+
+                                    <li class="submenu-items">
+                                        <p>Đẩy công suất theo thương hiệu</p>
+                                        <a href="./product.html">4 Acoustic</a>
+                                        <a href="./product.html">Nexo</a>
+                                        <a href="./product.html">Adamson</a>
+
+                                        <a href="./product.html">Amate</a>
+                                        <a href="./product.html">Kukedy</a>
+                                        <a href="./product.html">DK</a>
+
+                                        <a href="./product.html">Hours</a>
+
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <!-- 5 -->
+                        <li class=" category ">
+                            <a href="./product.html">
+
+                                <span>Vang Số - DSP</span>
+                                <i class="fas fa-angle-right   category-right-arrow "></i>
+
+                            </a>
+
+                            <div class=" submenu-container ">
+                                <ul class=" submenu ">
+
+                                    <li class="submenu-items">
+                                        <p>Vang Số - DSP theo thương hiệu</p>
+                                        <a href="./product.html">4 Acoustic</a>
+                                        <a href="./product.html">Vainal</a>
+                                        <a href="./product.html">Nexo</a>
+
+                                        <a href="./product.html">Amate</a>
+                                        <a href="./product.html">Kukedy</a>
+                                        <a href="./product.html">Zongson</a>
+
+                                        <a href="./product.html">Marani</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <!-- 6 -->
+                        <li class=" category ">
+                            <a href="./product.html">
+
+                                <span>Mixcer</span>
+                                <i class="fas fa-angle-right   category-right-arrow "></i>
+
+                            </a>
+
+                            <div class=" submenu-container ">
+                                <ul class=" submenu ">
+
+                                    <li class="submenu-items">
+                                        <p>Mixcer theo thương hiệu</p>
+                                        <a href="./product.html">Pioneer-dj</a>
+                                        <a href="./product.html">Allen & Heath </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <!-- 7 -->
+                        <li class=" category ">
+                            <a href="./product.html">
+
+                                <span>Micro không dây</span>
+                                <i class="fas fa-angle-right   category-right-arrow "></i>
+
+                            </a>
+
+                            <div class=" submenu-container ">
+                                <ul class=" submenu ">
+
+                                    <li class="submenu-items">
+                                        <p>Micro không dây theo thương hiệu</p>
+                                        <a href="./product.html">Baiervires</a>
+                                        <a href="./product.html">DK</a>
+                                        <a href="./product.html">DB acoustic</a>
+
+                                        <a href="./product.html">Maingo</a>
+                                        <a href="./product.html">VTA</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <!-- 8 -->
+                        <li class=" category ">
+                            <a href="./product.html">
+
+                                <span>Quản lý nguồn</span>
+                                <i class="fas fa-angle-right   category-right-arrow "></i>
+
+                            </a>
+
+                            <div class=" submenu-container ">
+                                <ul class=" submenu ">
+
+                                    <li class="submenu-items">
+                                        <p>Quản lý nguồn theo thương hiệu</p>
+                                        <a href="./product.html">Kuledy</a>
+                                        <a href="./product.html">VTA</a>
+                                        <a href="./product.html">dBacoustic</a>
+
+                                        <a href="./product.html">Kukedy</a>
+                                        <a href="./product.html">MK</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <!-- 9 -->
+                        <li class=" category ">
+                            <a href="./product.html">
+
+                                <span>Phụ kiện âm Thanh</span>
+                                <i class="fas fa-angle-right   category-right-arrow "></i>
+
+                            </a>
+
+                            <div class=" submenu-container ">
+                                <ul class=" submenu ">
+
+                                    <li class="submenu-items">
+                                        <p>Phụ kiện từ các hãng</p>
+                                        <a href="./product.html">Tủ kĩ thuật</a>
+                                        <a href="./product.html">Chân loa</a>
+                                        <a href="./product.html">Cọc loa</a>
+
+                                        <a href="./product.html">Dây jack</a>
+                                        <a href="./product.html">Treo loa</a>
+                                        <a href="./product.html">Khung treo loa</a>
+
+                                        <a href="./product.html">Khác ...</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <!-- 10 -->
+                        <li class=" category ">
+                            <a href="./product.html">
+
+                                <span>Combo âm thanh gia đình</span>
+                                <i class="fas fa-angle-right   category-right-arrow "></i>
+
+                            </a>
+
+                            <div class=" submenu-container ">
+                                <ul class=" submenu ">
+
+                                    <li class="submenu-items">
+                                        <p>Combo theo giá</p>
+                                        <a href="./product.html">Combo từ 20 - 30 triệu</a>
+                                        <a href="./product.html">Combo từ 30 - 50 triệu</a>
+                                        <a href="./product.html">Combo từ 50 - 70 triệu</a>
+
+                                        <a href="./product.html">Combo từ 120 - 150 triệu</a>
+                                        <a href="./product.html">Combo từ 150 - 200 triệu</a>
+
+                                    </li>
+
+                                    <li class="submenu-items">
+                                        <p>Combo theo thương hiệu</p>
+                                        <a href="./product.html">4 Acoustic</a>
+                                        <a href="./product.html">Nexo</a>
+                                        <a href="./product.html">Adamson</a>
+
+                                        <a href="./product.html">Amate</a>
+                                        <a href="./product.html">Kukedy</a>
+                                        <a href="./product.html">DK</a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <!-- 11 -->
+                        <li class=" category ">
+                            <a href="./product.html">
+
+                                <span>Combo phòng phim</span>
+                                <i class="fas fa-angle-right   category-right-arrow "></i>
+
+                            </a>
+
+                            <div class=" submenu-container ">
+                                <ul class=" submenu ">
+
+                                    <li class="submenu-items">
+                                        <p>Combo theo giá</p>
+                                        <a href="./product.html">Combo từ 20 - 30 triệu</a>
+                                        <a href="./product.html">Combo từ 30 - 50 triệu</a>
+                                        <a href="./product.html">Combo từ 50 - 70 triệu</a>
+
+                                        <a href="./product.html">Combo từ 120 - 150 triệu</a>
+                                        <a href="./product.html">Combo từ 150 - 200 triệu</a>
+
+                                    </li>
+
+                                    <li class="submenu-items">
+                                        <p>Combo theo thương hiệu</p>
+                                        <a href="./product.html">4 Acoustic</a>
+                                        <a href="./product.html">Nexo</a>
+                                        <a href="./product.html">Adamson</a>
+
+                                        <a href="./product.html">Amate</a>
+                                        <a href="./product.html">Kukedy</a>
+                                        <a href="./product.html">DK</a>
+
+                                    </li>
+
+
+                                </ul>
+                            </div>
+
+                        </li>
+
+                        <!-- 12 -->
+                        <li class=" category ">
+                            <a href="./product.html">
+
+                                <span>Combo âm thanh hội trường</span>
+                                <i class="fas fa-angle-right   category-right-arrow "></i>
+
+                            </a>
+
+                            <div class=" submenu-container ">
+                                <ul class=" submenu ">
+
+                                    <li class="submenu-items">
+                                        <p>Combo theo giá</p>
+                                        <a href="./product.html">Combo từ 20 - 30 triệu</a>
+                                        <a href="./product.html">Combo từ 30 - 50 triệu</a>
+                                        <a href="./product.html">Combo từ 50 - 70 triệu</a>
+
+                                        <a href="./product.html">Combo từ 120 - 150 triệu</a>
+                                        <a href="./product.html">Combo từ 150 - 200 triệu</a>
+
+                                    </li>
+
+                                    <li class="submenu-items">
+                                        <p>Combo theo thương hiệu</p>
+                                        <a href="./product.html">4 Acoustic</a>
+                                        <a href="./product.html">Nexo</a>
+                                        <a href="./product.html">Adamson</a>
+
+                                        <a href="./product.html">Amate</a>
+                                        <a href="./product.html">Kukedy</a>
+                                        <a href="./product.html">DK</a>
+
+                                    </li>
+
+
+                                </ul>
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+
+
+                <div class=" nav-2-menu ">
+                    <a href="./index.html"><i class="fas fa-home"></i> Trang chủ</a>
+                    <a href="./"><i class="fas fa-tools"></i> Xây dựng cấu hình</a>
+                    <a href="./"><i class="fas fa-users-cog"></i> Dự án đã hoàn thành</a>
+
+                    <a href="./blog.html"><i class="far fa-newspaper"></i> Blog</a>
+                    <a href="./contact.html"><i class="fas fa-map-marked-alt"></i> Giới thiệu</a>
+                </div>
+
+            </div>
+        </div>
+        <!-- container Navigation 2 Mobile Danh mục sán phẩm, menu  -->
+
+
+
+
+        <!--  d-none  Nav Menu2 Ẩn - thu gọn - nền xám -->
+        <div class=" backdrop-bg ">
+        </div>
+
+        <!-- Menu ẩn nhỏ bên trái màn hình -->
+        <div class=" mobile-nav-bar ">
+            <div class="btn-close-menu" type='button'><i class="fas fa-times"></i></div>
+            <!-- 1 - Logo menu hidden -->
+            <div class=" mobile-menu__item-logo ">
+                <div class="logo-master-audio ">
+                    <a href="./index.html"><img src="./img/logo/logo.png" alt="logo"></a>
+                </div>
+            </div>
+            <!-- 2 - Input tìm kiếm sp bất kì -->
+            <div class=" search-collapse">
+                <input type="text" placeholder="Tìm sản phẩm bạn muốn ...">
+            </div>
+
+            <!-- 3 - accordion Tuôn ra giữa Menu và danh mục -->
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <!-- 1 -->
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Menu
+                        </button>
+                    </h2>
+
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <!--Menu con bên trong accodion được ẩn cuộn ẩn đi -->
+                            <div class=" menu-collapse ">
+                                <span>
+                                    <a href="./index.html">
+                                        <div>Trang chủ</div>
+                                    </a>
+                                </span>
+
+                                <span>
+                                    <a href="#">
+                                        <div>Xây dựng cấu hình</div>
+                                    </a>
+                                </span>
+
+                                <span>
+                                    <a href="#">
+                                        <div>Dự án đã hoàn thành</div>
+                                    </a>
+                                </span>
+
+                                <span>
+                                    <a href="./blog.html">
+                                        <div>Blog</div>
+                                    </a>
+
+                                </span>
+
+                                <span>
+                                    <a href="./contact.html">
+                                        <div>Liên hệ</div>
+                                    </a>
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-heading-category">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapse-category" aria-expanded="false"
+                            aria-controls="flush-collapse-category">
+                            Danh mục sản phẩm
+                        </button>
+                    </h2>
+
+                    <!-- Các danh mục con chính -->
+                    <div id="flush-collapse-category" class="accordion-collapse collapse"
+                        aria-labelledby="flush-heading-category" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+
+                            <!-- Danh mục con các sản phẩm - Accordion Luôn mở -->
+                            <ul class=" categorys-hide ">
+                                <!-- 1 -->
+                                <li class=" category-hide ">
+                                    <span class=" category-hide-title ">
+                                        <a href="./product.html">
+                                            <div>Loa fullrange</div>
+                                        </a>
+
+                                        <i class="fas fa-angle-right  category-hide-right-arrow "></i>
+
+                                    </span>
+
+                                    <div class=" submenu-hide-container ">
+                                        <ul class=" submenu-hide ">
+
+                                            <li class="submenu-hide-items">
+                                                <p>Loa fullrange theo thương hiệu</p>
+                                                <a href="./product.html">4 Acoustic</a>
+                                                <a href="./product.html">Nexo</a>
+                                                <a href="./product.html">Adamson</a>
+
+                                                <a href="./product.html">Amate</a>
+                                                <a href="./product.html">Kukedy</a>
+                                                <a href="./product.html">DK</a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+
+                                <!-- 2 -->
+                                <li class=" category-hide ">
+                                    <span class=" category-hide-title " href="./product.html">
+
+                                        <div>Loa subwoofer</div>
+                                        <i class="fas fa-angle-right   category-hide-right-arrow "></i>
+
+                                    </span>
+
+                                    <div class=" submenu-hide-container ">
+                                        <ul class=" submenu-hide ">
+
+                                            <li class="submenu-hide-items">
+                                                <p>Loa subwoofer theo thương hiệu</p>
+                                                <a href="./product.html">4 Acoustic</a>
+                                                <a href="./product.html">Nexo</a>
+                                                <a href="./product.html">Adamson</a>
+
+                                                <a href="./product.html">Amate</a>
+                                                <a href="./product.html">Kukedy</a>
+                                                <a href="./product.html">DK</a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+
+                                <!-- 3 -->
+                                <li class=" category-hide ">
+                                    <span class=" category-hide-title " href="./product.html">
+
+                                        <div>Loa line array</div>
+                                        <i class="fas fa-angle-right   category-hide-right-arrow "></i>
+
+                                    </span>
+
+                                    <div class=" submenu-hide-container ">
+                                        <ul class=" submenu-hide ">
+
+                                            <li class="submenu-hide-items">
+                                                <p>Loa line array theo thương hiệu</p>
+                                                <a href="./product.html">4 Acoustic</a>
+                                                <a href="./product.html">Nexo</a>
+                                                <a href="./product.html">Adamson</a>
+
+                                                <a href="./product.html">Amate</a>
+                                                <a href="./product.html">Kukedy</a>
+                                                <a href="./product.html">DK</a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+
+                                <!-- 4 -->
+                                <li class=" category-hide ">
+                                    <span class=" category-hide-title " href="./product.html">
+
+                                        <div>Đẩy công suất</div>
+                                        <i class="fas fa-angle-right   category-hide-right-arrow "></i>
+
+                                    </span>
+
+                                    <div class=" submenu-hide-container ">
+                                        <ul class=" submenu-hide ">
+
+                                            <li class="submenu-hide-items">
+                                                <p>Đẩy công suất theo thương hiệu</p>
+                                                <a href="./product.html">4 Acoustic</a>
+                                                <a href="./product.html">Nexo</a>
+                                                <a href="./product.html">Adamson</a>
+
+                                                <a href="./product.html">Amate</a>
+                                                <a href="./product.html">Kukedy</a>
+                                                <a href="./product.html">DK</a>
+
+                                                <a href="./product.html">Hours</a>
+
+
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+
+                                <!-- 5 -->
+                                <li class=" category-hide ">
+                                    <span class=" category-hide-title " href="./product.html">
+
+                                        <div>Vang Số - DSP</div>
+                                        <i class="fas fa-angle-right   category-hide-right-arrow "></i>
+
+                                    </span>
+
+                                    <div class=" submenu-hide-container ">
+                                        <ul class=" submenu-hide ">
+
+                                            <li class="submenu-hide-items">
+                                                <p>Vang Số - DSP theo thương hiệu</p>
+                                                <a href="./product.html">4 Acoustic</a>
+                                                <a href="./product.html">Vainal</a>
+                                                <a href="./product.html">Nexo</a>
+
+                                                <a href="./product.html">Amate</a>
+                                                <a href="./product.html">Kukedy</a>
+                                                <a href="./product.html">Zongson</a>
+
+                                                <a href="./product.html">Marani</a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+
+                                <!-- 6 -->
+                                <li class=" category-hide ">
+                                    <span class=" category-hide-title " href="./product.html">
+
+                                        <div>Mixcer</div>
+                                        <i class="fas fa-angle-right   category-hide-right-arrow "></i>
+
+                                    </span>
+
+                                    <div class=" submenu-hide-container ">
+                                        <ul class=" submenu-hide ">
+
+                                            <li class="submenu-hide-items">
+                                                <p>Mixcer theo thương hiệu</p>
+                                                <a href="./product.html">Pioneer-dj</a>
+                                                <a href="./product.html">Allen & Heath </a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+
+                                <!-- 7 -->
+                                <li class=" category-hide ">
+                                    <span class=" category-hide-title " href="./product.html">
+
+                                        <div>Micro không dây</div>
+                                        <i class="fas fa-angle-right   category-hide-right-arrow "></i>
+
+                                    </span>
+
+                                    <div class=" submenu-hide-container ">
+                                        <ul class=" submenu-hide ">
+
+                                            <li class="submenu-hide-items">
+                                                <p>Micro không dây theo thương hiệu</p>
+                                                <a href="./product.html">Baiervires</a>
+                                                <a href="./product.html">DK</a>
+                                                <a href="./product.html">DB acoustic</a>
+
+                                                <a href="./product.html">Maingo</a>
+                                                <a href="./product.html">VTA</a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+
+                                <!-- 8 -->
+                                <li class=" category-hide ">
+                                    <span class=" category-hide-title " href="./product.html">
+
+                                        <div>Quản lý nguồn</div>
+                                        <i class="fas fa-angle-right   category-hide-right-arrow "></i>
+
+                                    </span>
+
+                                    <div class=" submenu-hide-container ">
+                                        <ul class=" submenu-hide ">
+
+                                            <li class="submenu-hide-items">
+                                                <p>Quản lý nguồn theo thương hiệu</p>
+                                                <a href="./product.html">Kuledy</a>
+                                                <a href="./product.html">VTA</a>
+                                                <a href="./product.html">dBacoustic</a>
+
+                                                <a href="./product.html">Kukedy</a>
+                                                <a href="./product.html">MK</a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+
+                                <!-- 9 -->
+                                <li class=" category-hide ">
+                                    <span class=" category-hide-title " href="./product.html">
+
+                                        <div>Phụ kiện âm Thanh</div>
+                                        <i class="fas fa-angle-right   category-hide-right-arrow "></i>
+
+                                    </span>
+
+                                    <div class=" submenu-hide-container ">
+                                        <ul class=" submenu-hide ">
+
+                                            <li class="submenu-hide-items">
+                                                <p>Phụ kiện từ các hãng</p>
+                                                <a href="./product.html">Tủ kĩ thuật</a>
+                                                <a href="./product.html">Chân loa</a>
+                                                <a href="./product.html">Cọc loa</a>
+
+                                                <a href="./product.html">Dây jack</a>
+                                                <a href="./product.html">Treo loa</a>
+                                                <a href="./product.html">Khung treo loa</a>
+
+                                                <a href="./product.html">Khác ...</a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+
+                                <!-- 10 -->
+                                <li class=" category-hide ">
+                                    <span class=" category-hide-title " href="./product.html">
+
+                                        <div>Combo âm thanh gia đình</div>
+                                        <i class="fas fa-angle-right   category-hide-right-arrow "></i>
+
+                                    </span>
+
+                                    <div class=" submenu-hide-container ">
+                                        <ul class=" submenu-hide ">
+
+                                            <li class="submenu-hide-items">
+                                                <p>Combo theo giá</p>
+                                                <a href="./product.html">Combo từ 20 - 30 triệu</a>
+                                                <a href="./product.html">Combo từ 30 - 50 triệu</a>
+                                                <a href="./product.html">Combo từ 50 - 70 triệu</a>
+
+                                                <a href="./product.html">Combo từ 120 - 150 triệu</a>
+                                                <a href="./product.html">Combo từ 150 - 200 triệu</a>
+
+                                            </li>
+
+                                            <li class="submenu-hide-items">
+                                                <p>Combo theo thương hiệu</p>
+                                                <a href="./product.html">4 Acoustic</a>
+                                                <a href="./product.html">Nexo</a>
+                                                <a href="./product.html">Adamson</a>
+
+                                                <a href="./product.html">Amate</a>
+                                                <a href="./product.html">Kukedy</a>
+                                                <a href="./product.html">DK</a>
+
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                </li>
+
+                                <!-- 11 -->
+                                <li class=" category-hide ">
+                                    <span class=" category-hide-title " href="./product.html">
+
+                                        <div>Combo phòng phim</div>
+                                        <i class="fas fa-angle-right   category-hide-right-arrow "></i>
+
+                                    </span>
+
+                                    <div class=" submenu-hide-container ">
+                                        <ul class=" submenu-hide ">
+
+                                            <li class="submenu-hide-items">
+                                                <p>Combo theo giá</p>
+                                                <a href="./product.html">Combo từ 20 - 30 triệu</a>
+                                                <a href="./product.html">Combo từ 30 - 50 triệu</a>
+                                                <a href="./product.html">Combo từ 50 - 70 triệu</a>
+
+                                                <a href="./product.html">Combo từ 120 - 150 triệu</a>
+                                                <a href="./product.html">Combo từ 150 - 200 triệu</a>
+
+                                            </li>
+
+                                            <li class="submenu-hide-items">
+                                                <p>Combo theo thương hiệu</p>
+                                                <a href="./product.html">4 Acoustic</a>
+                                                <a href="./product.html">Nexo</a>
+                                                <a href="./product.html">Adamson</a>
+
+                                                <a href="./product.html">Amate</a>
+                                                <a href="./product.html">Kukedy</a>
+                                                <a href="./product.html">DK</a>
+
+                                            </li>
+
+
+                                        </ul>
+                                    </div>
+
+                                </li>
+
+                                <!-- 12 -->
+                                <li class=" category-hide ">
+                                    <span class=" category-hide-title " href="./product.html">
+
+                                        <div>Combo âm thanh hội trường</div>
+                                        <i class="fas fa-angle-right   category-hide-right-arrow "></i>
+
+                                    </span>
+
+                                    <div class=" submenu-hide-container ">
+                                        <ul class=" submenu-hide ">
+
+                                            <li class="submenu-hide-items">
+                                                <p>Combo theo giá</p>
+                                                <a href="./product.html">Combo từ 20 - 30 triệu</a>
+                                                <a href="./product.html">Combo từ 30 - 50 triệu</a>
+                                                <a href="./product.html">Combo từ 50 - 70 triệu</a>
+
+                                                <a href="./product.html">Combo từ 120 - 150 triệu</a>
+                                                <a href="./product.html">Combo từ 150 - 200 triệu</a>
+
+                                            </li>
+
+                                            <li class="submenu-hide-items">
+                                                <p>Combo theo thương hiệu</p>
+                                                <a href="./product.html">4 Acoustic</a>
+                                                <a href="./product.html">Nexo</a>
+                                                <a href="./product.html">Adamson</a>
+
+                                                <a href="./product.html">Amate</a>
+                                                <a href="./product.html">Kukedy</a>
+                                                <a href="./product.html">DK</a>
+
+                                            </li>
+
+
+
+
+
+                                    </div>
+                                    <!-- Danh mục con các sản phẩm - Accordion Luôn mở -->
+
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+
+            </div>
+            <!-- Menu ẩn nhỏ bên trái màn hình -->
 
     </header>
 
     <!-- ************************************************ -->
 
-    <!-- Moadal Đăng nhập / đăng kí -->
-    <div class=" login-register-container   container-fluid ">
-
-
-
-        <div class=" login-register-form container-fluid ">
-
-            <ul class="nav nav-pills mb-3  d-flex justify-content-center   login-register-tab-change " id="pills-tab"
-                role="tablist">
-
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                        aria-selected="false">Đăng nhập</button>
-                </li>
-
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true">
-                        Đăng ký
-                    </button>
-                </li>
-
-
-
-            </ul>
-
-            <div class="tab-content" id="pills-tabContent">
-
-                <!-- 1 - Đăng nhập -->
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-
-                    <form>
-                        <!-- <div class=" login-register-form-title ">Đăng nhập</div> <br> -->
-
-                        <div class=" laber-inputs-infor ">
-
-                            <div class=" laber-input-infor  mb-3 ">
-                                <label for="exampleInputEmail1" class="form-label">Email
-                                    <span class="text-danger">*</span>
-                                </label>
-
-                                <input type="email" class="" id="exampleInputEmail1"
-                                    placeholder="Địa chỉ email đã đăng kí">
-                                <small class="error-mess d-none ">Vui lòng nhập đúng Email</small>
-
-                            </div>
-
-                            <div class=" laber-input-infor  mb-3 ">
-                                <label for="password" class="form-label">Mật khẩu
-                                    <span class="text-danger">*</span>
-                                </label>
-
-                                <input type="password" class="" id="password" placeholder="">
-                                <small class="error-mess">Vui lòng nhập mật khẩu</small>
-
-                            </div>
-                        </div>
-
-                        <div type="button" class=" login-btn  register-button mt-2">Đăng nhập</div>
-
-
-                    </form>
-
-                </div> <!-- 2 - Đăng nhập -->
-
-
-                <!-- 2 - Đăng kí -->
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-
-                    <form>
-                        <!-- <div class=" login-register-form-title ">Đăng ký</div> <br> -->
-
-                        <div class=" laber-inputs-infor ">
-                            <div class=" laber-input-infor  mb-3 ">
-                                <label for="full-name">Họ và tên
-                                    <span class="text-danger">*</span>
-                                </label>
-
-                                <input type="text" class="" id="full-name">
-                                <small class="error-mess d-none ">Vui lòng nhập đúng họ và tên</small>
-                            </div>
-
-                            <div class=" laber-input-infor  mb-3 ">
-                                <label for="exampleInputEmail1" class="form-label">Email
-                                    <span class="text-danger">*</span>
-                                </label>
-
-                                <input type="email" class="" id="exampleInputEmail1"
-                                    placeholder="Địa chỉ email dùng đăng kí mới">
-                                    <small class="error-mess d-none ">Vui lòng nhập đúng Email</small>
-                            </div>
-
-                            <div class=" laber-input-infor  mb-3 ">
-                                <label for="password" class="form-label">Mật khẩu
-                                    <span class="text-danger">*</span>
-                                </label>
-
-                                <input type="password" class="" id="password" placeholder="Tạo mật khẩu mới">
-                                <small class="error-mess d-none ">Vui lòng nhập đúng Email</small>
-                            </div>
-
-                            <div class=" laber-input-infor  mb-3 ">
-                                <label for="date-of-birth">Ngày tháng năm sinh
-                                    <span class="text-danger">*</span>
-                                </label>
-
-                                <input type="date" class="" id="date-of-birth">
-                                <small class="error-mess d-none ">Vui lòng nhập vào ngày sinh nhật</small>
-                            </div>
-
-                        </div>
-
-                        <div class=" mb-3  form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-
-                            <label class="form-check-label" for="exampleCheck1">
-                                Quý khách đồng ý với điều khoản dịch vụ của chúng tôi
-                            </label>
-
-                        </div>
-
-                        <div type="button" class="  register-btn  register-button ">Đăng ký</div>
-
-                    </form>
-
-                </div> <!-- 2 - Đăng kí -->
-
-
-            </div>
-
-
-
-
-        </div>
-        <!-- login-register-form -->
-
-    </div>
-    <!-- Moadal Đăng nhập / đăng kí -->
-
     <!-- Kê navigation -->
     <!-- <div class="margin-top-nav   container-fluid "></div> -->
 
+    <!-- breadcrumb -->
     <div class="breadcrumb-container container-fluid">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="./index.html">TRANG CHỦ</a></li>
-                <li class="breadcrumb-item active" aria-current="page">GIỎ HÀNG</li>
-            </ol>
-        </nav>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="./index.html">TRANG CHỦ</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">GIỎ HÀNG</li>
+                </ol>
+            </nav>
+        </div>
 
     </div>
+    <!-- breadcrumb -->
 
 
     <main>
-     
 
-        <!--  -->
-        <section class=" cart-container   container ">
-            <div class="cart-container-page-title-container   container-fluid " >
-                Giỏ hàng của bạn
-            </div>
+        <div class="cart-container-page-title-container   container ">
+            Giỏ hàng của bạn
+        </div>
+
+        <!-- cart-container Desktop -->
+        <section class=" cart-container   container     ">
+
 
             <div class="cart-title">
-                <span> <input type="checkbox" value=""> </span>
                 <span> SẢN PHẨM <span class="cart-title-number-items"><small>(3)</small></span> </span>
                 <span> TÊN SẢN PHẨM</span>
                 <span>ĐƠN GIÁ</span>
@@ -349,16 +1334,15 @@
 
                 <!-- 1 -->
                 <div class="cart-item">
-
-                    <!-- Chọn sản phẩm đó -->
-                    <span> <input type="checkbox" value=""> </span>
                     <!-- Ảnh sản phẩm -->
                     <span class=" cart-item-product-image ">
-                        <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="cart-image">
+                        <a href="./product-detail/product-detail.html">
+                            <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="cart-image">
+                        </a>
                     </span>
 
                     <!-- Tên sản phẩm -->
-                    <span>PCS 318NB</span>
+                    <span><a href="./product-detail/product-detail.html">PCS 318NB</a></span>
 
                     <!-- Đơn giá -->
                     <span>65.200.000đ</span>
@@ -383,19 +1367,18 @@
 
                 <!-- 2 -->
                 <div class="cart-item">
-
-                    <!-- Chọn sản phẩm đó -->
-                    <span> <input type="checkbox" value=""> </span>
                     <!-- Ảnh sản phẩm -->
                     <span class=" cart-item-product-image ">
-                        <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="cart-image">
+                        <a href="./product-detail/product-detail.html">
+                            <img src="./img/nexo/nexo-ls18.jpg" alt="cart-image">
+                        </a>
                     </span>
 
                     <!-- Tên sản phẩm -->
-                    <span>PCS 218NB</span>
+                    <span><a href="./product-detail/product-detail.html">LS 18</a></span>
 
                     <!-- Đơn giá -->
-                    <span>33.000.000đ</span>
+                    <span>89,612,600₫</span>
 
                     <!-- Chỉnh số lượng sp -->
                     <span class="custom-number">
@@ -407,7 +1390,7 @@
                     </span>
 
                     <!-- Thành tiền -->
-                    <span>66.000.000đ</span>
+                    <span>179,225,200đ</span>
 
                     <!-- icon thùng rác xóa đơn -->
                     <span class=" delete-one " type="button" onclick="deleteOneItem()"> <i
@@ -417,19 +1400,18 @@
 
                 <!-- 3 -->
                 <div class="cart-item">
-
-                    <!-- Chọn sản phẩm đó -->
-                    <span> <input type="checkbox" value=""> </span>
                     <!-- Ảnh sản phẩm -->
                     <span class=" cart-item-product-image ">
-                        <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="cart-image">
+                        <a href="./product-detail/product-detail.html">
+                            <img src="./img/amate/amate-X218WF.png" alt="cart-image">
+                        </a>
                     </span>
 
                     <!-- Tên sản phẩm -->
-                    <span>PCS 118NB</span>
+                    <span><a href="./product-detail/product-detail.html">X218WF</a></span>
 
                     <!-- Đơn giá -->
-                    <span>22.500.000đ</span>
+                    <span>189,200,000đ</span>
 
                     <!-- Chỉnh số lượng sp -->
                     <span class="custom-number">
@@ -441,11 +1423,12 @@
                     </span>
 
                     <!-- Thành tiền -->
-                    <span>67.500.000đ</span>
+                    <span>567,000,000đ</span>
 
                     <!-- icon thùng rác xóa đơn -->
-                    <span class=" delete-one " type="button" onclick="deleteOneItem()"> <i
-                            class="fas fa-trash-alt "></i> </span>
+                    <span class=" delete-one " type="button" onclick="deleteOneItem()">
+                        <i class="fas fa-trash-alt "></i>
+                    </span>
 
                 </div> <!-- cart-item -->
 
@@ -456,14 +1439,141 @@
             </div>
             <!-- cart-items -->
 
-            <div class=" cart-button-buy-delete-all ">
-                <a href="./product.html"> <span class="button-buy" type="button"> TIẾP TỤC MUA HÀNG </span> </a>
+        </section> <!-- cart-container Desktop -->
 
-                <span class="button-delete-all" type="button" onclick="deleteAllItem()"> XÓA TOÀN BỘ </span>
 
+        <!-- cart-container Mobile-->
+        <section class=" cart-container-mobile   container ">
+
+            <!-- item 1 -->
+            <div class=" cart-item-mobile ">
+                <!-- Khối ảnh Trái -->
+                <div class=" cart-item-pro-img-mobile ">
+                    <a href="./product-detail/product-detail.html">
+                        <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="cart-image">
+                    </a>
+                </div>
+                <!-- Khối thông tin bên phải -->
+                <div class=" cart-title-product-cols-mobile ">
+                    <!-- 1 -->
+                    <span class=" pro-name-mobile-flex ">
+                        <a href="./product-detail/product-detail.html">PCS 318NB</a>
+                        <div> <i class="fas fa-trash-alt "></i>  </div>
+                    </span>
+                    <!-- 2 -->
+                    <span class="unit-price">
+                        <div class="col-name">ĐƠN GIÁ</div>
+                        <div class="col-value">65.200.000đ</div>
+                    </span>
+
+                    <!-- 3 -->
+                    <span class="pro-quantity">
+                        <div class="col-name">SỐ LƯỢNG</div>
+                        <!-- Chỉnh số lượng sp -->
+                        <div class="custom-number-mobile">
+                            <i class="fas fa-minus"></i>
+                            <input class="custom-number-input-mobile" type="text" value="1">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </span>
+                    <!-- 4 -->
+                    <span>
+                        <div class="col-name">THÀNH TIỀN</div>
+                        <div>65.200.000đ</div>
+                    </span>
+                </div>
             </div>
 
-        </section> <!-- cart-container -->
+            <!-- item 2 -->
+            <div class=" cart-item-mobile ">
+                <!-- Khối ảnh Trái -->
+                <div class=" cart-item-pro-img-mobile ">
+                    <a href="./product-detail/product-detail.html">
+                        <img src="./img/nexo/nexo-ls18.jpg" alt="cart-image">
+                    </a>
+                </div>
+                <!-- Khối thông tin bên phải -->
+                <div class=" cart-title-product-cols-mobile ">
+                    <!-- 1 -->
+                    <span class=" pro-name-mobile-flex ">
+                        <a href="./product-detail/product-detail.html">LS 18</a>
+                        <div> <i class="fas fa-trash-alt "></i>  </div>
+                    </span>
+                    <!-- 2 -->
+                    <span class="unit-price">
+                        <div class="col-name">ĐƠN GIÁ</div>
+                        <div class="col-value">89,612,600₫</div>
+                    </span>
+                    <!-- 3 -->
+                    <span class="pro-quantity">
+                        <div class="col-name">SỐ LƯỢNG</div>
+
+                        <!-- Chỉnh số lượng sp -->
+                        <div class="custom-number-mobile">
+                            <i class="fas fa-minus"></i>
+                            <input class="custom-number-input-mobile" type="text" value="2">
+                            <i class="fas fa-plus"></i>
+                        </div>
+
+                    </span>
+                    <!-- 4 -->
+                    <span>
+                        <div class="col-name">THÀNH TIỀN</div>
+                        <div>179,225,200đ</div>
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- item 3 -->
+            <div class=" cart-item-mobile ">
+                <!-- Khối ảnh Trái -->
+                <div class=" cart-item-pro-img-mobile ">
+                    <a href="./product-detail/product-detail.html">
+                        <img src="./img/amate/amate-X218WF.png" alt="cart-image">
+                    </a>
+                </div>
+                <!-- Khối thông tin bên phải -->
+                <div class=" cart-title-product-cols-mobile ">
+                    <!-- 1 -->
+                    <span class=" pro-name-mobile-flex ">
+                        <a href="./product-detail/product-detail.html">X218WF Active</a>
+                        <div> <i class="fas fa-trash-alt "></i>  </div>
+                    </span>
+                    <!-- 2 -->
+                    <span class="unit-price">
+                        <div class="col-name">ĐƠN GIÁ</div>
+                        <div class="col-value">189,200,000đ</div>
+                    </span>
+
+                    <!-- 3 -->
+                    <span class="pro-quantity">
+                        <div class="col-name">SỐ LƯỢNG</div>
+                        <!-- Chỉnh số lượng sp -->
+                        <div class="custom-number-mobile">
+                            <i class="fas fa-minus"></i>
+                            <input class="custom-number-input-mobile" type="text" value="3">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                    </span>
+                    <!-- 4 -->
+                    <span>
+                        <div class="col-name">THÀNH TIỀN</div>
+                        <div>567,000,000đ</div>
+                    </span>
+                </div>
+            </div>
+
+        </section>
+        <!-- cart-container Mobile -->
+
+        <!-- Nút tiếp tục mua hàng và xóa tất cả -->
+        <div class=" cart-button-buy-delete-all   container ">
+            <a href="./product.html"> <span class="button-buy" type="button"> TIẾP TỤC MUA HÀNG </span> </a>
+
+            <span class="button-delete-all" type="button" onclick="deleteAllItem()"> XÓA TOÀN BỘ </span>
+        </div>
+
 
         <!-- Khối Thành tiền -->
         <section class=" payment-container  container ">
@@ -509,8 +1619,6 @@
 
 
     </main>
-
-    <br><br>
 
     <footer>
         <div class="footer-container   container-fluid">
