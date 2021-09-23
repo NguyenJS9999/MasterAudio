@@ -7,7 +7,8 @@ li {
   list-style: none;
 }
 main {
-  background: rgba(246, 246, 246, 1);
+  /* background: rgba(246, 246, 246, 1); */
+  background: rgba(255, 255, 255, 1);
 }
 /* style cho ô INPUT dùng chung  */
 input {
@@ -1063,15 +1064,7 @@ trang khác dùng chung ở nav tác động */
 /* Phần trống bên trái cho danh mục sản phẩm */
 
 /* Banner chính trang home  */
-.banners {
-  /* border: 0.1px solid rgb(130, 7, 154); */
-  width: 79%;
-  padding: 2px 0px 4px 0px;
-}
-.banners img {
-  width: 100%;
-  /* border: 0.1px solid rgb(7, 17, 154); */
-}
+
 
 /* End main - section Danh mục đổ xuống - banner quang cáo */
 
@@ -1083,7 +1076,7 @@ trang khác dùng chung ở nav tác động */
   .navigation-mobile {
     display: block;
     display: flex;
-    padding: 4px 0px;
+    padding: 4px auto;
   }
   .menu-infos-header-mobile {
     top: 61.2px;

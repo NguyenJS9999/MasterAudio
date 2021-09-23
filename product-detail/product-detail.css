@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 /* font Rubik */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
-
+:root {
+  --color-success: #0db102;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -43,7 +45,7 @@ input::placeholder {
   /* border: 1px solid red; */
   /* margin: 0px 80px; */
   margin: auto;
-  padding-top: 20px;
+  padding-top: 40px;
 
   display: flex;
   flex-direction: row;
@@ -132,6 +134,16 @@ input::placeholder {
 .nav-link {
   padding: 0px;
 }
+.nav-tabs {
+  border-bottom: 1px solid gray;
+}
+
+.divider-line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(18, 18, 18, 0.1);
+  margin-bottom: 1.5rem;
+}
 /* ***********************************************8 */
 
 .images-other img {
@@ -155,7 +167,7 @@ input::placeholder {
 }
 /* 1 */
 .product-name-code {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
@@ -164,7 +176,7 @@ input::placeholder {
   /* padding-bottom: 12px; */
 }
 .product-name-detail {
-  color: #e42313;
+  /* color: #e42313; */
   font-size: 24px;
   font-weight: 600;
   text-align: center;
@@ -173,14 +185,14 @@ input::placeholder {
   font-size: 16px;
 }
 .product-price-detail {
-  color: #e42313;
+  color: #c3811d;
   font-size: 22px;
   font-weight: 600;
 }
 
 /* 2 */
 .product-status-amount {
-  border: 1px solid white;
+  /* border: 1px solid white; */
 
   display: flex;
   flex-direction: column;
@@ -189,11 +201,11 @@ input::placeholder {
   grid-gap: 24px;
 }
 .product-status-detail {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
 }
 .product-status-detail span {
-  color: #ecaf44;
+  color: var(--color-success);
 }
 
 .product-amount-detail {
@@ -209,37 +221,40 @@ input::placeholder {
 .custom-number {
   /* border: 1px solid red; */
   border-radius: 2px;
+  width: 150px;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  grid-gap: 6px;
   vertical-align: middle;
-  padding: 1px 6px;
   background: rgba(208, 208, 208, 0.5);
 }
 /* Style cho ô input riêng - nhập lượng hàng */
 .custom-number-input {
   border: 1px solid rgba(208, 208, 208, 0.5);
   border-radius: 2px;
-  background: rgba(208, 208, 208, 0.5);
-  width: 40px;
+  background: rgba(255, 255, 255, 1);
+  width: 50%;
   text-align: center;
-  padding: 2px;
 }
 .custom-number-input:hover {
   border: 1px solid rgba(208, 208, 208, 1);
 }
 /* 2 Nút tăng giảm */
+.custom-number i {
+  /* border: 1px solid rgba(243, 0, 0, 0.5); */
+  padding: 12px 12px;
+}
 .custom-number i:hover {
-  /* transform: scale(1.3); */
+  color: rgba(228, 35, 19, 1);
 }
 .custom-number i:active {
-  color: rgba(228, 35, 19, 1);
+  color: rgb(0, 0, 0);
 }
 /* Thích sản phẩm - Thả tim*/
 .like-product i {
-  color: #ff9dd8;
+  color: rgba(228, 35, 19, 1);
   font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.2s ease;
@@ -328,7 +343,7 @@ input::placeholder {
 /* Chi tiết bài viết về sản phẩm, cấu hình và ảnh */
 .product-description {
   /* border: 0.1px solid rgba(228, 25, 19, 0.2); */
-  border: 0.1px solid rgba(145, 146, 148, 0.5);
+  /* border: 0.1px solid rgba(145, 146, 148, 0.5); */
   border-radius: 2px;
   margin: 8px 80px;
   padding: 8px;
@@ -342,13 +357,15 @@ input::placeholder {
   padding: 12px 40px;
   /* width: 294px; */
   width: 100%;
-  border-color: rgba(208, 208, 208, 0.5) rgba(208, 208, 208, 0.5)
-    rgba(208, 208, 208, 0) rgba(208, 208, 208, 0.5);
+  /* border-color: rgba(208, 208, 208, 0.5) rgba(208, 208, 208, 0.5)
+    rgba(208, 208, 208, 0) rgba(208, 208, 208, 0.5); */
+    border: none!important;
 }
 .product-description ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1.5rem;
 }
 /* Giới thiệu sản phẩm */
 .product-description-text {

@@ -1,0 +1,48 @@
+/* Xử lý danh mục sản phẩm riêng ngoại từ màn index */
+/* Thẻ Category tiêu đề có nút chỉ xuống  */
+.nav-2-category {
+    /* border: 0.1px solid rgba(228,35,19, 1); */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .nav-2-category:hover {
+    background: rgba(92, 98, 103, 0.8);
+  }
+  .nav-2-category-title {
+    /* border: 0.1px solid violet; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    grid-gap: 6px;
+  }
+  
+  .nav-2-category-title i {
+    /* border: 0.1px solid rgba(228,35,19, 1); */
+    /* display: none; */
+    font-size: 22px;
+    line-height: 0.2;
+    height: 12px;
+  }
+  .nav-2-category-title:hover > i {
+    display: block;
+  }
+  /* Quay mũi tên chỉ lển của Category */
+  .sort-down-category-to-up {
+    transform: rotate(-180deg);
+    transition: all 0.3s ease;
+  }
+  
+  .categorys {
+    border: 0.1px solid rgba(228, 35, 19, 0.2);
+    margin-top: 6px;
+    z-index: 2;
+  }
+  .categorys-none {
+    display: none !important;
+  }
+  .submenu {
+    border: 0.1px solid rgba(228, 35, 19, 0.2);
+  }
+  /* End Nav */

@@ -799,10 +799,10 @@
                 <div class=" nav-2-menu ">
                     <a href="./index.html"><i class="fas fa-home"></i> Trang chủ</a>
                     <a href="./"><i class="fas fa-tools"></i> Xây dựng cấu hình</a>
-                    <a href="./"><i class="fas fa-users-cog"></i> Dự án đã hoàn thành</a>
+                    <a href="./"><i class="fas fa-users-cog"></i> Công trình tiêu biểu</a>
 
-                    <a href="./blog.html"><i class="far fa-newspaper"></i> Blog</a>
-                    <a href="./contact.html"><i class="fas fa-map-marked-alt"></i> Giới thiệu</a>
+                    <a href="./blog.html"><i class="far fa-newspaper"></i> Tin tức</a>
+                    <a href="./contact.html"><i class="fas fa-map-marked-alt"></i> Liên hệ</a>
                 </div>
 
             </div>
@@ -861,13 +861,13 @@
 
                                 <span>
                                     <a href="#">
-                                        <div>Dự án đã hoàn thành</div>
+                                        <div>Công trình tiêu biểu</div>
                                     </a>
                                 </span>
 
                                 <span>
                                     <a href="./blog.html">
-                                        <div>Blog</div>
+                                        <div>Tin tức</div>
                                     </a>
 
                                 </span>
@@ -1294,25 +1294,26 @@
     <!-- <div class="margin-top-nav   container-fluid "></div> -->
 
     <!-- breadcrumb -->
-    <div class="breadcrumb-container container-fluid">
-        <div class="container">
+    <div class="breadcrumb-container     container-fluid ">
+        <div class=" breadcrumb-content container ">
+            <div class=" breadcrumb-title ">GIỎ HÀNG</div>
+
+            <!-- <div class="page-banner__hr-line"></div> -->
+
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="./index.html">TRANG CHỦ</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">GIỎ HÀNG</li>
+                    <li class="breadcrumb-item" aria-current="page">GIỎ HÀNG</li>
                 </ol>
             </nav>
+
         </div>
 
     </div>
     <!-- breadcrumb -->
 
 
-    <main>
-
-        <div class="cart-container-page-title-container   container ">
-            Giỏ hàng của bạn
-        </div>
+    <main class=" cart-container-background ">
 
         <!-- cart-container Desktop -->
         <section class=" cart-container   container     ">
@@ -1325,7 +1326,7 @@
                 <span>SỐ LƯỢNG</span>
                 <span>THÀNH TIỀN</span>
                 <!-- nhầm -->
-                <span style="display: none;"> <i class="fas fa-trash-alt"></i> </span>
+                <span style="display: none;"> </span>
 
             </div>
 
@@ -1345,7 +1346,7 @@
                     <span><a href="./product-detail/product-detail.html">PCS 318NB</a></span>
 
                     <!-- Đơn giá -->
-                    <span>65.200.000đ</span>
+                    <span>65.200.000₫</span>
 
                     <!-- Chỉnh số lượng sp -->
                     <span class="custom-number">
@@ -1357,11 +1358,11 @@
                     </span>
 
                     <!-- Thành tiền -->
-                    <span>65.200.000đ</span>
+                    <span>65.200.000₫</span>
 
                     <!-- icon thùng rác xóa đơn -->
                     <span class=" delete-one " type="button" onclick="deleteOneItem()"> <i
-                            class="fas fa-trash-alt "></i> </span>
+                            class="fas fa-trash-alt   delete-one "></i> </span>
 
                 </div> <!-- cart-item -->
 
@@ -1392,9 +1393,9 @@
                     <!-- Thành tiền -->
                     <span>179,225,200đ</span>
 
-                    <!-- icon thùng rác xóa đơn -->
+                    <!-- icon thùng rác xóa ₫ơn -->
                     <span class=" delete-one " type="button" onclick="deleteOneItem()"> <i
-                            class="fas fa-trash-alt "></i> </span>
+                            class="fas fa-trash-alt   delete-one "></i> </span>
 
                 </div> <!-- cart-item -->
 
@@ -1427,7 +1428,7 @@
 
                     <!-- icon thùng rác xóa đơn -->
                     <span class=" delete-one " type="button" onclick="deleteOneItem()">
-                        <i class="fas fa-trash-alt "></i>
+                        <i class="fas fa-trash-alt   delete-one "></i>
                     </span>
 
                 </div> <!-- cart-item -->
@@ -1458,7 +1459,7 @@
                     <!-- 1 -->
                     <span class=" pro-name-mobile-flex ">
                         <a href="./product-detail/product-detail.html">PCS 318NB</a>
-                        <div> <i class="fas fa-trash-alt "></i>  </div>
+                        <div> <i class="fas fa-trash-alt   delete-one "></i> </div>
                     </span>
                     <!-- 2 -->
                     <span class="unit-price">
@@ -1497,7 +1498,7 @@
                     <!-- 1 -->
                     <span class=" pro-name-mobile-flex ">
                         <a href="./product-detail/product-detail.html">LS 18</a>
-                        <div> <i class="fas fa-trash-alt "></i>  </div>
+                        <div> <i class="fas fa-trash-alt   delete-one "></i> </div>
                     </span>
                     <!-- 2 -->
                     <span class="unit-price">
@@ -1538,7 +1539,7 @@
                     <!-- 1 -->
                     <span class=" pro-name-mobile-flex ">
                         <a href="./product-detail/product-detail.html">X218WF Active</a>
-                        <div> <i class="fas fa-trash-alt "></i>  </div>
+                        <div> <i class="fas fa-trash-alt   delete-one "></i> </div>
                     </span>
                     <!-- 2 -->
                     <span class="unit-price">
@@ -1574,49 +1575,64 @@
             <span class="button-delete-all" type="button" onclick="deleteAllItem()"> XÓA TOÀN BỘ </span>
         </div>
 
+        <div class=" order-container    container ">
+            <!-- Khối giảm giá -->
+            <div class="order-discount">
+                <h4 class="order__title">MÃ GIẢM GIÁ</h4>
 
-        <!-- Khối Thành tiền -->
-        <section class=" payment-container  container ">
-            <div class=" payment-title "> THANH TOÁN </div>
+                <div class="discount-wrapper">
+                    <input class=" discount-input" type="text"
+                        placeholder="Nhập mã giảm giá (M10, M20, M30)">
+                    <!-- <div class="feedback-noti">Mã giảm giá đã hết hạn</div> -->
+                </div>
 
-            <div class=" count-money ">
+                <button class="section__btn btn-apply-discount">
+                    ÁP DỤNG MÃ GIẢM GIÁ
+                </button>
+            </div>
+
+            <!-- Khối Thành tiền -->
+            <section class=" payment-container  container ">
+                <div class=" payment-title "> TỔNG TIỀN </div>
+
+                <div class=" count-money ">
 
 
-                <span class=" total-money ">
-                    <b>Tổng tiền</b>
+                    <span class=" total-money ">
+                        <b>Tạm tính</b>
 
-                    <div class=" total-money-number ">195,600,000đ</div>
+                        <div class=" total-money-number ">195,600,000₫</div>
+                    </span>
+                    <!--  -->
+                    <div class="border-bottom"></div>
+
+                    <span class=" tax-avt ">
+                        <b>Giảm giá</b>
+
+                        <div>- 0₫</div>
+
+                    </span>
+                    <!--  -->
+                    <div class="border-bottom"></div>
+
+                    <span class="into-money">
+                        <b>Thành tiền</b>
+
+                        <div class="into-money-number">197,556,000₫</div>
+
+                    </span>
+
+                </div> <!-- count-money -->
+
+                <span class=" make-payment ">
+                    <a class=" make-payment-button    section__btn " href="./check-out.html">
+                        <i class="fas fa-hand-holding-usd"></i>  TIẾN HÀNH ĐẶT HÀNG
+                    </a>
                 </span>
-                <!--  -->
-                <div class="border-bottom"></div>
 
-                <span class=" tax-avt ">
-                    <b>Thuế VAT</b>
+            </section> <!-- payment-container -->
 
-                    <div>10%</div>
-
-                </span>
-                <!--  -->
-                <div class="border-bottom"></div>
-
-                <span class="into-money">
-                    <b>Thành tiền</b>
-
-                    <div class="into-money-number">197,556,000đ</div>
-
-                </span>
-
-            </div> <!-- count-money -->
-
-            <span class=" make-payment ">
-                <a class="make-payment-button" href="./check-out.html">
-                    <i class="fas fa-hand-holding-usd"></i>  TIẾN HÀNH THANH TOÁN
-                </a>
-            </span>
-
-        </section> <!-- payment-container -->
-
-
+        </div>
 
     </main>
 
