@@ -25,6 +25,8 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <!-- slick crocell CDN CSS -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <!-- ICON iconify -->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
     <!-- css code tay-->
 
@@ -174,7 +176,7 @@
 
                     <div class=" search-header-desktop ">
                         <span>
-                            <input type="text" name="" id="" placeholder="Tìm sản phẩm bạn muốn ...">
+                            <input type="text" name="" id="" placeholder="Tìm kiếm">
                             <i class="fas fa-search"></i>
                         </span>
 
@@ -816,7 +818,7 @@
             </div>
             <!-- 2 - Input tìm kiếm sp bất kì -->
             <div class=" search-collapse">
-                <input type="text" placeholder="Tìm sản phẩm bạn muốn ...">
+                <input type="text" placeholder="Tìm kiếm">
             </div>
 
             <!-- 3 - accordion Tuôn ra giữa Menu và danh mục -->
@@ -1427,7 +1429,7 @@
     <div class="breadcrumb-container     container-fluid ">
         <div class=" breadcrumb-content container ">
             <div class=" breadcrumb-title ">Danh mục sản phẩm</div>
-            
+
             <!-- <div class="page-banner__hr-line"></div> -->
 
             <nav aria-label="breadcrumb">
@@ -1442,438 +1444,384 @@
     </div>
     <!-- breadcrumb -->
 
-    <main>
-        <section class="filter-container-background">
-            <!-- Lọc sản phẩm -->
-            <div class=" filter-container  container ">
+    <main id="main">
+        <!-- Section Products List -->
+        <section class="section  section-products-list container-fluid">
 
-                <div class=" filters    ">
+            <div class="products__container container">
+                <!-- Khối lọc bên trái -->
+                <div class="products__filter">
 
+                    <h4 class="section-title filter-title">TÌM SẢN PHẨM</h4>
 
-                    <div class="filter-by-brand">
-
-                        <div class="filter-title">CHỌN SẢN PHẨM THEO THƯƠNG HIỆU</div>
-
-                        <!-- Bọc Carousel -->
-                        <div class="list-brand">
-
-                            <!-- Div được gắn Carousel -->
-                            <!-- <div class="list-brand-carousel"> -->
-
-                            <div class="brand-logo  "><img src="./img/Brands/brand-logo/logo-4-acoustic.png" alt="logo">
-                            </div>
-
-                            <div class="brand-logo"><img src="./img/Brands/brand-logo/Nexo.png" alt="logo"></div>
-
-                            <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Adamson.png" alt="logo">
-                            </div>
-
-                            <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Amate.png" alt="logo">
-
-                            </div>
-                            <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Kuledy.png" alt="logo">
-                            </div>
-
-                            <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-DK.png" alt="logo"></div>
-
-                            <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Baiervires.png" alt="logo">
-                            </div>
-
-                            <div class="brand-logo"><img src="./img/Brands/brand-logo/logo-Hours.png" alt="logo">
-                            </div>
-
-                            <div class="brand-logo"><img src="./img/Brands/brand-logo/Pioneer-dj.png" alt="logo">
-                            </div>
-
-                            <!-- </div>  -->
-                            <!-- Div được gắn Carousel,list-brand-carousel -->
-
-                        </div>
-
-
-                    </div>
-                    <!-- Lọc theo kiểu loại sản phẩm -->
-                    <div class="filter-by-classify">
-
-                        <div class="filter-title">CHỌN THEO PHÂN LOẠI SẢN PHẨM </div>
-
-                        <div class="list-classify">
-                            <!-- Div được gắn Carousel -->
-                            <!-- <div class="list-brand-carousel"> -->
-
-                            <div class="brand-classify">
-                                <span> Subwoofer </span>
-                                <img src="./img/Brands/brand-classify/subwoofer.png" alt="subwoofer">
-                            </div>
-
-                            <div class="brand-classify">
-                                <span> Full range </span>
-                                <img src="./img/Brands/brand-classify/full-range.png  " alt="full-range">
-                            </div>
-
-                            <div class="brand-classify">
-                                <span> Line array </span>
-                                <img src="./img/Brands/brand-classify/line-array.png  " alt="Line-array">
-                            </div>
-
-                            <div class="brand-classify">
-                                <span> Mid low </span>
-                                <img src="./img/Brands/brand-classify/mid-low.png  " alt="Mid low">
-                            </div>
-
-                            <div class="brand-classify">
-                                <span> Amplifier </span>
-                                <img src="./img/Brands/brand-classify/amplifier.png  " alt="amplifier">
-                            </div>
-
-                            <div class="brand-classify">
-                                <span> Micro </span>
-                                <img src="./img/Brands/brand-classify/micro-wireless.png  " alt="">
-                            </div>
-
-                            <div class="brand-classify">
-                                <span> Digital echo </span>
-                                <img src="./img/Brands/brand-classify/digital-echo.png  " alt="">
-                            </div>
-
-                            <div class="brand-classify">
-                                <span> Mixer </span>
-                                <img src="./img/Brands/brand-classify/Mixer.png  " alt="">
-                            </div>
-
-                            <div class="brand-classify">
-                                <span> Auto power </span>
-                                <img src="./img/Brands/brand-classify/auto-power.png  " alt="">
-                            </div>
-                        </div>
-
-                        <!-- </div>  -->
-                        <!-- list-brand -->
+                    <div class=" product__search   d-flex ">
+                        <input type="text" class="header-component__search-input" placeholder="Tìm kiếm" />
+                        <i class="fas fa-search"></i>
                     </div>
 
+                    <!-- Lọc theo thương hiệu -->
+                    <div class=" filter__brands">
+                        <h4 class="section-title filter-title">LỌC THEO THƯƠNG HIỆU</h4>
 
-
-                </div> <!-- filters Các bộ lọc (2) -->
-
-
-                <!-- Lọc theo giá và tìm kiếm -->
-                <div class="filter-by-price   container-fluid  ">
-
-                    <div class="filter-by-price-buttons">
-                        <span class="filter-by-price-button">Giá tăng dần
-                            <i class="fas fa-long-arrow-alt-up"></i>
-                        </span>
-
-                        <span class="filter-by-price-button">Giá giảm dần
-                            <i class="fas fa-long-arrow-alt-down"></i>
-                        </span>
-
-
-                    </div>
-
-                    <div class=" filter-by-price-range ">
-                        
-                        <div class="filter-by-price-title">Sản phẩm giá từ:</div>
-                        <span>
-                            <input type="number">
-                            <i class="fas fa-long-arrow-alt-right"></i>
-                            <input type="number">
-                        </span>
-                    </div>
-
-                </div>
-
-                <!-- Mục tìm kiếm sản phẩm -->
-                <div class=" search-container ">
-                    <div class="product-search">
-                        <input class="search-input" type="text" placeholder="Tìm kiếm sản phẩm">
-                        <span class="search-icon" type=button> <i class="fas fa-search "> </i></span>
-                    </div>
-                </div>
-
-            </div> <!-- filters-container -->
-
-
-
-
-        </section> <!-- Lọc sản phẩm -->
-
-        <section class="products-pagination-container    container-fluid ">
-
-            <div class="list-products container ">
-                <!-- 1 -->
-                <div class="product">
-
-                    <a href="./product-detail/product-detail.html">
-                        <div class="product-img">
-                            <img src="./img/4-acoustic/Subwoofer-PCS-318NB.png" alt="product">
-                        </div>
-                    </a>
-
-                    <div class="product-details">
-                        <div class="product-infor    container ">
-                            <div class="product-infor-brand">4 Acoustic</div>
-                            <div class="product-infor-name-product">Subwoofer PCS 318NB</div>
-                            <div class="product-infor-price">65,200,000₫</div>
-                            <i class="far fa-heart  like-product "></i>
-                        </div>
-
-                        <div class="product-details-button    container ">
-                            <span class=" product-details-button-cart " type="button">
-                                <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                        <div class="filter__list">
+                            <span>
+                                <input type="checkbox" id="4 Acoustic" name="speak" value="4 Acoustic">
+                                <label class="filter__item filter__brand-item" for="4 Acoustic">4 Acoustic </label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Nexo" name="speak" value="Nexo">
+                                <label class="filter__item filter__brand-item" for="Nexo">Nexo </label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Adamson" name="speak" value="Adamson">
+                                <label class="filter__item filter__brand-item" for="Adamson">Adamson </label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Amate" name="speak" value="Amate">
+                                <label class="filter__item filter__brand-item" for="Amate">Amate </label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Kuledy" name="speak" value="Kuledy">
+                                <label class="filter__item filter__brand-item" for="Kuledy">Kuledy </label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="DK" name="speak" value="DK">
+                                <label class="filter__item filter__brand-item" for="DK">DK </label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Baiervires" name="micro" value="Baiervires">
+                                <label class="filter__item filter__brand-item" for="Baiervires">Baiervires </label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Hous" name="amplifier" value="Hous">
+                                <label class="filter__item filter__brand-item" for="Hous">Hous </label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Pioneer Dj" name="mixcer" value="Pioneer Dj">
+                                <label class="filter__item filter__brand-item" for="Pioneer Dj">Pioneer Dj </label>
                             </span>
 
-                            <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                <i class="fas fa-coins"></i> Mua ngay
-                            </a>
                         </div>
-
                     </div>
 
-                </div>
-                <!-- 2 -->
+                    <!-- Lọc theo loại sản phẩm -->
+                    <div class=" filter__type">
 
-                <div class="product">
+                        <h4 class="section-title filter-title">LỌC THEO LOẠI SẢN PHẨM</h4>
 
-                    <a href="./product-detail/product-detail.html">
-                        <div class="product-img">
-                            <img src="./img/nexo/nexo-ps15.png" alt="product">
-                        </div>
-                    </a>
+                        <div class="filter__type-list filter__list">
 
-                    <div class="product-details">
-                        <div class="product-infor    container ">
-                            <div class="product-infor-brand">Nexo</div>
-                            <div class="product-infor-name-product">Fullrange PS15</div>
-                            <div class="product-infor-price"> 87,715,000₫  </div>
-                            <i class="far fa-heart  like-product "></i>
-                        </div>
-
-                        <div class="product-details-button    container ">
-                            <span class=" product-details-button-cart " type="button">
-                                <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                            <span>
+                                <input type="checkbox" id="Subwoofer" value="Subwoofer">
+                                <label class="filter__item filter__type-item" for="Subwoofer"> Subwoofer </label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Full-range" value="Full range">
+                                <label class="filter__item filter__type-item" for="Full-range"> Full range </label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Line-array" value="Line array">
+                                <label class="filter__item filter__type-item" for="Line-array"> Line array </label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Mid-low" value="Mid low">
+                                <label class="filter__item filter__type-item" for="Mid-low"> Mid low </label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Amplifier" value="Amplifier">
+                                <label class="filter__item filter__type-item" for="Amplifier"> Amplifier </label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Micro" value="Micro">
+                                <label class="filter__item filter__type-item" for="Micro"> Micro </label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Digital-echo" value="Digital echo">
+                                <label class="filter__item filter__type-item" for="Digital-echo"> Digital echo </label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Mixer" value="Mixer">
+                                <label class="filter__item filter__type-item" for="Mixer"> Mixer </label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Auto-power" value="Auto power">
+                                <label class="filter__item filter__type-item" for="Auto-power"> Auto power </label>
                             </span>
 
-                            <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                <i class="fas fa-coins"></i> Mua ngay
-                            </a>
                         </div>
-
                     </div>
 
-                </div>
-                <!-- 3 -->
+                    <!-- Lọc theo quốc gia -->
+                    <div class=" filter__nation">
+                        <h4 class="section-title filter-title">LỌC THEO QUỐC GIA</h4>
 
-                <div class="product">
+                        <div class="filter__nation-list filter__list">
 
-                    <a href="./product-detail/product-detail.html">
-                        <div class="product-img">
-                            <img src="./img/adamson/adamson-point15.jpg" alt="product">
-                        </div>
-                    </a>
-
-                    <div class="product-details">
-                        <div class="product-infor    container ">
-                            <div class="product-infor-brand">Adamson</div>
-                            <div class="product-infor-name-product">Fullrange Point 15</div>
-                            <div class="product-infor-price">99,111,000₫</div>
-                            <i class="far fa-heart  like-product "></i>
-
-                        </div>
-
-                        <div class="product-details-button    container ">
-                            <span class=" product-details-button-cart " type="button">
-                                <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                            <span>
+                                <input type="checkbox" id="Gemany" value="Gemany">
+                                <label class="filter__item filter__Nation-item" for="Gemany">Đức</label>
                             </span>
 
-                            <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                <i class="fas fa-coins"></i> Mua ngay
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <!--  4  -->
-                <div class="product">
-
-                    <a href="./product-detail/product-detail.html">
-                        <div class="product-img">
-                            <img src="./img//amate/amate-X218WF.png" alt="product">
-                        </div>
-                    </a>
-
-                    <div class="product-details">
-                        <div class="product-infor    container ">
-                            <div class="product-infor-brand">Amate</div>
-                            <div class="product-infor-name-product">Subwoofer X218WFD</div>
-                            <div class="product-infor-price">179.697.708₫</div>
-                            <i class="far fa-heart  like-product "></i>
-
-                        </div>
-
-                        <div class="product-details-button    container ">
-                            <span class=" product-details-button-cart " type="button">
-                                <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                            <span>
+                                <input type="checkbox" id="France" value="France">
+                                <label class="filter__item filter__Nation-item" for="France">Pháp</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Canada" value="Canada">
+                                <label class="filter__item filter__Nation-item" for="Canada">Canada</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="Canada" value="Canada">
+                                <label class="filter__item filter__Nation-item" for="Canada">Tây Ban Nha</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="America" value="America">
+                                <label class="filter__item filter__Nation-item" for="America">Mỹ</label>
+                            </span>
+                            <span>
+                                <input type="checkbox" id="China" value="China">
+                                <label class="filter__item filter__Nation-item" for="China">Trung Quốc</label>
                             </span>
 
-                            <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                <i class="fas fa-coins"></i> Mua ngay
-                            </a>
                         </div>
-
                     </div>
 
-                </div>
-                <!-- 5 -->
+                    <!-- Loc theo giá -->
+                    <div class=" filter__price">
+                        <h4 class="section-title filter-title">LỌC THEO GIÁ</h4>
 
-                <div class="product">
-
-                    <a href="./product-detail/product-detail.html">
-                        <div class="product-img">
-                            <img src="./img/kuledy/kuledy-line-array-v110.png" alt="product">
-                        </div>
-                    </a>
-
-                    <div class="product-details">
-                        <div class="product-infor    container ">
-                            <div class="product-infor-brand">Kuledy</div>
-                            <div class="product-infor-name-product">Array Kuledy V110</div>
-                            <div class="product-infor-price">35,000,000₫</div>
-                            <i class="far fa-heart  like-product "></i>
-
-                        </div>
-
-                        <div class="product-details-button    container ">
-                            <span class=" product-details-button-cart " type="button">
-                                <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                        <div class="filter__price-list filter__list">
+                            <span>
+                                <input type="checkbox" id="<10" value="<10">
+                                <label class="filter__item filter__price-item" for="<10">Dưới 10,000,000₫</label>
                             </span>
 
-                            <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                <i class="fas fa-coins"></i> Mua ngay
-                            </a>
-                        </div>
-
-                    </div>
-
-                </div>
-                <!-- 6 -->
-
-                <div class="product">
-
-                    <a href="./product-detail/product-detail.html">
-                        <div class="product-img">
-                            <img src="./img/DK/DK-VR12L.png" alt="product">
-                        </div>
-                    </a>
-
-                    <div class="product-details">
-                        <div class="product-infor    container ">
-                            <div class="product-infor-brand">DK</div>
-                            <div class="product-infor-name-product">Fullrange DK VR12</div>
-                            <div class="product-infor-price">18,500,000₫</div>
-                            <i class="far fa-heart  like-product "></i>
-
-                        </div>
-
-                        <div class="product-details-button    container ">
-                            <span class=" product-details-button-cart " type="button">
-                                <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
+                            <span>
+                                <input type="checkbox" id="10-30" value="10-30">
+                                <label class="filter__item filter__price-item" for="10-30">10,000,001₫ -
+                                    30,000,000₫</label>
                             </span>
 
-                            <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                <i class="fas fa-coins"></i> Mua ngay
-                            </a>
-                        </div>
+                            <span>
+                                <input type="checkbox" id="30-50" value="30-50">
+                                <label class="filter__item filter__price-item" for="30-50">30,000,001₫ -
+                                    50,000,000₫</label>
+                            </span>
+
+
+                            <span>
+                                <input type="checkbox" id="50-70" value="50-70">
+                                <label class="filter__item filter__price-item" for=" ">50,000,001₫ - 70,000,000₫</label>
+                            </span>
+
+                            <span>
+                                <input type="checkbox" id="70-90" value="70-90">
+                                <label class="filter__item filter__price-item" for="70-90">70,000,001₫ -
+                                    90,000,000₫</label>
+                            </span>
+
+                            <span>
+                                <input type="checkbox" id=">90" value=">90">
+                                <label class="filter__item filter__price-item" for=">90">Trên 90,000,000₫</label>
+                            </span>
+
+                        </div> <!-- Loc theo giá -->
 
                     </div>
 
                 </div>
-                <!-- 7 -->
 
-                <div class="product">
+                <!-- Khối danh sách sản phẩm bển phải -->
+                <div class="products__wrapper">
 
-                    <a href="./product-detail/product-detail.html">
-                        <div class="product-img">
-                            <img src="./img/Baiervires/Baiervires-BS980.png" alt="product">
+
+                    <!-- Nút lọc màn mobile - thu gọn cột lọc -->
+                    <div class="mobile-filter-icon">
+                        <button class="section__btn mobile-filter__btn">
+                            <i class="fas fa-filter"></i>
+                            <span>LỌC SẢN PHẨM</span>
+                        </button>
+                    </div>
+                    <!-- Chọn lọc sản phẩm   -->
+                    <div class="products__sorts">
+
+                        <div class="products__sort-item products__sort-order">
+                            <select class="form-select" aria-label="select-sort-order">
+                                <option selected="">Sắp xếp sản phẩm</option>
+                                <option value="1">Theo mức độ phổ biến</option>
+                                <option value="2">Theo giá từ thấp đến cao</option>
+                                <option value="3">Theo giá từ cao đến thấp</option>
+                            </select>
                         </div>
-                    </a>
 
-                    <div class="product-details">
-                        <div class="product-infor    container ">
-                            <div class="product-infor-brand">Baiervires </div>
-                            <div class="product-infor-name-product">Micro Baiervires BS980</div>
-                            <div class="product-infor-price">
-                                12,900,000₫  
+                        <div class="products__sort-item products__sort-page-items">
+                            <select class="form-select" aria-label="select-page-items">
+                                <option value="1">9 sản phẩm/trang</option>
+                                <option selected="" value="2">12 sản phẩm/trang</option>
+                                <option value="3">15 sản phẩm/trang</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Danh sách các sản phẩm -->
+                    <div class=" products-list ">
+                        <div class=" products-list__inner ">
+                            <!-- 1 -->
+                            <div class=" col__product-card ">
+                                <div class=" product-card ">
+                                    <div class="product-card__wishlist">
+                                        <i class="far fa-heart"></i>
+                                    </div>
+
+                                    <div class="product-card__img">
+                                        <img src="https://nguyenkeo.github.io/MasterAudio/img/4-acoustic/Subwoofer-PCS-318NB.png"
+                                            alt="speak">
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class=" product-card__brand ">4 Acoustic</h5>
+                                        <p class="card-text product-card__name">
+                                            Subwoofer PCS 318NB
+                                        </p>
+                                        <p class="card-text product-card__price">65,200,000₫</p>
+                                        <button class="btn-addtocart product-card__btn">
+                                            <i class="fas fa-shopping-cart"></i> 
+
+                                            <span>Thêm vào giỏ hàng</span>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <i class="far fa-heart  like-product "></i>
+                            <!-- 2 -->
+                            <div class=" col__product-card ">
+                                <div class=" product-card ">
+                                    <div class="product-card__wishlist">
+                                        <i class="far fa-heart"></i>
+                                    </div>
 
-                        </div>
+                                    <div class="product-card__img">
+                                        <img src="https://nguyenkeo.github.io/MasterAudio/img/nexo/nexo-ps15.png"
+                                            alt="speak">
+                                    </div>
 
-                        <div class="product-details-button    container ">
-                            <span class=" product-details-button-cart " type="button">
-                                <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
-                            </span>
+                                    <div class="card-body">
+                                        <h5 class=" product-card__brand ">Nexo</h5>
+                                        <p class="card-text product-card__name">
+                                            Fullrange PS15
+                                        </p>
+                                        <p class="card-text product-card__price">87,715,000₫</p>
+                                        <button class="btn-addtocart product-card__btn">
+                                            <i class="fas fa-shopping-cart"></i> 
 
-                            <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                <i class="fas fa-coins"></i> Mua ngay
-                            </a>
+                                            <span>Thêm vào giỏ hàng</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- 3 -->
+                            <div class=" col__product-card ">
+                                <div class=" product-card ">
+                                    <div class="product-card__wishlist">
+                                        <i class="far fa-heart"></i>
+                                    </div>
+
+                                    <div class="product-card__img">
+                                        <img src="https://nguyenkeo.github.io/MasterAudio/img/adamson/adamson-point15.jpg"
+                                            alt="speak">
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class=" product-card__brand ">Adamson</h5>
+                                        <p class="card-text product-card__name">
+                                            Fullrange Point 15
+                                        </p>
+                                        <p class="card-text product-card__price">99,111,000₫</p>
+                                        <button class="btn-addtocart product-card__btn">
+                                            <i class="fas fa-shopping-cart"></i> 
+
+                                            <span>Thêm vào giỏ hàng</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!-- 4 -->
+                            <div class=" col__product-card ">
+                                <div class=" product-card ">
+                                    <div class="product-card__wishlist">
+                                        <i class="far fa-heart"></i>
+                                    </div>
+
+                                    <div class="product-card__img">
+                                        <img src="https://nguyenkeo.github.io/MasterAudio/img//amate/amate-X218WF.png"
+                                            alt="speak">
+                                    </div>
+
+                                    <div class="card-body">
+                                        <h5 class=" product-card__brand ">Amate</h5>
+                                        <p class="card-text product-card__name">
+                                            Subwoofer X218WFD
+                                        </p>
+                                        <p class="card-text product-card__price">179.697.708₫</p>
+                                        <button class="btn-addtocart product-card__btn">
+                                            <i class="fas fa-shopping-cart"></i> 
+
+                                            <span>Thêm vào giỏ hàng</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 5 -->
+
+
+
                         </div>
 
                     </div>
 
-                </div>
-                <!-- 8 -->
-                <div class="product">
 
-                    <a href="./product-detail/product-detail.html">
-                        <div class="product-img">
-                            <img src="./img/hous/amplyfier-Hous-TC-3815.png" alt="product">
-                        </div>
-                    </a>
+                    <div class="products__pagination">
 
-                    <div class="product-details">
-                        <div class="product-infor    container ">
-                            <div class="product-infor-brand">HOUS</div>
-                            <div class="product-infor-name-product">Amplifier Hous TC 3815</div>
-                            <div class="product-infor-price">24,500,000₫</div>
-                            <i class="far fa-heart  like-product "></i>
+                        <nav aria-label="page-navigation">
+                            <ul class="pagination">
 
-                        </div>
+                                <li class="pagination-item">
+                                    <a class="pagination-link page-prev" href="#" aria-label="Previous">
+                                        <i class="fas fa-chevron-left"></i>
+                                    </a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a class="pagination-link" href="#">1</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a class="pagination-link" href="#">2</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a class="pagination-link" href="#">3</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a class="pagination-link" href="#">4</a>
+                                </li>
+                                <li class="pagination-item">
+                                    <a class="pagination-link" href="#">5</a>
+                                </li>
+                                <li class="pagination-item page-next">
+                                    <a class="pagination-link" href="#" aria-label="Next">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </li>
 
-                        <div class="product-details-button    container ">
-                            <span class=" product-details-button-cart " type="button">
-                                <i class="fas fa-cart-arrow-down"></i> Thêm vào giỏ hàng
-                            </span>
-
-                            <a class=" product-details-button-buynow " href="./cart.html" type="button">
-                                <i class="fas fa-coins"></i> Mua ngay
-                            </a>
-                        </div>
-
+                            </ul>
+                        </nav>
                     </div>
 
                 </div>
-                <!-- 9 -->
 
             </div>
-            <!-- list-products -->
 
-            <div class="paginations">
-                <span class="page-prev">&#60;</span>
-
-                <span class="#" id="paginations-active">
-                    <a href="#">1</a>
-                </span>
-                <span><a href="#">2</a></span>
-                <span><a href="#">3</a></span>
-                <span><a href="#">4</a></span>
-                <span><a href="#">5</a></span>
-
-                <span class="next-pagination">&#62;</span>
-
-            </div>
 
         </section>
 

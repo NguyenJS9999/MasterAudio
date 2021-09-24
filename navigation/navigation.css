@@ -891,7 +891,10 @@ trang khác dùng chung ở nav tác động */
   padding: 6px 0px;
   background: rgba(92, 98, 103, 1);
 }
-
+/* Thay đổi thêm thiết kế gọn gàng thu danh mục ở trang index */
+.nav-2-category-index:hover .categorys {
+  display: flex;
+}
 .nav-2-menu {
   /* border: 0.1px solid rgb(7, 137, 154); */
   width: 78%;
@@ -916,7 +919,7 @@ trang khác dùng chung ở nav tác động */
   align-items: start;
   color: #000000;
 }
-.categorys {
+.categorys, .categorys-index {
   /* border: 0.1px solid rgba(228,35,19, 0.2); */
   border-radius: 2px;
   width: 100%;
@@ -935,6 +938,10 @@ trang khác dùng chung ở nav tác động */
 
   /* position điểm tựa cho menu con bậc 1 */
   position: relative;
+}
+/* Tạm ẩn danh mục ở màn index đi cho gọn, màn 768-none */
+.categorys-index {
+  display: none;
 }
 .category {
   /* border: 0.1px solid rgb(154, 7, 142); */
@@ -1015,7 +1022,6 @@ trang khác dùng chung ở nav tác động */
 
 /* Di chuột qua Tiêu đề danh mục hiện menu con */
 .category:hover .submenu-container {
-  display: block;
   display: flex;
 }
 
@@ -1141,7 +1147,7 @@ trang khác dùng chung ở nav tác động */
   }
   /* Banner Trên 992px co nhỏ 79% */
   .banners {
-    width: 100%;
+    /* width: 100%; */
   }
 }
 
@@ -1188,7 +1194,7 @@ trang khác dùng chung ở nav tác động */
   }
   /* Banner Trên 992px co nhỏ 79% */
   .banners {
-    width: 100%;
+    /* width: 100%; */
   }
 }
 
@@ -1228,12 +1234,13 @@ trang khác dùng chung ở nav tác động */
     display: none;
   }
 
+  /* Tạm ẩn cho danh mục ở index ẩn gọn đi */
   .categorys {
-    display: none;
+    /* display: none; */
   }
   /* Banner Trên 992px co nhỏ 79% */
   .banners {
-    width: 100%;
+    /* width: 100%; */
   }
 }
 
@@ -1281,7 +1288,7 @@ trang khác dùng chung ở nav tác động */
   }
   /* Banner Trên 992px co nhỏ 79% */
   .banners {
-    width: 79%;
+    /* width: 79%; */
   }
 }
 
