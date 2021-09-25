@@ -106,7 +106,6 @@ input::placeholder {
 
 
 /* Danh sách các sản phẩm - row ngang */
-
 .featured-product__list {
   --bs-gutter-y: 2.5rem;
   display: grid;
@@ -228,6 +227,7 @@ p {
 .vlog-typical-projects {
   /* border: 0.1px solid rgb(102, 67, 21); */
   margin-top: 3rem;
+  margin-bottom: 5.25rem;
 }
 
 .typical-projects-list {
@@ -286,11 +286,13 @@ p {
   background-color: var(--color-logo-light);
 }
 /* Start Tự hào thương hiệu */
+.services-container {
+  padding-bottom: 3.25rem;
+}
 .services__title {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   font-size: 1.75rem;
-  margin-top: 4rem;
 }
 .section__title {
   font-weight: 600;
@@ -343,7 +345,8 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  padding: 2.25rem 3rem 2.25rem 0;
+  padding-bottom: 3rem;
 }
 .newsletter-title {
   font-size: 1.75rem;
