@@ -242,6 +242,10 @@ p {
 .typical-project img{
   width: 100%;
 }
+.typical-project-title {
+  font-size: 16px;
+  font-size: 500;
+}
 /* Start Nav */
 /* Nav Mobile */
 /* Nav Desktop */
