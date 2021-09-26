@@ -1,0 +1,32 @@
+FEATURE SUMMARY ( Tính năng chính của sản phẩm )
+19” Rack Mountable
+16 Mono Mic/Line Inputs (TRS + XLR)
+Recallable AnaLOGIQTM Preamps
+3 Stereo Inputs (TRS)
+12 Mix Outputs (XLR)
+7 Monitor Mixes (4 mono + 3 stereo)
+4 FX Engines
+2 dedicated FX Sends / Returns
+4 Mute Groups
+4 DCA Groups
+AES Digital Out
+24×22 USB Audio Interface
+dSNAKETM Remote Audio Port
+17 Motor Faders
+800×480 Touchscreen
+4 Soft Keys
+Trim, polarity, HPF, gate, insert, 4-band PEQ, compressor, delay on all Inputs
+Insert, 4-band PEQ, 1/3 octave GEQ, compressor, delay on all Outputs
+Automatic Mic Mixer
+Channel Ducker on all Inputs
+ProFactory Mic Presets
+RackFX Library
+Built-in Signal Generator
+RTA with Peak Band indication
+Spectrogram to aid feedback elimination and room acoustics
+Qu-Drive Direct Multitrack Recording / Playback on USB drives
+DAW MIDI Control
+Qu-Pad iPad App
+Qu-You iPhone / Android personal monitoring app
+Qu-Control customisable iOS app for simple wireless control
+Compatible with ME Personal Mixing System

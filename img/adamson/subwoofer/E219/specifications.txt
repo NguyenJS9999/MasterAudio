@@ -1,0 +1,14 @@
+Frequency Range (+/-3 dB)	28 Hz - 90 Hz
+Maximum Peak SPL**	144
+Components LF	2x SD19 19" Kevlar® Neodymium Driver
+Nominal Impedance LF	2x 8 Ω
+Power Handling (AES / Peak) LF	2x 1600 / 6400 W
+Rigging	
+Integrated Rigging System
+
+Connection	3x Speakon™ NL8
+Height Front (mm / in)	597 / 23.5
+Width (mm / in)	1440 / 56.7
+Depth (mm / in)	889 / 35
+Weight (kg / lbs)	106.6 / 235
+Supported Processing	Lake

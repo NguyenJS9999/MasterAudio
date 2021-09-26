@@ -1,0 +1,28 @@
+KEY FEATURES
+4 x 6.5 inch LF/MF Drivers
+4 x HF Compression Drivers
+145dB peak SPL
+Frequency response: 85Hz-20kHz
+H350mm/W575mm/D715mm
+58Kg/128lb
+Dispersion 90 ̊ H x 0-10 ̊V
+SPECIFICATIONS
+Frequency Response [a]	85Hz – 19kHz ±3dB
+Usable Range @-6dB [a]	80Hz – 20kHz
+Sensitivity 1W @ 1m [b]	110dB SPL Nominal
+Nominal Peak SPL @ 1m [b]	145dB Peak
+Dispersion [c]	90° Horizontal x 0-10° vertical
+Crossover Frequency	850 Hz
+Nominal Impedance	LF-MF:16Ω (12 Ω min) – HF: 16Ω (12 Ω min
+Amplified Controller	NXAMP4x4 - 3xSTM M46 in parallel on 2 NXAMP4x4 channels - 2x4000W/2Ω
+FEATURES
+Components	LF-MF: 4 x 6.5” (17cm) 16 Ω flat membrane high excursion drivers
+HF: 4 x 2.5” voice coil, 1.4” throat Neodymium 16 Ω drivers, Ketone Polymer diaphragm
+Height x Width x Depth	350 x 575 x 715 mm – 13.78” x 22.64” x 28.15”
+Weight : Net	59kg – 130lbs
+Connectors	2 x NL8-MDV Speakon 8 poles (in/out) & 1 x NLT4-MDV Speakon 4
+poles (to STM S118 and B112)
+Construction	PU Composite Low Density – Polyurethane water based black coating
+Handles	3 handles (2 sides and 1 rear
+Front	Perforated dark grey metal grille
+Rigging	Integral 3 points flying system. Inter cabinet angle adjustments from 0.2° to 10° in logarithmic steps

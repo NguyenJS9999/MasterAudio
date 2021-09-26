@@ -1,0 +1,20 @@
+Amplifier program power	2000 W (LF) + 1000 W (MF) + 1000 W (HF) Class D Tri-amplified
+Input sensitivity	8 dBu – 1.94 V
+Input impedance	20 KΩ Balanced
+Mains	Universal switch mode Power Supply 85-265 V / 45-65 Hz
+Average current draw	3.7 A (Heavy duty musical program)
+SPL (1m)	141 dB continuous, 144 dB peak
+Built-in DSP	64- bit processing unit. Includes factory presets
+AD/DA converters	24 bit – 48 kHz – SNR >112dB
+Presets	HPF60_FLAT / HPF60_NEARFIELD / HPF60_LONGTHROW / HPF80_FLAT / HPF80_NEARFIELD / HPF80_LONGTHROW + 25 configurable user memories
+Frequency response (-10 dB)	42 Hz – 18 kHz
+LF	2 x 12″ neodymium woofers (3″ voice coil)
+MF	4 x 6″ neodymium woofers (1.5″ voice coil)
+HF	2 x 3″ titanium diaphragm, neodymium magnet compression drivers
+Directivity (HxV)	100º x 8º
+Dimensions (HxWxD)	372 x 1100 x 657 mm
+Weight	64.6 kg
+Finish	Multilayer baltic birch plywood with high resistant black Polyurea® coating
+Grille	1.5mm steel with grey micro-foam cloth
+Rigging	Stainless-steel black painted integrated rigging bars
+Connectors	1x XLR input / 1x XLR link / 1x AC PowerCon® input / 1x AC PowerCon® link / 1x EtherCon® RJ45 input / 1x EtherCon® RJ45 link

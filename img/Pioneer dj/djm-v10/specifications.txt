@@ -1,0 +1,9 @@
+1. Hỗ trợ tới 6 kênh Audio Line9. Beat FX mới Shimmer
+2. 4 Dải băng tần EQ
+3. Mỗi kênh có 1 Filter, 1 cực
+4. EQ Master Isolator
+5. Bộ nén Compressor trên mỗi kênh
+6. Send/Return Built-In + External FX
+7. Hai kênh tai nghe độc lập cho 2 DJ
+8. Cân chỉnh âm thanh của Monitor tốt hơn
+9. Beat FX mới Shimmer

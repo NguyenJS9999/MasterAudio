@@ -1,0 +1,22 @@
+Amplifier program power	2400 W (LF) + 800 W (MF-HF) Class D Bi-amplified
+Input sensitivity	8 dBu – 1.94 V
+Input impedance	20 KΩ Balanced
+Maximum input level	20 dBu
+Mains	Universal switch mode Power Supply 85-265 V / 45-65 Hz
+Average current draw	4.6 A (Heavy duty musical program)
+SPL (1m)	133 dB continuous, 136 dB peak
+Built-in DSP	48-bit processing unit. Includes factory presets.
+AD/DA converters	24 bit – 48 kHz
+Presets	FLAT / NEARFIELD / LONGTHROW / SPEECH
+Standby mode consumption	< 5 W
+Adjustable delay line	118 ms / 40 m
+Frequency response (-10 dB)	35 Hz – 19 kHz
+LF	18” woofer (4″ voice coil)
+MF	12” neodymium woofer (3″ voice coil)
+HF	1.75” PM4 diaphragm compression driver
+Directivity (HxV)	60º x 50º
+Dimensions (HxWxD)	1230 x 520 x 540 mm
+Weight	67 kg
+Finish	Multilayer birch plywood with high resistant black Polyurea® coating
+Grille	2 mm steel with black acoustic mesh
+Connectors	1x XLR input / 1x XLR link / 1xAC PowerCon® input / 1xAC PowerCon® link

@@ -1,0 +1,7 @@
+Loại:4 kênh
+Đáp ứng tần số âm nhạc:+0,5 dB từ 10 Hz đến 20 KHz
+Công suất 8Ω stereo:1900 W
+Công suất 4Ω stereo:3300 W
+Công suất 2Ω stereo:4000 W
+Kích thước:4U 19 "Rack - Độ sâu 457 mm (18")
+Trọng lượng:24,5kg

@@ -1,0 +1,16 @@
+Frequency Response:30HZ-150HZ
+Sensitivity 1W/1m:104dB
+Nominal Impedance:LF1:8 Ohm LF2:8 Ohm
+Power Handling Rms:2400W
+Power PROGRAM:4800W
+Power PEAK:9600W
+Calculated Output:138dB
+Maximum SPL:144dB
+Crossover Freouency:30HZ-110HZ
+ 
+Enclosure  Material:18mm/25mmhigh quality birch plywood
+Finish:Environmental protection, wear-resistant waterproof coarse point painting
+Grille:Round hole dust gold steel
+Input  Connectors:SPEAKON NL4X2
+Dimensions W×D×H(mm) :1070x780x562 (WxDxH) mm
+N. W/G. W  (KG):76KG

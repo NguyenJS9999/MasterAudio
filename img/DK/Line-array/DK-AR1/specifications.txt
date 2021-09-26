@@ -1,0 +1,17 @@
+Công suất định mức 1000W
+
+Băng thông khả dụng (-10dB) 50Hz-20kHz
+
+Áp suất tối đa 138dB (thiết kế [K2_70])
+
+Mức chỉ thị danh nghĩa (-6dB): 110 độ / 70
+
+Đối xứng: bất đối xứng 90 độ: (35 độ / 55 độ hoặc 55 độ / 35 độ)
+
+Độ thẳng đứng phụ thuộc vào số lượng loa và độ cong của mảng đường
+
+Đơn vị loa tần số cao: 2 X1,75 inch mỗi 50W
+
+Tần số thấp: 2 X 10 inch mỗi 450W
+
+Điện trở danh nghĩa tần số thấp: ohms HF: 2x 16ohms 2x16

@@ -1,0 +1,13 @@
+Model : C-12
+Power Rated: 300W
+Frequency Response: 55Hz-20KHz ±3dB
+Recommended Amplifier: 600W into 8Ω
+Unit Specifications: LF: 12" Ferrite Bass, 65mm Voice Coil
+            HF: 1.75" ferrite tweeter, 44.4mm voice coil
+Sensitivity: 97dB
+Max SPL: 125dB
+Connection socket: 2xNeutrik NL4
+Standard impedance: 8Ω
+Coverage angle: 90°×40°
+Size (HxWxD): 605x365x395mm
+Weight: 20.9Kg

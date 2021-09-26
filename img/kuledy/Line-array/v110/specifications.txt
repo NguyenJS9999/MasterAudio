@@ -1,0 +1,21 @@
+Thông số kỹ thuật:
+
+Đáp ứng tần số: 60Hz ~ 18KHz (± 3dB ) 50Hz ~ 20KHz ( -10dB )
+
+Chỉ thị danh nghĩa: 90 ° điều chỉnh theo chiều dọc
+
+Độ nhạy: Treble: 112dB ( 2KHz-16KHz ) Bass: 103dB ( 500KHz-2KHz )
+
+Công suất loa: Treble: 80W Bass: 350W
+
+Trở kháng: Treble / Bass: 16 [Omega
+
+Mức áp suất âm thanh tối đa: Bass: Bass từ tính neodymium 1x10 ''
+
+Treble: treble nén từ tính 1x3 '' neodymium
+
+Dữ liệu vật lý:
+
+Chiều cao x chiều rộng x chiều sâu: 308x580x390mm
+
+Cân nặng: 22,5kg

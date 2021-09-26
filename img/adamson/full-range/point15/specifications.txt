@@ -1,0 +1,22 @@
+Frequency Range (+/-3 dB)	55 Hz - 18 kHz
+Nominal Directivity (-6 dB) H x V	60° x 40°, 90° x 60° or 40° x 20° Rotatable
+Maximum Peak SPL**	136 dB (Active) / 134.8 dB (Passive)
+Components LF	ND15-L 15" Kevlar Neodymium Driver
+Components HF	B&C DE800 3" Diaphragm / 1.4" Exit Compression Driver
+Nominal Impedance LF	8 Ω
+Nominal Impedance HF	16 Ω
+Nominal Impedance Passive	8 Ω
+Power Handling (AES / Peak) LF	500 / 2000 W
+Power Handling (AES / Peak) HF	110 / 440 W
+Power Handling (AES / Peak) Passive	610 / 2440 W
+Rigging	
+4x SLR™ Socket
+
+Built-in Polemount Socket
+
+Connection	2x Speakon™ NL4 (Barrier Strip Optional)
+Height Front (mm / in)	726 / 28.63
+Width (mm / in)	451 / 17.75
+Depth (mm / in)	334 / 13.13
+Weight (kg / lbs)	24.8 / 54.5 Active, 26.6 / 58.5 Passive
+Supported Processing	Lake, IPD, XTA

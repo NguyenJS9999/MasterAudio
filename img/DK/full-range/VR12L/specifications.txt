@@ -1,0 +1,13 @@
+Frequency response: 50HZ-20KHZ (± 3dB)
+40HZ-20KHZ (-10dB)
+Sensitivity (1w / 1m): 100dB
+Rated impedance: 8 Ohm
+Rated power: 550W
+Music Power: 1100W
+Peak power: 2200W
+Continuous sound pressure: 127dB
+Maximum SPL: 133db
+Crossover point: 2KHZ
+Refers to the property: 60 ° (H) X80 ° (V)
+Size: 366 * 449 * 600mm (W × D × H)
+Net Weight: 21KG

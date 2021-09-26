@@ -1,0 +1,21 @@
+Model Name	HCS-115F
+GS1 (EAN) CODE	4260318510905
+System Type	2-Way 15“+1,4“ Fullrange Speaker
+Power Rating	900 W AES
+1800 W program
+3600 W peak
+Frequency Range (+/- 3 dB)	45 Hz - 20 kHz
+Coverage Pattern (hxv)	90°x45°
+Sensitivity	100 dB 1w/1m
+Maximum SPL	128 dB
+Woofer	STG-15FR 800W AES, 3“ voice coil
+Driver	STG-75F 200W AES, 3“ voice coil
+Nominal Impedance	8 Ohm
+Input Connectors	2 x Neutrik NL4 Socket
+parallel 1+/1-
+Housing	Birch Multiplex
+Suspension/Mounting	35 mm pole socket
+Coating	anti-scratch
+Polyurethane coating
+Dimensions (h/w/d)	760x494x457 mm
+Net weight	40,0 kg

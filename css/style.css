@@ -65,7 +65,7 @@ input::placeholder {
 }
 .banners {
   /* border: 0.1px solid rgb(130, 7, 154); */
-  width: 100%;
+  padding: 0 !important;
 }
 .banners img {
   width: 100%;
@@ -84,9 +84,10 @@ input::placeholder {
 .featured-product__backgound {
   /* border: 0.1px solid rgb(23, 79, 138); */
   background-color: var(--color-neutral-bg);
-  padding: 3rem 0;  
+  padding: 3rem 0;
 }
 .featured-product__banners {
+  width: 100%;
   overflow: hidden;
   height: 500px;
   margin-top: -2.5rem;
@@ -103,7 +104,6 @@ input::placeholder {
   text-align: center;
   margin-bottom: 2.25rem;
 }
-
 
 /* Danh sách các sản phẩm - row ngang */
 .featured-product__list {
@@ -222,6 +222,7 @@ p {
 .featured-product__btn {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 /* VLOG công trình tiêu biểu */
 .vlog-typical-projects {
@@ -235,7 +236,7 @@ p {
   margin-bottom: 3rem;
   display: flex;
   flex-direction: row;
-  
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -307,7 +308,7 @@ p {
   /* border: 0.1px solid rgb(102, 67, 21); */
   margin-top: 40px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 .service {
   /* border: 0.1px solid rgba(145,146,148, 1); */
@@ -335,7 +336,7 @@ p {
 .service__content {
   font-size: 16px;
   color: #5b5b5b;
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 /* End Tự hào thương hiệu  */
 /* Start Đăng kí nhận tin mới */
@@ -411,7 +412,6 @@ p {
   .proud span {
     font-size: 24px;
   }
-
 }
 
 /* Medium */
@@ -420,7 +420,6 @@ p {
     grid-template-columns: 1fr 1fr;
     gap: 8px;
   }
-
 }
 
 /* Large */
@@ -437,7 +436,6 @@ p {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 8px;
   }
-
 }
 
 /* Extra extra large */

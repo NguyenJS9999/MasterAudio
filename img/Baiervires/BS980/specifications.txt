@@ -1,0 +1,49 @@
+Thông số kỹ thuật hệ thống:
+
+Dải tần: 640-690 MHz
+
+Tổng số kênh: 200CH
+
+Khoảng cách sử dụng hiệu quả : ≈50m
+
+Tần số khoảng: 250KHz
+
+Tần số rộng: 50 MHz
+
+Chế độ dao động tần số: Tổng hợp tần số vòng khóa pha (PLL)
+
+ Thông số tay mic:
+
+Tỷ lệ tín hiệu / nhiễu : ≥50dB
+
+Độ ổn định tần số: ± 5KHz
+
+Chế độ nhận lựa chọn điều khiển: CPU + tiếp nhận nhận dạng hoa tiêu
+
+Chế độ im lặng: Mute & Lock Loop Circuit
+
+Chế độ hiển thị: LCD
+
+Nguồn: 12V DC, 1250mA
+
+Giao diện đầu ra âm thanh 2 Ổ cắm cân bằng XLR + Ổ cắm không cân bằng TRS 6.3mm
+
+Thông số đầu thu:
+
+Dải tần: 640-690 MHz
+
+Tổng số kênh: 200CH
+
+Tần số khoảng: 250KHz
+
+Tần số rộng: 50 MHz
+
+Chế độ dao động tần số: PLL khóa pha tổng hợp tần số
+
+Công suất cầm tay: ≤30mW
+
+Chế độ truyền phát thế hệ điều khiển CPU + tạo mã nhận dạng hoa tiêu
+
+Độ ổn định tần số: ± 4KHz
+
+Chế độ hiển thị: LCD + màn hình ngược sáng màu

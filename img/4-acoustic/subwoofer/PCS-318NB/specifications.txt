@@ -1,0 +1,18 @@
+
+Model Name	PCS-318NB
+GS1 (EAN) CODE	4260318510486
+System Type	Triple 18“ ground stack subwoofer
+Power Rating	4500 W AES
+9000 W program
+18000 W peak
+Frequency Range (-10 dB)	28 Hz - 160 Hz
+Sensitivity	103 dB 1w/1m
+Maximum SPL	154 dB
+Woofer	3 x STG-18NB 1500W AES, 4“ voice coil
+Suspension/Mounting	Snap In function for PCS-110L and PCS-210L flight frame
+Nominal Impedance	2,7 Ohm
+Input Connectors	2 x Neutrik NL4 Socket parallel 1+/1-
+Housing	Birch Multiplex
+Coating	Water-resistant Polyurea coating
+Dimensions (h/w/d)	1200x500x700 mm
+Net weight	91,5 kg

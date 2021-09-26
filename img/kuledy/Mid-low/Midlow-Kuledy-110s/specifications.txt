@@ -1,0 +1,17 @@
+Thông số kỹ thuật:
+Đáp ứng tần số: 40Hz ~ 200Hz (± 3dB) 30Hz ~ 320Hz (-10dB)
+Chỉ thị danh nghĩa: không có chỉ thị
+Độ nhạy: 100dB SPL
+Công suất loa: 1000W
+Trở kháng: 8Ω
+Mức áp suất âm thanh tối đa: 130dB (liên tục), 136dB (cao điểm)
+Đơn vị loa: loa trầm 2x15 '' (cuộn dây 75mm)Dữ liệu vật lý:Chiều cao x chiều rộng x chiều sâu: 680mmx580x796mm
+
+Cân nặng: 60kg
+Phương pháp liên kết: Ghế loa WP4 lõi 2x4
+Phương thức liên kết: WP4: 1-2 +
+           NL4: 1 + 1-
+Chất liệu: 15mm, bảng nhiều lớp bạch dương 18mm
+Xử lý bề mặt: sơn nước màu đen
+Lưới: lưới thép epoxy đen xốp và vải hộp cách âm
+Góc: 5.0.-5.-10 ° điều chỉnh

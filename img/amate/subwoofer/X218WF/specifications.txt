@@ -1,0 +1,17 @@
+Amplifier program power	5000 W – Class D
+Input sensitivity	2 dBu – 1 V
+Input impedance	20 KΩ Balanced
+Mains	Universal switch mode Power Supply 85-265 V / 45-65 Hz
+Average current draw	9.4 A (Heavy duty musical program)
+SPL (1m)	141 dB continuous, 144 dB peak
+Built-in DSP	64-bit processing unit. Includes factory presets
+AD/DA converters	24 bit – 48 kHz – SNR > 112 dB
+Presets	LPF60 X212AF / LPF80 X212AF / LPF80 STANDARD / LPF90 STANDARD / LPF100 STANDARD / LPF90 X102FD / CARDIOID + 25 configurable user memories
+Frequency response (-10 dB)	25 Hz – 120 Hz
+LF	2x 18” neodymium woofers (4” voice coil)
+Directivity (HxV)	Omnidirectional
+Dimensions (HxWxD)	1114 x 751 x 815 mm
+Weight	99 kg
+Finish	Multilayer baltic birch plywood with high resistant black Polyurea® coating
+Grille	2 mm steel with grey micro-foam cloth
+Connectors	1x XLR input / 1x XLR link / 1x AC PowerCon® input / 1x AC PowerCon® link / 1 x EtherCon® RJ45 input / 1 x EtherCon® RJ45 link

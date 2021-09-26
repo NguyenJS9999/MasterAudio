@@ -1,0 +1,19 @@
+Model Name	PCS-210L
+GS1 (EAN) CODE	4260318510646
+System Type	2x10“/2x1“ 2_Way Line Array Module
+Power Rating	800 W AES
+1600 W program
+3200 W peak
+Frequency Range (+/- 3 dB)	75 Hz - 20 kHz
+Coverage Pattern (hxv)	120°x10°
+Sensitivity	104 dB 1w/1m
+Maximum SPL	136 dB
+Woofer	2 x STG-10L 350W AES, 3“ voice coil, neodymium
+Driver	2 x STG-45NB 50W AES, 1,75“ voice coil, neodymium
+Nominal Impedance	8 Ohm
+Input Connectors	2 x Neutrik NL4 Socket
+parallel 1+/1-
+Housing	Birch Multiplex
+Coating	Water-resistant Polyurea coating
+Dimensions (h/w/d)	319x750x515 mm
+Net weight	28,0 kg

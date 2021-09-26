@@ -1,0 +1,91 @@
+Technical Details
+Model Name	SX-25000	SX-44000	SX-46000
+GS1 (EAN) CODE	4260318511858	4260318512022	4260318511865
+System Type	2-Channel Class D Amplifier	4-Channel Class D Amplifier	4-Channel Class D Amplifier
+Output Power
+all channels driven
+20Hz - 20 kHz, 0.1 % THD	2 x 6000W @ 2Ohm
+2 x 4300W @ 4Ohm
+2 x 2600W @ 8Ohm	4 x 2700W @ 2Ohm
+4 x 1830W @ 4Ohm
+4 x 1100W @ 8Ohm	4 x 3800W @ 2Ohm
+4 x 2700W @ 4Ohm
+4 x 1600W @ 8Ohm
+Output Power
+Bridge mode	-
+-	2 x 5000W @ 4Ohm
+2 x 3660W @ 8Ohm
+2 x 3200W @16Ohm	2 x 7600W @ 4Ohm
+2 x 5400W @ 8Ohm
+2 x 3200W @16Ohm
+THD+N @ 8Ω 1kHz,1dB	≤0.05%	≤0.05%	≤0.05%
+Slew Rate	>30v/μs	>30v/μs	>30v/μs
+Frequency Response
+@1Watt, 8Ohm	10Hz -20kHz / ±0.35dB	10Hz -20kHz / ±0.35dB	10Hz -20kHz / ±0.35dB
+Damping Factor
+(@100Hz)	>5000	>3000	>3000
+Signal to Noise Ratio
+20Hz -20 kHz	>99dB	>99dB	>99dB
+Channel Separation
+Crosstalk@1kHz	>70dB	>70dB	>70dB
+Voltage Gain	45.4dB (0,775V:144V)	41,7dB (0,775V:94V)	43,3dB (0,775V:113V)
+Input Sensitivity	selectable 0.775V/1V/1.4V/2V	selectable 0.775V/1V/1.4V/2V	selectable 0.775V/1V/1.4V/2V
+Input Impedance	20k Ohm Balanced
+10k Ohm Unbalanced	20k Ohm Balanced
+10k Ohm Unbalanced	20k Ohm Balanced
+10k Ohm Unbalanced
+Front Control	Power switch, Gain control	Power switch, Gain control	Power switch, Gain control
+Rear Control	Sensitivity Switch,
+Mode Switch	Sensitivity Switch,
+Mode Switch	Sensitivity Switch,
+Mode Switch
+LED Indicators	Signal VU Meter
+Protect,
+Parallel	Signal VU Meter
+Protect,
+Parallel,
+Bridge	Signal VU Meter
+Protect,
+Parallel,
+Bridge
+Input Connectors	XLR Active balanced
+pin1 gnd / pin 2+ / pin3-	XLR Active balanced
+pin1 gnd / pin 2+ / pin3-	XLR Active balanced
+pin1 gnd / pin 2+ / pin3-
+Output Connectors	2 Neutrik NL4 Sockets
+2 Binding Posts	4 Neutrik NL4 Sockets	4 Neutrik NL4 Sockets
+Cooling	Low Noise Continuously Variable
+speed fan	Low Noise Continuously Variable
+speed fan	Low Noise Continuously Variable
+speed fan
+Protection	Full short circuit, Open circuit,
+thermal, Ultrasonic, RF Protection.
+Stable Into reactive or
+Mismatched loads	Full short circuit, Open circuit,
+thermal, Ultrasonic, RF Protection.
+Stable Into reactive or
+Mismatched loads	Full short circuit, Open circuit,
+thermal, Ultrasonic, RF Protection.
+Stable Into reactive or
+Mismatched loads
+Load Protection	On/Off muting
+DC fault power
+Supply shutdown	On/Off muting
+DC fault power
+Supply shutdown	On/Off muting
+DC fault power
+Supply shutdown
+Operating Voltage	230V (+/- 10%), 50-60Hz
+USA Version
+110V (+/- 10%), 50-60Hz	230V (+/- 10%), 50-60Hz
+USA Version
+110V (+/- 10%), 50-60Hz	230V (+/- 10%), 50-60Hz
+USA Version
+110V (+/- 10%), 50-60Hz
+Idle
+Power Consumption	< 165W	< 130W	< 155W
+Max.
+Power Consumption	< 5000W	< 4000W	< 6000W
+Fuse	T-30A	T-25A	T-30A
+Dimensions (h/w/d)	19“/1U 483W x 402D x 44H	19“/1U 483W x 402D x 44H	19“/1U 483W x 402D x 44H
+Net weight	8,4 kg	8,2 kg	8,4 kg

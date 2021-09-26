@@ -1,0 +1,11 @@
+Frequency Range (+/-3 dB)	40Hz - 110Hz
+Maximum Peak SPL**	138
+Components LF	2x ND18-S 18" Kevlar Neodymium Drivers
+Nominal Impedance LF	4.5 Ω
+Power Handling (AES / Peak) LF	2x 800 / 2x 3200 W
+Connection	4x Neutrik Speakon™NL4: 2x Front (Pins 2 +/-), 2x Back (Pins 1 +/-)
+Height Front (mm / in)	584 / 23
+Width (mm / in)	1066 / 42
+Depth (mm / in)	825 / 32.5
+Weight (kg / lbs)	65 / 142
+Supported Processing	Lake

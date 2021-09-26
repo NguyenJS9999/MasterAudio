@@ -1,0 +1,23 @@
+Voltage Gain	32 dB
+Input Sensitivity	1.88 V
+Input Impedance
+20 kΩ
+Slew Rate	+/-12 V/μs
+Output Power (1 kHz – 0,1% THD) (1)
+
+Stereo 8 Ω / 650 + 650 W
+Stereo 4 Ω / 1200 + 1200 W
+Stereo 2 Ω / 2100 + 2100 W (2)
+Bridge 8 Ω / 2400 W
+Bridge 4 Ω / 4200 W (2)
+Average Current draw (3)
+
+7 A @ 230 V AC
+Frequency Response	20 Hz – 20 kHz (0/-1 dB)
+Damping Factor (1 kHz @ 8 Ω)	350
+Crosstalk	65 dB
+S/N Ratio (A-weighted)	108 dB (A)
+Mains	220 – 240 V AC- 50/60 Hz
+Dimensions (HxWxD)	88 x 482 x 440 mm
+Weight
+21 kg
