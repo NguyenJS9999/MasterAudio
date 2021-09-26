@@ -413,6 +413,7 @@ input::placeholder {
 
 /* Start Mã giảm giá khối thanh toán */
 .order-container {
+  padding: 0;
   display: flex;
   gap: 4rem;
   margin-top: 4rem;
