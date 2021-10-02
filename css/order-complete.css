@@ -1,0 +1,230 @@
+:root {
+  --color-danger: #ee3b47;
+  --color-success: #0db102;
+  --color-info: #167efb;
+  --color-logo: #2c2e3e;
+  --color-logo-light: #34374c;
+  --color-text: #121212;
+  --color-text-light: rgba(18, 18, 18, 0.8);
+  --color-neutral-bg: #f6f6f6;
+  --color-highlight-bg: rgba(255, 253, 240, 0.5);
+  --color-neutral-border: rgba(18, 18, 18, 0.2);
+  --color-highlight-border: #f9c372;
+  --color-primary: #c3811d;
+  --color-primary-light: rgba(183, 136, 51, 0.9);
+  --color-secondary: #fef5e8;
+  --color-secondary-hightlight: #ffecd1;
+}
+/* style cho ô INPUT dùng chung */
+/* style cho ô INPUT dùng chung  */
+input {
+  border: 1px solid rgba(208, 208, 208, 0.5);
+  border-radius: 2px;
+  padding: 8px 6px;
+  transition: all 0.2s;
+}
+input:hover {
+  box-shadow: 0px 0px 4px 0px rgb(255, 255, 255) !important;
+  color: inherit !important;
+}
+input:focus {
+  outline: none !important;
+  box-shadow: 0px 0px 4px 0px rgba(208, 208, 208, 1);
+  border-color: var(--color-primary-light) !important;
+}
+input::placeholder {
+  color: rgba(208, 208, 208, 1) !important;
+  font-size: 14px;
+}
+
+#main {
+  background-image: url(../img/banner/Nexo-stm-banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 3rem;
+  /* height: 100vh; */
+}
+
+.section-order--complete {
+  margin-top: 0rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+.thank-you,
+.order-complete-noti {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+.thank-you {
+  font-size: 1.25rem;
+}
+.thank-you,
+.order-complete-noti {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+.order-result {
+  /* border: 1px solid red; */
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+.order-result span {
+  /* border: 1px solid violet; */
+  background: rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 2rem 0.1rem 2rem;
+  color: #e1e1cc;
+  font-size: 14px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.order-result p {
+  margin-bottom: 0.75rem;
+}
+.order-number > p:first-child,
+.order-date > p:first-child {
+  margin-bottom: 0.5rem;
+}
+.order-result > div > p:last-child {
+  margin-bottom: 0;
+  font-weight: 500;
+}
+.vertical-line {
+  width: 1px;
+  height: 3rem;
+  background-color: #fff;
+}
+/* Chi tiết đơn hàng */
+.order__payment-info,
+.order__details {
+  width: 100%;
+  height: fit-content;
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  border: 1px solid rgba(18, 18, 18, 0.1);
+}
+
+.order__details {
+  background-color: #fff;
+  max-width: 600px;
+  margin: auto;
+}
+.order__title {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  line-height: 1.625rem;
+  margin-bottom: 1.5rem;
+}
+.order__list {
+  margin-bottom: 2rem;
+}
+.order-item .col-left {
+    padding-right: 1.75rem;
+    text-align: left;
+}
+.order-item__quantity {
+    font-weight: 600;
+}
+.order-header.order-row {
+  padding: 0.75rem 0;
+  font-weight: 500;
+}
+.order-row,
+.order-row-small {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+.order-item {
+  border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+}
+.order-price {
+  margin-top: 1.5rem;
+}
+.order-row-small {
+  padding: 0 0 0.75rem 0;
+  justify-content: space-between;
+}
+.order-row-small .col-left {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  text-align: left;
+}
+.order-ship-fee,
+.order__list {
+  border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+}
+.order-payment,
+.order-ship,
+.order-expect {
+  padding: 0.75rem 0 0.5rem 0;
+}
+.order-ship {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+}
+
+.support-info {
+  color: #000;
+  margin-bottom: 2rem;
+}
+.text-info {
+  color: #08b2d4 !important;
+}
+
+.section__btn {
+  outline: none;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1.25rem;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  background-color: var(--color-logo);
+  transition: all 0.2s ease;
+}
+.back-home a {
+  color: #fff;
+}
+
+/* Start Responsive by @Media same bootstrap */
+
+/* X-Small */
+@media (max-width: 576px) {
+}
+
+/* Small */
+@media (min-width: 576px) {
+}
+
+/* Medium */
+@media (min-width: 768px) {
+}
+
+/* Large */
+@media (min-width: 992px) {
+}
+
+/* Extra large */
+@media (min-width: 1200px) {
+}
+
+/* Extra extra large */
+@media (min-width: 1400px) {
+}
+/* End Responsive by @Media same  bootstrap*/
+
+/* Start */
+/* End */

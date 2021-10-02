@@ -11,7 +11,7 @@ main {
   background: rgba(255, 255, 255, 1);
 }
 /* style cho ô INPUT dùng chung  */
-input {
+/* input {
   border: 1px solid rgb(148, 148, 148);
   border-radius: 2px;
   padding: 8px 6px;
@@ -27,7 +27,7 @@ input:focus {
 input::placeholder {
   color: rgba(148, 148, 148, 0.8);
   font-size: 14px;
-}
+} */
 /* Ghi đè các css của fontawesom hiệu ứng di chuột vào */
 .fas {
   cursor: pointer;
@@ -625,7 +625,7 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   color: #000000;
   grid-gap: 2px;
 }
@@ -916,7 +916,7 @@ trang khác dùng chung ở nav tác động */
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: start;
+  align-items: flex-start;
   color: #000000;
 }
 .categorys, .categorys-index {
@@ -931,7 +931,7 @@ trang khác dùng chung ở nav tác động */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   grid-gap: 2px;
 
   margin-top: 12px;

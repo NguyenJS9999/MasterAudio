@@ -40,8 +40,8 @@
     <!-- css PRODUCT - trang danh mục tổng quan -->
     <link rel="stylesheet" href="./css/product.css">
 
-    <!-- Css CHECK OUT -->
-    <link rel="stylesheet" href="./css/check-out.css">
+    <!-- Css ORDER-COMPLETE -->
+    <link rel="stylesheet" href="./css/order-complete.css">
 
 
 </head>
@@ -1285,304 +1285,116 @@
     <!-- Kê navigation -->
     <!-- <div class="margin-top-nav   container-fluid "></div> -->
 
-    <!-- breadcrumb -->
-    <div class="breadcrumb-container     container-fluid ">
-        <div class=" breadcrumb-content container ">
 
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="./index.html">TRANG CHỦ</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">SẢN PHẨM</li>
-                </ol>
-            </nav>
+    <main id='main'>
+        <section class="section-order--complete container-fluid">
+            <div class="order-summary container">
+                <div class="order-thank">
 
-        </div>
+                    <h4 class="order-complete-noti mb-2">ĐẶT HÀNG THÀNH CÔNG!</h4>
+                    <h4 class="thank-you">
+                        Cảm ơn quý khách đã lựa chọn Master&nbsp;Audio
+                    </h4>
 
-    </div>
-    <!-- breadcrumb -->
-
-    <main>
-        <section class="section-order__container container-fluid">
-
-            <div class="order container">
-
-                <div class="order-form needs-validation">
-                    <!-- Thông tin thanh toán -->
-                    <div class="order-info">
-                        <h4 class="order__title">Thông tin thanh toán</h4>
-
-                        <div class="order__first-info row g-3">
-                            <div class="order__name">
-                                <input type="text" class=" name-input" placeholder="Họ tên *">
-                                <div class="feedback-noti">Vui lòng nhập họ tên</div>
+                    <div class="order-result">
+                       <span>
+                            <div class="order-number">
+                                <p>Mã đơn hàng</p>
+                                <p class="text-bold">686868</p>
                             </div>
 
-                            <div class="order__phone">
-                                <input type="text" class=" phone-input" placeholder="Số điện thoại *">
-                                <div class="feedback-noti">Vui lòng nhập số điện thoại</div>
+                            <div class="vertical-line"></div>
+
+                            <div class="order-date">
+                                <p>Ngày nhận đơn</p>
+                                <p class="text-bold">30/12/2021</p>
                             </div>
-
-                            <div class="order__address">
-                                <input type="text" class=" address-input" placeholder="Địa chỉ *">
-                                <div class="feedback-noti">Vui lòng nhập địa chỉ</div>
-                            </div>
-
-                            <div class="order__city">
-                                <input type="text" class=" city-input" placeholder="Tỉnh/Thành phố *">
-                                <div class="feedback-noti">Vui lòng nhập tỉnh/thành phố</div>
-                            </div>
-
-                            <div class="order__district">
-                                <input type="text" class=" district-input" placeholder="Quận/Huyện *">
-                                <div class="valid-feedback feedback-noti">
-                                    Vui lòng nhập quận/huyện
-                                </div>
-                            </div>
-
-                            <div class="order__ward">
-                                <input type="text" class=" ward-input" placeholder="Phường/Xã *">
-                                <div class="feedback-noti">Vui lòng nhập phường/xã</div>
-                            </div>
-
-
-                            <div class="order__ship-method">
-                                <select class="form-select ship-method-select" id="ship-method">
-                                    <option selected value="">
-                                        Phương thức vận chuyển *
-                                    </option>
-
-                                    <option value="standard">Tiêu chuẩn</option>    
-                                    <option value="save">Tiết kiệm</option>
-                                    <option value="fast">Nhanh</option>
-                                    <option value="super-fast">Hỏa tốc</option>
-                                </select>
-
-                                <div class="feedback-noti">
-                                    Vui lòng chọn phương thức vận chuyển
-                                </div>
-                            </div>
-
-                            <div class=" mb-3 ">
-                                <textarea class=" order-note form-control d-none" id="order-note" rows="3"
-                                    placeholder="Ghi chú đơn hàng">
-                                </textarea>
-
-                                <textarea class=" order-note form-control " id="order-note" rows="3"
-                                    placeholder="Ghi chú đơn hàng">
-                                </textarea>
-                            </div>
-
-                        </div>
-
-
-
-
-                    </div>
-
-                    <div class=" order-payment__container ">
-                        <!-- Thông tin đơn hàng -->
-                        <div class="order__details">
-                            <h4 class="order__title">Thông tin đơn hàng</h4>
-
-                            <div class="order__list">
-                                <div class="order-header order-row">
-                                    <div class="col-left">SẢN PHẨM</div>
-                                    <div class="col-right">THÀNH TIỀN</div>
-                                </div>
-
-                                <div class="order-item order-row">
-                                    <div class="col-left">
-                                        Yves Saint Laurent Libre EDP 30ml x<span
-                                            class="order-item__quantity">&nbsp;1</span>
-                                    </div>
-                                    <div class="col-right order-item__unit-price">1.860.000₫</div>
-                                </div>
-
-                                <div class="order-item order-row">
-                                    <div class="col-left">
-                                        Giorgio Armani Sì EDP 100ml x&nbsp;<span class="order-item__quantity">1</span>
-                                    </div>
-                                    <div class="col-right order-item__unit-price">3.580.000₫</div>
-                                </div>
-
-                                <div class="order-price order-row-small">
-                                    <div class="col-left">Tạm tính</div>
-                                    <div class="col-right">5.440.000₫</div>
-                                </div>
-
-                                <div class="order-discount order-row-small">
-                                    <div class="col-left">Giảm giá</div>
-                                    <div class="col-right">
-                                        - <span class="discount-amount">200.000₫</span>
-                                    </div>
-                                </div>
-
-                                <div class="order-ship-fee order-row-small">
-                                    <div class="col-left">Phí giao hàng</div>
-                                    <div class="col-right">0₫</div>
-                                </div>
-
-                                <div class="order-subtotal order-row">
-                                    <div class="col-left">TỔNG TIỀN</div>
-                                    <div class="col-right">5.240.000₫</div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- Phuong thức thanh toán -->
-                        <div class=" payment-methods__container  ">
-                            <h4 class=" order__title ">PHƯƠNG THỨC THANH TOÁN</h4>
-
-                            <!-- Các phương thức thanh toán - accordion -->
-                            <div class=" payment-methods   accordion" id="payment-methods">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingVisa">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#visa" aria-expanded="false"
-                                            aria-controls="visa">
-                                            <div class="form-check">
-                                                <input class="form-check-input pay-radio" type="radio"
-                                                    name="pay-methods" id="visa-pay" value="visa-pay" checked="">
-                                                <label class="form-check-label" for="visa-pay">
-                                                    Thanh toán trực tuyến bằng thẻ Visa/MasterCard
-                                                </label>
-                                            </div>
-                                        </button>
-                                    </h2>
-                                    <div id="visa" class="accordion-collapse collapse" aria-labelledby="headingVisa"
-                                        data-bs-parent="#payment-methods">
-                                        <div class="accordion-body">
-                                            <div class="row g-2">
-
-                                                <div class="col-12">
-                                                    <input class="form-control visa-card-number" type="text"
-                                                        placeholder="Số thẻ *" aria-label="Card number">
-                                                    <div class="feedback-noti">
-                                                        Vui lòng nhập số thẻ
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-12">
-                                                    <input type="text" class="form-control visa-card-name"
-                                                        placeholder="Tên chủ thẻ *" aria-label="Card name">
-                                                    <div class="feedback-noti">
-                                                        Vui lòng nhập tên chủ thẻ
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-12">
-                                                    <input type="text" class="form-control visa-card-date"
-                                                        name="datepicker" id="datepicker" placeholder="MM/YYYY *">
-                                                    <div class="feedback-noti">
-                                                        Vui lòng nhập ngày hết hạn
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-12">
-                                                    <input type="text" class="form-control visa-card-cvv"
-                                                        placeholder="CVV/CVC *" aria-label="CVV-CVC">
-                                                    <div class="feedback-noti">
-                                                        Vui lòng nhập số CVV/CVC
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingBankTransfer">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#bankTransfer"
-                                            aria-expanded="false" aria-controls="bankTransfer">
-                                            <div class="form-check">
-                                                <input class="form-check-input pay-radio" type="radio"
-                                                    name="pay-methods" id="bank-pay" value="bank-pay">
-                                                <label class="form-check-label" for="bank-pay">
-                                                    Chuyển khoản ngân hàng
-                                                </label>
-                                            </div>
-                                        </button>
-                                    </h2>
-
-                                    <div id="bankTransfer" class="accordion-collapse collapse"
-                                        aria-labelledby="headingBankTransfer" data-bs-parent="#payment-methods">
-                                        <div class="accordion-body">
-                                            Thực hiện chuyển khoản vào tài khoản ngân hàng của
-                                            Master&nbsp;Audio. <br>
-                                            Xem thông tin chi tiết tài khoản tại
-                                            <a href="#" class="text-info">đây</a>. <br>
-                                            Nội dung chuyển khoản:
-                                            <span class="text-bold text-danger">“SĐT của bạn - Mã đơn hàng”</span>.
-                                            <br>
-                                            (Ví dụ:
-                                            <span class="text-bold">“0988360148 - 006868”</span>)
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingCod">
-                                        <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#cod" aria-expanded="false"
-                                            aria-controls="cod">
-                                            <div class="form-check">
-                                                <input class="form-check-input pay-radio" type="radio"
-                                                    name="pay-methods" id="cod-pay" value="cod-pay">
-                                                <label class="form-check-label" for="cod-pay">
-                                                    Thanh toán tiền mặt khi nhận hàng (COD)
-                                                </label>
-                                            </div>
-                                        </button>
-                                    </h2>
-
-                                    <div id="cod" class="accordion-collapse collapse" aria-labelledby="headingCod"
-                                        data-bs-parent="#payment-methods">
-                                        <div class="accordion-body">
-                                            Quý khách sẽ thanh toán tiền mặt trực tiếp cho nhân viên
-                                            giao hàng ngay sau khi nhận hàng.
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <!-- Nút tiến hành đặt hàng -->
-                            <div class="col-12">
-                                <a href="./order-complete.html">
-                                    <button class="section__btn w-100 btn-place-order" type="button">ĐẶT HÀNG </button>
-                                </a>
-                            </div>
-
-                        </div>
+                       </span>
 
                     </div>
 
                 </div>
 
-            </div>
+                <div class="order__details">
+                    <h4 class="order__title">Chi tiết đơn hàng</h4>
 
+                    <div class="order__list">
+                        <div class="order-header order-row">
+                            <div class="col-left">SẢN PHẨM</div>
+                            <div class="col-right">THÀNH TIỀN</div>
+                        </div>
+
+                        <div class="order-item order-row">
+                            <div class="col-left">
+                                4 Acoustic PCS 318NB x<span class="order-item__quantity">&nbsp;1</span>
+                            </div>
+                            <div class="col-right order-item__unit-price">65.200.000₫</div>
+                        </div>
+
+                        <div class="order-item order-row">
+                            <div class="col-left">
+                                Nexo LS 18 x&nbsp;<span class="order-item__quantity">1</span>
+                            </div>
+                            <div class="col-right order-item__unit-price">89,612,600₫</div>
+                        </div>
+
+                        <div class="order-item order-row">
+                            <div class="col-left">
+                                Amate X218WF x&nbsp;<span class="order-item__quantity">1</span>
+                            </div>
+                            <div class="col-right order-item__unit-price">189,200,000đ</div>
+                        </div>
+
+                        <div class="order-price order-row-small">
+                            <div class="col-left">Tạm tính</div>
+                            <div class="col-right">344,012,600₫</div>
+                        </div>
+
+                        <div class="order-discount order-row-small">
+                            <div class="col-left">Giảm giá</div>
+                            <div class="col-right">
+                                - <span class="discount-amount">34,401,260₫</span>
+                            </div>
+                        </div>
+
+                        <div class="order-ship-fee order-row-small">
+                            <div class="col-left">Phí giao hàng</div>
+                            <div class="col-right">0₫</div>
+                        </div>
+
+                        <div class="order-payment order-row-small">
+                            <div class="col-left">Phương thức thanh&nbsp;toán</div>
+                            <div class="col-right">Thanh toán tiền mặt khi nhận&nbsp;hàng (COD)</div>
+                        </div>
+
+                        <div class="order-expect order-row-small">
+                            <div class="col-left">Giao hàng dự&nbsp;kiến</div>
+                            <div class="col-right">30/12/2021</div>
+                        </div>
+
+                        <div class="order-ship order-row-small">
+                            <div class="col-left">Phương thức vận&nbsp;chuyển</div>
+                            <div class="col-right">Tiêu chuẩn</div>
+                        </div>
+
+                        <div class="order-subtotal order-row">
+                            <div class="col-left">TỔNG CỘNG</div>
+                            <div class="col-right">309,611,340₫</div>
+                        </div>
+                    </div>
+
+                    <p class="support-info">
+                        Tổng đài hỗ trợ: <span class="text-info">0988360148</span>
+                    </p>
+
+                    <div class="col-12">
+                        <a class=" back-home   section__btn" href="./index.html">QUAY VỀ TRANG CHỦ</a>
+                    </div>
+
+                </div>
+            </div>
         </section>
     </main>
-
-    <!-- Nút Tiến hành đặt hàng -->
-    <div class="proceed-to-order-button   d-none ">
-        <i class="fas fa-hand-holding-usd"></i>  TIẾN HÀNH ĐẶT HÀNG
-    </div>
-
-
-    <div class="modal-notice-successful-order   d-none ">
-        <div class="notice-successful-order-modal">
-
-            <p>Chúc mừng quý khách đã đặt hàng thành công  <i class="fas fa-heart"></i> <br /></p>
-            <!-- Cảm ơn quý khách rất nhiều
-                Hẹn gặp lại quý khách! -->
-            </p>
-
-        </div>
-    </div>
 
     <footer>
         <div class="footer-container   container-fluid">
@@ -1693,12 +1505,6 @@
 
     </footer>
 
-
-
-    <!-- <br><br><br><br><br><br><br><br><br><br> -->
-
-
-
     <!-- Thư viện Jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap js -->
@@ -1708,8 +1514,8 @@
 
     <!-- File Js Để dưới để ghi đè js của thư viện !!! -->
 
-    <!-- Tệp JS trang check-out -->
-    <script src="./js/check-out.js"></script>
+    <!-- Tệp JS trang ORDER-COMPLETE -->
+    <script src="./js/order-complete.js"></script>
 
     <!-- Js của NAV -->
     <script src="./navigation/navigation.js"></script>
