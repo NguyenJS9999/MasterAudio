@@ -517,8 +517,8 @@ input::placeholder {
 
 /* Thích sản phẩm - Thả tim*/
 .like-product {
-  color: #ff9dd8;
-  font-size: 1.2rem;
+  color: #e42313;
+  font-size: 1rem;
   cursor: pointer;
   transition: all 0.2s ease;
 }
