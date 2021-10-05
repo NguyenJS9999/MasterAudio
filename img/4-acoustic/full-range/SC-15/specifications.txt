@@ -1,0 +1,26 @@
+Model Name	SC-15
+GS1 (EAN) CODE	4260318511735
+System Type	2-Way 15“+1,5“ Fullrange Speaker
+Power Rating	600 W AES
+1200 W program
+2400 W peak
+Frequency Range (+/- 3 dB)	40 Hz - 20 kHz
+Coverage Pattern (hxv)	80°x50°
+Sensitivity	101 dB 1w/1m
+Maximum SPL	136 dB
+Woofer	1 x STG-15PD
+Driver	STG-1.53NP
+Nominal Impedance	8 Ohm
+Input Connectors	2 x Neutrik NL4 Socket parallel 1+/1-
+Housing	Birch Multiplex
+Suspension/Mounting	35 mm pole socket
+15 x M8 suspension
+U-Profil-Base
+Coating	Anti-scratch Polyurethane coating
+Dimensions (h/w/d)	700x431,5x436 mm
+Net weight	34,0 Kg
+
+Sản phẩm loa 4-Acoustic SC-15 là dòng loa nổi bật với những thiết kế tinh tế và sang trọng. Đây là dòng sản phẩm loa mang thương hiệu nổi tiếng đến từ Đức rất đẳng cấp, thời thượng với chất âm chuẩn Châu Âu. Âm bass vô cùng mạnh mẽ sôi động khi thể hiện những bản nhạc sống, remix và cũng trầm ấm du dương khi cất lên những bản nhạc vàng, 
+bolero.
+
+<table id="table_98000" class="mce-item-table table-clean"><thead><tr><th class="head_0 col_first"><span style="font-size:12pt">Model Name</span></th><th class="head_2 col_last"><span style="font-size:12pt">SC-15</span></th></tr></thead><tbody><tr class="odd row_0 row_first"><td class="col_0 col_first"><span style="font-size:12pt">GS1 (EAN) CODE</span></td><td class="col_2 col_last"><span style="font-size:12pt">4260318511735</span></td></tr><tr class="even row_1"><td class="col_0 col_first"><span style="font-size:12pt">System Type</span></td><td class="col_2 col_last"><span style="font-size:12pt">2-Way 15“+1,5“ Fullrange Speaker</span></td></tr><tr class="odd row_2"><td class="col_0 col_first"><span style="font-size:12pt">Power Rating</span></td><td class="col_2 col_last"><span style="font-size:12pt">600 W AES</span><br><span style="font-size:12pt">1200 W program</span><br><span style="font-size:12pt">2400 W peak</span></td></tr><tr class="even row_3"><td class="col_0 col_first"><span style="font-size:12pt">Frequency Range (+/- 3 dB)</span></td><td class="col_2 col_last"><span style="font-size:12pt">40 Hz - 20 kHz</span></td></tr><tr class="odd row_4"><td class="col_0 col_first"><span style="font-size:12pt">Coverage Pattern (hxv)</span></td><td class="col_2 col_last"><span style="font-size:12pt">80°x50°</span></td></tr><tr class="even row_5"><td class="col_0 col_first"><span style="font-size:12pt">Sensitivity</span></td><td class="col_2 col_last"><span style="font-size:12pt">101 dB 1w/1m</span></td></tr><tr class="odd row_6"><td class="col_0 col_first"><span style="font-size:12pt">Maximum SPL</span></td><td class="col_2 col_last"><span style="font-size:12pt">136 dB</span></td></tr><tr class="even row_7"><td class="col_0 col_first"><span style="font-size:12pt">Woofer</span></td><td class="col_2 col_last"><span style="font-size:12pt">1 x STG-15PD</span></td></tr><tr class="odd row_8"><td class="col_0 col_first"><span style="font-size:12pt">Driver</span></td><td class="col_2 col_last"><span style="font-size:12pt">STG-1.53NP</span></td></tr><tr class="even row_9"><td class="col_0 col_first"><span style="font-size:12pt">Nominal Impedance</span></td><td class="col_2 col_last"><span style="font-size:12pt">8 Ohm</span></td></tr><tr class="odd row_10"><td class="col_0 col_first"><span style="font-size:12pt">Input Connectors</span></td><td class="col_2 col_last"><span style="font-size:12pt">2 x Neutrik NL4 Socket parallel 1+/1-</span></td></tr><tr class="even row_11"><td class="col_0 col_first"><span style="font-size:12pt">Housing</span></td><td class="col_2 col_last"><span style="font-size:12pt">Birch Multiplex</span></td></tr><tr class="odd row_12"><td class="col_0 col_first"><span style="font-size:12pt">Suspension/Mounting</span></td><td class="col_2 col_last"><span style="font-size:12pt">35 mm pole socket</span><br><span style="font-size:12pt">15 x M8 suspension</span><br><span style="font-size:12pt">U-Profil-Base</span></td></tr><tr class="even row_13"><td class="col_0 col_first"><span style="font-size:12pt">Coating</span></td><td class="col_2 col_last"><span style="font-size:12pt">Anti-scratch Polyurethane coating</span></td></tr><tr class="odd row_14"><td class="col_0 col_first"><span style="font-size:12pt">Dimensions (h/w/d)</span></td><td class="col_2 col_last"><span style="font-size:12pt">700x431,5x436 mm</span></td></tr><tr class="even row_15 row_last"><td class="col_0 col_first"><span style="font-size:12pt">Net weight</span></td><td class="col_2 col_last"><span style="font-size:12pt">34,0 Kg</span></td></tr></tbody></table>
