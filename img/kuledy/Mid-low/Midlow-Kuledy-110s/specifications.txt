@@ -1,3 +1,5 @@
+22tr
+
 Thông số kỹ thuật:
 Đáp ứng tần số: 40Hz ~ 200Hz (± 3dB) 30Hz ~ 320Hz (-10dB)
 Chỉ thị danh nghĩa: không có chỉ thị
