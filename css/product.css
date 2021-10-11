@@ -34,9 +34,7 @@ a {
   cursor: pointer;
   color: black;
 }
-.container-fluid {
-  /* padding: 0px; */
-}
+
 /* style cho ô INPUT dùng chung  */
 input {
   border: 1px solid rgba(208, 208, 208, 0.5);
@@ -59,9 +57,9 @@ input::placeholder {
 }
 
 /* Nav */
-header {
-  /* border: 1px solid red; */
-}
+/* header {
+  border: 1px solid red;
+} */
 /* Xử lý danh mục sản phẩm riêng ngoại từ màn index */
 /* Thẻ Category tiêu đề có nút chỉ xuống  */
 .nav-2-category {
