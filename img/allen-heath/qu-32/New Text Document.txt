@@ -1,0 +1,44 @@
+Feature Summary
+32 Mono Mic/Line Inputs (TRS + XLR)
+Recallable AnaLOGIQTM Preamps
+3 Stereo Inputs (TRS)
+24 Mix Outputs (XLR)
+4 Stereo Groups (switchable to Mix mode)
+Up to 11 Monitor Mixes (4 mono + 7 stereo)
+2 Stereo Matrix Outs
+4 FX Engines
+4 dedicated FX Sends / Returns
+4 Mute Groups
+4 DCA Groups
+AES Digital Out
+32×32 USB Audio Interface
+dSNAKETM Remote Audio Port
+33 Motor Faders
+7” Touchscreen
+10 Soft Keys
+Trim, polarity, HPF, gate, insert, 4-band PEQ, compressor, delay on all Inputs
+Insert, 4-band PEQ, 1/3 octave GEQ, compressor, delay on all Outputs
+Automatic Mic Mixer
+Channel Ducker on all inputs
+ProFactory Mic Presets
+RackFX Library
+Built-in Signal Generator
+RTA with Peak Band indication
+Spectrogram to aid feedback elimination and room acoustics
+Automatic Mic Mixer
+Qu-Drive Direct Multitrack Recording / Playback on USB drives
+DAW MIDI Control
+Qu-Pad iPad App
+Qu-You iPhone / Android personal monitoring app
+Qu-Control customisable iOS app for simple wireless control
+Compatible with ME Personal Mixing System
+High contrast metallic finish controls, matching premium GLD Chrome series
+Accessories
+AR2412 – 24 inputs, 12 outputs AudioRack with dSNAKE connection and expansion port for personal monitoring.
+AR84 – 8 inputs, 4 outputs AudioRack with dSNAKE connection.
+AB168 – Portable, rugged 16 inputs, 8 outputs stagebox with dSNAKE connection and expansion port for personal monitoring.
+AH9650 – 100m drum of EtherFlex Cat5 with locking Neutrik EtherCon connectors.
+AH9981 – 50m drum of EtherFlex Cat5 with locking Neutrik EtherCon connectors
+AH9651 – 20m of Neutrik EtherFlex Cat5 with locking Neutrik EtherCon connectors
+LEDLamp – variable brightness 18” gooseneck lamp.
+AP9639 – Dust cover for Qu-32.

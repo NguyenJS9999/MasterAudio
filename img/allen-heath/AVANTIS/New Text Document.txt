@@ -1,0 +1,13 @@
+Digital mixer 96kHz, gồm 64 kênh, 42 bus
+
+Cấu trúc mix hoàn toàn có thể thiết lập cấu hình
+
+Lõi XCVI - độ trễ 0.7 ms  đồng pha
+
+Trang bị hai màn hình cảm ứng Full HD, giao diện Continuity UI
+
+Bộ mở rộng từ xa
+
+Nâng cấp dPACK để sở hữu dLIVE processing
+
+Khung máy hoàn toàn bằng kim loại siêu chắc chắn, trọng lượng nhẹ
